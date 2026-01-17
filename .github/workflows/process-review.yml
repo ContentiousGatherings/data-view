@@ -1,0 +1,217 @@
+name: Process Review Issue
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  process-review:
+    # Only run on issues with [Review] prefix in title
+    if: startsWith(github.event.issue.title, '[Review]')
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Process review issue
+        id: process
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+        run: |
+          python << 'EOF'
+          import json
+          import os
+          import re
+          import sys
+          from datetime import datetime, timezone
+
+          issue_body = os.environ.get('ISSUE_BODY', '')
+          issue_number = os.environ.get('ISSUE_NUMBER')
+          issue_title = os.environ.get('ISSUE_TITLE', '')
+          issue_user = os.environ.get('ISSUE_USER', '')
+
+          # Valid tables and actions
+          VALID_TABLES = {
+              'event', 'location', 'splitlocation', 'actor', 'splitactor',
+              'timestamp', 'meetingtype'
+          }
+          VALID_ACTIONS = {'mark_unusable', 'mark_blocked', 'correct_field'}
+
+          def extract_json_from_body(body: str) -> dict | None:
+              """Extract JSON from markdown code fence."""
+              pattern = r'```json\s*\n(.*?)\n```'
+              match = re.search(pattern, body, re.DOTALL)
+              if not match:
+                  return None
+              try:
+                  return json.loads(match.group(1))
+              except json.JSONDecodeError:
+                  return None
+
+          def validate_json(data: dict) -> tuple[bool, str]:
+              """Validate the review JSON structure."""
+              if not isinstance(data, dict):
+                  return False, "JSON must be an object"
+
+              # Required fields
+              required = ['table', 'id', 'action', 'reason']
+              missing = [f for f in required if f not in data]
+              if missing:
+                  return False, f"Missing required fields: {', '.join(missing)}"
+
+              # Validate table
+              if data['table'] not in VALID_TABLES:
+                  return False, f"Invalid table '{data['table']}'. Must be one of: {', '.join(sorted(VALID_TABLES))}"
+
+              # Validate action
+              if data['action'] not in VALID_ACTIONS:
+                  return False, f"Invalid action '{data['action']}'. Must be one of: {', '.join(sorted(VALID_ACTIONS))}"
+
+              # Validate id is numeric
+              if not isinstance(data['id'], int):
+                  return False, "Field 'id' must be an integer"
+
+              # Validate reason is not the placeholder
+              if data['reason'].startswith('EDIT THIS'):
+                  return False, "Please edit the 'reason' field with your actual feedback"
+
+              # Validate correct_field action has required fields
+              if data['action'] == 'correct_field':
+                  if 'field' not in data:
+                      return False, "Action 'correct_field' requires 'field' parameter"
+                  if 'new_value' not in data:
+                      return False, "Action 'correct_field' requires 'new_value' parameter"
+
+              return True, "Valid"
+
+          # Extract and validate JSON
+          data = extract_json_from_body(issue_body)
+
+          if data is None:
+              print("::set-output name=valid::false")
+              print("::set-output name=error::Could not find valid JSON in issue body. Make sure the JSON is inside a ```json code fence.")
+              sys.exit(0)
+
+          is_valid, message = validate_json(data)
+
+          if not is_valid:
+              print(f"::set-output name=valid::false")
+              print(f"::set-output name=error::{message}")
+              sys.exit(0)
+
+          # Add metadata
+          edit_record = {
+              **data,
+              'reviewer': issue_user,
+              'issue_number': int(issue_number),
+              'timestamp': datetime.now(timezone.utc).isoformat()
+          }
+
+          # Write to file for next step
+          with open('edit_record.json', 'w') as f:
+              json.dump(edit_record, f)
+
+          print("::set-output name=valid::true")
+          print(f"::set-output name=table::{data['table']}")
+          print(f"::set-output name=id::{data['id']}")
+          print(f"::set-output name=action::{data['action']}")
+          EOF
+
+      - name: Add needs-fix label and comment on invalid
+        if: steps.process.outputs.valid == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const error = `${{ steps.process.outputs.error }}`;
+
+            // Add needs-fix label
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['needs-fix']
+            });
+
+            // Remove validated label if present
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'validated'
+              });
+            } catch (e) {
+              // Label might not exist
+            }
+
+            // Comment with error
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `## Validation Failed\n\n${error}\n\nPlease edit the JSON in your issue and try again.`
+            });
+
+      - name: Append to edits.jsonl
+        if: steps.process.outputs.valid == 'true'
+        run: |
+          cat edit_record.json >> edits.jsonl
+          echo "" >> edits.jsonl
+
+      - name: Commit edits.jsonl
+        if: steps.process.outputs.valid == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add edits.jsonl
+          git diff --staged --quiet || git commit -m "Add review edit from issue #${{ github.event.issue.number }}"
+          git push
+
+      - name: Add validated label and comment on success
+        if: steps.process.outputs.valid == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const table = `${{ steps.process.outputs.table }}`;
+            const id = `${{ steps.process.outputs.id }}`;
+            const action = `${{ steps.process.outputs.action }}`;
+
+            // Add validated label
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['validated']
+            });
+
+            // Remove needs-fix label if present
+            try {
+              await github.rest.issues.removeLabel({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                name: 'needs-fix'
+              });
+            } catch (e) {
+              // Label might not exist
+            }
+
+            // Comment confirmation
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `## Review Logged\n\nYour correction has been recorded:\n- **Table:** \`${table}\`\n- **ID:** ${id}\n- **Action:** \`${action}\`\n\nThis edit will be applied to the database in the next batch update. Thank you for your review!`
+            });

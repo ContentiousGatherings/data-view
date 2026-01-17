@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link %}
+
+{% block title %}Event {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/event/">Events</a> &raquo;
+    Event {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>Event {{ entity.id }}</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Event Details</h2>
+
+    <dl class="detail-list">
+        <dt>Excerpt</dt>
+        <dd class="excerpt">{{ entity.excerpt }}</dd>
+
+        {% if entity.full_text %}
+        <dt>Full Text</dt>
+        <dd>
+            <details>
+                <summary>Show full article text</summary>
+                <div class="full-text">{{ entity.full_text }}</div>
+            </details>
+        </dd>
+        {% endif %}
+
+        <dt>Extraction Reasoning</dt>
+        <dd class="reasoning">{{ entity.reasoning }}</dd>
+    </dl>
+</section>
+
+<section class="linked-entities">
+    <h2>Linked Entities</h2>
+
+    <div class="linked-grid">
+        {% if timestamp %}
+        <div class="linked-item">
+            <h3>Timestamp</h3>
+            {{ record_link(timestamp, 'timestamp', timestamp.when) }}
+            {% if timestamp.normalized_datetime %}
+            <div class="sub-detail">Normalized: {{ timestamp.normalized_datetime }}</div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if location %}
+        <div class="linked-item">
+            <h3>Location</h3>
+            {{ record_link(location, 'location', location.name) }}
+            <div class="sub-detail">Country: {{ location.country }}</div>
+        </div>
+        {% endif %}
+
+        {% if meetingtype %}
+        <div class="linked-item">
+            <h3>Meeting Type</h3>
+            {{ record_link(meetingtype, 'meetingtype', meetingtype.name) }}
+            {% if meetingtype.category %}
+            <div class="sub-detail">Category: {{ meetingtype.category }}</div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if actors %}
+        <div class="linked-item">
+            <h3>Actors ({{ actors|length }})</h3>
+            <ul class="linked-list">
+                {% for actor in actors %}
+                <li>{{ record_link(actor, 'actor', actor.name) }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% if article %}
+<section class="source-info">
+    <h2>Source Article</h2>
+    <dl class="detail-list">
+        <dt>Journal</dt>
+        <dd>{{ article.journal }}</dd>
+        <dt>Published</dt>
+        <dd>{{ article.date_published }}</dd>
+    </dl>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('event', entity.id, {
+        'Excerpt': entity.excerpt,
+        'Location': location.name if location else 'N/A',
+        'Date': timestamp.when if timestamp else 'N/A',
+        'Type': meetingtype.name if meetingtype else 'N/A'
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

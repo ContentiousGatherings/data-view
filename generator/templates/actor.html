@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link %}
+
+{% block title %}Actor {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/actor/">Actors</a> &raquo;
+    Actor {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>{{ entity.name }}</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Actor Details</h2>
+
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd>{{ entity.name }}</dd>
+
+        <dt>Description</dt>
+        <dd>{{ entity.description }}</dd>
+
+        {% if entity.number %}
+        <dt>Number</dt>
+        <dd>{{ entity.number }}</dd>
+        {% endif %}
+
+        <dt>Excerpt</dt>
+        <dd class="excerpt">{{ entity.excerpt }}</dd>
+
+        <dt>Extraction Reasoning</dt>
+        <dd class="reasoning">{{ entity.reasoning }}</dd>
+
+        {% if entity.validation_reasoning %}
+        <dt>Validation Reasoning</dt>
+        <dd class="reasoning">{{ entity.validation_reasoning }}</dd>
+        {% endif %}
+
+        {% if entity.validation_datetime %}
+        <dt>Validated</dt>
+        <dd>{{ entity.validation_datetime }} ({{ entity.validation_model or 'unknown model' }})</dd>
+        {% endif %}
+    </dl>
+</section>
+
+{% if event %}
+<section class="parent-entity">
+    <h2>Event</h2>
+    <p>From: {{ record_link(event, 'event', 'Event ' ~ event.id) }}</p>
+</section>
+{% endif %}
+
+{% if split_actors %}
+<section class="related-entities">
+    <h2>Split Actors ({{ split_actors|length }})</h2>
+    <p class="help-text">Individual actors extracted from this actor string.</p>
+
+    <table class="entity-table">
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sa in split_actors %}
+            <tr class="{{ sa|get_status }}">
+                <td>{{ mini_status(sa) }}</td>
+                <td>{{ sa.name }}</td>
+                <td>{{ sa.actor_type }}</td>
+                <td><a href="{{ base_url }}/splitactor/{{ sa.id }}/">View</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('actor', entity.id, {
+        'Name': entity.name,
+        'Description': entity.description,
+        'Excerpt': entity.excerpt
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

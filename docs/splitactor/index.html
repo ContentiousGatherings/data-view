@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split Actors - CG Review</title>
+    <link rel="stylesheet" href="https://ContentiousGatherings.github.io/data-view/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://ContentiousGatherings.github.io/data-view/" class="nav-brand">CG Review</a>
+            <div class="nav-links">
+                <a href="https://ContentiousGatherings.github.io/data-view/event/">Events</a>
+                <a href="https://ContentiousGatherings.github.io/data-view/location/">Locations</a>
+                <a href="https://ContentiousGatherings.github.io/data-view/actor/">Actors</a>
+                <a href="https://ContentiousGatherings.github.io/data-view/timestamp/">Timestamps</a>
+                <a href="https://ContentiousGatherings.github.io/data-view/meetingtype/">Meeting Types</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+<nav class="breadcrumb">
+    <a href="https://ContentiousGatherings.github.io/data-view/">Home</a> &raquo;
+    Split Actors
+</nav>
+
+<h1>Split Actors</h1>
+
+<div class="list-stats">
+    <span class="stat-valid">0 valid</span>
+    <span class="stat-invalid">0 invalid</span>
+    <span class="stat-blocked">0 blocked</span>
+    <span class="stat-unknown">0 pending</span>
+    <span class="stat-total">(0 total)</span>
+</div>
+
+<div class="list-filters">
+    <label>
+        <input type="checkbox" id="filter-valid" checked> Show valid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-invalid" checked> Show invalid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-blocked" checked> Show blocked
+    </label>
+    <label>
+        <input type="checkbox" id="filter-unknown" checked> Show pending
+    </label>
+</div>
+
+<table class="entity-table list-table" id="entity-list">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>ID</th>
+            <th>Name</th>
+            
+            <th>Type</th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+</table>
+
+
+
+<script>
+// Simple client-side filtering
+document.querySelectorAll('.list-filters input').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const status = this.id.replace('filter-', '');
+        document.querySelectorAll(`tr[data-status="${status}"]`).forEach(row => {
+            row.style.display = this.checked ? '' : 'none';
+        });
+    });
+});
+</script>
+
+    </main>
+
+    <footer>
+        <div class="status-legend">
+            <span class="status-badge valid">Valid</span>
+            <span class="status-badge invalid">Invalid</span>
+            <span class="status-badge blocked">Blocked</span>
+            <span class="status-badge unknown">Not validated</span>
+        </div>
+        <p>Contentious Gatherings Pipeline Review</p>
+    </footer>
+</body>
+</html>

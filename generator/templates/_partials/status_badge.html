@@ -1,0 +1,22 @@
+{# Render a status badge for an entity #}
+{% macro status_badge(status, reason=None) %}
+<span class="status-badge {{ status }}" {% if reason %}title="{{ reason }}"{% endif %}>
+    {% if status == 'valid' %}
+        &#10003; Valid
+    {% elif status == 'invalid' %}
+        &#10007; Invalid
+    {% elif status == 'blocked' %}
+        &#9888; Blocked
+    {% else %}
+        ? Not validated
+    {% endif %}
+</span>
+{% endmacro %}
+
+{# Mini status indicator for links #}
+{% macro mini_status(entity) %}
+{% set status = entity|get_status %}
+<span class="mini-status {{ status }}" title="{{ entity|get_status_reason or status }}">
+    {% if status == 'valid' %}&#10003;{% elif status == 'invalid' %}&#10007;{% elif status == 'blocked' %}&#9888;{% else %}?{% endif %}
+</span>
+{% endmacro %}

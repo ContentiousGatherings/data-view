@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link %}
+
+{% block title %}Timestamp {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/timestamp/">Timestamps</a> &raquo;
+    Timestamp {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>"{{ entity.when }}"</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Timestamp Details</h2>
+
+    <dl class="detail-list">
+        <dt>Raw Value</dt>
+        <dd><code>{{ entity.when }}</code></dd>
+
+        {% if entity.normalized_datetime %}
+        <dt>Normalized DateTime</dt>
+        <dd class="highlight"><code>{{ entity.normalized_datetime }}</code></dd>
+        {% endif %}
+
+        {% if entity.validation_method %}
+        <dt>Validation Method</dt>
+        <dd>
+            <span class="method-badge {{ entity.validation_method.split('_')[0] if entity.validation_method else '' }}">
+                {{ entity.validation_method }}
+            </span>
+        </dd>
+        {% endif %}
+
+        {% if entity.normalization_reasoning %}
+        <dt>Normalization Reasoning</dt>
+        <dd class="reasoning">{{ entity.normalization_reasoning }}</dd>
+        {% endif %}
+
+        <dt>Excerpt</dt>
+        <dd class="excerpt">{{ entity.excerpt }}</dd>
+
+        <dt>Extraction Reasoning</dt>
+        <dd class="reasoning">{{ entity.reasoning }}</dd>
+    </dl>
+</section>
+
+{% if events %}
+<section class="related-entities">
+    <h2>Events Using This Timestamp ({{ events|length }})</h2>
+
+    <ul class="linked-list">
+        {% for event in events %}
+        <li>{{ record_link(event, 'event', 'Event ' ~ event.id ~ ': ' ~ (event.excerpt[:60] ~ '...' if event.excerpt|length > 60 else event.excerpt)) }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('timestamp', entity.id, {
+        'When': entity.when,
+        'Normalized': entity.normalized_datetime or 'Not parsed',
+        'Method': entity.validation_method or 'N/A',
+        'Excerpt': entity.excerpt
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

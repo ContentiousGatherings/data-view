@@ -1,0 +1,118 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link %}
+
+{% block title %}Split Actor {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/splitactor/">Split Actors</a> &raquo;
+    Split Actor {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>{{ entity.name }}</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Split Actor Details</h2>
+
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd>{{ entity.name }}</dd>
+
+        <dt>Actor Type</dt>
+        <dd><span class="actor-type">{{ entity.actor_type }}</span></dd>
+
+        {% if entity.description %}
+        <dt>Description</dt>
+        <dd>{{ entity.description }}</dd>
+        {% endif %}
+
+        {% if entity.reasoning %}
+        <dt>Splitting Reasoning</dt>
+        <dd class="reasoning">{{ entity.reasoning }}</dd>
+        {% endif %}
+
+        {% if entity.splitting_datetime %}
+        <dt>Split</dt>
+        <dd>{{ entity.splitting_datetime }} ({{ entity.splitting_model or 'unknown model' }})</dd>
+        {% endif %}
+
+        {% if entity.matching_datetime %}
+        <dt>Matched</dt>
+        <dd>{{ entity.matching_datetime }}</dd>
+        {% endif %}
+    </dl>
+</section>
+
+{% if parent_actor %}
+<section class="parent-entity">
+    <h2>Parent Actor</h2>
+    <p>Split from: {{ record_link(parent_actor, 'actor', parent_actor.name) }}</p>
+</section>
+{% endif %}
+
+{% if matches %}
+<section class="match-results">
+    <h2>Match Results ({{ matches|length }})</h2>
+    <p class="help-text">Fuzzy matches against the authoritative actor database.</p>
+
+    <table class="entity-table match-table">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Authoritative Name</th>
+                <th>Type</th>
+                <th>Algorithm</th>
+                <th>Score</th>
+                <th>Accepted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for match in matches|sort(attribute='rank') %}
+            <tr class="{% if match.accepted %}accepted{% elif match.accepted == false %}rejected{% endif %}">
+                <td>{{ match.rank + 1 }}</td>
+                <td>{{ match.authoritative_actor.name }}</td>
+                <td>{{ match.authoritative_actor.actor_type }}</td>
+                <td><code>{{ match.algorithm.value if match.algorithm else match.algorithm }}</code></td>
+                <td>{{ '%.2f'|format(match.confidence_score) }}</td>
+                <td>
+                    {% if match.accepted is none %}
+                    <span class="pending">Pending</span>
+                    {% elif match.accepted %}
+                    <span class="accepted-badge">Accepted</span>
+                    {% else %}
+                    <span class="rejected-badge">Rejected</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% else %}
+<section class="match-results">
+    <h2>Match Results</h2>
+    <p class="no-data">No matches found for this actor.</p>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('splitactor', entity.id, {
+        'Name': entity.name,
+        'Type': entity.actor_type,
+        'Parent': parent_actor.name if parent_actor else 'N/A'
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

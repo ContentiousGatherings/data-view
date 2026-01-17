@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link %}
+
+{% block title %}Location {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/location/">Locations</a> &raquo;
+    Location {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>{{ entity.name }}</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Location Details</h2>
+
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd>{{ entity.name }}</dd>
+
+        <dt>Country</dt>
+        <dd>{{ entity.country }}</dd>
+
+        <dt>Excerpt</dt>
+        <dd class="excerpt">{{ entity.excerpt }}</dd>
+
+        <dt>Extraction Reasoning</dt>
+        <dd class="reasoning">{{ entity.reasoning }}</dd>
+
+        {% if entity.validation_reasoning %}
+        <dt>Validation Reasoning</dt>
+        <dd class="reasoning">{{ entity.validation_reasoning }}</dd>
+        {% endif %}
+
+        {% if entity.validation_datetime %}
+        <dt>Validated</dt>
+        <dd>{{ entity.validation_datetime }} ({{ entity.validation_model or 'unknown model' }})</dd>
+        {% endif %}
+    </dl>
+</section>
+
+{% if split_locations %}
+<section class="related-entities">
+    <h2>Split Locations ({{ split_locations|length }})</h2>
+    <p class="help-text">Individual locations extracted from this location string.</p>
+
+    <table class="entity-table">
+        <thead>
+            <tr>
+                <th>Status</th>
+                <th>Name</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sl in split_locations %}
+            <tr class="{{ sl|get_status }}">
+                <td>{{ mini_status(sl) }}</td>
+                <td>{{ sl.name }}</td>
+                <td>{{ sl.country }}</td>
+                <td><a href="{{ base_url }}/splitlocation/{{ sl.id }}/">View</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endif %}
+
+{% if events %}
+<section class="related-entities">
+    <h2>Events Using This Location ({{ events|length }})</h2>
+
+    <ul class="linked-list">
+        {% for event in events %}
+        <li>{{ record_link(event, 'event', 'Event ' ~ event.id ~ ': ' ~ (event.excerpt[:60] ~ '...' if event.excerpt|length > 60 else event.excerpt)) }}</li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('location', entity.id, {
+        'Name': entity.name,
+        'Country': entity.country,
+        'Excerpt': entity.excerpt
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

@@ -1,0 +1,15 @@
+{# Render a link to another record with status indicator #}
+{% macro record_link(entity, entity_type, label=None) %}
+{% set status = entity|get_status %}
+<a href="{{ base_url }}/{{ entity_type }}/{{ entity.id }}/" class="record-link {{ status }}">
+    <span class="mini-status {{ status }}">
+        {% if status == 'valid' %}&#10003;{% elif status == 'invalid' %}&#10007;{% elif status == 'blocked' %}&#9888;{% else %}?{% endif %}
+    </span>
+    {{ label or entity.name or entity.when or entity.id }}
+</a>
+{% endmacro %}
+
+{# Simple link without status #}
+{% macro simple_link(entity_type, entity_id, label) %}
+<a href="{{ base_url }}/{{ entity_type }}/{{ entity_id }}/">{{ label }}</a>
+{% endmacro %}

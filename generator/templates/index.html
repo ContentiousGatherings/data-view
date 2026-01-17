@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block title %}CG Review - Home{% endblock %}
+
+{% block content %}
+<h1>Contentious Gatherings Pipeline Review</h1>
+
+<p class="intro">
+    Browse extracted entities from the pipeline. Each page includes a "Report Problem"
+    link to submit corrections via GitHub Issues.
+</p>
+
+<div class="stats-grid">
+    {% for type_key, type_name in entity_types %}
+    {% set type_stats = stats[type_key] %}
+    <div class="stat-card">
+        <h2>
+            <a href="{{ base_url }}/{{ type_key }}/">{{ type_name }}</a>
+        </h2>
+        <div class="stat-total">{{ type_stats.total }} total</div>
+        <div class="stat-breakdown">
+            <span class="stat-valid">{{ type_stats.valid }} valid</span>
+            <span class="stat-invalid">{{ type_stats.invalid }} invalid</span>
+            <span class="stat-blocked">{{ type_stats.blocked }} blocked</span>
+            <span class="stat-unknown">{{ type_stats.unknown }} pending</span>
+        </div>
+        <div class="stat-bar">
+            {% set total = type_stats.total or 1 %}
+            <div class="bar-valid" style="width: {{ (type_stats.valid / total * 100)|round(1) }}%"></div>
+            <div class="bar-invalid" style="width: {{ (type_stats.invalid / total * 100)|round(1) }}%"></div>
+            <div class="bar-blocked" style="width: {{ (type_stats.blocked / total * 100)|round(1) }}%"></div>
+            <div class="bar-unknown" style="width: {{ (type_stats.unknown / total * 100)|round(1) }}%"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<section class="instructions">
+    <h2>How to Report Problems</h2>
+    <ol>
+        <li>Navigate to any entity page</li>
+        <li>Click the "Report Problem" button</li>
+        <li>Edit the JSON in the issue template:
+            <ul>
+                <li><code>mark_unusable</code> - Flag as invalid with reason</li>
+                <li><code>mark_blocked</code> - Flag as blocked (needs manual review)</li>
+                <li><code>correct_field</code> - Suggest a specific field change</li>
+            </ul>
+        </li>
+        <li>Submit the issue - a GitHub Action will validate and log the correction</li>
+    </ol>
+</section>
+{% endblock %}

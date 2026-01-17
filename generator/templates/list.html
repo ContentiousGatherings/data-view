@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import mini_status %}
+
+{% block title %}{{ entity_type_display }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    {{ entity_type_display }}
+</nav>
+
+<h1>{{ entity_type_display }}</h1>
+
+<div class="list-stats">
+    <span class="stat-valid">{{ counts.valid }} valid</span>
+    <span class="stat-invalid">{{ counts.invalid }} invalid</span>
+    <span class="stat-blocked">{{ counts.blocked }} blocked</span>
+    <span class="stat-unknown">{{ counts.unknown }} pending</span>
+    <span class="stat-total">({{ counts.total }} total)</span>
+</div>
+
+<div class="list-filters">
+    <label>
+        <input type="checkbox" id="filter-valid" checked> Show valid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-invalid" checked> Show invalid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-blocked" checked> Show blocked
+    </label>
+    <label>
+        <input type="checkbox" id="filter-unknown" checked> Show pending
+    </label>
+</div>
+
+<table class="entity-table list-table" id="entity-list">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>ID</th>
+            <th>{{ primary_field_label }}</th>
+            {% if secondary_field_label %}
+            <th>{{ secondary_field_label }}</th>
+            {% endif %}
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for entity in entities %}
+        {% set status = entity|get_status %}
+        <tr class="row-{{ status }}" data-status="{{ status }}">
+            <td>{{ mini_status(entity) }}</td>
+            <td>{{ entity.id }}</td>
+            <td>
+                {% if primary_field == 'excerpt' %}
+                {{ (entity[primary_field][:80] ~ '...' if entity[primary_field]|length > 80 else entity[primary_field]) }}
+                {% else %}
+                {{ entity[primary_field] or '-' }}
+                {% endif %}
+            </td>
+            {% if secondary_field %}
+            <td>{{ entity[secondary_field] or '-' }}</td>
+            {% endif %}
+            <td><a href="{{ base_url }}/{{ entity_type }}/{{ entity.id }}/">View</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% if counts.total > 500 %}
+<p class="help-text">Showing first 500 records. Use browser search (Ctrl+F) to find specific entries.</p>
+{% endif %}
+
+<script>
+// Simple client-side filtering
+document.querySelectorAll('.list-filters input').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const status = this.id.replace('filter-', '');
+        document.querySelectorAll(`tr[data-status="${status}"]`).forEach(row => {
+            row.style.display = this.checked ? '' : 'none';
+        });
+    });
+});
+</script>
+{% endblock %}
