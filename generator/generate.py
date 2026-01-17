@@ -17,6 +17,7 @@ from urllib.parse import quote
 
 from jinja2 import Environment, FileSystemLoader
 from sqlmodel import Session, create_engine, select
+from tqdm import tqdm
 
 # Add parent directory to path to import db_model
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -61,7 +62,7 @@ def get_status_reason(record: Any) -> str | None:
 
 
 def make_issue_url(
-    repo: str, table: str, record_id: int, context: dict, base_url: str
+    repo: str, table: str, record_id: int, context: dict
 ) -> str:
     """Generate a GitHub issue URL with pre-filled content."""
     title = f"[Review] {table}/{record_id}"
@@ -97,7 +98,7 @@ def make_issue_url(
 {context_md}
 
 ---
-*Page: {base_url}/{table}/{record_id}/*
+*Page: /{table}/{record_id}/*
 *Submit this issue to log your correction.*
 """
 
@@ -113,13 +114,11 @@ class SiteGenerator:
         self,
         db_path: str,
         repo: str,
-        base_url: str,
         output_dir: str,
     ):
         self.db_path = db_path
         self.output_dir = Path(output_dir)
         self.repo = repo
-        self.base_url = base_url.rstrip("/")
 
         # Set up Jinja2
         template_dir = Path(__file__).parent / "templates"
@@ -132,9 +131,9 @@ class SiteGenerator:
         self.env.filters["get_status"] = get_status
         self.env.filters["get_status_reason"] = get_status_reason
         self.env.globals["make_issue_url"] = lambda table, id, ctx: make_issue_url(
-            self.repo, table, id, ctx, self.base_url
+            self.repo, table, id, ctx
         )
-        self.env.globals["base_url"] = self.base_url
+
 
         # Database engine
         self.engine = create_engine(f"sqlite:///{db_path}")
@@ -284,7 +283,7 @@ class SiteGenerator:
 
         counts = {"total": 0, "valid": 0, "invalid": 0, "blocked": 0, "unknown": 0}
 
-        for entity in entities:
+        for entity in tqdm(entities, desc=f"Generating {entity_type} pages"):
             counts["total"] += 1
             status = get_status(entity)
             counts[status] += 1
@@ -351,7 +350,7 @@ class SiteGenerator:
                     )
                 ).all()
                 # Load authoritative locations for matches
-                for match in context["matches"]:
+                for match in tqdm(context["matches"], desc="Loading authoritative locations"):
                     match.authoritative_location = session.get(
                         AuthoritativeLocation, match.authoritative_location_id
                     )
@@ -379,7 +378,7 @@ class SiteGenerator:
                     )
                 ).all()
                 # Load authoritative actors for matches
-                for match in context["matches"]:
+                for match in tqdm(context["matches"], desc="Loading authoritative actors"):
                     match.authoritative_actor = session.get(
                         AuthoritativeActor, match.authoritative_actor_id
                     )
@@ -405,7 +404,7 @@ class SiteGenerator:
                     )
                 ).all()
                 # Load authoritative meeting types for matches
-                for match in context["matches"]:
+                for match in tqdm(context["matches"], desc="Loading authoritative meeting types"):
                     match.authoritative_meetingtype = session.get(
                         AuthoritativeMeetingType, match.authoritative_meetingtype_id
                     )
@@ -453,11 +452,6 @@ def main():
         default="ContentiousGatherings/data-view",
         help="GitHub repository for issues (default: ContentiousGatherings/data-view)",
     )
-    parser.add_argument(
-        "--base-url",
-        default="https://ContentiousGatherings.github.io/data-view",
-        help="Base URL for the generated site",
-    )
 
     args = parser.parse_args()
 
@@ -473,7 +467,6 @@ def main():
         db_path=db_path,
         output_dir=output_dir,
         repo=args.repo,
-        base_url=args.base_url,
     )
 
     generator.generate()
