@@ -11,6 +11,7 @@ import json
 import os
 import shutil
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import quote
@@ -62,7 +63,7 @@ def get_status_reason(record: Any) -> str | None:
 
 
 def make_issue_url(
-    repo: str, table: str, record_id: int, context: dict
+    repo: str, table: str, record_id: int, context: dict, generated_at: str
 ) -> str:
     """Generate a GitHub issue URL with pre-filled content."""
     title = f"[Review] {table}/{record_id}"
@@ -99,6 +100,7 @@ def make_issue_url(
 
 ---
 *Page: /{table}/{record_id}/*
+*Site generated: {generated_at}*
 *Submit this issue to log your correction.*
 """
 
@@ -120,6 +122,10 @@ class SiteGenerator:
         self.output_dir = Path(output_dir)
         self.repo = repo
 
+        # Generation timestamp
+        self.generated_at = datetime.now(timezone.utc)
+        self.generated_at_str = self.generated_at.strftime("%Y-%m-%d %H:%M UTC")
+
         # Set up Jinja2
         template_dir = Path(__file__).parent / "templates"
         self.env = Environment(
@@ -131,9 +137,9 @@ class SiteGenerator:
         self.env.filters["get_status"] = get_status
         self.env.filters["get_status_reason"] = get_status_reason
         self.env.globals["make_issue_url"] = lambda table, id, ctx: make_issue_url(
-            self.repo, table, id, ctx
+            self.repo, table, id, ctx, self.generated_at_str
         )
-
+        self.env.globals["generated_at"] = self.generated_at_str
 
         # Database engine
         self.engine = create_engine(f"sqlite:///{db_path}")
