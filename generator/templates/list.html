@@ -39,6 +39,9 @@
         <tr>
             <th>Status</th>
             <th>ID</th>
+            {% if group_field %}
+            <th>{{ group_field_label }}</th>
+            {% endif %}
             <th>{{ primary_field_label }}</th>
             {% if secondary_field_label %}
             <th>{{ secondary_field_label }}</th>
@@ -52,6 +55,9 @@
         <tr class="row-{{ status }}" data-status="{{ status }}">
             <td>{{ mini_status(entity) }}</td>
             <td>{{ entity.id }}</td>
+            {% if group_field %}
+            <td>{{ entity[group_field] }}</td>
+            {% endif %}
             <td>
                 {% if primary_field == 'excerpt' %}
                 {{ (entity[primary_field][:80] ~ '...' if entity[primary_field]|length > 80 else entity[primary_field]) }}

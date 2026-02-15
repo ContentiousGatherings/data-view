@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link, simple_link %}
+
+{% block title %}Auth. Location {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/authoritativelocation/">Authoritative Locations</a> &raquo;
+    {{ entity.name }}
+</nav>
+
+<div class="entity-header">
+    <h1>{{ entity.name }}</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Location Details</h2>
+
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd>{{ entity.name }}</dd>
+
+        <dt>Country</dt>
+        <dd>{{ entity.country }}</dd>
+
+        {% if entity.county %}
+        <dt>County</dt>
+        <dd>{{ entity.county }}</dd>
+        {% endif %}
+
+        {% if entity.parish %}
+        <dt>Parish</dt>
+        <dd>{{ entity.parish }}</dd>
+        {% endif %}
+
+        {% if entity.district %}
+        <dt>District</dt>
+        <dd>{{ entity.district }}</dd>
+        {% endif %}
+
+        {% if entity.place_type %}
+        <dt>Place Type</dt>
+        <dd>{{ entity.place_type }}</dd>
+        {% endif %}
+
+        {% if entity.latitude is not none and entity.longitude is not none %}
+        <dt>Coordinates</dt>
+        <dd>{{ entity.latitude }}, {{ entity.longitude }}</dd>
+        {% endif %}
+
+        {% if entity.valid_from_year or entity.valid_to_year %}
+        <dt>Valid Period</dt>
+        <dd>{{ entity.valid_from_year or '?' }} &ndash; {{ entity.valid_to_year or '?' }}</dd>
+        {% endif %}
+
+        <dt>Source</dt>
+        <dd>{{ entity.source }}{% if entity.source_reference %} ({{ entity.source_reference }}){% endif %}</dd>
+
+        {% if entity.source_table %}
+        <dt>Source Table</dt>
+        <dd>{{ entity.source_table }}{% if entity.original_id %} #{{ entity.original_id }}{% endif %}</dd>
+        {% endif %}
+
+        <dt>Added</dt>
+        <dd>{{ entity.date_added }}</dd>
+
+        <dt>Modified</dt>
+        <dd>{{ entity.date_modified }}</dd>
+    </dl>
+</section>
+
+{% if matches %}
+<section class="match-results">
+    <h2>Split Location Matches ({{ matches|length }})</h2>
+    <p class="help-text">Split locations that matched to this authoritative location.</p>
+
+    <table class="entity-table match-table">
+        <thead>
+            <tr>
+                <th>Split Location</th>
+                <th>Algorithm</th>
+                <th>Score</th>
+                <th>Rank</th>
+                <th>Accepted</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for match in matches|sort(attribute='confidence_score', reverse=true) %}
+            <tr class="{% if match.accepted %}accepted{% elif match.accepted == false %}rejected{% endif %}">
+                <td>
+                    {% if match.split_location %}
+                    {{ record_link(match.split_location, 'splitlocation', match.split_location.name) }}
+                    {% else %}
+                    Split #{{ match.split_location_id }}
+                    {% endif %}
+                </td>
+                <td><code>{{ match.algorithm.value if match.algorithm else match.algorithm }}</code></td>
+                <td>{{ '%.2f'|format(match.confidence_score) }}</td>
+                <td>{{ match.rank + 1 }}</td>
+                <td>
+                    {% if match.accepted is none %}
+                    <span class="pending">Pending</span>
+                    {% elif match.accepted %}
+                    <span class="accepted-badge">Accepted</span>
+                    {% else %}
+                    <span class="rejected-badge">Rejected</span>
+                    {% endif %}
+                </td>
+                <td><a href="{{ base_url }}/splitlocationmatch/{{ match.id }}/">View</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('authoritativelocation', entity.id, {
+        'Name': entity.name,
+        'Country': entity.country,
+        'County': entity.county or 'N/A',
+        'Source': entity.source
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

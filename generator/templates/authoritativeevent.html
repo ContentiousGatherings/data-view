@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link, simple_link %}
+
+{% block title %}Authoritative Event {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/authoritativeevent/">Authoritative Events</a> &raquo;
+    Authoritative Event {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>{{ entity.canonical_name or ('Authoritative Event #' ~ entity.id) }}</h1>
+    {% if entity.reviewed_date %}
+    <span class="status-badge valid">Reviewed</span>
+    {% else %}
+    <span class="status-badge unknown">Not Reviewed</span>
+    {% endif %}
+</div>
+
+<section class="entity-details">
+    <h2>Event Details</h2>
+
+    <dl class="detail-list">
+        {% if entity.canonical_name %}
+        <dt>Canonical Name</dt>
+        <dd>{{ entity.canonical_name }}</dd>
+        {% endif %}
+
+        {% if entity.canonical_description %}
+        <dt>Description</dt>
+        <dd>{{ entity.canonical_description }}</dd>
+        {% endif %}
+
+        {% if entity.category %}
+        <dt>Category</dt>
+        <dd><span class="category-badge {{ entity.category }}">{{ entity.category }}</span></dd>
+        {% endif %}
+
+        {% if entity.event_date_start %}
+        <dt>Date Start</dt>
+        <dd>{{ entity.event_date_start }}</dd>
+        {% endif %}
+
+        {% if entity.event_date_end and entity.event_date_end != entity.event_date_start %}
+        <dt>Date End</dt>
+        <dd>{{ entity.event_date_end }}</dd>
+        {% endif %}
+
+        <dt>Source Events</dt>
+        <dd>{{ entity.source_event_count }}</dd>
+
+        {% if entity.confidence_score is not none %}
+        <dt>Confidence</dt>
+        <dd>{{ '%.2f'|format(entity.confidence_score) }}</dd>
+        {% endif %}
+
+        <dt>Created</dt>
+        <dd>{{ entity.date_added }}</dd>
+
+        <dt>Modified</dt>
+        <dd>{{ entity.date_modified }}</dd>
+
+        {% if entity.reviewed_date %}
+        <dt>Reviewed</dt>
+        <dd>{{ entity.reviewed_date }}</dd>
+        {% endif %}
+    </dl>
+</section>
+
+<section class="linked-entities">
+    <h2>Linked Entities</h2>
+
+    <div class="linked-grid">
+        {% if auth_location %}
+        <div class="linked-item">
+            <h3>Location</h3>
+            <a href="{{ base_url }}/authoritativelocation/{{ auth_location.id }}/" class="record-link">{{ auth_location.name }}</a>
+            {% if auth_location.county %}
+            <div class="sub-detail">County: {{ auth_location.county }}</div>
+            {% endif %}
+            {% if auth_location.country %}
+            <div class="sub-detail">Country: {{ auth_location.country }}</div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        {% if auth_actors %}
+        <div class="linked-item">
+            <h3>Actors ({{ auth_actors|length }})</h3>
+            <ul class="linked-list">
+                {% for aa in auth_actors %}
+                <li>
+                    {% if aa.authoritative_actor %}
+                    {{ aa.authoritative_actor.name }}
+                    {% if aa.role %}<span class="sub-detail">({{ aa.role }})</span>{% endif %}
+                    <span class="sub-detail">- {{ aa.source_event_count }} source{{ 's' if aa.source_event_count != 1 }}</span>
+                    {% else %}
+                    Actor #{{ aa.authoritative_actor_id }}
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+{% if source_events %}
+<section class="match-results">
+    <h2>Source Events ({{ source_events|length }})</h2>
+    <p class="help-text">Extracted events that have been matched to this authoritative event.</p>
+
+    {% for se in source_events|sort(attribute='match.composite_score', reverse=true) %}
+    {% set match = se.match %}
+    <div class="source-event-card" style="border: 1px solid #ddd; border-radius: 6px; padding: 1em; margin-bottom: 1em; {% if match.accepted %}border-left: 4px solid #28a745;{% elif match.accepted == false %}border-left: 4px solid #dc3545;{% else %}border-left: 4px solid #ffc107;{% endif %}">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5em;">
+            <strong>{{ simple_link('event', match.event_id, 'Event #' ~ match.event_id) }}</strong>
+            {% if match.accepted is none %}
+            <span class="pending">Pending</span>
+            {% elif match.accepted %}
+            <span class="accepted-badge">Accepted</span>
+            {% else %}
+            <span class="rejected-badge">Rejected</span>
+            {% endif %}
+        </div>
+
+        {% if se.event %}
+        {% if se.event.excerpt %}
+        <div class="excerpt" style="margin-bottom: 0.5em;">{{ se.event.excerpt }}</div>
+        {% endif %}
+
+        {% if se.event.full_text %}
+        <details style="margin-bottom: 0.5em;">
+            <summary>Show full article text</summary>
+            <div class="full-text">{{ se.event.full_text }}</div>
+        </details>
+        {% endif %}
+
+        <div class="linked-grid" style="margin-bottom: 0.5em;">
+            {% if se.article %}
+            <div class="linked-item">
+                <h4>Article</h4>
+                <div class="sub-detail">{{ se.article.journal }}</div>
+                <div class="sub-detail">{{ se.article.date_published }}</div>
+            </div>
+            {% endif %}
+
+            {% if se.timestamp %}
+            <div class="linked-item">
+                <h4>Timestamp</h4>
+                {{ record_link(se.timestamp, 'timestamp', se.timestamp.when) }}
+                {% if se.timestamp.normalized_datetime %}
+                <div class="sub-detail">Normalized: {{ se.timestamp.normalized_datetime }}</div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if se.location %}
+            <div class="linked-item">
+                <h4>Location</h4>
+                {{ record_link(se.location, 'location', se.location.name) }}
+                <div class="sub-detail">{{ se.location.country }}</div>
+            </div>
+            {% endif %}
+
+            {% if se.meetingtype %}
+            <div class="linked-item">
+                <h4>Meeting Type</h4>
+                {{ record_link(se.meetingtype, 'meetingtype', se.meetingtype.name) }}
+                {% if se.meetingtype.category %}
+                <div class="sub-detail">{{ se.meetingtype.category }}</div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            {% if se.actors %}
+            <div class="linked-item">
+                <h4>Actors ({{ se.actors|length }})</h4>
+                <ul class="linked-list">
+                    {% for actor in se.actors %}
+                    <li>{{ record_link(actor, 'actor', actor.name) }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+        {% endif %}
+
+        <table class="entity-table" style="margin: 0;">
+            <thead>
+                <tr>
+                    <th>Location</th>
+                    <th>Time</th>
+                    <th>Actor</th>
+                    <th>Composite</th>
+                    <th>Dims</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{ '%.2f'|format(match.location_score) if match.location_score is not none else '-' }}</td>
+                    <td>{{ '%.2f'|format(match.time_score) if match.time_score is not none else '-' }}</td>
+                    <td>{{ '%.2f'|format(match.actor_score) if match.actor_score is not none else '-' }}</td>
+                    <td><strong>{{ '%.2f'|format(match.composite_score) }}</strong></td>
+                    <td>{{ match.dimensions_matched }}/3</td>
+                </tr>
+            </tbody>
+        </table>
+        {% if match.accepted_reason %}
+        <div class="sub-detail" style="margin-top: 0.3em;">{{ match.accepted_reason }}</div>
+        {% endif %}
+    </div>
+    {% endfor %}
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('authoritativeevent', entity.id, {
+        'Name': entity.canonical_name or 'N/A',
+        'Category': entity.category or 'N/A',
+        'Date': entity.event_date_start|string if entity.event_date_start else 'N/A',
+        'Source Events': entity.source_event_count|string
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

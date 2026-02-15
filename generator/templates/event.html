@@ -89,6 +89,57 @@
     </div>
 </section>
 
+{% if entity.consolidation_status %}
+<section class="consolidation-info">
+    <h2>Consolidation</h2>
+    <dl class="detail-list">
+        <dt>Status</dt>
+        <dd><span class="status-badge {{ entity.consolidation_status }}">{{ entity.consolidation_status }}</span></dd>
+        {% if entity.consolidation_datetime %}
+        <dt>Processed</dt>
+        <dd>{{ entity.consolidation_datetime }}</dd>
+        {% endif %}
+    </dl>
+    {% if event_matches %}
+    <h3>Event Matches ({{ event_matches|length }})</h3>
+    <table class="entity-table match-table">
+        <thead>
+            <tr>
+                <th>Auth. Event</th>
+                <th>Location</th>
+                <th>Time</th>
+                <th>Actor</th>
+                <th>Composite</th>
+                <th>Dims</th>
+                <th>Accepted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for match in event_matches %}
+            <tr class="{% if match.accepted %}accepted{% elif match.accepted == false %}rejected{% endif %}">
+                <td><a href="{{ base_url }}/authoritativeevent/{{ match.authoritative_event_id }}/">Auth #{{ match.authoritative_event_id }}</a></td>
+                <td>{{ '%.2f'|format(match.location_score) if match.location_score is not none else '-' }}</td>
+                <td>{{ '%.2f'|format(match.time_score) if match.time_score is not none else '-' }}</td>
+                <td>{{ '%.2f'|format(match.actor_score) if match.actor_score is not none else '-' }}</td>
+                <td>{{ '%.2f'|format(match.composite_score) }}</td>
+                <td>{{ match.dimensions_matched }}/3</td>
+                <td>
+                    {% if match.accepted is none %}
+                    <span class="pending">Pending</span>
+                    {% elif match.accepted %}
+                    <span class="accepted-badge">Accepted</span>
+                    {% else %}
+                    <span class="rejected-badge">Rejected</span>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+</section>
+{% endif %}
+
 {% if article %}
 <section class="source-info">
     <h2>Source Article</h2>

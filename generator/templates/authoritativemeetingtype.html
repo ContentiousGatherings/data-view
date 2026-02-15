@@ -1,0 +1,127 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge, mini_status %}
+{% from "_partials/record_link.html" import record_link %}
+
+{% block title %}Auth. Meeting Type {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/authoritativemeetingtype/">Authoritative Meeting Types</a> &raquo;
+    {{ entity.name }}
+</nav>
+
+<div class="entity-header">
+    <h1>{{ entity.name }}</h1>
+    {% if entity.is_relevant is none %}
+    <span class="status-badge unknown">Relevance Unknown</span>
+    {% elif entity.is_relevant %}
+    <span class="status-badge valid">Relevant</span>
+    {% else %}
+    <span class="status-badge invalid">Not Relevant</span>
+    {% endif %}
+</div>
+
+<section class="entity-details">
+    <h2>Meeting Type Details</h2>
+
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd>{{ entity.name }}</dd>
+
+        <dt>Category</dt>
+        <dd>{{ entity.category }}</dd>
+
+        {% if entity.description %}
+        <dt>Description</dt>
+        <dd>{{ entity.description }}</dd>
+        {% endif %}
+
+        {% if entity.aliases %}
+        <dt>Aliases</dt>
+        <dd>{{ entity.aliases }}</dd>
+        {% endif %}
+
+        <dt>Relevant</dt>
+        <dd>
+            {% if entity.is_relevant is none %}
+            <span class="pending">Not evaluated</span>
+            {% elif entity.is_relevant %}
+            Yes
+            {% else %}
+            No
+            {% endif %}
+        </dd>
+
+        {% if entity.relevance_reason %}
+        <dt>Relevance Reason</dt>
+        <dd>{{ entity.relevance_reason }}</dd>
+        {% endif %}
+
+        <dt>Source</dt>
+        <dd>{{ entity.source }}{% if entity.source_reference %} ({{ entity.source_reference }}){% endif %}</dd>
+
+        <dt>Added</dt>
+        <dd>{{ entity.date_added }}</dd>
+
+        <dt>Modified</dt>
+        <dd>{{ entity.date_modified }}</dd>
+    </dl>
+</section>
+
+{% if matches %}
+<section class="match-results">
+    <h2>Meeting Type Matches ({{ matches|length }})</h2>
+    <p class="help-text">Extracted meeting types that matched to this authoritative type.</p>
+
+    <table class="entity-table match-table">
+        <thead>
+            <tr>
+                <th>Meeting Type</th>
+                <th>Algorithm</th>
+                <th>Score</th>
+                <th>Rank</th>
+                <th>Accepted</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for match in matches|sort(attribute='confidence_score', reverse=true) %}
+            <tr class="{% if match.accepted %}accepted{% elif match.accepted == false %}rejected{% endif %}">
+                <td>
+                    {% if match.meetingtype %}
+                    {{ record_link(match.meetingtype, 'meetingtype', match.meetingtype.name) }}
+                    {% else %}
+                    Meeting Type #{{ match.meetingtype_id }}
+                    {% endif %}
+                </td>
+                <td><code>{{ match.algorithm.value if match.algorithm else match.algorithm }}</code></td>
+                <td>{{ '%.2f'|format(match.confidence_score) }}</td>
+                <td>{{ match.rank + 1 }}</td>
+                <td>
+                    {% if match.accepted is none %}
+                    <span class="pending">Pending</span>
+                    {% elif match.accepted %}
+                    <span class="accepted-badge">Accepted</span>
+                    {% else %}
+                    <span class="rejected-badge">Rejected</span>
+                    {% endif %}
+                </td>
+                <td><a href="{{ base_url }}/meetingtypematch/{{ match.id }}/">View</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('authoritativemeetingtype', entity.id, {
+        'Name': entity.name,
+        'Category': entity.category,
+        'Relevant': entity.is_relevant|string if entity.is_relevant is not none else 'Unknown'
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

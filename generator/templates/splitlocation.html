@@ -46,6 +46,11 @@
         <dt>Matched</dt>
         <dd>{{ entity.matching_datetime }}</dd>
         {% endif %}
+
+        {% if entity.reviewed_date %}
+        <dt>Reviewed</dt>
+        <dd>{{ entity.reviewed_date }}</dd>
+        {% endif %}
     </dl>
 </section>
 

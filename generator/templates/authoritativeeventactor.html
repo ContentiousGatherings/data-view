@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge %}
+{% from "_partials/record_link.html" import simple_link %}
+
+{% block title %}Auth. Event Actor {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/authoritativeeventactor/">Authoritative Event Actors</a> &raquo;
+    Link {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>Authoritative Event Actor #{{ entity.id }}</h1>
+    {{ status_badge(status, status_reason) }}
+</div>
+
+{% if status_reason %}
+<div class="status-reason {{ status }}">
+    <strong>Reason:</strong> {{ status_reason }}
+</div>
+{% endif %}
+
+<section class="entity-details">
+    <h2>Link Details</h2>
+
+    <dl class="detail-list">
+        <dt>Authoritative Event</dt>
+        <dd>{{ simple_link('authoritativeevent', entity.authoritative_event_id, 'Auth. Event #' ~ entity.authoritative_event_id) }}</dd>
+
+        <dt>Authoritative Actor</dt>
+        <dd>{{ simple_link('authoritativeactor', entity.authoritative_actor_id, 'Auth. Actor #' ~ entity.authoritative_actor_id) }}</dd>
+
+        {% if entity.role %}
+        <dt>Role</dt>
+        <dd>{{ entity.role }}</dd>
+        {% endif %}
+
+        <dt>Source Event Count</dt>
+        <dd>{{ entity.source_event_count }}</dd>
+    </dl>
+</section>
+
+{% if auth_event %}
+<section class="related-entities">
+    <h2>Authoritative Event</h2>
+    <dl class="detail-list">
+        {% if auth_event.canonical_name %}
+        <dt>Name</dt>
+        <dd><a href="{{ base_url }}/authoritativeevent/{{ auth_event.id }}/">{{ auth_event.canonical_name }}</a></dd>
+        {% else %}
+        <dt>ID</dt>
+        <dd><a href="{{ base_url }}/authoritativeevent/{{ auth_event.id }}/">Auth. Event #{{ auth_event.id }}</a></dd>
+        {% endif %}
+        {% if auth_event.category %}
+        <dt>Category</dt>
+        <dd>{{ auth_event.category }}</dd>
+        {% endif %}
+        {% if auth_event.event_date_start %}
+        <dt>Date</dt>
+        <dd>{{ auth_event.event_date_start }}</dd>
+        {% endif %}
+    </dl>
+</section>
+{% endif %}
+
+{% if auth_actor %}
+<section class="related-entities">
+    <h2>Authoritative Actor</h2>
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd><a href="{{ base_url }}/authoritativeactor/{{ auth_actor.id }}/">{{ auth_actor.name }}</a></dd>
+        <dt>Type</dt>
+        <dd>{{ auth_actor.actor_type }}</dd>
+        {% if auth_actor.description %}
+        <dt>Description</dt>
+        <dd>{{ auth_actor.description }}</dd>
+        {% endif %}
+    </dl>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('authoritativeeventactor', entity.id, {
+        'Auth Event': entity.authoritative_event_id|string,
+        'Auth Actor': entity.authoritative_actor_id|string,
+        'Role': entity.role or 'N/A',
+        'Source Events': entity.source_event_count|string
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}

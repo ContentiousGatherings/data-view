@@ -25,11 +25,15 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.db_model import (
     Actor,
+    ActorAlias,
     Article,
     AuthoritativeActor,
+    AuthoritativeEvent,
+    AuthoritativeEventActor,
     AuthoritativeLocation,
     AuthoritativeMeetingType,
     Event,
+    EventMatch,
     Location,
     MeetingType,
     MeetingTypeMatch,
@@ -50,6 +54,19 @@ def get_status(record: Any) -> str:
             return "valid"
         elif record.use is False:
             return "invalid"
+    if hasattr(record, "accepted"):
+        if record.accepted is True:
+            return "valid"
+        elif record.accepted is False:
+            return "invalid"
+    if hasattr(record, "matching_datetime"):
+        if record.matching_datetime is not None:
+            return "valid"
+    if hasattr(record, "reviewed_date"):
+        if record.reviewed_date is not None:
+            return "valid"
+        else:
+            return "unknown"
     return "unknown"
 
 
@@ -59,6 +76,8 @@ def get_status_reason(record: Any) -> str | None:
         return getattr(record, "block_reason", None)
     if hasattr(record, "use") and record.use is False:
         return getattr(record, "unuse_reason", None)
+    if hasattr(record, "accepted") and record.accepted is not None:
+        return getattr(record, "accepted_reason", None)
     return None
 
 
@@ -71,7 +90,7 @@ def make_issue_url(
     json_block = json.dumps(
         {
             "table": table,
-            "id": record_id,
+            "id": str(record_id),
             "action": "mark_unusable",
             "reason": "EDIT THIS: Describe why this should be removed",
             "reviewer": "",
@@ -108,7 +127,9 @@ def make_issue_url(
     if len(body) > 1800:
         body = body[:1800] + "\n\n(truncated)"
 
-    return f"https://github.com/{repo}/issues/new?title={quote(title)}&body={quote(body)}"
+    return (
+        f"https://github.com/{repo}/issues/new?title={quote(title)}&body={quote(body)}"
+    )
 
 
 class SiteGenerator:
@@ -208,7 +229,96 @@ class SiteGenerator:
                 "name",
                 "category",
             ),
+            (
+                "authoritativeevent",
+                AuthoritativeEvent,
+                "authoritativeevent.html",
+                "Authoritative Events",
+                "canonical_name",
+                "category",
+            ),
+            (
+                "eventmatch",
+                EventMatch,
+                "eventmatch.html",
+                "Event Matches",
+                "composite_score",
+                "algorithm",
+            ),
+            (
+                "authoritativelocation",
+                AuthoritativeLocation,
+                "authoritativelocation.html",
+                "Authoritative Locations",
+                "name",
+                "county",
+            ),
+            (
+                "splitlocationmatch",
+                SplitLocationMatch,
+                "splitlocationmatch.html",
+                "Split Location Matches",
+                "confidence_score",
+                "algorithm",
+            ),
+            (
+                "authoritativeactor",
+                AuthoritativeActor,
+                "authoritativeactor.html",
+                "Authoritative Actors",
+                "name",
+                "actor_type",
+            ),
+            (
+                "actoralias",
+                ActorAlias,
+                "actoralias.html",
+                "Actor Aliases",
+                "alias",
+                "alias_normalized",
+            ),
+            (
+                "splitactormatch",
+                SplitActorMatch,
+                "splitactormatch.html",
+                "Split Actor Matches",
+                "confidence_score",
+                "algorithm",
+            ),
+            (
+                "authoritativemeetingtype",
+                AuthoritativeMeetingType,
+                "authoritativemeetingtype.html",
+                "Authoritative Meeting Types",
+                "name",
+                "category",
+            ),
+            (
+                "meetingtypematch",
+                MeetingTypeMatch,
+                "meetingtypematch.html",
+                "Meeting Type Matches",
+                "confidence_score",
+                "algorithm",
+            ),
+            (
+                "authoritativeeventactor",
+                AuthoritativeEventActor,
+                "authoritativeeventactor.html",
+                "Authoritative Event Actors",
+                "role",
+                "source_event_count",
+            ),
         ]
+
+        # Custom queries: filter entity types that are too large unfiltered
+        custom_queries = {
+            "authoritativelocation": select(AuthoritativeLocation).where(
+                AuthoritativeLocation.id.in_(
+                    select(SplitLocationMatch.authoritative_location_id).distinct()
+                )
+            ),
+        }
 
         for (
             entity_type,
@@ -219,7 +329,8 @@ class SiteGenerator:
             secondary_field,
         ) in entity_configs:
             print(f"Generating {entity_type} pages...")
-            entities = session.exec(select(model)).all()
+            query = custom_queries.get(entity_type, select(model))
+            entities = session.exec(query).all()
             all_entities[entity_type] = {
                 "entities": entities,
                 "display_name": display_name,
@@ -249,11 +360,27 @@ class SiteGenerator:
             "description": "Description",
             "category": "Category",
             "actor_type": "Type",
+            "canonical_name": "Canonical Name",
+            "composite_score": "Composite Score",
+            "algorithm": "Algorithm",
+            "county": "County",
+            "alias": "Alias",
+            "alias_normalized": "Normalized",
+            "confidence_score": "Confidence Score",
+            "role": "Role",
+            "source_event_count": "Source Events",
+        }
+
+        # Extra grouping column for match tables
+        group_fields = {
+            "splitlocationmatch": ("split_location_id", "Split Location"),
         }
 
         for entity_type, data in all_entities.items():
             # Limit to first 500 entities for performance
             entities = data["entities"][:500]
+
+            group_field, group_field_label = group_fields.get(entity_type, (None, None))
 
             html = list_template.render(
                 entity_type=entity_type,
@@ -265,9 +392,13 @@ class SiteGenerator:
                     data["primary_field"], data["primary_field"]
                 ),
                 secondary_field=data["secondary_field"],
-                secondary_field_label=field_labels.get(data["secondary_field"])
-                if data["secondary_field"]
-                else None,
+                secondary_field_label=(
+                    field_labels.get(data["secondary_field"])
+                    if data["secondary_field"]
+                    else None
+                ),
+                group_field=group_field,
+                group_field_label=group_field_label,
             )
 
             # Write to entity_type/index.html
@@ -311,6 +442,41 @@ class SiteGenerator:
             page_dir.mkdir(parents=True, exist_ok=True)
             (page_dir / "index.html").write_text(html)
 
+        # For match tables, recompute counts grouped by parent entity so that
+        # e.g. 5 suggestions for one split location count as a single entry.
+        if entity_type == "splitlocationmatch":
+            counts = self._grouped_match_counts(
+                entities, key=lambda e: e.split_location_id
+            )
+
+        return counts
+
+    @staticmethod
+    def _grouped_match_counts(entities: list, key) -> dict:
+        """Count stats grouped by a parent key.
+
+        Groups match records by key (e.g. split_location_id) and assigns each
+        group a single status: "valid" if any match is accepted, "invalid" if
+        all are explicitly rejected, "unknown" otherwise.
+        """
+        from collections import defaultdict
+
+        groups: dict[int, list] = defaultdict(list)
+        for entity in entities:
+            groups[key(entity)].append(entity)
+
+        counts = {"total": 0, "valid": 0, "invalid": 0, "blocked": 0, "unknown": 0}
+        for members in groups.values():
+            counts["total"] += 1
+            statuses = [get_status(m) for m in members]
+            if "valid" in statuses:
+                counts["valid"] += 1
+            elif all(s == "invalid" for s in statuses):
+                counts["invalid"] += 1
+            elif "blocked" in statuses:
+                counts["blocked"] += 1
+            else:
+                counts["unknown"] += 1
         return counts
 
     def _get_entity_context(
@@ -333,6 +499,13 @@ class SiteGenerator:
             context["actors"] = session.exec(
                 select(Actor).where(Actor.event_id == entity.id)
             ).all()
+            # Get consolidation matches
+            try:
+                context["event_matches"] = session.exec(
+                    select(EventMatch).where(EventMatch.event_id == entity.id)
+                ).all()
+            except Exception:
+                context["event_matches"] = []
 
         elif entity_type == "location":
             # Get split locations
@@ -356,7 +529,11 @@ class SiteGenerator:
                     )
                 ).all()
                 # Load authoritative locations for matches
-                for match in tqdm(context["matches"], desc="Loading authoritative locations"):
+                for match in tqdm(
+                    context["matches"],
+                    desc="Loading authoritative locations",
+                    leave=False,
+                ):
                     match.authoritative_location = session.get(
                         AuthoritativeLocation, match.authoritative_location_id
                     )
@@ -384,7 +561,9 @@ class SiteGenerator:
                     )
                 ).all()
                 # Load authoritative actors for matches
-                for match in tqdm(context["matches"], desc="Loading authoritative actors"):
+                for match in tqdm(
+                    context["matches"], desc="Loading authoritative actors", leave=False
+                ):
                     match.authoritative_actor = session.get(
                         AuthoritativeActor, match.authoritative_actor_id
                     )
@@ -410,12 +589,180 @@ class SiteGenerator:
                     )
                 ).all()
                 # Load authoritative meeting types for matches
-                for match in tqdm(context["matches"], desc="Loading authoritative meeting types"):
+                for match in tqdm(
+                    context["matches"],
+                    desc="Loading authoritative meeting types",
+                    leave=False,
+                ):
                     match.authoritative_meetingtype = session.get(
                         AuthoritativeMeetingType, match.authoritative_meetingtype_id
                     )
             except Exception:
                 context["matches"] = []
+
+        elif entity_type == "authoritativeevent":
+            # Get authoritative location
+            if entity.authoritative_location_id:
+                context["auth_location"] = session.get(
+                    AuthoritativeLocation, entity.authoritative_location_id
+                )
+            # Get event matches with full source event details
+            try:
+                matches = session.exec(
+                    select(EventMatch).where(
+                        EventMatch.authoritative_event_id == entity.id
+                    )
+                ).all()
+                source_events = []
+                for match in matches:
+                    event = session.get(Event, match.event_id)
+                    se = {
+                        "match": match,
+                        "event": event,
+                        "article": None,
+                        "location": None,
+                        "timestamp": None,
+                        "meetingtype": None,
+                        "actors": [],
+                    }
+                    if event:
+                        if event.article_id:
+                            se["article"] = session.get(Article, event.article_id)
+                        if event.location_id:
+                            se["location"] = session.get(Location, event.location_id)
+                        if event.date_id:
+                            se["timestamp"] = session.get(TimeStamp, event.date_id)
+                        if event.type_id:
+                            se["meetingtype"] = session.get(MeetingType, event.type_id)
+                        se["actors"] = session.exec(
+                            select(Actor).where(Actor.event_id == event.id)
+                        ).all()
+                    source_events.append(se)
+                context["source_events"] = source_events
+            except Exception:
+                context["source_events"] = []
+            # Get actors
+            try:
+                context["auth_actors"] = session.exec(
+                    select(AuthoritativeEventActor).where(
+                        AuthoritativeEventActor.authoritative_event_id == entity.id
+                    )
+                ).all()
+                for aa in context["auth_actors"]:
+                    aa.authoritative_actor = session.get(
+                        AuthoritativeActor, aa.authoritative_actor_id
+                    )
+            except Exception:
+                context["auth_actors"] = []
+
+        elif entity_type == "eventmatch":
+            # Get linked event and authoritative event
+            if entity.event_id:
+                context["event"] = session.get(Event, entity.event_id)
+            if entity.authoritative_event_id:
+                context["auth_event"] = session.get(
+                    AuthoritativeEvent, entity.authoritative_event_id
+                )
+
+        elif entity_type == "authoritativelocation":
+            # Get split location matches pointing to this auth location
+            try:
+                matches = session.exec(
+                    select(SplitLocationMatch).where(
+                        SplitLocationMatch.authoritative_location_id == entity.id
+                    )
+                ).all()
+                for match in matches:
+                    match.split_location = session.get(
+                        SplitLocation, match.split_location_id
+                    )
+                context["matches"] = matches
+            except Exception:
+                context["matches"] = []
+
+        elif entity_type == "splitlocationmatch":
+            # Get linked split location and authoritative location
+            if entity.split_location_id:
+                context["split_location"] = session.get(
+                    SplitLocation, entity.split_location_id
+                )
+            if entity.authoritative_location_id:
+                context["auth_location"] = session.get(
+                    AuthoritativeLocation, entity.authoritative_location_id
+                )
+
+        elif entity_type == "authoritativeactor":
+            # Get aliases
+            try:
+                context["aliases"] = session.exec(
+                    select(ActorAlias).where(
+                        ActorAlias.authoritative_actor_id == entity.id
+                    )
+                ).all()
+            except Exception:
+                context["aliases"] = []
+            # Get split actor matches
+            try:
+                matches = session.exec(
+                    select(SplitActorMatch).where(
+                        SplitActorMatch.authoritative_actor_id == entity.id
+                    )
+                ).all()
+                for match in matches:
+                    match.split_actor = session.get(SplitActor, match.split_actor_id)
+                context["matches"] = matches
+            except Exception:
+                context["matches"] = []
+
+        elif entity_type == "actoralias":
+            # Get the authoritative actor
+            if entity.authoritative_actor_id:
+                context["auth_actor"] = session.get(
+                    AuthoritativeActor, entity.authoritative_actor_id
+                )
+
+        elif entity_type == "splitactormatch":
+            # Get linked split actor and authoritative actor
+            if entity.split_actor_id:
+                context["split_actor"] = session.get(SplitActor, entity.split_actor_id)
+            if entity.authoritative_actor_id:
+                context["auth_actor"] = session.get(
+                    AuthoritativeActor, entity.authoritative_actor_id
+                )
+
+        elif entity_type == "authoritativemeetingtype":
+            # Get meeting type matches
+            try:
+                matches = session.exec(
+                    select(MeetingTypeMatch).where(
+                        MeetingTypeMatch.authoritative_meetingtype_id == entity.id
+                    )
+                ).all()
+                for match in matches:
+                    match.meetingtype = session.get(MeetingType, match.meetingtype_id)
+                context["matches"] = matches
+            except Exception:
+                context["matches"] = []
+
+        elif entity_type == "meetingtypematch":
+            # Get linked meeting type and authoritative meeting type
+            if entity.meetingtype_id:
+                context["meetingtype"] = session.get(MeetingType, entity.meetingtype_id)
+            if entity.authoritative_meetingtype_id:
+                context["auth_meetingtype"] = session.get(
+                    AuthoritativeMeetingType, entity.authoritative_meetingtype_id
+                )
+
+        elif entity_type == "authoritativeeventactor":
+            # Get linked authoritative event and actor
+            if entity.authoritative_event_id:
+                context["auth_event"] = session.get(
+                    AuthoritativeEvent, entity.authoritative_event_id
+                )
+            if entity.authoritative_actor_id:
+                context["auth_actor"] = session.get(
+                    AuthoritativeActor, entity.authoritative_actor_id
+                )
 
         return context
 
@@ -425,14 +772,43 @@ class SiteGenerator:
 
         html = template.render(
             stats=stats,
-            entity_types=[
-                ("event", "Events"),
-                ("location", "Locations"),
-                ("splitlocation", "Split Locations"),
-                ("actor", "Actors"),
-                ("splitactor", "Split Actors"),
-                ("timestamp", "Timestamps"),
-                ("meetingtype", "Meeting Types"),
+            # Rows for the index page layout
+            entity_rows=[
+                # Row 1: Event centered alone
+                [("event", "Events")],
+                # Row 2: placeholder for pipeline columns (handled separately)
+                "pipeline",
+                # Row 3: consolidation
+                [
+                    ("eventmatch", "Event Matches"),
+                    ("authoritativeeventactor", "Auth. Event Actors"),
+                ],
+                # Row 4: AuthoritativeEvent centered alone
+                [("authoritativeevent", "Authoritative Events")],
+            ],
+            # Pipeline columns: each data type as a vertical column
+            pipeline_columns=[
+                [
+                    ("location", "Locations"),
+                    ("splitlocation", "Split Locations"),
+                    ("splitlocationmatch", "Location Matches"),
+                    ("authoritativelocation", "Auth. Locations"),
+                ],
+                [
+                    ("timestamp", "Timestamps"),
+                ],
+                [
+                    ("actor", "Actors"),
+                    ("splitactor", "Split Actors"),
+                    ("splitactormatch", "Actor Matches"),
+                    ("authoritativeactor", "Auth. Actors"),
+                    ("actoralias", "Actor Aliases"),
+                ],
+                [
+                    ("meetingtype", "Meeting Types"),
+                    ("meetingtypematch", "Type Matches"),
+                    ("authoritativemeetingtype", "Auth. Types"),
+                ],
             ],
         )
 

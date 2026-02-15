@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% from "_partials/status_badge.html" import status_badge %}
+{% from "_partials/record_link.html" import record_link, simple_link %}
+
+{% block title %}Split Location Match {{ entity.id }} - CG Review{% endblock %}
+
+{% block content %}
+<nav class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &raquo;
+    <a href="{{ base_url }}/splitlocationmatch/">Split Location Matches</a> &raquo;
+    Match {{ entity.id }}
+</nav>
+
+<div class="entity-header">
+    <h1>Split Location Match #{{ entity.id }}</h1>
+    {% if entity.accepted is none %}
+    <span class="status-badge unknown">Pending</span>
+    {% elif entity.accepted %}
+    <span class="status-badge valid">Accepted</span>
+    {% else %}
+    <span class="status-badge invalid">Rejected</span>
+    {% endif %}
+</div>
+
+<section class="entity-details">
+    <h2>Match Details</h2>
+
+    <dl class="detail-list">
+        <dt>Split Location</dt>
+        <dd>{{ simple_link('splitlocation', entity.split_location_id, 'Split Location #' ~ entity.split_location_id) }}</dd>
+
+        <dt>Authoritative Location</dt>
+        <dd>{{ simple_link('authoritativelocation', entity.authoritative_location_id, 'Auth. Location #' ~ entity.authoritative_location_id) }}</dd>
+
+        <dt>Algorithm</dt>
+        <dd><code>{{ entity.algorithm.value if entity.algorithm else entity.algorithm }}</code></dd>
+
+        <dt>Confidence Score</dt>
+        <dd><strong>{{ '%.2f'|format(entity.confidence_score) }}</strong></dd>
+
+        <dt>Rank</dt>
+        <dd>{{ entity.rank + 1 }}</dd>
+
+        <dt>Accepted</dt>
+        <dd>
+            {% if entity.accepted is none %}
+            <span class="pending">Pending</span>
+            {% elif entity.accepted %}
+            <span class="accepted-badge">Yes</span>
+            {% else %}
+            <span class="rejected-badge">No</span>
+            {% endif %}
+        </dd>
+
+        {% if entity.accepted_reason %}
+        <dt>Reason</dt>
+        <dd>{{ entity.accepted_reason }}</dd>
+        {% endif %}
+
+        <dt>Date</dt>
+        <dd>{{ entity.date_added }}</dd>
+    </dl>
+</section>
+
+{% if split_location %}
+<section class="related-entities">
+    <h2>Split Location</h2>
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd>{{ record_link(split_location, 'splitlocation', split_location.name) }}</dd>
+        <dt>Country</dt>
+        <dd>{{ split_location.country }}</dd>
+    </dl>
+</section>
+{% endif %}
+
+{% if auth_location %}
+<section class="related-entities">
+    <h2>Authoritative Location</h2>
+    <dl class="detail-list">
+        <dt>Name</dt>
+        <dd><a href="{{ base_url }}/authoritativelocation/{{ auth_location.id }}/">{{ auth_location.name }}</a></dd>
+        <dt>Country</dt>
+        <dd>{{ auth_location.country }}</dd>
+        {% if auth_location.county %}
+        <dt>County</dt>
+        <dd>{{ auth_location.county }}</dd>
+        {% endif %}
+        {% if auth_location.place_type %}
+        <dt>Place Type</dt>
+        <dd>{{ auth_location.place_type }}</dd>
+        {% endif %}
+    </dl>
+</section>
+{% endif %}
+
+<section class="actions">
+    <a href="{{ make_issue_url('splitlocationmatch', entity.id, {
+        'Split Location': entity.split_location_id|string,
+        'Auth Location': entity.authoritative_location_id|string,
+        'Score': entity.confidence_score|string,
+        'Accepted': entity.accepted|string if entity.accepted is not none else 'Pending'
+    }) }}" class="btn btn-report" target="_blank">
+        Report Problem
+    </a>
+</section>
+{% endblock %}
