@@ -6,8 +6,13 @@ on:
 
 jobs:
   process-review:
-    # Only run on issues with [Review] prefix in title
-    if: startsWith(github.event.issue.title, '[Review]')
+    # Only run on issues with a known review prefix in title
+    if: >-
+      startsWith(github.event.issue.title, '[Valid]') ||
+      startsWith(github.event.issue.title, '[Invalid]') ||
+      startsWith(github.event.issue.title, '[Block]') ||
+      startsWith(github.event.issue.title, '[Report]') ||
+      startsWith(github.event.issue.title, '[Review]')
     runs-on: ubuntu-latest
     permissions:
       issues: write
@@ -45,9 +50,12 @@ jobs:
           # Valid tables and actions
           VALID_TABLES = {
               'event', 'location', 'splitlocation', 'actor', 'splitactor',
-              'timestamp', 'meetingtype'
+              'timestamp', 'meetingtype', 'authoritativeevent', 'eventmatch',
+              'authoritativelocation', 'splitlocationmatch', 'authoritativeactor',
+              'actoralias', 'splitactormatch', 'authoritativemeetingtype',
+              'meetingtypematch', 'authoritativeeventactor',
           }
-          VALID_ACTIONS = {'mark_unusable', 'mark_blocked', 'correct_field'}
+          VALID_ACTIONS = {'mark_valid', 'mark_unusable', 'mark_blocked', 'report', 'correct_field'}
 
           def extract_json_from_body(body: str) -> dict | None:
               """Extract JSON from markdown code fence."""
@@ -65,8 +73,8 @@ jobs:
               if not isinstance(data, dict):
                   return False, "JSON must be an object"
 
-              # Required fields
-              required = ['table', 'id', 'action', 'reason']
+              # Fields required for every action
+              required = ['table', 'id', 'action']
               missing = [f for f in required if f not in data]
               if missing:
                   return False, f"Missing required fields: {', '.join(missing)}"
@@ -83,12 +91,22 @@ jobs:
               if not isinstance(data['id'], int):
                   return False, "Field 'id' must be an integer"
 
-              # Validate reason is not the placeholder
-              if data['reason'].startswith('EDIT THIS'):
-                  return False, "Please edit the 'reason' field with your actual feedback"
+              # Per-action validation
+              action = data['action']
 
-              # Validate correct_field action has required fields
-              if data['action'] == 'correct_field':
+              if action in ('mark_unusable', 'mark_blocked'):
+                  if 'reason' not in data:
+                      return False, f"Action '{action}' requires a 'reason' field"
+                  if data['reason'].startswith('EDIT THIS'):
+                      return False, "Please edit the 'reason' field with your actual feedback"
+
+              if action == 'report':
+                  if 'description' not in data:
+                      return False, "Action 'report' requires a 'description' field"
+                  if data['description'].startswith('EDIT THIS'):
+                      return False, "Please edit the 'description' field with your actual feedback"
+
+              if action == 'correct_field':
                   if 'field' not in data:
                       return False, "Action 'correct_field' requires 'field' parameter"
                   if 'new_value' not in data:

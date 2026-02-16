@@ -6,8 +6,8 @@
 <h1>Contentious Gatherings Pipeline Review</h1>
 
 <p class="intro">
-    Browse extracted entities from the pipeline. Each page includes a "Report Problem"
-    link to submit corrections via GitHub Issues.
+    Browse extracted entities from the pipeline. Each page includes review buttons
+    to submit corrections via GitHub Issues.
 </p>
 
 {% macro stat_card(type_key, type_name) %}
@@ -60,18 +60,19 @@
 {% endfor %}
 
 <section class="instructions">
-    <h2>How to Report Problems</h2>
+    <h2>How to Review</h2>
     <ol>
         <li>Navigate to any entity page</li>
-        <li>Click the "Report Problem" button</li>
-        <li>Edit the JSON in the issue template:
+        <li>Click one of the review buttons:
             <ul>
-                <li><code>mark_unusable</code> - Flag as invalid with reason</li>
-                <li><code>mark_blocked</code> - Flag as blocked (needs manual review)</li>
-                <li><code>correct_field</code> - Suggest a specific field change</li>
+                <li><strong>Valid</strong> - Confirm the entity is correct</li>
+                <li><strong>Invalid</strong> - Flag as unusable (edit the reason)</li>
+                <li><strong>Block</strong> - Flag as blocked / needs manual review (edit the reason)</li>
+                <li><strong>Report</strong> - Report a general problem (edit the description)</li>
             </ul>
         </li>
-        <li>Submit the issue - a GitHub Action will validate and log the correction</li>
+        <li>Edit the pre-filled JSON if needed, then submit the issue</li>
+        <li>A GitHub Action will validate and log the correction</li>
     </ol>
 </section>
 {% endblock %}
