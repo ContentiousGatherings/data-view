@@ -59,6 +59,11 @@ def get_status(record: Any) -> str:
             return "valid"
         elif record.accepted is False:
             return "invalid"
+    if hasattr(record, "needs_review"):
+        if record.needs_review is False:
+            return "valid"
+        else:
+            return "unknown"
     if hasattr(record, "matching_datetime"):
         if record.matching_datetime is not None:
             return "valid"
