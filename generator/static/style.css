@@ -692,6 +692,69 @@ summary:hover {
     background: var(--color-blocked-bg);
 }
 
+/* Pagination */
+.pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-bottom: 1rem;
+}
+
+.pagination a,
+.pagination .page-current {
+    display: inline-block;
+    padding: 0.25rem 0.625rem;
+    border-radius: 0.25rem;
+    font-size: 0.8125rem;
+    text-decoration: none;
+}
+
+.pagination a {
+    background: var(--color-bg-alt);
+    color: var(--color-link);
+    border: 1px solid var(--color-border);
+}
+
+.pagination a:hover {
+    background: var(--color-border);
+}
+
+.pagination .page-current {
+    background: var(--color-link);
+    color: white;
+    font-weight: 600;
+    border: 1px solid var(--color-link);
+}
+
+/* Record Navigation */
+.record-nav {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+}
+
+.record-nav a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.record-nav a:hover {
+    text-decoration: underline;
+}
+
+.record-nav-disabled {
+    color: var(--color-text-muted);
+    opacity: 0.5;
+}
+
+main > .record-nav:last-child {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .detail-list {

@@ -347,8 +347,9 @@ class SiteGenerator:
         return stats
 
     def _generate_list_pages(self, all_entities: dict, stats: dict):
-        """Generate list/browse pages for each entity type."""
+        """Generate paginated list/browse pages for each entity type."""
         list_template = self.env.get_template("list.html")
+        page_size = 200
 
         # Field labels for display
         field_labels = {
@@ -376,34 +377,67 @@ class SiteGenerator:
         }
 
         for entity_type, data in all_entities.items():
-            # Limit to first 500 entities for performance
-            entities = data["entities"][:500]
-
+            entities = data["entities"]
             group_field, group_field_label = group_fields.get(entity_type, (None, None))
 
-            html = list_template.render(
-                entity_type=entity_type,
-                entity_type_display=data["display_name"],
-                entities=entities,
-                counts=stats[entity_type],
-                primary_field=data["primary_field"],
-                primary_field_label=field_labels.get(
-                    data["primary_field"], data["primary_field"]
-                ),
-                secondary_field=data["secondary_field"],
-                secondary_field_label=(
-                    field_labels.get(data["secondary_field"])
-                    if data["secondary_field"]
-                    else None
-                ),
-                group_field=group_field,
-                group_field_label=group_field_label,
-            )
+            # Chunk entities into pages
+            chunks = [
+                entities[i : i + page_size]
+                for i in range(0, max(len(entities), 1), page_size)
+            ]
+            if not chunks:
+                chunks = [[]]
 
-            # Write to entity_type/index.html
-            list_dir = self.output_dir / entity_type
-            list_dir.mkdir(parents=True, exist_ok=True)
-            (list_dir / "index.html").write_text(html)
+            # Build page descriptors
+            pages = []
+            for page_idx, chunk in enumerate(chunks):
+                start = page_idx * page_size + 1
+                end = start + len(chunk) - 1
+                label = f"{start}-{end}" if len(chunk) > 0 else "0"
+                if page_idx == 0:
+                    path = f"/{entity_type}/"
+                else:
+                    path = f"/{entity_type}/{start}-{end}/"
+                pages.append(
+                    {"label": label, "path": path, "is_current": False}
+                )
+
+            # Render each page
+            for page_idx, chunk in enumerate(chunks):
+                pages_for_render = [
+                    {**p, "is_current": i == page_idx} for i, p in enumerate(pages)
+                ]
+
+                html = list_template.render(
+                    entity_type=entity_type,
+                    entity_type_display=data["display_name"],
+                    entities=chunk,
+                    counts=stats[entity_type],
+                    primary_field=data["primary_field"],
+                    primary_field_label=field_labels.get(
+                        data["primary_field"], data["primary_field"]
+                    ),
+                    secondary_field=data["secondary_field"],
+                    secondary_field_label=(
+                        field_labels.get(data["secondary_field"])
+                        if data["secondary_field"]
+                        else None
+                    ),
+                    group_field=group_field,
+                    group_field_label=group_field_label,
+                    pages=pages_for_render,
+                )
+
+                # First page → entity_type/index.html
+                # Subsequent → entity_type/{start}-{end}/index.html
+                if page_idx == 0:
+                    list_dir = self.output_dir / entity_type
+                else:
+                    start = page_idx * page_size + 1
+                    end = start + len(chunk) - 1
+                    list_dir = self.output_dir / entity_type / f"{start}-{end}"
+                list_dir.mkdir(parents=True, exist_ok=True)
+                (list_dir / "index.html").write_text(html)
 
     def _generate_entity_pages(
         self,
@@ -419,7 +453,12 @@ class SiteGenerator:
 
         counts = {"total": 0, "valid": 0, "invalid": 0, "blocked": 0, "unknown": 0}
 
-        for entity in tqdm(entities, desc=f"Generating {entity_type} pages"):
+        # Build ordered ID list for record navigation
+        entity_ids = [e.id for e in entities]
+
+        for i, entity in enumerate(
+            tqdm(entities, desc=f"Generating {entity_type} pages")
+        ):
             counts["total"] += 1
             status = get_status(entity)
             counts[status] += 1
@@ -427,12 +466,22 @@ class SiteGenerator:
             # Get related data based on entity type
             context = self._get_entity_context(session, entity, entity_type)
 
+            # Build record navigation
+            record_nav = {
+                "first_id": entity_ids[0],
+                "last_id": entity_ids[-1],
+                "prev_id": entity_ids[i - 1] if i > 0 else None,
+                "next_id": entity_ids[i + 1] if i < len(entity_ids) - 1 else None,
+                "entity_type": entity_type,
+            }
+
             # Render the page
             html = template.render(
                 entity=entity,
                 entity_type=entity_type,
                 status=status,
                 status_reason=get_status_reason(entity),
+                record_nav=record_nav,
                 **context,
             )
 

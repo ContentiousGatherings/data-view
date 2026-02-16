@@ -11,6 +11,18 @@
 
 <h1>{{ entity_type_display }}</h1>
 
+{% if pages|length > 1 %}
+<nav class="pagination">
+    {% for page in pages %}
+        {% if page.is_current %}
+            <span class="page-current">{{ page.label }}</span>
+        {% else %}
+            <a href="{{ base_url }}{{ page.path }}">{{ page.label }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>
+{% endif %}
+
 <div class="list-stats">
     <span class="stat-valid">{{ counts.valid }} valid</span>
     <span class="stat-invalid">{{ counts.invalid }} invalid</span>
@@ -74,8 +86,16 @@
     </tbody>
 </table>
 
-{% if counts.total > 500 %}
-<p class="help-text">Showing first 500 records. Use browser search (Ctrl+F) to find specific entries.</p>
+{% if pages|length > 1 %}
+<nav class="pagination">
+    {% for page in pages %}
+        {% if page.is_current %}
+            <span class="page-current">{{ page.label }}</span>
+        {% else %}
+            <a href="{{ base_url }}{{ page.path }}">{{ page.label }}</a>
+        {% endif %}
+    {% endfor %}
+</nav>
 {% endif %}
 
 <script>

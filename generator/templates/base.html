@@ -27,7 +27,39 @@
     </header>
 
     <main>
+        {% if record_nav %}
+        <nav class="record-nav">
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.first_id }}/">First</a>
+            {% if record_nav.prev_id %}
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.prev_id }}/">Prev</a>
+            {% else %}
+            <span class="record-nav-disabled">Prev</span>
+            {% endif %}
+            {% if record_nav.next_id %}
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.next_id }}/">Next</a>
+            {% else %}
+            <span class="record-nav-disabled">Next</span>
+            {% endif %}
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.last_id }}/">Last</a>
+        </nav>
+        {% endif %}
         {% block content %}{% endblock %}
+        {% if record_nav %}
+        <nav class="record-nav">
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.first_id }}/">First</a>
+            {% if record_nav.prev_id %}
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.prev_id }}/">Prev</a>
+            {% else %}
+            <span class="record-nav-disabled">Prev</span>
+            {% endif %}
+            {% if record_nav.next_id %}
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.next_id }}/">Next</a>
+            {% else %}
+            <span class="record-nav-disabled">Next</span>
+            {% endif %}
+            <a href="{{ base_url }}/{{ record_nav.entity_type }}/{{ record_nav.last_id }}/">Last</a>
+        </nav>
+        {% endif %}
     </main>
 
     <footer>
