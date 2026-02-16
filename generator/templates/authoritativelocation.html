@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_partials/status_badge.html" import status_badge, mini_status %}
 {% from "_partials/record_link.html" import record_link, simple_link %}
+{% from "_partials/action_buttons.html" import action_buttons %}
 
 {% block title %}Auth. Location {{ entity.id }} - CG Review{% endblock %}
 
@@ -124,14 +125,10 @@
 </section>
 {% endif %}
 
-<section class="actions">
-    <a href="{{ make_issue_url('authoritativelocation', entity.id, {
-        'Name': entity.name,
-        'Country': entity.country,
-        'County': entity.county or 'N/A',
-        'Source': entity.source
-    }) }}" class="btn btn-report" target="_blank">
-        Report Problem
-    </a>
-</section>
+{{ action_buttons('authoritativelocation', entity.id, {
+    'Name': entity.name,
+    'Country': entity.country,
+    'County': entity.county or 'N/A',
+    'Source': entity.source
+}) }}
 {% endblock %}

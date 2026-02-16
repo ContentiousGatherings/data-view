@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_partials/status_badge.html" import status_badge %}
 {% from "_partials/record_link.html" import record_link, simple_link %}
+{% from "_partials/action_buttons.html" import action_buttons %}
 
 {% block title %}Meeting Type Match {{ entity.id }} - CG Review{% endblock %}
 
@@ -87,14 +88,10 @@
 </section>
 {% endif %}
 
-<section class="actions">
-    <a href="{{ make_issue_url('meetingtypematch', entity.id, {
-        'Meeting Type': entity.meetingtype_id|string,
-        'Auth Type': entity.authoritative_meetingtype_id|string,
-        'Score': entity.confidence_score|string,
-        'Accepted': entity.accepted|string if entity.accepted is not none else 'Pending'
-    }) }}" class="btn btn-report" target="_blank">
-        Report Problem
-    </a>
-</section>
+{{ action_buttons('meetingtypematch', entity.id, {
+    'Meeting Type': entity.meetingtype_id|string,
+    'Auth Type': entity.authoritative_meetingtype_id|string,
+    'Score': entity.confidence_score|string,
+    'Accepted': entity.accepted|string if entity.accepted is not none else 'Pending'
+}) }}
 {% endblock %}

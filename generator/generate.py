@@ -87,34 +87,82 @@ def get_status_reason(record: Any) -> str | None:
 
 
 def make_issue_url(
-    repo: str, table: str, record_id: int, context: dict, generated_at: str
+    repo: str,
+    table: str,
+    record_id: int,
+    context: dict,
+    generated_at: str,
+    action: str = "report",
 ) -> str:
-    """Generate a GitHub issue URL with pre-filled content."""
-    title = f"[Review] {table}/{record_id}"
+    """Generate a GitHub issue URL with pre-filled content.
 
-    json_block = json.dumps(
-        {
-            "table": table,
-            "id": str(record_id),
-            "action": "mark_unusable",
-            "reason": "EDIT THIS: Describe why this should be removed",
-            "reviewer": "",
+    Actions: mark_valid, mark_unusable, mark_blocked, report.
+    """
+    ACTION_CONFIG = {
+        "mark_valid": {
+            "prefix": "[Valid]",
+            "json": {"table": table, "id": str(record_id), "action": "mark_valid", "reviewer": ""},
         },
-        indent=2,
-    )
+        "mark_unusable": {
+            "prefix": "[Invalid]",
+            "json": {
+                "table": table,
+                "id": str(record_id),
+                "action": "mark_unusable",
+                "reason": "EDIT THIS: Describe why this should be removed",
+                "reviewer": "",
+            },
+        },
+        "mark_blocked": {
+            "prefix": "[Block]",
+            "json": {
+                "table": table,
+                "id": str(record_id),
+                "action": "mark_blocked",
+                "reason": "EDIT THIS: Describe why this is blocked",
+                "reviewer": "",
+            },
+        },
+        "report": {
+            "prefix": "[Report]",
+            "json": {
+                "table": table,
+                "id": str(record_id),
+                "action": "report",
+                "description": "EDIT THIS: Describe the problem",
+                "reviewer": "",
+            },
+        },
+    }
 
-    # Format context as markdown
-    context_lines = []
-    for key, value in context.items():
-        if value is not None:
-            # Truncate long values
-            str_value = str(value)
-            if len(str_value) > 200:
-                str_value = str_value[:200] + "..."
-            context_lines.append(f"- **{key}:** {str_value}")
-    context_md = "\n".join(context_lines)
+    cfg = ACTION_CONFIG.get(action, ACTION_CONFIG["report"])
+    title = f"{cfg['prefix']} {table}/{record_id}"
+    json_block = json.dumps(cfg["json"], indent=2)
 
-    body = f"""<!-- EDIT JSON BELOW - Keep the code fence markers -->
+    if action == "report":
+        # Shorter body for general reports — no detailed context section
+        body = f"""<!-- EDIT JSON BELOW - Keep the code fence markers -->
+```json
+{json_block}
+```
+
+---
+*Page: /{table}/{record_id}/*
+*Site generated: {generated_at}*
+*Submit this issue to log your correction.*
+"""
+    else:
+        # Full body with reference context
+        context_lines = []
+        for key, value in context.items():
+            if value is not None:
+                str_value = str(value)
+                if len(str_value) > 200:
+                    str_value = str_value[:200] + "..."
+                context_lines.append(f"- **{key}:** {str_value}")
+        context_md = "\n".join(context_lines)
+
+        body = f"""<!-- EDIT JSON BELOW - Keep the code fence markers -->
 ```json
 {json_block}
 ```
@@ -162,8 +210,8 @@ class SiteGenerator:
         # Add custom filters and globals
         self.env.filters["get_status"] = get_status
         self.env.filters["get_status_reason"] = get_status_reason
-        self.env.globals["make_issue_url"] = lambda table, id, ctx: make_issue_url(
-            self.repo, table, id, ctx, self.generated_at_str
+        self.env.globals["make_issue_url"] = lambda table, id, ctx, action="report": make_issue_url(
+            self.repo, table, id, ctx, self.generated_at_str, action=action
         )
         self.env.globals["generated_at"] = self.generated_at_str
 

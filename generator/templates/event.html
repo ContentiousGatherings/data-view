@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_partials/status_badge.html" import status_badge, mini_status %}
 {% from "_partials/record_link.html" import record_link %}
+{% from "_partials/action_buttons.html" import action_buttons %}
 
 {% block title %}Event {{ entity.id }} - CG Review{% endblock %}
 
@@ -152,14 +153,10 @@
 </section>
 {% endif %}
 
-<section class="actions">
-    <a href="{{ make_issue_url('event', entity.id, {
-        'Excerpt': entity.excerpt,
-        'Location': location.name if location else 'N/A',
-        'Date': timestamp.when if timestamp else 'N/A',
-        'Type': meetingtype.name if meetingtype else 'N/A'
-    }) }}" class="btn btn-report" target="_blank">
-        Report Problem
-    </a>
-</section>
+{{ action_buttons('event', entity.id, {
+    'Excerpt': entity.excerpt,
+    'Location': location.name if location else 'N/A',
+    'Date': timestamp.when if timestamp else 'N/A',
+    'Type': meetingtype.name if meetingtype else 'N/A'
+}) }}
 {% endblock %}

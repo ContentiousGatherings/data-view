@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_partials/status_badge.html" import status_badge %}
 {% from "_partials/record_link.html" import simple_link %}
+{% from "_partials/action_buttons.html" import action_buttons %}
 
 {% block title %}Auth. Event Actor {{ entity.id }} - CG Review{% endblock %}
 
@@ -81,14 +82,10 @@
 </section>
 {% endif %}
 
-<section class="actions">
-    <a href="{{ make_issue_url('authoritativeeventactor', entity.id, {
-        'Auth Event': entity.authoritative_event_id|string,
-        'Auth Actor': entity.authoritative_actor_id|string,
-        'Role': entity.role or 'N/A',
-        'Source Events': entity.source_event_count|string
-    }) }}" class="btn btn-report" target="_blank">
-        Report Problem
-    </a>
-</section>
+{{ action_buttons('authoritativeeventactor', entity.id, {
+    'Auth Event': entity.authoritative_event_id|string,
+    'Auth Actor': entity.authoritative_actor_id|string,
+    'Role': entity.role or 'N/A',
+    'Source Events': entity.source_event_count|string
+}) }}
 {% endblock %}

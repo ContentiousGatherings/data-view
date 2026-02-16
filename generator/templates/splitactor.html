@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_partials/status_badge.html" import status_badge, mini_status %}
 {% from "_partials/record_link.html" import record_link %}
+{% from "_partials/action_buttons.html" import action_buttons %}
 
 {% block title %}Split Actor {{ entity.id }} - CG Review{% endblock %}
 
@@ -106,13 +107,9 @@
 </section>
 {% endif %}
 
-<section class="actions">
-    <a href="{{ make_issue_url('splitactor', entity.id, {
-        'Name': entity.name,
-        'Type': entity.actor_type,
-        'Parent': parent_actor.name if parent_actor else 'N/A'
-    }) }}" class="btn btn-report" target="_blank">
-        Report Problem
-    </a>
-</section>
+{{ action_buttons('splitactor', entity.id, {
+    'Name': entity.name,
+    'Type': entity.actor_type,
+    'Parent': parent_actor.name if parent_actor else 'N/A'
+}) }}
 {% endblock %}

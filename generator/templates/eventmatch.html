@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% from "_partials/status_badge.html" import status_badge, mini_status %}
 {% from "_partials/record_link.html" import record_link, simple_link %}
+{% from "_partials/action_buttons.html" import action_buttons %}
 
 {% block title %}Event Match {{ entity.id }} - CG Review{% endblock %}
 
@@ -160,14 +161,10 @@
 </section>
 {% endif %}
 
-<section class="actions">
-    <a href="{{ make_issue_url('eventmatch', entity.id, {
-        'Event': entity.event_id|string,
-        'Auth Event': entity.authoritative_event_id|string,
-        'Composite Score': entity.composite_score|string,
-        'Accepted': entity.accepted|string if entity.accepted is not none else 'Pending'
-    }) }}" class="btn btn-report" target="_blank">
-        Report Problem
-    </a>
-</section>
+{{ action_buttons('eventmatch', entity.id, {
+    'Event': entity.event_id|string,
+    'Auth Event': entity.authoritative_event_id|string,
+    'Composite Score': entity.composite_score|string,
+    'Accepted': entity.accepted|string if entity.accepted is not none else 'Pending'
+}) }}
 {% endblock %}

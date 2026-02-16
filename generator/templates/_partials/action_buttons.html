@@ -1,0 +1,9 @@
+{# Render the four review action buttons for an entity #}
+{% macro action_buttons(entity_type, entity_id, ctx) %}
+<section class="actions">
+    <a href="{{ make_issue_url(entity_type, entity_id, ctx, 'mark_valid') }}" class="btn btn-valid" target="_blank">Valid</a>
+    <a href="{{ make_issue_url(entity_type, entity_id, ctx, 'mark_unusable') }}" class="btn btn-invalid" target="_blank">Invalid</a>
+    <a href="{{ make_issue_url(entity_type, entity_id, ctx, 'mark_blocked') }}" class="btn btn-block" target="_blank">Block</a>
+    <a href="{{ make_issue_url(entity_type, entity_id, ctx, 'report') }}" class="btn btn-report" target="_blank">Report</a>
+</section>
+{% endmacro %}

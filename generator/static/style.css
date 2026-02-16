@@ -444,17 +444,47 @@ code {
     transition: all 0.15s;
 }
 
-.btn-report {
+.btn-valid {
+    background: var(--color-valid);
+    color: white;
+}
+
+.btn-valid:hover {
+    background: #16a34a;
+}
+
+.btn-invalid {
+    background: var(--color-invalid);
+    color: white;
+}
+
+.btn-invalid:hover {
+    background: #dc2626;
+}
+
+.btn-block {
     background: var(--color-blocked);
     color: white;
 }
 
-.btn-report:hover {
+.btn-block:hover {
     background: #d97706;
+}
+
+.btn-report {
+    background: var(--color-unknown);
+    color: white;
+}
+
+.btn-report:hover {
+    background: #4b5563;
 }
 
 /* Actions Section */
 .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-top: 2rem;
     padding-top: 1.5rem;
     border-top: 1px solid var(--color-border);
