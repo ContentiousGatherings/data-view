@@ -17,6 +17,12 @@
                 <a href="/timestamp/">Timestamps</a>
                 <a href="/meetingtype/">Meeting Types</a>
             </div>
+            <div class="nav-links">
+                <a href="/authoritativelocation/">Auth. Locations</a>
+                <a href="/authoritativeactor/">Auth. Actors</a>
+                <a href="/authoritativemeetingtype/">Auth. Types</a>
+                <a href="/authoritativeevent/">Auth. Events</a>
+            </div>
         </nav>
     </header>
 
@@ -31,14 +37,18 @@
 <div class="entity-header">
     <h1>"Eftermiddagen"</h1>
     
-<span class="status-badge valid" >
+<span class="status-badge invalid" title="Normalization failed: [LLM Fallback - Confidence: medium] Failed to parse LLM result: unconverted data remains: :00:00. The phrase &#39;långt på eftermiddagen&#39; typically refers to a time around **15:00–17:00** (3–5 PM). Given ">
     
-        &#10003; Valid
+        &#10007; Invalid
     
 </span>
 
 </div>
 
+
+<div class="status-reason invalid">
+    <strong>Reason:</strong> Normalization failed: [LLM Fallback - Confidence: medium] Failed to parse LLM result: unconverted data remains: :00:00. The phrase &#39;långt på eftermiddagen&#39; typically refers to a time around **15:00–17:00** (3–5 PM). Given 
+</div>
 
 
 <section class="entity-details">
@@ -61,7 +71,7 @@
 
         
         <dt>Normalization Reasoning</dt>
-        <dd class="reasoning">[LLM Fallback - Confidence: low] Failed to parse LLM result: unconverted data remains: :00:00. The expression &#39;på eftermiddagen&#39; typically refers to the afternoon period, which is generally considered to start around **12:00 PM (noon)** and end around **4:00–5:00 PM**. Since the publication date is **1868-07-30**, and assuming the article was written around the time of publication, the phrase &#39;långt på eftermiddagen&#39; (far into the afternoon) would likely refer to a time after **4:00 PM** on the same day. However, without a specific time of day or additional context, it is impossible to pinpoint an exact ISO date. The best estimate is that this refers to a time after **1868-07-30 16:00:00**, but this is speculative. If you need a precise conversion, more context would be required.</dd>
+        <dd class="reasoning">[LLM Fallback - Confidence: medium] Failed to parse LLM result: unconverted data remains: :00:00. The phrase &#39;långt på eftermiddagen&#39; typically refers to a time around **15:00–17:00** (3–5 PM). Given the publication date (1868-07-30), this would correspond to **July 15, 1868, at around 3 PM** (ISO format: `1868-07-15T15:00:00`).</dd>
         
 
         <dt>Excerpt</dt>
@@ -93,7 +103,7 @@
 
 
 <section class="actions">
-    <a href="https://github.com/ContentiousGatherings/data-view/issues/new?title=%5BReview%5D%20timestamp/2247&amp;body=%3C%21--%20EDIT%20JSON%20BELOW%20-%20Keep%20the%20code%20fence%20markers%20--%3E%0A%60%60%60json%0A%7B%0A%20%20%22table%22%3A%20%22timestamp%22%2C%0A%20%20%22id%22%3A%202247%2C%0A%20%20%22action%22%3A%20%22mark_unusable%22%2C%0A%20%20%22reason%22%3A%20%22EDIT%20THIS%3A%20Describe%20why%20this%20should%20be%20removed%22%2C%0A%20%20%22reviewer%22%3A%20%22%22%0A%7D%0A%60%60%60%0A%0A%23%23%23%20Reference%20%28do%20not%20edit%20below%20this%20line%29%0A-%20%2A%2AWhen%3A%2A%2A%20Eftermiddagen%0A-%20%2A%2ANormalized%3A%2A%2A%20Not%20parsed%0A-%20%2A%2AMethod%3A%2A%2A%20llm_approved%0A-%20%2A%2AExcerpt%3A%2A%2A%20Da%20det%20redan%20lidit%20till%20l%C3%A5ngt%20p%C3%A5%20eftermiddagen%0A%0A---%0A%2APage%3A%20/timestamp/2247/%2A%0A%2ASite%20generated%3A%202026-02-02%2021%3A56%20UTC%2A%0A%2ASubmit%20this%20issue%20to%20log%20your%20correction.%2A%0A" class="btn btn-report" target="_blank">
+    <a href="https://github.com/ContentiousGatherings/data-view/issues/new?title=%5BReview%5D%20timestamp/2247&amp;body=%3C%21--%20EDIT%20JSON%20BELOW%20-%20Keep%20the%20code%20fence%20markers%20--%3E%0A%60%60%60json%0A%7B%0A%20%20%22table%22%3A%20%22timestamp%22%2C%0A%20%20%22id%22%3A%20%222247%22%2C%0A%20%20%22action%22%3A%20%22mark_unusable%22%2C%0A%20%20%22reason%22%3A%20%22EDIT%20THIS%3A%20Describe%20why%20this%20should%20be%20removed%22%2C%0A%20%20%22reviewer%22%3A%20%22%22%0A%7D%0A%60%60%60%0A%0A%23%23%23%20Reference%20%28do%20not%20edit%20below%20this%20line%29%0A-%20%2A%2AWhen%3A%2A%2A%20Eftermiddagen%0A-%20%2A%2ANormalized%3A%2A%2A%20Not%20parsed%0A-%20%2A%2AMethod%3A%2A%2A%20llm_approved%0A-%20%2A%2AExcerpt%3A%2A%2A%20Da%20det%20redan%20lidit%20till%20l%C3%A5ngt%20p%C3%A5%20eftermiddagen%0A%0A---%0A%2APage%3A%20/timestamp/2247/%2A%0A%2ASite%20generated%3A%202026-02-16%2008%3A15%20UTC%2A%0A%2ASubmit%20this%20issue%20to%20log%20your%20correction.%2A%0A" class="btn btn-report" target="_blank">
         Report Problem
     </a>
 </section>
@@ -108,7 +118,7 @@
             <span class="status-badge unknown">Not validated</span>
         </div>
         <p>Contentious Gatherings Pipeline Review</p>
-        <p class="generated-at">Site generated: 2026-02-02 21:56 UTC</p>
+        <p class="generated-at">Site generated: 2026-02-16 08:15 UTC</p>
     </footer>
 </body>
 </html>

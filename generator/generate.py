@@ -328,7 +328,7 @@ class SiteGenerator:
             primary_field,
             secondary_field,
         ) in entity_configs:
-            print(f"Generating {entity_type} pages...")
+
             query = custom_queries.get(entity_type, select(model))
             entities = session.exec(query).all()
             all_entities[entity_type] = {
@@ -342,7 +342,6 @@ class SiteGenerator:
             )
 
         # Generate list pages
-        print("Generating list pages...")
         self._generate_list_pages(all_entities, stats)
 
         return stats

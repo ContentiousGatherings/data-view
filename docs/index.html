@@ -17,6 +17,12 @@
                 <a href="/timestamp/">Timestamps</a>
                 <a href="/meetingtype/">Meeting Types</a>
             </div>
+            <div class="nav-links">
+                <a href="/authoritativelocation/">Auth. Locations</a>
+                <a href="/authoritativeactor/">Auth. Actors</a>
+                <a href="/authoritativemeetingtype/">Auth. Types</a>
+                <a href="/authoritativeevent/">Auth. Events</a>
+            </div>
         </nav>
     </header>
 
@@ -29,156 +35,440 @@
     link to submit corrections via GitHub Issues.
 </p>
 
-<div class="stats-grid">
+
+
+
     
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/event/">Events</a>
-        </h2>
-        <div class="stat-total">7224 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">0 valid</span>
-            <span class="stat-invalid">380 invalid</span>
-            <span class="stat-blocked">3347 blocked</span>
-            <span class="stat-unknown">3497 pending</span>
-        </div>
-        <div class="stat-bar">
+    <div class="stats-grid stats-grid-centered">
+        
             
-            <div class="bar-valid" style="width: 0.0%"></div>
-            <div class="bar-invalid" style="width: 5.3%"></div>
-            <div class="bar-blocked" style="width: 46.3%"></div>
-            <div class="bar-unknown" style="width: 48.4%"></div>
-        </div>
+
+<div class="stat-card">
+    <h2>
+        <a href="/event/">Events</a>
+    </h2>
+    <div class="stat-total">7224 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">0 valid</span>
+        <span class="stat-invalid">384 invalid</span>
+        <span class="stat-blocked">3347 blocked</span>
+        <span class="stat-unknown">3493 pending</span>
     </div>
-    
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/location/">Locations</a>
-        </h2>
-        <div class="stat-total">7224 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">3497 valid</span>
-            <span class="stat-invalid">380 invalid</span>
-            <span class="stat-blocked">3347 blocked</span>
-            <span class="stat-unknown">0 pending</span>
-        </div>
-        <div class="stat-bar">
-            
-            <div class="bar-valid" style="width: 48.4%"></div>
-            <div class="bar-invalid" style="width: 5.3%"></div>
-            <div class="bar-blocked" style="width: 46.3%"></div>
-            <div class="bar-unknown" style="width: 0.0%"></div>
-        </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 0.0%"></div>
+        <div class="bar-invalid" style="width: 5.3%"></div>
+        <div class="bar-blocked" style="width: 46.3%"></div>
+        <div class="bar-unknown" style="width: 48.4%"></div>
     </div>
-    
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/splitlocation/">Split Locations</a>
-        </h2>
-        <div class="stat-total">3729 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">0 valid</span>
-            <span class="stat-invalid">29 invalid</span>
-            <span class="stat-blocked">0 blocked</span>
-            <span class="stat-unknown">3700 pending</span>
-        </div>
-        <div class="stat-bar">
-            
-            <div class="bar-valid" style="width: 0.0%"></div>
-            <div class="bar-invalid" style="width: 0.8%"></div>
-            <div class="bar-blocked" style="width: 0.0%"></div>
-            <div class="bar-unknown" style="width: 99.2%"></div>
-        </div>
-    </div>
-    
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/actor/">Actors</a>
-        </h2>
-        <div class="stat-total">8338 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">3473 valid</span>
-            <span class="stat-invalid">1287 invalid</span>
-            <span class="stat-blocked">3578 blocked</span>
-            <span class="stat-unknown">0 pending</span>
-        </div>
-        <div class="stat-bar">
-            
-            <div class="bar-valid" style="width: 41.7%"></div>
-            <div class="bar-invalid" style="width: 15.4%"></div>
-            <div class="bar-blocked" style="width: 42.9%"></div>
-            <div class="bar-unknown" style="width: 0.0%"></div>
-        </div>
-    </div>
-    
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/splitactor/">Split Actors</a>
-        </h2>
-        <div class="stat-total">4607 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">0 valid</span>
-            <span class="stat-invalid">0 invalid</span>
-            <span class="stat-blocked">0 blocked</span>
-            <span class="stat-unknown">4607 pending</span>
-        </div>
-        <div class="stat-bar">
-            
-            <div class="bar-valid" style="width: 0.0%"></div>
-            <div class="bar-invalid" style="width: 0.0%"></div>
-            <div class="bar-blocked" style="width: 0.0%"></div>
-            <div class="bar-unknown" style="width: 100.0%"></div>
-        </div>
-    </div>
-    
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/timestamp/">Timestamps</a>
-        </h2>
-        <div class="stat-total">7224 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">2916 valid</span>
-            <span class="stat-invalid">961 invalid</span>
-            <span class="stat-blocked">3347 blocked</span>
-            <span class="stat-unknown">0 pending</span>
-        </div>
-        <div class="stat-bar">
-            
-            <div class="bar-valid" style="width: 40.4%"></div>
-            <div class="bar-invalid" style="width: 13.3%"></div>
-            <div class="bar-blocked" style="width: 46.3%"></div>
-            <div class="bar-unknown" style="width: 0.0%"></div>
-        </div>
-    </div>
-    
-    
-    <div class="stat-card">
-        <h2>
-            <a href="/meetingtype/">Meeting Types</a>
-        </h2>
-        <div class="stat-total">7224 total</div>
-        <div class="stat-breakdown">
-            <span class="stat-valid">3140 valid</span>
-            <span class="stat-invalid">737 invalid</span>
-            <span class="stat-blocked">3347 blocked</span>
-            <span class="stat-unknown">0 pending</span>
-        </div>
-        <div class="stat-bar">
-            
-            <div class="bar-valid" style="width: 43.5%"></div>
-            <div class="bar-invalid" style="width: 10.2%"></div>
-            <div class="bar-blocked" style="width: 46.3%"></div>
-            <div class="bar-unknown" style="width: 0.0%"></div>
-        </div>
-    </div>
-    
 </div>
+
+        
+    </div>
+    
+
+    
+    <div class="pipeline-columns">
+        
+        <div class="pipeline-column">
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/location/">Locations</a>
+    </h2>
+    <div class="stat-total">7224 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">3493 valid</span>
+        <span class="stat-invalid">384 invalid</span>
+        <span class="stat-blocked">3347 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 48.4%"></div>
+        <div class="bar-invalid" style="width: 5.3%"></div>
+        <div class="bar-blocked" style="width: 46.3%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/splitlocation/">Split Locations</a>
+    </h2>
+    <div class="stat-total">3729 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">3700 valid</span>
+        <span class="stat-invalid">29 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 99.2%"></div>
+        <div class="bar-invalid" style="width: 0.8%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/splitlocationmatch/">Location Matches</a>
+    </h2>
+    <div class="stat-total">2724 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">1064 valid</span>
+        <span class="stat-invalid">1660 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 39.1%"></div>
+        <div class="bar-invalid" style="width: 60.9%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/authoritativelocation/">Auth. Locations</a>
+    </h2>
+    <div class="stat-total">1689 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">1689 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 100.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+        </div>
+        
+        <div class="pipeline-column">
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/timestamp/">Timestamps</a>
+    </h2>
+    <div class="stat-total">7224 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">2659 valid</span>
+        <span class="stat-invalid">1218 invalid</span>
+        <span class="stat-blocked">3347 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 36.8%"></div>
+        <div class="bar-invalid" style="width: 16.9%"></div>
+        <div class="bar-blocked" style="width: 46.3%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+        </div>
+        
+        <div class="pipeline-column">
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/actor/">Actors</a>
+    </h2>
+    <div class="stat-total">8338 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">3469 valid</span>
+        <span class="stat-invalid">1291 invalid</span>
+        <span class="stat-blocked">3578 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 41.6%"></div>
+        <div class="bar-invalid" style="width: 15.5%"></div>
+        <div class="bar-blocked" style="width: 42.9%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/splitactor/">Split Actors</a>
+    </h2>
+    <div class="stat-total">4607 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">4607 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 100.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/splitactormatch/">Actor Matches</a>
+    </h2>
+    <div class="stat-total">6408 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">3740 valid</span>
+        <span class="stat-invalid">717 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">1951 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 58.4%"></div>
+        <div class="bar-invalid" style="width: 11.2%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 30.4%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/authoritativeactor/">Auth. Actors</a>
+    </h2>
+    <div class="stat-total">2375 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">0 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">2375 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 0.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 100.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/actoralias/">Actor Aliases</a>
+    </h2>
+    <div class="stat-total">2692 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">0 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">2692 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 0.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 100.0%"></div>
+    </div>
+</div>
+
+            
+        </div>
+        
+        <div class="pipeline-column">
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/meetingtype/">Meeting Types</a>
+    </h2>
+    <div class="stat-total">7224 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">3137 valid</span>
+        <span class="stat-invalid">740 invalid</span>
+        <span class="stat-blocked">3347 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 43.4%"></div>
+        <div class="bar-invalid" style="width: 10.2%"></div>
+        <div class="bar-blocked" style="width: 46.3%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/meetingtypematch/">Type Matches</a>
+    </h2>
+    <div class="stat-total">2780 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">2695 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">85 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 96.9%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 3.1%"></div>
+    </div>
+</div>
+
+            
+                
+
+<div class="stat-card">
+    <h2>
+        <a href="/authoritativemeetingtype/">Auth. Types</a>
+    </h2>
+    <div class="stat-total">69 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">0 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">69 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 0.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 100.0%"></div>
+    </div>
+</div>
+
+            
+        </div>
+        
+    </div>
+    
+
+    
+    <div class="stats-grid">
+        
+            
+
+<div class="stat-card">
+    <h2>
+        <a href="/eventmatch/">Event Matches</a>
+    </h2>
+    <div class="stat-total">177 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">177 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 100.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+        
+            
+
+<div class="stat-card">
+    <h2>
+        <a href="/authoritativeeventactor/">Auth. Event Actors</a>
+    </h2>
+    <div class="stat-total">133 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">0 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">133 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 0.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 100.0%"></div>
+    </div>
+</div>
+
+        
+    </div>
+    
+
+    
+    <div class="stats-grid stats-grid-centered">
+        
+            
+
+<div class="stat-card">
+    <h2>
+        <a href="/authoritativeevent/">Authoritative Events</a>
+    </h2>
+    <div class="stat-total">168 total</div>
+    <div class="stat-breakdown">
+        <span class="stat-valid">168 valid</span>
+        <span class="stat-invalid">0 invalid</span>
+        <span class="stat-blocked">0 blocked</span>
+        <span class="stat-unknown">0 pending</span>
+    </div>
+    <div class="stat-bar">
+        
+        <div class="bar-valid" style="width: 100.0%"></div>
+        <div class="bar-invalid" style="width: 0.0%"></div>
+        <div class="bar-blocked" style="width: 0.0%"></div>
+        <div class="bar-unknown" style="width: 0.0%"></div>
+    </div>
+</div>
+
+        
+    </div>
+    
+
 
 <section class="instructions">
     <h2>How to Report Problems</h2>
@@ -206,7 +496,7 @@
             <span class="status-badge unknown">Not validated</span>
         </div>
         <p>Contentious Gatherings Pipeline Review</p>
-        <p class="generated-at">Site generated: 2026-02-02 21:56 UTC</p>
+        <p class="generated-at">Site generated: 2026-02-16 08:15 UTC</p>
     </footer>
 </body>
 </html>
