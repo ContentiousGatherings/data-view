@@ -1,0 +1,4247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timestamps - CG Review</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">CG Review</a>
+            <div class="nav-links">
+                <a href="/event/">Events</a>
+                <a href="/location/">Locations</a>
+                <a href="/actor/">Actors</a>
+                <a href="/timestamp/">Timestamps</a>
+                <a href="/meetingtype/">Meeting Types</a>
+            </div>
+            <div class="nav-links">
+                <a href="/authoritativelocation/">Auth. Locations</a>
+                <a href="/authoritativeactor/">Auth. Actors</a>
+                <a href="/authoritativemeetingtype/">Auth. Types</a>
+                <a href="/authoritativeevent/">Auth. Events</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        
+<nav class="breadcrumb">
+    <a href="/">Home</a> &raquo;
+    Timestamps
+</nav>
+
+<h1>Timestamps</h1>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/timestamp/">1-200</a>
+        
+    
+        
+            <a href="/timestamp/201-400/">201-400</a>
+        
+    
+        
+            <a href="/timestamp/401-600/">401-600</a>
+        
+    
+        
+            <span class="page-current">601-800</span>
+        
+    
+        
+            <a href="/timestamp/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/timestamp/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/timestamp/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/timestamp/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/timestamp/1601-1800/">1601-1800</a>
+        
+    
+        
+            <a href="/timestamp/1801-2000/">1801-2000</a>
+        
+    
+        
+            <a href="/timestamp/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/timestamp/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/timestamp/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/timestamp/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/timestamp/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/timestamp/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/timestamp/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/timestamp/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/timestamp/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/timestamp/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/timestamp/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/timestamp/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/timestamp/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/timestamp/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/timestamp/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/timestamp/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/timestamp/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/timestamp/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/timestamp/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/timestamp/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/timestamp/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/timestamp/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/timestamp/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/timestamp/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/timestamp/6801-7000/">6801-7000</a>
+        
+    
+        
+            <a href="/timestamp/7001-7200/">7001-7200</a>
+        
+    
+        
+            <a href="/timestamp/7201-7224/">7201-7224</a>
+        
+    
+</nav>
+
+
+<div class="list-stats">
+    <span class="stat-valid">2400 valid</span>
+    <span class="stat-invalid">737 invalid</span>
+    <span class="stat-blocked">4087 blocked</span>
+    <span class="stat-unknown">0 pending</span>
+    <span class="stat-total">(7224 total)</span>
+</div>
+
+<div class="list-filters">
+    <label>
+        <input type="checkbox" id="filter-valid" checked> Show valid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-invalid" checked> Show invalid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-blocked" checked> Show blocked
+    </label>
+    <label>
+        <input type="checkbox" id="filter-unknown" checked> Show pending
+    </label>
+</div>
+
+<table class="entity-table list-table" id="entity-list">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>ID</th>
+            
+            <th>When</th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>601</td>
+            
+            <td>
+                
+                1883-07-01T09:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/601/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>602</td>
+            
+            <td>
+                
+                1883-07-01T15:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/602/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Meeting type blacklisted">
+    &#9888;
+</span>
+</td>
+            <td>603</td>
+            
+            <td>
+                
+                1883-07-01T09:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/603/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>604</td>
+            
+            <td>
+                
+                Ingen specifik plats nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/604/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>605</td>
+            
+            <td>
+                
+                1908-05-01T11:27:00
+                
+            </td>
+            
+            <td><a href="/timestamp/605/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>606</td>
+            
+            <td>
+                
+                1908-04-20
+                
+            </td>
+            
+            <td><a href="/timestamp/606/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>607</td>
+            
+            <td>
+                
+                1908-05-01
+                
+            </td>
+            
+            <td><a href="/timestamp/607/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>608</td>
+            
+            <td>
+                
+                2024-03-13T08:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/608/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>609</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/609/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>610</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/610/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>611</td>
+            
+            <td>
+                
+                Karlskoga
+                
+            </td>
+            
+            <td><a href="/timestamp/611/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="Filtered: Ingen specifik tidspunkt">
+    &#10007;
+</span>
+</td>
+            <td>612</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/612/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>613</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/613/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>614</td>
+            
+            <td>
+                
+                Vollsjö
+                
+            </td>
+            
+            <td><a href="/timestamp/614/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>615</td>
+            
+            <td>
+                
+                13:e [månad] [år]
+                
+            </td>
+            
+            <td><a href="/timestamp/615/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>616</td>
+            
+            <td>
+                
+                Lördag [år]
+                
+            </td>
+            
+            <td><a href="/timestamp/616/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>617</td>
+            
+            <td>
+                
+                Lördag [år]
+                
+            </td>
+            
+            <td><a href="/timestamp/617/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>618</td>
+            
+            <td>
+                
+                Maj [år]
+                
+            </td>
+            
+            <td><a href="/timestamp/618/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>619</td>
+            
+            <td>
+                
+                16 december
+                
+            </td>
+            
+            <td><a href="/timestamp/619/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>620</td>
+            
+            <td>
+                
+                måndags förliden vecka
+                
+            </td>
+            
+            <td><a href="/timestamp/620/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>621</td>
+            
+            <td>
+                
+                1883-07-04T10:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/621/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>622</td>
+            
+            <td>
+                
+                1883-07-14T08:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/622/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>623</td>
+            
+            <td>
+                
+                1883-07-08T10:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/623/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>624</td>
+            
+            <td>
+                
+                söndag
+                
+            </td>
+            
+            <td><a href="/timestamp/624/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>625</td>
+            
+            <td>
+                
+                1900-06-15T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/625/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>626</td>
+            
+            <td>
+                
+                tidigt 1900-tal
+                
+            </td>
+            
+            <td><a href="/timestamp/626/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>627</td>
+            
+            <td>
+                
+                måndagen i förra veckan
+                
+            </td>
+            
+            <td><a href="/timestamp/627/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>628</td>
+            
+            <td>
+                
+                1900-04-17
+                
+            </td>
+            
+            <td><a href="/timestamp/628/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>629</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/629/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>630</td>
+            
+            <td>
+                
+                Österdalarnes
+                
+            </td>
+            
+            <td><a href="/timestamp/630/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>631</td>
+            
+            <td>
+                
+                fredag
+                
+            </td>
+            
+            <td><a href="/timestamp/631/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="Filtered: Ingen specifik tidspunkt">
+    &#10007;
+</span>
+</td>
+            <td>632</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/632/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>633</td>
+            
+            <td>
+                
+                2 maj 1900
+                
+            </td>
+            
+            <td><a href="/timestamp/633/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="The temporal expression &#39;Göteborg&#39; refers to a city name, not a specific time period. While &#39;Göteborg&#39; could be used in a historical context to indicate a time frame (e.g., &#39;under Göteborgs regim&#39; [under Göteborg&#39;s rule]), it does not inherently refer to a date or a specific time period that can be converted to a calendar date. Without additional context (e.g., a phrase like &#39;i Göteborg den 15 januari 1903&#39;), this expression alone is not parseable to a specific date.">
+    &#10007;
+</span>
+</td>
+            <td>634</td>
+            
+            <td>
+                
+                Göteborg
+                
+            </td>
+            
+            <td><a href="/timestamp/634/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>635</td>
+            
+            <td>
+                
+                förra månaden
+                
+            </td>
+            
+            <td><a href="/timestamp/635/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>636</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/636/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>637</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/637/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>638</td>
+            
+            <td>
+                
+                Mosebacke
+                
+            </td>
+            
+            <td><a href="/timestamp/638/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>639</td>
+            
+            <td>
+                
+                1900-01-08T00:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/639/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>640</td>
+            
+            <td>
+                
+                1900-04-27T07:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/640/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>641</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/641/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>642</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/642/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>643</td>
+            
+            <td>
+                
+                1890-05-01
+                
+            </td>
+            
+            <td><a href="/timestamp/643/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Meeting type blacklisted">
+    &#9888;
+</span>
+</td>
+            <td>644</td>
+            
+            <td>
+                
+                1908-01-01T00:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/644/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>645</td>
+            
+            <td>
+                
+                1906-05-01T00:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/645/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>646</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/646/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>647</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/647/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>648</td>
+            
+            <td>
+                
+                Kungshättan
+                
+            </td>
+            
+            <td><a href="/timestamp/648/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>649</td>
+            
+            <td>
+                
+                22 augusti 1900
+                
+            </td>
+            
+            <td><a href="/timestamp/649/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="Filtered: Ingen specifik tidspunkt">
+    &#10007;
+</span>
+</td>
+            <td>650</td>
+            
+            <td>
+                
+                Ingen specifik datum eller tid nämns för händelsen.
+                
+            </td>
+            
+            <td><a href="/timestamp/650/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>651</td>
+            
+            <td>
+                
+                6 februari
+                
+            </td>
+            
+            <td><a href="/timestamp/651/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>652</td>
+            
+            <td>
+                
+                Under året
+                
+            </td>
+            
+            <td><a href="/timestamp/652/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>653</td>
+            
+            <td>
+                
+                Under året
+                
+            </td>
+            
+            <td><a href="/timestamp/653/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>654</td>
+            
+            <td>
+                
+                Under året
+                
+            </td>
+            
+            <td><a href="/timestamp/654/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>655</td>
+            
+            <td>
+                
+                Under året
+                
+            </td>
+            
+            <td><a href="/timestamp/655/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Meeting type blacklisted">
+    &#9888;
+</span>
+</td>
+            <td>656</td>
+            
+            <td>
+                
+                13 februari
+                
+            </td>
+            
+            <td><a href="/timestamp/656/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>657</td>
+            
+            <td>
+                
+                Under året
+                
+            </td>
+            
+            <td><a href="/timestamp/657/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>658</td>
+            
+            <td>
+                
+                Ingen specifik plats nämns för händelsen.
+                
+            </td>
+            
+            <td><a href="/timestamp/658/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>659</td>
+            
+            <td>
+                
+                1900-05-01T07:30:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/659/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>660</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/660/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>661</td>
+            
+            <td>
+                
+                1924-03-24 till 1924-03-31
+                
+            </td>
+            
+            <td><a href="/timestamp/661/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>662</td>
+            
+            <td>
+                
+                I går
+                
+            </td>
+            
+            <td><a href="/timestamp/662/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>663</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns för folkmötena.
+                
+            </td>
+            
+            <td><a href="/timestamp/663/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>664</td>
+            
+            <td>
+                
+                Det finns inga specifika datum eller tider nämnda i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/664/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>665</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/665/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>666</td>
+            
+            <td>
+                
+                gårdagens historia
+                
+            </td>
+            
+            <td><a href="/timestamp/666/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>667</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/667/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>668</td>
+            
+            <td>
+                
+                1848-07-17
+                
+            </td>
+            
+            <td><a href="/timestamp/668/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>669</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/669/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>670</td>
+            
+            <td>
+                
+                i år
+                
+            </td>
+            
+            <td><a href="/timestamp/670/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="The term &#39;Stehag&#39; is a proper noun referring to a person (a notable figure or family name) rather than a temporal expression. It does not indicate a specific time period, date, or relative time reference that could be converted to a date.">
+    &#10007;
+</span>
+</td>
+            <td>671</td>
+            
+            <td>
+                
+                Stehag
+                
+            </td>
+            
+            <td><a href="/timestamp/671/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>672</td>
+            
+            <td>
+                
+                2024-01-03T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/672/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>673</td>
+            
+            <td>
+                
+                annandag pingst
+                
+            </td>
+            
+            <td><a href="/timestamp/673/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>674</td>
+            
+            <td>
+                
+                Berlin
+                
+            </td>
+            
+            <td><a href="/timestamp/674/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>675</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/675/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>676</td>
+            
+            <td>
+                
+                Ingen specifik plats nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/676/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>677</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/677/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>678</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/678/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>679</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/679/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>680</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/680/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>681</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/681/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>682</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/682/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>683</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/683/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>684</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/684/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>685</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/685/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>686</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/686/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>687</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/687/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>688</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/688/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>689</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/689/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>690</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/690/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>691</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/691/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>692</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/692/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>693</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/693/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>694</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/694/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>695</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/695/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>696</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/696/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>697</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/697/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>698</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/698/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>699</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/699/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>700</td>
+            
+            <td>
+                
+                Ingen annan händelse nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/700/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>701</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/701/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>702</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/702/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>703</td>
+            
+            <td>
+                
+                20:e dagen
+                
+            </td>
+            
+            <td><a href="/timestamp/703/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>704</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/704/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Meeting type blacklisted">
+    &#9888;
+</span>
+</td>
+            <td>705</td>
+            
+            <td>
+                
+                okänt
+                
+            </td>
+            
+            <td><a href="/timestamp/705/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>706</td>
+            
+            <td>
+                
+                Nu
+                
+            </td>
+            
+            <td><a href="/timestamp/706/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>707</td>
+            
+            <td>
+                
+                17 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/707/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>708</td>
+            
+            <td>
+                
+                Nu
+                
+            </td>
+            
+            <td><a href="/timestamp/708/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>709</td>
+            
+            <td>
+                
+                Okänt
+                
+            </td>
+            
+            <td><a href="/timestamp/709/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Meeting type blacklisted">
+    &#9888;
+</span>
+</td>
+            <td>710</td>
+            
+            <td>
+                
+                1800-talet
+                
+            </td>
+            
+            <td><a href="/timestamp/710/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>711</td>
+            
+            <td>
+                
+                2024-06-23T00:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/711/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>712</td>
+            
+            <td>
+                
+                1200-01-01T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/712/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>713</td>
+            
+            <td>
+                
+                1200-01-01T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/713/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>714</td>
+            
+            <td>
+                
+                1200-01-01T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/714/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>715</td>
+            
+            <td>
+                
+                1200-01-01T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/715/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>716</td>
+            
+            <td>
+                
+                1883-10-10
+                
+            </td>
+            
+            <td><a href="/timestamp/716/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>717</td>
+            
+            <td>
+                
+                1923-10-11T00:30:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/717/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>718</td>
+            
+            <td>
+                
+                1923-10-11T00:30:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/718/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>719</td>
+            
+            <td>
+                
+                19 juli
+                
+            </td>
+            
+            <td><a href="/timestamp/719/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>720</td>
+            
+            <td>
+                
+                2024-04-28T08:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/720/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>721</td>
+            
+            <td>
+                
+                1909
+                
+            </td>
+            
+            <td><a href="/timestamp/721/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>722</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/722/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>723</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/723/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>724</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/724/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>725</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns
+                
+            </td>
+            
+            <td><a href="/timestamp/725/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>726</td>
+            
+            <td>
+                
+                På fredag kväll
+                
+            </td>
+            
+            <td><a href="/timestamp/726/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>727</td>
+            
+            <td>
+                
+                1900-05-31T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/727/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>728</td>
+            
+            <td>
+                
+                1900-05-30T00:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/728/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="Matched blacklist pattern: &#39;okänt&#39;">
+    &#10007;
+</span>
+</td>
+            <td>729</td>
+            
+            <td>
+                
+                Okänt
+                
+            </td>
+            
+            <td><a href="/timestamp/729/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>730</td>
+            
+            <td>
+                
+                Ingen tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/730/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>731</td>
+            
+            <td>
+                
+                Sorunda
+                
+            </td>
+            
+            <td><a href="/timestamp/731/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>732</td>
+            
+            <td>
+                
+                framtid
+                
+            </td>
+            
+            <td><a href="/timestamp/732/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>733</td>
+            
+            <td>
+                
+                torsdag
+                
+            </td>
+            
+            <td><a href="/timestamp/733/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>734</td>
+            
+            <td>
+                
+                majdemonstrationen i Stockholm
+                
+            </td>
+            
+            <td><a href="/timestamp/734/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>735</td>
+            
+            <td>
+                
+                19 januari 1900
+                
+            </td>
+            
+            <td><a href="/timestamp/735/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>736</td>
+            
+            <td>
+                
+                Lillehammar
+                
+            </td>
+            
+            <td><a href="/timestamp/736/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>737</td>
+            
+            <td>
+                
+                morgon, söndagen, måndagen, tisdag, torsdag, fredag, lördagen
+                
+            </td>
+            
+            <td><a href="/timestamp/737/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>738</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/738/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>739</td>
+            
+            <td>
+                
+                1900-talet
+                
+            </td>
+            
+            <td><a href="/timestamp/739/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>740</td>
+            
+            <td>
+                
+                i går afton
+                
+            </td>
+            
+            <td><a href="/timestamp/740/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>741</td>
+            
+            <td>
+                
+                Italien
+                
+            </td>
+            
+            <td><a href="/timestamp/741/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>742</td>
+            
+            <td>
+                
+                Okänt
+                
+            </td>
+            
+            <td><a href="/timestamp/742/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>743</td>
+            
+            <td>
+                
+                1900-04-06T08:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/743/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>744</td>
+            
+            <td>
+                
+                medeltiden
+                
+            </td>
+            
+            <td><a href="/timestamp/744/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-invalid" data-status="invalid">
+            <td>
+
+<span class="mini-status invalid" title="Filtered: Ingen specifik tidspunkt">
+    &#10007;
+</span>
+</td>
+            <td>745</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/745/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>746</td>
+            
+            <td>
+                
+                afton
+                
+            </td>
+            
+            <td><a href="/timestamp/746/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>747</td>
+            
+            <td>
+                
+                söndag
+                
+            </td>
+            
+            <td><a href="/timestamp/747/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>748</td>
+            
+            <td>
+                
+                1908-03-08
+                
+            </td>
+            
+            <td><a href="/timestamp/748/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>749</td>
+            
+            <td>
+                
+                1908-03-06
+                
+            </td>
+            
+            <td><a href="/timestamp/749/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>750</td>
+            
+            <td>
+                
+                1908-03-05
+                
+            </td>
+            
+            <td><a href="/timestamp/750/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>751</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns
+                
+            </td>
+            
+            <td><a href="/timestamp/751/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>752</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns
+                
+            </td>
+            
+            <td><a href="/timestamp/752/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>753</td>
+            
+            <td>
+                
+                maj 1887
+                
+            </td>
+            
+            <td><a href="/timestamp/753/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>754</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/754/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>755</td>
+            
+            <td>
+                
+                förlidet år
+                
+            </td>
+            
+            <td><a href="/timestamp/755/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>756</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/756/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>757</td>
+            
+            <td>
+                
+                nägta söndag
+                
+            </td>
+            
+            <td><a href="/timestamp/757/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>758</td>
+            
+            <td>
+                
+                1872-09-06
+                
+            </td>
+            
+            <td><a href="/timestamp/758/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>759</td>
+            
+            <td>
+                
+                15 augusti, kl. 2 e. m. - 7 e. m.
+                
+            </td>
+            
+            <td><a href="/timestamp/759/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>760</td>
+            
+            <td>
+                
+                Okänt
+                
+            </td>
+            
+            <td><a href="/timestamp/760/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>761</td>
+            
+            <td>
+                
+                Göteborg
+                
+            </td>
+            
+            <td><a href="/timestamp/761/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>762</td>
+            
+            <td>
+                
+                Ingen specifik plats nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/762/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>763</td>
+            
+            <td>
+                
+                1917-10-13T18:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/763/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>764</td>
+            
+            <td>
+                
+                påskhelgen
+                
+            </td>
+            
+            <td><a href="/timestamp/764/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>765</td>
+            
+            <td>
+                
+                15 augusti
+                
+            </td>
+            
+            <td><a href="/timestamp/765/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>766</td>
+            
+            <td>
+                
+                1879-03-02
+                
+            </td>
+            
+            <td><a href="/timestamp/766/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>767</td>
+            
+            <td>
+                
+                d
+                
+            </td>
+            
+            <td><a href="/timestamp/767/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>768</td>
+            
+            <td>
+                
+                20 november
+                
+            </td>
+            
+            <td><a href="/timestamp/768/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>769</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/769/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>770</td>
+            
+            <td>
+                
+                Ingen specifik plats nämns i texten.
+                
+            </td>
+            
+            <td><a href="/timestamp/770/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>771</td>
+            
+            <td>
+                
+                25:e dagen i månaden
+                
+            </td>
+            
+            <td><a href="/timestamp/771/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>772</td>
+            
+            <td>
+                
+                1800-talet
+                
+            </td>
+            
+            <td><a href="/timestamp/772/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>773</td>
+            
+            <td>
+                
+                1800-talet
+                
+            </td>
+            
+            <td><a href="/timestamp/773/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>774</td>
+            
+            <td>
+                
+                1859-1866
+                
+            </td>
+            
+            <td><a href="/timestamp/774/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>775</td>
+            
+            <td>
+                
+                22 d:s
+                
+            </td>
+            
+            <td><a href="/timestamp/775/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>776</td>
+            
+            <td>
+                
+                31 mars
+                
+            </td>
+            
+            <td><a href="/timestamp/776/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>777</td>
+            
+            <td>
+                
+                24:e dagen
+                
+            </td>
+            
+            <td><a href="/timestamp/777/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>778</td>
+            
+            <td>
+                
+                1900-03-31T10:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/778/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>779</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/779/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: Location outside Sweden">
+    &#9888;
+</span>
+</td>
+            <td>780</td>
+            
+            <td>
+                
+                maj
+                
+            </td>
+            
+            <td><a href="/timestamp/780/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>781</td>
+            
+            <td>
+                
+                förra söndagen
+                
+            </td>
+            
+            <td><a href="/timestamp/781/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>782</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/782/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>783</td>
+            
+            <td>
+                
+                Ingen specifik plats nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/783/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>784</td>
+            
+            <td>
+                
+                1900-05-01T04:30:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/784/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>785</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/785/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>786</td>
+            
+            <td>
+                
+                17 december
+                
+            </td>
+            
+            <td><a href="/timestamp/786/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>787</td>
+            
+            <td>
+                
+                Efter första folkmötet
+                
+            </td>
+            
+            <td><a href="/timestamp/787/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>788</td>
+            
+            <td>
+                
+                i går
+                
+            </td>
+            
+            <td><a href="/timestamp/788/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>789</td>
+            
+            <td>
+                
+                Gt kll
+                
+            </td>
+            
+            <td><a href="/timestamp/789/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>790</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/790/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>791</td>
+            
+            <td>
+                
+                1 maj
+                
+            </td>
+            
+            <td><a href="/timestamp/791/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>792</td>
+            
+            <td>
+                
+                2023-10-08T20:00:00
+                
+            </td>
+            
+            <td><a href="/timestamp/792/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>793</td>
+            
+            <td>
+                
+                1898-05-01
+                
+            </td>
+            
+            <td><a href="/timestamp/793/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>794</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns för mötet.
+                
+            </td>
+            
+            <td><a href="/timestamp/794/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>795</td>
+            
+            <td>
+                
+                Ingen specifik tidpunkt nämns.
+                
+            </td>
+            
+            <td><a href="/timestamp/795/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>796</td>
+            
+            <td>
+                
+                1800-12-05T00:00:00Z
+                
+            </td>
+            
+            <td><a href="/timestamp/796/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>797</td>
+            
+            <td>
+                
+                Valdagens afton
+                
+            </td>
+            
+            <td><a href="/timestamp/797/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>798</td>
+            
+            <td>
+                
+                Hvarje dag
+                
+            </td>
+            
+            <td><a href="/timestamp/798/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Event blocked: QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>799</td>
+            
+            <td>
+                
+                tisdags afton
+                
+            </td>
+            
+            <td><a href="/timestamp/799/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>800</td>
+            
+            <td>
+                
+                1885-07-29
+                
+            </td>
+            
+            <td><a href="/timestamp/800/">View</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/timestamp/">1-200</a>
+        
+    
+        
+            <a href="/timestamp/201-400/">201-400</a>
+        
+    
+        
+            <a href="/timestamp/401-600/">401-600</a>
+        
+    
+        
+            <span class="page-current">601-800</span>
+        
+    
+        
+            <a href="/timestamp/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/timestamp/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/timestamp/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/timestamp/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/timestamp/1601-1800/">1601-1800</a>
+        
+    
+        
+            <a href="/timestamp/1801-2000/">1801-2000</a>
+        
+    
+        
+            <a href="/timestamp/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/timestamp/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/timestamp/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/timestamp/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/timestamp/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/timestamp/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/timestamp/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/timestamp/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/timestamp/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/timestamp/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/timestamp/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/timestamp/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/timestamp/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/timestamp/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/timestamp/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/timestamp/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/timestamp/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/timestamp/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/timestamp/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/timestamp/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/timestamp/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/timestamp/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/timestamp/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/timestamp/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/timestamp/6801-7000/">6801-7000</a>
+        
+    
+        
+            <a href="/timestamp/7001-7200/">7001-7200</a>
+        
+    
+        
+            <a href="/timestamp/7201-7224/">7201-7224</a>
+        
+    
+</nav>
+
+
+<script>
+// Client-side filtering with localStorage persistence
+const FILTER_KEY = 'cg-review-filters';
+
+function getFilters() {
+    try {
+        const stored = localStorage.getItem(FILTER_KEY);
+        return stored ? JSON.parse(stored) : null;
+    } catch (e) { return null; }
+}
+
+function saveFilters() {
+    const state = {};
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        state[cb.id.replace('filter-', '')] = cb.checked;
+    });
+    try { localStorage.setItem(FILTER_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function applyFilters() {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        document.querySelectorAll(`tr[data-status="${status}"]`).forEach(row => {
+            row.style.display = cb.checked ? '' : 'none';
+        });
+    });
+}
+
+// Restore saved state
+const saved = getFilters();
+if (saved) {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        if (status in saved) cb.checked = saved[status];
+    });
+}
+applyFilters();
+
+// Listen for changes
+document.querySelectorAll('.list-filters input').forEach(cb => {
+    cb.addEventListener('change', function() {
+        saveFilters();
+        applyFilters();
+    });
+});
+</script>
+
+        
+    </main>
+
+    <footer>
+        <div class="status-legend">
+            <span class="status-badge valid">Valid</span>
+            <span class="status-badge invalid">Invalid</span>
+            <span class="status-badge blocked">Blocked</span>
+            <span class="status-badge unknown">Not validated</span>
+        </div>
+        <p>Contentious Gatherings Pipeline Review</p>
+        <p class="generated-at">Site generated: 2026-02-17 17:27 UTC</p>
+    </footer>
+</body>
+</html>

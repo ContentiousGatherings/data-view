@@ -1,0 +1,4247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - CG Review</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">CG Review</a>
+            <div class="nav-links">
+                <a href="/event/">Events</a>
+                <a href="/location/">Locations</a>
+                <a href="/actor/">Actors</a>
+                <a href="/timestamp/">Timestamps</a>
+                <a href="/meetingtype/">Meeting Types</a>
+            </div>
+            <div class="nav-links">
+                <a href="/authoritativelocation/">Auth. Locations</a>
+                <a href="/authoritativeactor/">Auth. Actors</a>
+                <a href="/authoritativemeetingtype/">Auth. Types</a>
+                <a href="/authoritativeevent/">Auth. Events</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        
+<nav class="breadcrumb">
+    <a href="/">Home</a> &raquo;
+    Events
+</nav>
+
+<h1>Events</h1>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/event/">1-200</a>
+        
+    
+        
+            <a href="/event/201-400/">201-400</a>
+        
+    
+        
+            <a href="/event/401-600/">401-600</a>
+        
+    
+        
+            <a href="/event/601-800/">601-800</a>
+        
+    
+        
+            <a href="/event/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/event/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/event/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/event/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/event/1601-1800/">1601-1800</a>
+        
+    
+        
+            <span class="page-current">1801-2000</span>
+        
+    
+        
+            <a href="/event/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/event/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/event/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/event/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/event/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/event/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/event/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/event/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/event/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/event/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/event/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/event/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/event/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/event/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/event/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/event/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/event/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/event/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/event/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/event/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/event/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/event/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/event/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/event/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/event/6801-7000/">6801-7000</a>
+        
+    
+        
+            <a href="/event/7001-7200/">7001-7200</a>
+        
+    
+        
+            <a href="/event/7201-7224/">7201-7224</a>
+        
+    
+</nav>
+
+
+<div class="list-stats">
+    <span class="stat-valid">2345 valid</span>
+    <span class="stat-invalid">0 invalid</span>
+    <span class="stat-blocked">4087 blocked</span>
+    <span class="stat-unknown">792 pending</span>
+    <span class="stat-total">(7224 total)</span>
+</div>
+
+<div class="list-filters">
+    <label>
+        <input type="checkbox" id="filter-valid" checked> Show valid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-invalid" checked> Show invalid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-blocked" checked> Show blocked
+    </label>
+    <label>
+        <input type="checkbox" id="filter-unknown" checked> Show pending
+    </label>
+</div>
+
+<table class="entity-table list-table" id="entity-list">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>ID</th>
+            
+            <th>Excerpt</th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1801</td>
+            
+            <td>
+                
+                Deputeradekollegiet i Kiel höll i mindags i ett möte hvari det beslöts att tills...
+                
+            </td>
+            
+            <td><a href="/event/1801/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1802</td>
+            
+            <td>
+                
+                De holsteinska ständerdeputeradenai möte i Hamburg hölls i tisdags och varsde i ...
+                
+            </td>
+            
+            <td><a href="/event/1802/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1803</td>
+            
+            <td>
+                
+                Sorariade meetings hafva sednast hållits i Bremen Augsburg och Carlsruhe
+                
+            </td>
+            
+            <td><a href="/event/1803/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1804</td>
+            
+            <td>
+                
+                Tysk» nationalföreningen som gör min af att tillrusta krig på egen hand mot Danm...
+                
+            </td>
+            
+            <td><a href="/event/1804/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1805</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1805/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1806</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1806/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1807</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1807/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1808</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1808/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1809</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1809/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1810</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1810/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1811</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1811/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1812</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1812/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1813</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1813/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1814</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1814/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1815</td>
+            
+            <td>
+                
+                Vid ett allmänt möte i Eskilstuna i söndags e. m., i vilket omkring 500 personer...
+                
+            </td>
+            
+            <td><a href="/event/1815/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1816</td>
+            
+            <td>
+                
+                medlemmar; kallas till gemensamt diskussionsmöte söndagen den 12 april kl. 4 e. ...
+                
+            </td>
+            
+            <td><a href="/event/1816/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1817</td>
+            
+            <td>
+                
+                På aftonen höllos dessutom stora möten i do olika församlingslokalerna.
+                
+            </td>
+            
+            <td><a href="/event/1817/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1818</td>
+            
+            <td>
+                
+                Äfven på én mängd ställén i provinserna höllos vällyckade majdemonstrationcr,
+                
+            </td>
+            
+            <td><a href="/event/1818/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1819</td>
+            
+            <td>
+                
+                Folkmöten i försvarsfrågan. I Tågarp hölls sistlidna lördag ett folkmöte för Rön...
+                
+            </td>
+            
+            <td><a href="/event/1819/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1820</td>
+            
+            <td>
+                
+                Folkmötet för Aspelands och Handbörds härader i Kalmar län hölls i tingssalen i ...
+                
+            </td>
+            
+            <td><a href="/event/1820/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1821</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1821/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1822</td>
+            
+            <td>
+                
+                Egyptens härvarande representant har meddelat storvesiren att 20,000 turkiska pu...
+                
+            </td>
+            
+            <td><a href="/event/1822/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1823</td>
+            
+            <td>
+                
+                På ett af ledarna för den all-öndiska sufirörelsen hållet sammanträde i Delhi an...
+                
+            </td>
+            
+            <td><a href="/event/1823/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1824</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1824/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1825</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1825/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1826</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1826/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1827</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1827/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1828</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1828/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1829</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1829/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1830</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1830/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1831</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1831/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1832</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1832/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1833</td>
+            
+            <td>
+                
+                Folkmöte rörande landtförsvaret.
+                
+            </td>
+            
+            <td><a href="/event/1833/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1834</td>
+            
+            <td>
+                
+                På grund af löneregleringar stodo där arbetarne vid en grufva sedan fyra månader...
+                
+            </td>
+            
+            <td><a href="/event/1834/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1835</td>
+            
+            <td>
+                
+                Grufegarne, hvaribland voro flera af Sverges inda striella storheter, grepos af ...
+                
+            </td>
+            
+            <td><a href="/event/1835/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The phrase *&#39;Inrättandet av skiljedomsdomstol&#39;* (establishment of an arbitration court) is not a recognized **meeting type** in the context of historical Swedish newspapers. While the establishment of an arbitration court is a legal or administrative action, it does not fit the predefined categories of **folkmöte (public meeting)**, **majdemonstration (May Day demonstration)**, **strike (strike)**, **sammanträde (meeting)**, **högtidlighet (celebration)**, etc., which are typically tied to gatherings, protests, or public events rather than legal or administrative proceedings.">
+    &#9888;
+</span>
+</td>
+            <td>1836</td>
+            
+            <td>
+                
+                dock lycka des det en human landshöfding — det var till och med före strejken i ...
+                
+            </td>
+            
+            <td><a href="/event/1836/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1837</td>
+            
+            <td>
+                
+                Vid en annan grufva afskedades arbetare under sådana omständigheter att kamrater...
+                
+            </td>
+            
+            <td><a href="/event/1837/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1838</td>
+            
+            <td>
+                
+                Grufegarne, hvaribland voro flera af Sverges inda striella storheter, grepos af ...
+                
+            </td>
+            
+            <td><a href="/event/1838/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1839</td>
+            
+            <td>
+                
+                dock lycka des det en human landshöfding — det var till och med före strejken i ...
+                
+            </td>
+            
+            <td><a href="/event/1839/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1840</td>
+            
+            <td>
+                
+                dock lycka des det en human landshöfding — det var till och med före strejken i ...
+                
+            </td>
+            
+            <td><a href="/event/1840/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1841</td>
+            
+            <td>
+                
+                dock lycka des det en human landshöfding — det var till och med före strejken i ...
+                
+            </td>
+            
+            <td><a href="/event/1841/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1842</td>
+            
+            <td>
+                
+                Komma vi så till den store organi satören Abraham Rundbäcks djuptänkta planer De...
+                
+            </td>
+            
+            <td><a href="/event/1842/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1843</td>
+            
+            <td>
+                
+                Flygskrifter ha utgifvits, folkmöten hållits, ooh sammankomster, af så väl enski...
+                
+            </td>
+            
+            <td><a href="/event/1843/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1844</td>
+            
+            <td>
+                
+                Om ett folkmöte i Enånger skrifver Söderhamnsbladet Helsingen följande Folkmötet...
+                
+            </td>
+            
+            <td><a href="/event/1844/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1845</td>
+            
+            <td>
+                
+                Sundsvalls arbetareförenings tillvägagående då den vid sammanträdet i måndags
+                
+            </td>
+            
+            <td><a href="/event/1845/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1846</td>
+            
+            <td>
+                
+                Att ändå vilja vid ett folkmöte påstå, att hvarje arbetare »lätt» kan förtjäna 4...
+                
+            </td>
+            
+            <td><a href="/event/1846/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1847</td>
+            
+            <td>
+                
+                Demonstrationsrätten är återeröfrad och har användts för första gången för den a...
+                
+            </td>
+            
+            <td><a href="/event/1847/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1848</td>
+            
+            <td>
+                
+                18 st. från lika många, nyss hållna folkmöten
+                
+            </td>
+            
+            <td><a href="/event/1848/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Location outside Sweden: Country &#39;&#39; is not Sweden">
+    &#9888;
+</span>
+</td>
+            <td>1849</td>
+            
+            <td>
+                
+                fredagen den 2 d:s ett gemensamt möte, där följande frågor behandlades: Huru stä...
+                
+            </td>
+            
+            <td><a href="/event/1849/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1850</td>
+            
+            <td>
+                
+                Partiföreningarna beslöto å sitt möte den 2 febr. att blott sända ett ombud till...
+                
+            </td>
+            
+            <td><a href="/event/1850/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1851</td>
+            
+            <td>
+                
+                Vidare beslöts att bilda en sångkör på 100 man, hvilken skall medverka vid majde...
+                
+            </td>
+            
+            <td><a href="/event/1851/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1852</td>
+            
+            <td>
+                
+                Ty hvad är det annat än en förväxling af konungens person och konungens statshan...
+                
+            </td>
+            
+            <td><a href="/event/1852/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1853</td>
+            
+            <td>
+                
+                Ett massmöte på måndagsaftonen å Runans stora sal, anordnadt af Kvinnornas disku...
+                
+            </td>
+            
+            <td><a href="/event/1853/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1854</td>
+            
+            <td>
+                
+                Nordiska Nationalföreningen hade tidigare på aftonen sammanträde dervid den af k...
+                
+            </td>
+            
+            <td><a href="/event/1854/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1855</td>
+            
+            <td>
+                
+                J anseende till Folkmötet, tillägga dngbätarne vid Kungshättan tidigt på e. m.
+                
+            </td>
+            
+            <td><a href="/event/1855/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1856</td>
+            
+            <td>
+                
+                Folkmötet å Mosebacke. Inbjudarne till detta möte — 14 till antalet — hade försu...
+                
+            </td>
+            
+            <td><a href="/event/1856/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1857</td>
+            
+            <td>
+                
+                I Södra Bergenhus amt går det äfven lifligt till Det ena folkmötet aflöser det a...
+                
+            </td>
+            
+            <td><a href="/event/1857/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1858</td>
+            
+            <td>
+                
+                Frågan om rösträttens utsträckning var i onsdags föremål för en liflig diskussio...
+                
+            </td>
+            
+            <td><a href="/event/1858/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1859</td>
+            
+            <td>
+                
+                Ett möte i samma syfte hölls äfven helt nyligen i Antwerpen, hvarvid beslöts att...
+                
+            </td>
+            
+            <td><a href="/event/1859/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1860</td>
+            
+            <td>
+                
+                I går afton hölls ett folkmöte, vid vilket tal höllos, uppfordrande till demonst...
+                
+            </td>
+            
+            <td><a href="/event/1860/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1861</td>
+            
+            <td>
+                
+                Majöemonstrationcn i Köpenhamn.
+                
+            </td>
+            
+            <td><a href="/event/1861/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1862</td>
+            
+            <td>
+                
+                En folkmötesscen i företa akten var väl arrangerad och konventikel mötet med kaf...
+                
+            </td>
+            
+            <td><a href="/event/1862/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1863</td>
+            
+            <td>
+                
+                I Budapest hölls i söndags det stora folkmötet för protesterande mot ockupatione...
+                
+            </td>
+            
+            <td><a href="/event/1863/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1864</td>
+            
+            <td>
+                
+                På dagordningen var 1-majdemonstrationen och beslöts att sådan här skall anordna...
+                
+            </td>
+            
+            <td><a href="/event/1864/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1865</td>
+            
+            <td>
+                
+                där hela styrkan kan koncentreras till kommendering vid så utomordentliga tillfä...
+                
+            </td>
+            
+            <td><a href="/event/1865/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1866</td>
+            
+            <td>
+                
+                Här ha hundratals folkmöten förklarat att de ej ville vara med om nya bördor, me...
+                
+            </td>
+            
+            <td><a href="/event/1866/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1867</td>
+            
+            <td>
+                
+                dryftas i alla landade* lar, från Ystad till Haparanda, och från alla sidor skär...
+                
+            </td>
+            
+            <td><a href="/event/1867/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1868</td>
+            
+            <td>
+                
+                Hyresfrågan, Stockholms mest brännande, ventilerad på nio folkmöten samtidigt.
+                
+            </td>
+            
+            <td><a href="/event/1868/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1869</td>
+            
+            <td>
+                
+                Den glädjen skola vi gerna unna vår kollega och tacka honom till på köpet. Ucn »...
+                
+            </td>
+            
+            <td><a href="/event/1869/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1870</td>
+            
+            <td>
+                
+                sade Labouohere i sitt tal på det stora folkmötet i London — hölls i operahuset ...
+                
+            </td>
+            
+            <td><a href="/event/1870/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1871</td>
+            
+            <td>
+                
+                Årets majdemonstration försiggick söndagen den 3 maj med samling på Hästtorget o...
+                
+            </td>
+            
+            <td><a href="/event/1871/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Location outside Sweden: Country &#39;Skottland&#39; is not Sweden">
+    &#9888;
+</span>
+</td>
+            <td>1872</td>
+            
+            <td>
+                
+                I Edinburgh hölls den 20 d:s ett mycket talrikt besökt folkmöte, vilket antog fl...
+                
+            </td>
+            
+            <td><a href="/event/1872/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1873</td>
+            
+            <td>
+                
+                Spår beslöt pä möts i natt 1 Folkets hns att deltaga 1 1-maj-demonitratio nen.
+                
+            </td>
+            
+            <td><a href="/event/1873/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1874</td>
+            
+            <td>
+                
+                Öfverståthållareämbetet och mmjdemonstrationen. Oivuståthållaraåmbstet har pk an...
+                
+            </td>
+            
+            <td><a href="/event/1874/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1875</td>
+            
+            <td>
+                
+                FolkmSte I Sudertelje. Vi erinra om det till i morgon kl. 12 utlysta folkmötet i...
+                
+            </td>
+            
+            <td><a href="/event/1875/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1876</td>
+            
+            <td>
+                
+                liandMtatens embets- och tjengtemSn voro i går samlade till sitt sjunde allmänna...
+                
+            </td>
+            
+            <td><a href="/event/1876/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1877</td>
+            
+            <td>
+                
+                I Tynderö (Medelpad) hölls i söndags det första folkmötet på denna plats, vilket...
+                
+            </td>
+            
+            <td><a href="/event/1877/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Location outside Sweden: Country &#39;Indien&#39; is not Sweden">
+    &#9888;
+</span>
+</td>
+            <td>1878</td>
+            
+            <td>
+                
+                Den 21 september hölls i Kalkutta ett stort folkmöte, der man enhälligt beslöt a...
+                
+            </td>
+            
+            <td><a href="/event/1878/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1879</td>
+            
+            <td>
+                
+                Märkliga upplysningar erhöll en hufvudstadskorrespondent (K. R.), då han nyligen...
+                
+            </td>
+            
+            <td><a href="/event/1879/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1880</td>
+            
+            <td>
+                
+                Inbjudning Till öfvervarande af ett allmänt folkmöte får Komitén härmedelst inbj...
+                
+            </td>
+            
+            <td><a href="/event/1880/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1881</td>
+            
+            <td>
+                
+                Dubbel skyldighet att verka för livlig tillslutning till majdemonstrationien frå...
+                
+            </td>
+            
+            <td><a href="/event/1881/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1882</td>
+            
+            <td>
+                
+                Sorn presson redan meddelat, agde måndagen den 13 maj en större demonstration af...
+                
+            </td>
+            
+            <td><a href="/event/1882/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1883</td>
+            
+            <td>
+                
+                T. f. polismästaren V. Tamm har till civilministern överlämnat utredningen röran...
+                
+            </td>
+            
+            <td><a href="/event/1883/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1884</td>
+            
+            <td>
+                
+                Antalet deltagare i maj demonstrationerna och andra större fri luftsmöten afspeg...
+                
+            </td>
+            
+            <td><a href="/event/1884/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1885</td>
+            
+            <td>
+                
+                Folkmöte anordnas i afton half 8 e. m. i Immanuelskyrkan. Ämne: Ungdomen ooh alk...
+                
+            </td>
+            
+            <td><a href="/event/1885/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1886</td>
+            
+            <td>
+                
+                Vid våra majdemonstrationer intresserade äro de klassmedvetna arbetarne och intr...
+                
+            </td>
+            
+            <td><a href="/event/1886/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1887</td>
+            
+            <td>
+                
+                Folkmöien hålles snart sagdt hvarje söndag, och inom kommunerna gruppera sig smä...
+                
+            </td>
+            
+            <td><a href="/event/1887/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1888</td>
+            
+            <td>
+                
+                folkmöte, som i lördags hölls i Venersborg, uttalade dervid en skarp protest mot...
+                
+            </td>
+            
+            <td><a href="/event/1888/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1889</td>
+            
+            <td>
+                
+                Nordiska studentmötet med kristligt program. Det andra af dessa studentmöten, vi...
+                
+            </td>
+            
+            <td><a href="/event/1889/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1890</td>
+            
+            <td>
+                
+                Folkmöte har i dag hållits i Skillingaryd med valmännen från norra delen af östb...
+                
+            </td>
+            
+            <td><a href="/event/1890/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1891</td>
+            
+            <td>
+                
+                Södra delen af häradet har valmöte i morgon i Vernamo.
+                
+            </td>
+            
+            <td><a href="/event/1891/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1892</td>
+            
+            <td>
+                
+                O. D:s konserter i Aqvariums operasal ha varit besökta af en ovanligt talrik och...
+                
+            </td>
+            
+            <td><a href="/event/1892/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1893</td>
+            
+            <td>
+                
+                I går sjöng kören för kejsaren och kejsarinnan i deras familjkrets. En kejserlig...
+                
+            </td>
+            
+            <td><a href="/event/1893/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1894</td>
+            
+            <td>
+                
+                I Helsingörs Hangö gifvas konserter.
+                
+            </td>
+            
+            <td><a href="/event/1894/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1895</td>
+            
+            <td>
+                
+                I Helsingörs Hangö gifvas konserter.
+                
+            </td>
+            
+            <td><a href="/event/1895/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1896</td>
+            
+            <td>
+                
+                Mot utsträckt värnpligt uttalade sig ett folkmöte i Smedjebacken i förra veckan.
+                
+            </td>
+            
+            <td><a href="/event/1896/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1897</td>
+            
+            <td>
+                
+                Värnpligten utgjorde föremål för öfverläggning vid ett folkmöte i Hässjö, Vester...
+                
+            </td>
+            
+            <td><a href="/event/1897/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1898</td>
+            
+            <td>
+                
+                Äfven uttalar mötet sin skarpaste protest mot den taktik, som från flera häll fö...
+                
+            </td>
+            
+            <td><a href="/event/1898/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1899</td>
+            
+            <td>
+                
+                Beslöts att 1: sta majdemonstrationen skulle anordnas i likhet med föregående sa...
+                
+            </td>
+            
+            <td><a href="/event/1899/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1900</td>
+            
+            <td>
+                
+                Vidare beslöts att fortast {nöjligt anordna ett större antimilitaristiskt möte, ...
+                
+            </td>
+            
+            <td><a href="/event/1900/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1901</td>
+            
+            <td>
+                
+                Maj demonstrationer äro för henne en styggelse och tidningen Arbetet står för he...
+                
+            </td>
+            
+            <td><a href="/event/1901/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1902</td>
+            
+            <td>
+                
+                Socialisterna ha._jdprt mycket väsen af sig på sista tiden; deras doktriner ha u...
+                
+            </td>
+            
+            <td><a href="/event/1902/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1903</td>
+            
+            <td>
+                
+                »Man måste sätta hårdt mot hårdt, fordringar mot fordringar, anspråk mot anspråk...
+                
+            </td>
+            
+            <td><a href="/event/1903/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1904</td>
+            
+            <td>
+                
+                Ett folkmöte i Tokio.
+                
+            </td>
+            
+            <td><a href="/event/1904/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1905</td>
+            
+            <td>
+                
+                Sv. Brygg eriarbetareförb. afd i IHalmS höll ord. möte den 14 april, hvarvid föl...
+                
+            </td>
+            
+            <td><a href="/event/1905/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1906</td>
+            
+            <td>
+                
+                Sedan gammal-skandinavismens glans dagar har väl minst en mansålder förflutit fr...
+                
+            </td>
+            
+            <td><a href="/event/1906/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1907</td>
+            
+            <td>
+                
+                Folkmöte
+                
+            </td>
+            
+            <td><a href="/event/1907/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1908</td>
+            
+            <td>
+                
+                Den första ekonomiska företeelse som möter oss under 1890 är den af kejsar Wilhe...
+                
+            </td>
+            
+            <td><a href="/event/1908/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1909</td>
+            
+            <td>
+                
+                Detta till ej oväsendtlig del genom Robert Peels frånfälle föranledda folkmöte h...
+                
+            </td>
+            
+            <td><a href="/event/1909/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1910</td>
+            
+            <td>
+                
+                Ett möte med tobaksfabrikanterna i riket hålles i Stockholm å Grand hötol i dag....
+                
+            </td>
+            
+            <td><a href="/event/1910/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1911</td>
+            
+            <td>
+                
+                Ett folkmöte hölls den 30 december i Hudiksvall. Det var talrikt besökt och disk...
+                
+            </td>
+            
+            <td><a href="/event/1911/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1912</td>
+            
+            <td>
+                
+                Ett folkmöte hölls här om dagen under riksdagsmannen N. Nilssons ordförandeskap ...
+                
+            </td>
+            
+            <td><a href="/event/1912/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1913</td>
+            
+            <td>
+                
+                samtliga sektioner kallas härmed till ordinarie kvartalsmöte söndagen den 19 den...
+                
+            </td>
+            
+            <td><a href="/event/1913/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1914</td>
+            
+            <td>
+                
+                Majdemonstrationen.
+                
+            </td>
+            
+            <td><a href="/event/1914/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1915</td>
+            
+            <td>
+                
+                Folkmöte vrid Katrineholm.
+                
+            </td>
+            
+            <td><a href="/event/1915/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1916</td>
+            
+            <td>
+                
+                Tidningen var naturligtvis i hög grad förbittrad över studentadressen och trakie...
+                
+            </td>
+            
+            <td><a href="/event/1916/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1917</td>
+            
+            <td>
+                
+                folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1917/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1918</td>
+            
+            <td>
+                
+                att åtta dagar väsentligen användas #ör att diskutera de i somras hållna politis...
+                
+            </td>
+            
+            <td><a href="/event/1918/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1919</td>
+            
+            <td>
+                
+                fullföljer han sitt arbete lika väl i fängelset som på folkmötena.
+                
+            </td>
+            
+            <td><a href="/event/1919/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1920</td>
+            
+            <td>
+                
+                Man måste se honom förkunna det socialistiska evangeliet en afton med bart hufvu...
+                
+            </td>
+            
+            <td><a href="/event/1920/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1921</td>
+            
+            <td>
+                
+                avd. nr 60 i Limhamn avhåller kvartalsmöte söndagen den 14 april k1. 9.30-f. m. ...
+                
+            </td>
+            
+            <td><a href="/event/1921/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1922</td>
+            
+            <td>
+                
+                Efterskörd från 1 majdemonstrationen i Trelleborg.
+                
+            </td>
+            
+            <td><a href="/event/1922/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1923</td>
+            
+            <td>
+                
+                Vid fackföreningarnes styrelsers möte i går afton i Folkets hus beslöts enhällig...
+                
+            </td>
+            
+            <td><a href="/event/1923/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1924</td>
+            
+            <td>
+                
+                Folkets hus’’ invigning. Teckningen till den subskriberade festen på lördag för ...
+                
+            </td>
+            
+            <td><a href="/event/1924/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1925</td>
+            
+            <td>
+                
+                Vid Sydöstra Sverges läkare- och apotekareförenings sam manträde i Karlskrona de...
+                
+            </td>
+            
+            <td><a href="/event/1925/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1926</td>
+            
+            <td>
+                
+                Strejk utbröt i måndags å Jönköpings litografiska aktiebolags typografiska afdel...
+                
+            </td>
+            
+            <td><a href="/event/1926/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Location outside Sweden: Country &#39;Tyskland&#39; is not Sweden">
+    &#9888;
+</span>
+</td>
+            <td>1927</td>
+            
+            <td>
+                
+                Ea följd af detta fredsslut är äfven, att de stora praktsalar, som allt sedan ju...
+                
+            </td>
+            
+            <td><a href="/event/1927/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1928</td>
+            
+            <td>
+                
+                Majdemonstration i Sibirien. En storartad socialistisk och revolu; tionär 1 ista...
+                
+            </td>
+            
+            <td><a href="/event/1928/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1929</td>
+            
+            <td>
+                
+                Holländarne i Sydafrika. »Afrikander Bond» höll i förra veckan! kongress i Somer...
+                
+            </td>
+            
+            <td><a href="/event/1929/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1930</td>
+            
+            <td>
+                
+                Efter Bordeanxkongressen. Följderna af Bordeanxkongressen börjä redan att visa s...
+                
+            </td>
+            
+            <td><a href="/event/1930/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1931</td>
+            
+            <td>
+                
+                Holländarne i Sydafrika. »Afrikander Bond» höll i förra veckan! kongress i Somer...
+                
+            </td>
+            
+            <td><a href="/event/1931/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1932</td>
+            
+            <td>
+                
+                Man förmodar, såsom ock synes lämpligast, att folkmöten, hvilka ryktet förmält f...
+                
+            </td>
+            
+            <td><a href="/event/1932/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1933</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1933/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1934</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1934/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1935</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1935/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1936</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1936/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1937</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1937/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1938</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1938/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1939</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1939/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1940</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1940/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1941</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1941/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1942</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1942/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1943</td>
+            
+            <td>
+                
+                Folkmöten i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/1943/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1944</td>
+            
+            <td>
+                
+                Inbjudning till Folkmöte. Oppunda och Willåttinge Folkmötesförening håller sitt ...
+                
+            </td>
+            
+            <td><a href="/event/1944/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1945</td>
+            
+            <td>
+                
+                Tal. slutade med att recitera Heidenstams »Medborgarsång«, åtföljd av applåder. ...
+                
+            </td>
+            
+            <td><a href="/event/1945/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1946</td>
+            
+            <td>
+                
+                I ett kommande brev skola vi berätta något från ett agitationsmöte, som hölls i ...
+                
+            </td>
+            
+            <td><a href="/event/1946/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1947</td>
+            
+            <td>
+                
+                Med minnet af uttalandes från folkmötet i sendags åtta dagar sedan befara vi att...
+                
+            </td>
+            
+            <td><a href="/event/1947/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1948</td>
+            
+            <td>
+                
+                Det middagsflanerande Stockholm tittade med en liten nyans af oro på demonstrati...
+                
+            </td>
+            
+            <td><a href="/event/1948/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1949</td>
+            
+            <td>
+                
+                Föreningen beslöt att deltaga i 1-maj-demonstrationen.
+                
+            </td>
+            
+            <td><a href="/event/1949/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1950</td>
+            
+            <td>
+                
+                Beslöts att med fana deltaga i 1-majdemonstrationen.
+                
+            </td>
+            
+            <td><a href="/event/1950/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1951</td>
+            
+            <td>
+                
+                anmodas att sammanträda i Folkets hus onsdagen den 13 april kl. 8 e. m. för att ...
+                
+            </td>
+            
+            <td><a href="/event/1951/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1952</td>
+            
+            <td>
+                
+                Men på Cirkus hade en talare under bån mot våra förfäders mod vädjat till feghet...
+                
+            </td>
+            
+            <td><a href="/event/1952/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1953</td>
+            
+            <td>
+                
+                För öfrigt hjelpa ju icke garantier. »Har man en konung, som är — ursäkta ordet ...
+                
+            </td>
+            
+            <td><a href="/event/1953/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1954</td>
+            
+            <td>
+                
+                Jag måste nämna Anjala; de som drefvo till det förräderiet voro en liten klick f...
+                
+            </td>
+            
+            <td><a href="/event/1954/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1955</td>
+            
+            <td>
+                
+                Folkmötet i Kjula.
+                
+            </td>
+            
+            <td><a href="/event/1955/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1956</td>
+            
+            <td>
+                
+                vid Katrineholm hölls den 25 juni. Mötet var besökt af vidpass 600 personer. F. ...
+                
+            </td>
+            
+            <td><a href="/event/1956/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1957</td>
+            
+            <td>
+                
+                Förslaget till ny mäklareordning. Göteborgs handelsförenings fullmäktige hade ti...
+                
+            </td>
+            
+            <td><a href="/event/1957/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1958</td>
+            
+            <td>
+                
+                Folkmöte i försvarsfrågan. Enligt hit till ortens riksdagsman ingånget, Aftonbla...
+                
+            </td>
+            
+            <td><a href="/event/1958/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;publicering&#39; does not correspond to any of the predefined valid meeting types listed in your criteria. While &#39;publicering&#39; translates to &#39;publication&#39; in English, it does not refer to a specific type of gathering or meeting (such as a *folkmöte*, *strike*, *demonstration*, etc.). The description provided is about the publication of a dictionary, which is not a meeting type but rather an administrative or informational event.">
+    &#9888;
+</span>
+</td>
+            <td>1959</td>
+            
+            <td>
+                
+                Svenska Akademien har beslutat att Svenska Akademiens ordbok ska utges i tryck. ...
+                
+            </td>
+            
+            <td><a href="/event/1959/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1960</td>
+            
+            <td>
+                
+                Folkmöte.
+                
+            </td>
+            
+            <td><a href="/event/1960/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1961</td>
+            
+            <td>
+                
+                arbetarnes tidningar om . . • ti j . • ■ de storartade majdemonstrationerna 1 he...
+                
+            </td>
+            
+            <td><a href="/event/1961/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1962</td>
+            
+            <td>
+                
+                Demonsfrationstalare inom Arbetets spridningsområde, speciellt Skåne, Småland, B...
+                
+            </td>
+            
+            <td><a href="/event/1962/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1963</td>
+            
+            <td>
+                
+                Den mest imponerande majdemonstrationen var utan jämförelse det massmöte, som Lo...
+                
+            </td>
+            
+            <td><a href="/event/1963/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1964</td>
+            
+            <td>
+                
+                Folkmöte i Linköping. (Från 1). N:a ko^rcKupii.éent.) Ett sådant hölls förliden ...
+                
+            </td>
+            
+            <td><a href="/event/1964/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1965</td>
+            
+            <td>
+                
+                I majdemonstrationen i Karlstad deltogo äfven de strejkande ooh utestängda arbet...
+                
+            </td>
+            
+            <td><a href="/event/1965/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1966</td>
+            
+            <td>
+                
+                En komité tillsattes att inhämta mästarnes underskrifter å prislistan, hvilken s...
+                
+            </td>
+            
+            <td><a href="/event/1966/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1967</td>
+            
+            <td>
+                
+                Afdelningen beslöt enhälligt att deltaga i 1-majdemonstrationen.
+                
+            </td>
+            
+            <td><a href="/event/1967/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1968</td>
+            
+            <td>
+                
+                Möte med gj ätare bolls i Göteborg af Stockboims och Eskilstuna gjutarefackfören...
+                
+            </td>
+            
+            <td><a href="/event/1968/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1969</td>
+            
+            <td>
+                
+                Folkmöte
+                
+            </td>
+            
+            <td><a href="/event/1969/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1970</td>
+            
+            <td>
+                
+                Huru skall den framträda? Dertill finnas trenne utvägar: i riksförsamlingarne, p...
+                
+            </td>
+            
+            <td><a href="/event/1970/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1971</td>
+            
+            <td>
+                
+                Han fann själf befattningen en smula egendomlig och erinrade om att det var förs...
+                
+            </td>
+            
+            <td><a href="/event/1971/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Location outside Sweden: Country &#39;England&#39; is not Sweden">
+    &#9888;
+</span>
+</td>
+            <td>1972</td>
+            
+            <td>
+                
+                Den viktigaste i lördags timade händelsen i förbindelse med arbetstvisten i Hull...
+                
+            </td>
+            
+            <td><a href="/event/1972/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1973</td>
+            
+            <td>
+                
+                Ett synnerligt talande bevis för det intresse, hvarmed Londons arbetarebefolknin...
+                
+            </td>
+            
+            <td><a href="/event/1973/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Nykterhetsauiansmöte&#39; is not a standard or widely recognized meeting type in Swedish historical or modern contexts. The closest plausible interpretation of the name is a combination of *nykterhet* (temperance) and *auiansmöte* (which does not correspond to a known Swedish meeting type). The term is likely a misspelling or an incorrect transcription of a valid meeting type (e.g., *nykterhetsförsamling* or *nykterhetsmöte*, which refers to a temperance association or meeting). Since it does not match any of the valid meeting types listed, it is classified as invalid.">
+    &#9888;
+</span>
+</td>
+            <td>1974</td>
+            
+            <td>
+                
+                NykterhetsaUiansmöte hölls i Mölltorps templarlokaf sistlidne söndag. Baptistpre...
+                
+            </td>
+            
+            <td><a href="/event/1974/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1975</td>
+            
+            <td>
+                
+                Nykterhetsföredrag hölls af hr S. Frid, Karlsborg, om mannen i rötvarhänder.
+                
+            </td>
+            
+            <td><a href="/event/1975/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1976</td>
+            
+            <td>
+                
+                Nästa möte skall hållas i oktober i Svanvik hos blåbandsföreningen.
+                
+            </td>
+            
+            <td><a href="/event/1976/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1977</td>
+            
+            <td>
+                
+                Prästerna och nykterheten. På folkmötet i Hessleholm i onsdags hemställde en tal...
+                
+            </td>
+            
+            <td><a href="/event/1977/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1978</td>
+            
+            <td>
+                
+                Yästra Uplands nykterhetsförbund hade sistlidne söndag årsmöto i Veckholms templ...
+                
+            </td>
+            
+            <td><a href="/event/1978/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) in Swedish is not a specific, widely recognized meeting type in the context of historical Swedish newspapers or formal gatherings. While it can loosely refer to a gathering or assembly, it does not match the predefined valid meeting types like *folkmöte*, *majdemonstration*, *strike*, *sammanträde*, or *högtidlighet*. These terms are more specific and commonly documented in formal or political contexts. Thus, &#39;samling&#39; is not considered a valid meeting type for this analysis.">
+    &#9888;
+</span>
+</td>
+            <td>1979</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1979/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) in Swedish is not a specific, widely recognized meeting type in the context of historical Swedish newspapers or formal gatherings. While it can loosely refer to a gathering or assembly, it does not match the predefined valid meeting types like *folkmöte*, *majdemonstration*, *strike*, *sammanträde*, or *högtidlighet*. For historical Swedish newspapers, terms like *sammanträde* (formal meeting) or *demonstration* (public demonstration) are more commonly used. Thus, &#39;samling&#39; is not a distinct, valid meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1980</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1980/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (literally &#39;gathering&#39; or &#39;assembly&#39;) is not explicitly listed among the predefined valid meeting types in your criteria. While it could sometimes be used loosely to describe a general gathering, it does not fit the specific, historically recognized Swedish meeting types you provided (e.g., *folkmöte*, *strike*, *demonstration*). For clarity, it is considered invalid in this context unless further context clarifies its precise nature.">
+    &#9888;
+</span>
+</td>
+            <td>1981</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1981/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (literally &#39;gathering&#39; or &#39;assembly&#39;) is not a specific, widely recognized meeting type in Swedish historical newspapers or formal Swedish terminology. While it can describe a general gathering, it does not fit into the predefined list of valid meeting types such as *folkmöte*, *majdemonstration*, *strike*, *sammanträde*, or *högtidlighet*. For context, it could sometimes be used interchangeably with *sammanträde* (meeting) or *demonstration*, but it lacks the specificity required for classification in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1982</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1982/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) is not explicitly listed among the predefined valid meeting types in your criteria. While it can sometimes imply a gathering or meeting, it is not a distinct, historically recognized type of meeting in the context of Swedish newspapers or formal Swedish terminology for specific gatherings like *folkmötet*, *strike*, or *demonstration*. For clarity, it is considered invalid here unless further context specifies a specific type of event.">
+    &#9888;
+</span>
+</td>
+            <td>1983</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1983/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (gathering) is not explicitly listed among the predefined valid meeting types in your criteria. While it could sometimes imply a general gathering (e.g., a community or social event), it is not a formal or historically specific meeting type like *folkmöte*, *strike*, or *demonstration*. For Swedish historical newspapers, terms like *sammanträde* (meeting) or *mötet* (meeting) are more commonly used for structured gatherings. Thus, &#39;samling&#39; does not fit the exact criteria you provided.">
+    &#9888;
+</span>
+</td>
+            <td>1984</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1984/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (literally &#39;gathering&#39; or &#39;assembly&#39;) is not explicitly listed among the predefined valid meeting types in your criteria. While it could sometimes imply a general gathering, it is too vague to be classified as a specific type of meeting like *folkmöte*, *strike*, *demonstration*, or *sammanträde*. For historical Swedish newspapers, &#39;samling&#39; often refers to a broad, informal assembly rather than a structured event. Thus, it does not fit neatly into the predefined categories.">
+    &#9888;
+</span>
+</td>
+            <td>1985</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1985/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) is not explicitly listed among the predefined valid meeting types in your criteria. While it could sometimes imply a general gathering or informal meeting, it does not distinctly match any of the specific types like *folkmöte*, *strike*, *demonstration*, or *högtidlighet*. For historical Swedish newspapers, &#39;samling&#39; is often used more broadly and may not be classified as a formal meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1986</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1986/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) in Swedish is not a specific, widely recognized meeting type in the context of historical Swedish newspapers or formal gatherings. While it can broadly refer to a gathering or assembly, it does not match the predefined valid meeting types like *folkmöte*, *majdemonstration*, *strike*, *sammanträde*, or *högtidlighet*. For historical Swedish newspapers, terms like *sammanträde* (formal meeting) or *demonstration* (public demonstration) are more commonly used. Thus, &#39;samling&#39; is not a distinct, validated meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1987</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1987/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) in Swedish is not a specific, widely recognized meeting type in the context of historical Swedish newspapers or formal gatherings. While it can loosely refer to a gathering or assembly, it does not match the predefined valid meeting types like *folkmöte*, *majdemonstration*, *strike*, *sammanträde*, or *högtidlighet*. For historical Swedish newspapers, terms like *sammanträde* (formal meeting) or *demonstration* (public demonstration) are more commonly used. Thus, &#39;samling&#39; is not a distinct, valid meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1988</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1988/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (literally &#39;gathering&#39; or &#39;assembly&#39;) is not a specific, widely recognized meeting type in Swedish historical newspapers or formal contexts like *folkmöte* (public meeting), *strek* (strike), or *demonstration*. While it can imply a general gathering, it lacks the distinct, legally or socially defined connotation of other meeting types listed in your criteria (e.g., *majdemonstration*, *sammanträde*). Thus, it does not fit the criteria for a valid meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1989</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1989/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (gathering) is not explicitly listed among the predefined valid meeting types in your criteria. While it could sometimes imply a general gathering or informal meeting, it does not fit neatly into the specific categories like *folkmöte*, *strike*, *demonstration*, or *högtidlighet* as defined in your rules. For historical Swedish newspapers, &#39;samling&#39; is often used more broadly and may not always be a formal meeting type. Thus, it does not strictly qualify as a valid meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>1990</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1990/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;samling&#39; (assembly) is not explicitly listed among the predefined valid meeting types in your criteria. While it can sometimes imply a gathering or meeting, it is too vague and lacks specificity to be classified as one of the exact types you provided (e.g., *folkmöte*, *strike*, *demonstration*, etc.). For example, it could refer to a casual gathering, a religious event, or even a social function—not a formal or politically charged meeting type.">
+    &#9888;
+</span>
+</td>
+            <td>1991</td>
+            
+            <td>
+                
+                Nykterhetsförbundet hade en stor samling i Veckholm.
+                
+            </td>
+            
+            <td><a href="/event/1991/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1992</td>
+            
+            <td>
+                
+                Som protektionistisk kandidat anmälde sig sjelf vid valmötet i Åstorp i lördags
+                
+            </td>
+            
+            <td><a href="/event/1992/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1993</td>
+            
+            <td>
+                
+                Vid valmöte i Storvik i söndags nppstäldes som kandidat frihandlaren Anders Qöi-...
+                
+            </td>
+            
+            <td><a href="/event/1993/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1994</td>
+            
+            <td>
+                
+                Enligt meddelande till A B föreslogs vid folkmötet å Ljung till kandidater för r...
+                
+            </td>
+            
+            <td><a href="/event/1994/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1995</td>
+            
+            <td>
+                
+                På franska deputerade kammarens möte i måndags motiverade deputeraden Bumay inte...
+                
+            </td>
+            
+            <td><a href="/event/1995/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>1996</td>
+            
+            <td>
+                
+                Med Äet moraliska inflytande hvarom Stempler talade kunde man föga uträtta i kri...
+                
+            </td>
+            
+            <td><a href="/event/1996/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>1997</td>
+            
+            <td>
+                
+                Vid ett i går i Sundsvall hållet, af 700 personer besökt folkmöte antogs enhälli...
+                
+            </td>
+            
+            <td><a href="/event/1997/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>1998</td>
+            
+            <td>
+                
+                Opinionsmöte med anledning af den påtänkta munkorgslagen hade i torsdagg anordna...
+                
+            </td>
+            
+            <td><a href="/event/1998/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>1999</td>
+            
+            <td>
+                
+                I referatet öfver Karlskrona arbetares majdemonstration berättade den att ett kn...
+                
+            </td>
+            
+            <td><a href="/event/1999/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>2000</td>
+            
+            <td>
+                
+                Som behofvet af en fond, afsedd för hjelp vid inträffande dödsfall bland barn, s...
+                
+            </td>
+            
+            <td><a href="/event/2000/">View</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/event/">1-200</a>
+        
+    
+        
+            <a href="/event/201-400/">201-400</a>
+        
+    
+        
+            <a href="/event/401-600/">401-600</a>
+        
+    
+        
+            <a href="/event/601-800/">601-800</a>
+        
+    
+        
+            <a href="/event/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/event/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/event/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/event/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/event/1601-1800/">1601-1800</a>
+        
+    
+        
+            <span class="page-current">1801-2000</span>
+        
+    
+        
+            <a href="/event/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/event/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/event/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/event/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/event/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/event/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/event/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/event/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/event/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/event/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/event/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/event/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/event/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/event/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/event/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/event/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/event/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/event/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/event/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/event/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/event/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/event/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/event/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/event/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/event/6801-7000/">6801-7000</a>
+        
+    
+        
+            <a href="/event/7001-7200/">7001-7200</a>
+        
+    
+        
+            <a href="/event/7201-7224/">7201-7224</a>
+        
+    
+</nav>
+
+
+<script>
+// Client-side filtering with localStorage persistence
+const FILTER_KEY = 'cg-review-filters';
+
+function getFilters() {
+    try {
+        const stored = localStorage.getItem(FILTER_KEY);
+        return stored ? JSON.parse(stored) : null;
+    } catch (e) { return null; }
+}
+
+function saveFilters() {
+    const state = {};
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        state[cb.id.replace('filter-', '')] = cb.checked;
+    });
+    try { localStorage.setItem(FILTER_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function applyFilters() {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        document.querySelectorAll(`tr[data-status="${status}"]`).forEach(row => {
+            row.style.display = cb.checked ? '' : 'none';
+        });
+    });
+}
+
+// Restore saved state
+const saved = getFilters();
+if (saved) {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        if (status in saved) cb.checked = saved[status];
+    });
+}
+applyFilters();
+
+// Listen for changes
+document.querySelectorAll('.list-filters input').forEach(cb => {
+    cb.addEventListener('change', function() {
+        saveFilters();
+        applyFilters();
+    });
+});
+</script>
+
+        
+    </main>
+
+    <footer>
+        <div class="status-legend">
+            <span class="status-badge valid">Valid</span>
+            <span class="status-badge invalid">Invalid</span>
+            <span class="status-badge blocked">Blocked</span>
+            <span class="status-badge unknown">Not validated</span>
+        </div>
+        <p>Contentious Gatherings Pipeline Review</p>
+        <p class="generated-at">Site generated: 2026-02-17 17:27 UTC</p>
+    </footer>
+</body>
+</html>

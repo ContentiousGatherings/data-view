@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - CG Review</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">CG Review</a>
+            <div class="nav-links">
+                <a href="/event/">Events</a>
+                <a href="/location/">Locations</a>
+                <a href="/actor/">Actors</a>
+                <a href="/timestamp/">Timestamps</a>
+                <a href="/meetingtype/">Meeting Types</a>
+            </div>
+            <div class="nav-links">
+                <a href="/authoritativelocation/">Auth. Locations</a>
+                <a href="/authoritativeactor/">Auth. Actors</a>
+                <a href="/authoritativemeetingtype/">Auth. Types</a>
+                <a href="/authoritativeevent/">Auth. Events</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        
+<nav class="breadcrumb">
+    <a href="/">Home</a> &raquo;
+    Events
+</nav>
+
+<h1>Events</h1>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/event/">1-200</a>
+        
+    
+        
+            <a href="/event/201-400/">201-400</a>
+        
+    
+        
+            <a href="/event/401-600/">401-600</a>
+        
+    
+        
+            <a href="/event/601-800/">601-800</a>
+        
+    
+        
+            <a href="/event/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/event/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/event/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/event/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/event/1601-1800/">1601-1800</a>
+        
+    
+        
+            <a href="/event/1801-2000/">1801-2000</a>
+        
+    
+        
+            <a href="/event/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/event/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/event/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/event/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/event/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/event/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/event/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/event/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/event/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/event/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/event/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/event/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/event/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/event/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/event/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/event/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/event/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/event/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/event/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/event/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/event/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/event/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/event/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/event/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/event/6801-7000/">6801-7000</a>
+        
+    
+        
+            <a href="/event/7001-7200/">7001-7200</a>
+        
+    
+        
+            <span class="page-current">7201-7224</span>
+        
+    
+</nav>
+
+
+<div class="list-stats">
+    <span class="stat-valid">2345 valid</span>
+    <span class="stat-invalid">0 invalid</span>
+    <span class="stat-blocked">4087 blocked</span>
+    <span class="stat-unknown">792 pending</span>
+    <span class="stat-total">(7224 total)</span>
+</div>
+
+<div class="list-filters">
+    <label>
+        <input type="checkbox" id="filter-valid" checked> Show valid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-invalid" checked> Show invalid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-blocked" checked> Show blocked
+    </label>
+    <label>
+        <input type="checkbox" id="filter-unknown" checked> Show pending
+    </label>
+</div>
+
+<table class="entity-table list-table" id="entity-list">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>ID</th>
+            
+            <th>Excerpt</th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7201</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7201/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the specific meeting types listed (e.g., *folkmöte*, *strek*, *sammanträde*). It appears to be a combination of a customs-related term with the suffix *-möte* (meeting), but it does not fit the established categories for gatherings in Swedish history. The description suggests a political or civic event, but the term itself is not valid for the given classification.">
+    &#9888;
+</span>
+</td>
+            <td>7202</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7202/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7203</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7203/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types like *folkmöte*, *strek*, *sammanträde*, etc. It appears to be a combination of a customs-related term with the suffix &#39;möte&#39; (meeting), but it does not fit the established categories for historical Swedish gatherings.">
+    &#9888;
+</span>
+</td>
+            <td>7204</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7204/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7205</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7205/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; (customs meeting) does not correspond to any of the valid meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). The description suggests a political or civic gathering, but the term itself does not fit the predefined categories.">
+    &#9888;
+</span>
+</td>
+            <td>7206</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7206/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7207</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7207/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided categories. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the specific types of gatherings listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). This term is likely a specific local or administrative meeting related to customs duties rather than a broader public or political gathering.">
+    &#9888;
+</span>
+</td>
+            <td>7208</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7208/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7209</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7209/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the specific meeting types listed (e.g., *folkmöte*, *strek*, *sammanträde*). The description suggests a political or electoral gathering, but the term itself is not valid for this purpose.">
+    &#9888;
+</span>
+</td>
+            <td>7210</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7210/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7211</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7211/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; does not correspond to any of the predefined valid meeting types in Swedish history (such as *folkmöte*, *strek*, *sammanträde*, etc.). While *tull* (customs) is a recognized administrative term, *tullmöte* (customs meeting) is not a standard historical meeting type in Swedish newspapers or public gatherings. It could be a local or administrative event, but it does not fit the broader categories of public or political gatherings.">
+    &#9888;
+</span>
+</td>
+            <td>7212</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7212/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7213</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7213/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to a specific type of gathering like a *folkmöte*, *strek*, *sammanträde*, etc. It appears to be a combination of &#39;tull&#39; (customs) and &#39;möte&#39; (meeting), which does not fit the predefined valid meeting types.">
+    &#9888;
+</span>
+</td>
+            <td>7214</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7214/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7215</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7215/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). This term does not clearly refer to a specific type of gathering in the context of Swedish history or public events.">
+    &#9888;
+</span>
+</td>
+            <td>7216</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7216/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7217</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7217/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types like *folkmöte*, *strek*, *sammanträde*, etc. It appears to be a combination of a customs-related term with the word &#39;möte&#39; (meeting), but it does not fit the specific types listed for valid gatherings.">
+    &#9888;
+</span>
+</td>
+            <td>7218</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7218/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7219</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7219/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided categories. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the specific meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). This term does not clearly refer to a public or political gathering but rather a customs-related event or meeting.">
+    &#9888;
+</span>
+</td>
+            <td>7220</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7220/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7221</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7221/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types like *folkmöte*, *strek*, *sammanträde*, etc. It seems to refer to a **customs meeting** or a gathering related to customs administration, which does not fit the broader categories of public gatherings or political events listed in your criteria.">
+    &#9888;
+</span>
+</td>
+            <td>7222</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7222/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7223</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7223/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types like *folkmöte*, *strek*, *demonstration*, or *sammanträde*. It appears to be a combination of a specific administrative term (&#39;tull&#39;) with a meeting (&#39;möte&#39;), which does not fit the predefined categories for this analysis.">
+    &#9888;
+</span>
+</td>
+            <td>7224</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7224/">View</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/event/">1-200</a>
+        
+    
+        
+            <a href="/event/201-400/">201-400</a>
+        
+    
+        
+            <a href="/event/401-600/">401-600</a>
+        
+    
+        
+            <a href="/event/601-800/">601-800</a>
+        
+    
+        
+            <a href="/event/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/event/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/event/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/event/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/event/1601-1800/">1601-1800</a>
+        
+    
+        
+            <a href="/event/1801-2000/">1801-2000</a>
+        
+    
+        
+            <a href="/event/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/event/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/event/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/event/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/event/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/event/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/event/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/event/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/event/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/event/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/event/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/event/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/event/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/event/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/event/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/event/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/event/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/event/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/event/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/event/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/event/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/event/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/event/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/event/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/event/6801-7000/">6801-7000</a>
+        
+    
+        
+            <a href="/event/7001-7200/">7001-7200</a>
+        
+    
+        
+            <span class="page-current">7201-7224</span>
+        
+    
+</nav>
+
+
+<script>
+// Client-side filtering with localStorage persistence
+const FILTER_KEY = 'cg-review-filters';
+
+function getFilters() {
+    try {
+        const stored = localStorage.getItem(FILTER_KEY);
+        return stored ? JSON.parse(stored) : null;
+    } catch (e) { return null; }
+}
+
+function saveFilters() {
+    const state = {};
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        state[cb.id.replace('filter-', '')] = cb.checked;
+    });
+    try { localStorage.setItem(FILTER_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function applyFilters() {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        document.querySelectorAll(`tr[data-status="${status}"]`).forEach(row => {
+            row.style.display = cb.checked ? '' : 'none';
+        });
+    });
+}
+
+// Restore saved state
+const saved = getFilters();
+if (saved) {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        if (status in saved) cb.checked = saved[status];
+    });
+}
+applyFilters();
+
+// Listen for changes
+document.querySelectorAll('.list-filters input').forEach(cb => {
+    cb.addEventListener('change', function() {
+        saveFilters();
+        applyFilters();
+    });
+});
+</script>
+
+        
+    </main>
+
+    <footer>
+        <div class="status-legend">
+            <span class="status-badge valid">Valid</span>
+            <span class="status-badge invalid">Invalid</span>
+            <span class="status-badge blocked">Blocked</span>
+            <span class="status-badge unknown">Not validated</span>
+        </div>
+        <p>Contentious Gatherings Pipeline Review</p>
+        <p class="generated-at">Site generated: 2026-02-17 17:27 UTC</p>
+    </footer>
+</body>
+</html>

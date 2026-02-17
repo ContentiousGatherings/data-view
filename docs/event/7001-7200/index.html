@@ -1,0 +1,4247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - CG Review</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="nav-brand">CG Review</a>
+            <div class="nav-links">
+                <a href="/event/">Events</a>
+                <a href="/location/">Locations</a>
+                <a href="/actor/">Actors</a>
+                <a href="/timestamp/">Timestamps</a>
+                <a href="/meetingtype/">Meeting Types</a>
+            </div>
+            <div class="nav-links">
+                <a href="/authoritativelocation/">Auth. Locations</a>
+                <a href="/authoritativeactor/">Auth. Actors</a>
+                <a href="/authoritativemeetingtype/">Auth. Types</a>
+                <a href="/authoritativeevent/">Auth. Events</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        
+<nav class="breadcrumb">
+    <a href="/">Home</a> &raquo;
+    Events
+</nav>
+
+<h1>Events</h1>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/event/">1-200</a>
+        
+    
+        
+            <a href="/event/201-400/">201-400</a>
+        
+    
+        
+            <a href="/event/401-600/">401-600</a>
+        
+    
+        
+            <a href="/event/601-800/">601-800</a>
+        
+    
+        
+            <a href="/event/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/event/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/event/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/event/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/event/1601-1800/">1601-1800</a>
+        
+    
+        
+            <a href="/event/1801-2000/">1801-2000</a>
+        
+    
+        
+            <a href="/event/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/event/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/event/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/event/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/event/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/event/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/event/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/event/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/event/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/event/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/event/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/event/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/event/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/event/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/event/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/event/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/event/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/event/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/event/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/event/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/event/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/event/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/event/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/event/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/event/6801-7000/">6801-7000</a>
+        
+    
+        
+            <span class="page-current">7001-7200</span>
+        
+    
+        
+            <a href="/event/7201-7224/">7201-7224</a>
+        
+    
+</nav>
+
+
+<div class="list-stats">
+    <span class="stat-valid">2345 valid</span>
+    <span class="stat-invalid">0 invalid</span>
+    <span class="stat-blocked">4087 blocked</span>
+    <span class="stat-unknown">792 pending</span>
+    <span class="stat-total">(7224 total)</span>
+</div>
+
+<div class="list-filters">
+    <label>
+        <input type="checkbox" id="filter-valid" checked> Show valid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-invalid" checked> Show invalid
+    </label>
+    <label>
+        <input type="checkbox" id="filter-blocked" checked> Show blocked
+    </label>
+    <label>
+        <input type="checkbox" id="filter-unknown" checked> Show pending
+    </label>
+</div>
+
+<table class="entity-table list-table" id="entity-list">
+    <thead>
+        <tr>
+            <th>Status</th>
+            <th>ID</th>
+            
+            <th>Excerpt</th>
+            
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may hold meetings (as indicated by &#39;möte&#39;), it does not directly classify as one of the predefined valid meeting types like *folkmöte*, *strike*, *demonstration*, etc. The description &#39;möte&#39; (meeting) alone is insufficient to categorize this as a distinct meeting type in the context of historical Swedish newspapers.">
+    &#9888;
+</span>
+</td>
+            <td>7001</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7001/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization (a club or association), not a specific type of gathering or meeting. While it may host meetings, it does not inherently describe the type of meeting itself. The description &#39;möte&#39; (meeting) is too generic and does not fit the criteria of a specific meeting type like *folkmöte*, *strike*, or *demonstration*. Thus, this combination does not qualify as a valid meeting type for your classification.">
+    &#9888;
+</span>
+</td>
+            <td>7002</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7002/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of gathering or meeting. While it may host meetings (as indicated by &#39;möte&#39;), it does not inherently classify as one of the predefined valid meeting types like *folkmöte*, *strike*, *demonstration*, or *sammanträde*. The description &#39;möte&#39; (meeting) is correct but insufficient to classify this as a distinct meeting type in the context of historical Swedish newspapers.">
+    &#9888;
+</span>
+</td>
+            <td>7003</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7003/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth association or club, not a specific type of gathering or meeting type. While it may organize meetings (&#39;möte&#39;), it does not itself denote a formal meeting type like *folkmöte*, *strek*, or *sammanträde*. The description &#39;möte&#39; (meeting) is generic and does not qualify as a distinct meeting type.">
+    &#9888;
+</span>
+</td>
+            <td>7004</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7004/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may host meetings (as indicated by &#39;möte&#39;), it does not directly describe the type of meeting itself. The name alone does not fit into the predefined valid meeting types like *folkmöte*, *strek*, *sammanträde*, etc. The description &#39;möte&#39; (meeting) is too generic and does not specify a distinct type of gathering.">
+    &#9888;
+</span>
+</td>
+            <td>7005</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7005/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth association or club, not a specific type of meeting gathering. While it may organize meetings (as indicated by &#39;möte&#39;), it does not inherently describe the *type* of meeting itself. Valid meeting types should explicitly denote the nature of the gathering (e.g., *folkmöte*, *strike*, *demonstration*). Since this is a broader organizational name rather than a meeting type name, it does not fit the criteria for a valid meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>7006</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7006/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may host meetings (as indicated by &#39;möte&#39;), it does not inherently describe the *type* of meeting itself. The term does not fit into the predefined valid meeting types like *folkmöte*, *strek*, *demonstration*, etc., as it is a broader organizational context rather than a specific meeting event type.">
+    &#9888;
+</span>
+</td>
+            <td>7007</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7007/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may hold meetings (as indicated by &#39;möte&#39;), it does not inherently describe a *type* of meeting like *folkmöte*, *strike*, or *demonstration*. The term alone is not a recognized meeting type in the context of historical Swedish newspapers for this classification.">
+    &#9888;
+</span>
+</td>
+            <td>7008</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7008/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may hold meetings (as indicated by &#39;möte&#39;), it does not inherently describe a *type* of meeting like &#39;folkmöte&#39;, &#39;strike&#39;, or &#39;demonstration&#39;. The description &#39;möte&#39; alone is too generic and does not fit the criteria for a valid meeting type in this context.">
+    &#9888;
+</span>
+</td>
+            <td>7009</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7009/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may host meetings (as indicated by &#39;möte&#39;), it does not inherently describe the type of meeting itself. Valid meeting types should explicitly denote the nature of the gathering (e.g., *folkmöte*, *strike*, *demonstration*).">
+    &#9888;
+</span>
+</td>
+            <td>7010</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7010/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth association or club, not a specific type of meeting gathering. While it may organize meetings (&#39;möte&#39;), it does not inherently describe the type of meeting itself. The description &#39;möte&#39; (meeting) is too generic and does not fit the criteria for a valid meeting type name in the context of historical Swedish newspapers.">
+    &#9888;
+</span>
+</td>
+            <td>7011</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7011/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Ungdomsföreningen&#39; refers to a youth organization or association, not a specific type of meeting gathering. While it may host meetings (&#39;möte&#39;), the name itself does not classify as a recognized meeting type like *folkmöte*, *strike*, or *demonstration*. The description &#39;möte&#39; (meeting) is generic and does not specify a distinct event type.">
+    &#9888;
+</span>
+</td>
+            <td>7012</td>
+            
+            <td>
+                
+                Ungdomsföreningen håller möte i morgon f. m. där ett föredrag ska hållas av en u...
+                
+            </td>
+            
+            <td><a href="/event/7012/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7013</td>
+            
+            <td>
+                
+                Folkmötet i Broby var besökt af omkring 150 personer från skiljda trakter af Öst...
+                
+            </td>
+            
+            <td><a href="/event/7013/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7014</td>
+            
+            <td>
+                
+                Järnvägsmötet i Härnösand var besökt av omkring 100 personer från olika delar av...
+                
+            </td>
+            
+            <td><a href="/event/7014/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7015</td>
+            
+            <td>
+                
+                Folkmötet vid Flen
+                
+            </td>
+            
+            <td><a href="/event/7015/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7016</td>
+            
+            <td>
+                
+                Svenska i murareförbundets avd. i Malmö beslöt vid möte den 28 dennes till de ut...
+                
+            </td>
+            
+            <td><a href="/event/7016/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7017</td>
+            
+            <td>
+                
+                Kågeröds lantarbetereavdelmng har beslutet en uttaxering av 1 kr. pr månad och m...
+                
+            </td>
+            
+            <td><a href="/event/7017/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7018</td>
+            
+            <td>
+                
+                Åhus kvinnliga diskussionsklubb hade sitt ord. möte den 27 april och beslöt klub...
+                
+            </td>
+            
+            <td><a href="/event/7018/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7019</td>
+            
+            <td>
+                
+                Klubben håller sitt nästa Ordinarie möte lördagen den li maj, då nya medlemmar v...
+                
+            </td>
+            
+            <td><a href="/event/7019/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7020</td>
+            
+            <td>
+                
+                Två röda fanor blevo i lördagskväll samtidigt invigda i Folkets hus i Trelleborg...
+                
+            </td>
+            
+            <td><a href="/event/7020/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7021</td>
+            
+            <td>
+                
+                Grov a rbetarefack fären ingen i Bromölla invigde i går kväll sitt nya fälttecke...
+                
+            </td>
+            
+            <td><a href="/event/7021/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7022</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö invigde sitt nya fälttecken.
+                
+            </td>
+            
+            <td><a href="/event/7022/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7023</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 11 ma...
+                
+            </td>
+            
+            <td><a href="/event/7023/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7024</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 18 ma...
+                
+            </td>
+            
+            <td><a href="/event/7024/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7025</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 25 ma...
+                
+            </td>
+            
+            <td><a href="/event/7025/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7026</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 1 jun...
+                
+            </td>
+            
+            <td><a href="/event/7026/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7027</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 8 jun...
+                
+            </td>
+            
+            <td><a href="/event/7027/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7028</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 15 ju...
+                
+            </td>
+            
+            <td><a href="/event/7028/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7029</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 22 ju...
+                
+            </td>
+            
+            <td><a href="/event/7029/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7030</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 29 ju...
+                
+            </td>
+            
+            <td><a href="/event/7030/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7031</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 6 jul...
+                
+            </td>
+            
+            <td><a href="/event/7031/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7032</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 13 ju...
+                
+            </td>
+            
+            <td><a href="/event/7032/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7033</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 20 ju...
+                
+            </td>
+            
+            <td><a href="/event/7033/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7034</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 27 ju...
+                
+            </td>
+            
+            <td><a href="/event/7034/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7035</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 3 aug...
+                
+            </td>
+            
+            <td><a href="/event/7035/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7036</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 10 au...
+                
+            </td>
+            
+            <td><a href="/event/7036/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7037</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 17 au...
+                
+            </td>
+            
+            <td><a href="/event/7037/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7038</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 24 au...
+                
+            </td>
+            
+            <td><a href="/event/7038/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7039</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 31 au...
+                
+            </td>
+            
+            <td><a href="/event/7039/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7040</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 7 sep...
+                
+            </td>
+            
+            <td><a href="/event/7040/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7041</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 14 se...
+                
+            </td>
+            
+            <td><a href="/event/7041/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7042</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 21 se...
+                
+            </td>
+            
+            <td><a href="/event/7042/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7043</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 28 se...
+                
+            </td>
+            
+            <td><a href="/event/7043/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7044</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 5 okt...
+                
+            </td>
+            
+            <td><a href="/event/7044/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7045</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 12 ok...
+                
+            </td>
+            
+            <td><a href="/event/7045/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7046</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 19 ok...
+                
+            </td>
+            
+            <td><a href="/event/7046/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7047</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 26 ok...
+                
+            </td>
+            
+            <td><a href="/event/7047/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7048</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 2 nov...
+                
+            </td>
+            
+            <td><a href="/event/7048/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7049</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 9 nov...
+                
+            </td>
+            
+            <td><a href="/event/7049/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7050</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 16 no...
+                
+            </td>
+            
+            <td><a href="/event/7050/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7051</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 23 no...
+                
+            </td>
+            
+            <td><a href="/event/7051/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7052</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 30 no...
+                
+            </td>
+            
+            <td><a href="/event/7052/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7053</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 7 dec...
+                
+            </td>
+            
+            <td><a href="/event/7053/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7054</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 14 de...
+                
+            </td>
+            
+            <td><a href="/event/7054/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7055</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 21 de...
+                
+            </td>
+            
+            <td><a href="/event/7055/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7056</td>
+            
+            <td>
+                
+                Maskin och metallarbetarefackföreningen i Malmö håller sitt nästa möte den 28 de...
+                
+            </td>
+            
+            <td><a href="/event/7056/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7057</td>
+            
+            <td>
+                
+                nordiska konstnärsmötet i Göteborg
+                
+            </td>
+            
+            <td><a href="/event/7057/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7058</td>
+            
+            <td>
+                
+                nordiska studenttåget till Kristiania
+                
+            </td>
+            
+            <td><a href="/event/7058/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7059</td>
+            
+            <td>
+                
+                arbetareförhandlingarne i Kristiania
+                
+            </td>
+            
+            <td><a href="/event/7059/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7060</td>
+            
+            <td>
+                
+                nordiska folkmötet Hilleröd
+                
+            </td>
+            
+            <td><a href="/event/7060/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7061</td>
+            
+            <td>
+                
+                landtbruksmötet i Kjöbenhavn
+                
+            </td>
+            
+            <td><a href="/event/7061/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7062</td>
+            
+            <td>
+                
+                skan dinavisk kappsegling och kapprodd i Sundet
+                
+            </td>
+            
+            <td><a href="/event/7062/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7063</td>
+            
+            <td>
+                
+                nordiska rättskrifningsmötet i Stockholm
+                
+            </td>
+            
+            <td><a href="/event/7063/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): location invalid, timestamp invalid">
+    &#9888;
+</span>
+</td>
+            <td>7064</td>
+            
+            <td>
+                
+                fornforskaremötet i Kjöbenhavn
+                
+            </td>
+            
+            <td><a href="/event/7064/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (0/3 valid): location invalid, timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7065</td>
+            
+            <td>
+                
+                skjutfesten i Horsens
+                
+            </td>
+            
+            <td><a href="/event/7065/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7066</td>
+            
+            <td>
+                
+                Kristinehamn 29 januari. Arbetareföreningen och äfven personer utom den samma. B...
+                
+            </td>
+            
+            <td><a href="/event/7066/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7067</td>
+            
+            <td>
+                
+                Mellerud 1 februari. Mötet beslöt: allmän folkbeväpning och indelningsverkets up...
+                
+            </td>
+            
+            <td><a href="/event/7067/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7068</td>
+            
+            <td>
+                
+                Hudiksvalls folkmöte (i början af februari) uttalade sig för indelningsverkets b...
+                
+            </td>
+            
+            <td><a href="/event/7068/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7069</td>
+            
+            <td>
+                
+                Piteå stad 12 februari. Stadsinvånarne. Talrikt besökt. Ansåg försvaret otillräc...
+                
+            </td>
+            
+            <td><a href="/event/7069/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7070</td>
+            
+            <td>
+                
+                Hemsjö landtbruksklubb 14 februari, med riksdagsmannen Anders Andersson i Ingare...
+                
+            </td>
+            
+            <td><a href="/event/7070/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7071</td>
+            
+            <td>
+                
+                Det av kommittén utlysta allmänna sammanträdet ägde i går middags rum i Helsingb...
+                
+            </td>
+            
+            <td><a href="/event/7071/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7072</td>
+            
+            <td>
+                
+                Kiruna arbetare hade i söndags middag anordnat demonstrationståg med 6 fanor och...
+                
+            </td>
+            
+            <td><a href="/event/7072/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7073</td>
+            
+            <td>
+                
+                Protestmöte mot demonstrationåtalen i Eskilstuna. I torsdags hölls i Eskilstuna ...
+                
+            </td>
+            
+            <td><a href="/event/7073/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7074</td>
+            
+            <td>
+                
+                Stort politiskt möte i Eskilstuna. I söndags hölls i Eskilstuna ett stort politi...
+                
+            </td>
+            
+            <td><a href="/event/7074/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7075</td>
+            
+            <td>
+                
+                Stort möte i Stockholm. I söndags hölls i Stockholm ett stort möte, där talade H...
+                
+            </td>
+            
+            <td><a href="/event/7075/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7076</td>
+            
+            <td>
+                
+                Stort möte i Göteborg. I söndags hölls i Göteborg ett stort möte, där talade Hr ...
+                
+            </td>
+            
+            <td><a href="/event/7076/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7077</td>
+            
+            <td>
+                
+                Stort möte i Malmö. I söndags hölls i Malmö ett stort möte, där talade Hr Branti...
+                
+            </td>
+            
+            <td><a href="/event/7077/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term *&#39;Frihandelsvänligt möte&#39;* is not a recognized historical Swedish meeting type in the predefined list. While *&#39;möte&#39;* (meeting) is valid, the prefix *&#39;frihandelsvänligt&#39;* (pro-free trade) does not correspond to any specific meeting type like *folkmöte*, *strike*, or *demonstration*. The description suggests a general discussion, but the name itself does not fit any of the valid categories.">
+    &#9888;
+</span>
+</td>
+            <td>7078</td>
+            
+            <td>
+                
+                Varberg, torsdagen den 24 mars. Härstädes i afton hållet frihandelsvänligt möte,...
+                
+            </td>
+            
+            <td><a href="/event/7078/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7079</td>
+            
+            <td>
+                
+                Ystad, torsdagen den 24 mars. I går hölls ett valmöte i Brösarp, Allbo härad, be...
+                
+            </td>
+            
+            <td><a href="/event/7079/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7080</td>
+            
+            <td>
+                
+                Lidköping, torsdagen den 24 mars. Gårdagens valmansmöte härstädes uppstälde till...
+                
+            </td>
+            
+            <td><a href="/event/7080/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7081</td>
+            
+            <td>
+                
+                Vimmerby, torsdagen den 24 mars. Vimmerby stads röstberättigade invånare äro af ...
+                
+            </td>
+            
+            <td><a href="/event/7081/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullval möte&#39; is not a recognized historical Swedish meeting type in the context of the provided valid categories. While &#39;tullval&#39; (customs election) may refer to a specific administrative or electoral process, it does not directly correspond to a well-defined type of public gathering like *folkmöte*, *sammanträde*, or *demonstration*. The term is too specific and administrative in nature for inclusion in the list of common meeting types.">
+    &#9888;
+</span>
+</td>
+            <td>7082</td>
+            
+            <td>
+                
+                Sköfde, torsdagen den 24 mars. Tullval mötet i Moholm har uppställt protektionis...
+                
+            </td>
+            
+            <td><a href="/event/7082/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7083</td>
+            
+            <td>
+                
+                Helsingborg, torsdagen den 24 mars. Ett förberedande valmöte är utlyst till näst...
+                
+            </td>
+            
+            <td><a href="/event/7083/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7084</td>
+            
+            <td>
+                
+                Karlskrona, torsdagen den 24 mars. Flottans kårer ooh stater äro anmodade att sa...
+                
+            </td>
+            
+            <td><a href="/event/7084/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7085</td>
+            
+            <td>
+                
+                Nyligen har man sett en mäktig arbetschef vid Norberg spela förmyndare i fråga o...
+                
+            </td>
+            
+            <td><a href="/event/7085/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7086</td>
+            
+            <td>
+                
+                Ett större valmöte med deltagare från samtliga socknar inom Medelpads vestra dom...
+                
+            </td>
+            
+            <td><a href="/event/7086/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7087</td>
+            
+            <td>
+                
+                Förberedande valmöte för Södra Helsinglands Östra tingslags valkrets hölls i går...
+                
+            </td>
+            
+            <td><a href="/event/7087/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7088</td>
+            
+            <td>
+                
+                I Sorunda hölls i går ett af ett hundratal röstberättigade valmän besökt möte, h...
+                
+            </td>
+            
+            <td><a href="/event/7088/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7089</td>
+            
+            <td>
+                
+                Riksdagsman W. Bengtsson i Häradsköp har på två valmöten i Skillingaryd och Vern...
+                
+            </td>
+            
+            <td><a href="/event/7089/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7090</td>
+            
+            <td>
+                
+                Ett högermöte i Visby.
+                
+            </td>
+            
+            <td><a href="/event/7090/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7091</td>
+            
+            <td>
+                
+                Ett högermöte i Stockholm.
+                
+            </td>
+            
+            <td><a href="/event/7091/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7092</td>
+            
+            <td>
+                
+                Ett högermöte i Göteborg.
+                
+            </td>
+            
+            <td><a href="/event/7092/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7093</td>
+            
+            <td>
+                
+                Ett högermöte i Malmö.
+                
+            </td>
+            
+            <td><a href="/event/7093/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7094</td>
+            
+            <td>
+                
+                Ett högermöte i Norrköping.
+                
+            </td>
+            
+            <td><a href="/event/7094/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7095</td>
+            
+            <td>
+                
+                Ett högermöte i Linköping.
+                
+            </td>
+            
+            <td><a href="/event/7095/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7096</td>
+            
+            <td>
+                
+                Ett högermöte i Helsingborg.
+                
+            </td>
+            
+            <td><a href="/event/7096/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7097</td>
+            
+            <td>
+                
+                Ett högermöte i Jönköping.
+                
+            </td>
+            
+            <td><a href="/event/7097/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7098</td>
+            
+            <td>
+                
+                Ett högermöte i Umeå.
+                
+            </td>
+            
+            <td><a href="/event/7098/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7099</td>
+            
+            <td>
+                
+                Ett högermöte i Luleå.
+                
+            </td>
+            
+            <td><a href="/event/7099/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7100</td>
+            
+            <td>
+                
+                Ett högermöte i Östersund.
+                
+            </td>
+            
+            <td><a href="/event/7100/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7101</td>
+            
+            <td>
+                
+                Ett högermöte i Karlstad.
+                
+            </td>
+            
+            <td><a href="/event/7101/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7102</td>
+            
+            <td>
+                
+                Ett högermöte i Falun.
+                
+            </td>
+            
+            <td><a href="/event/7102/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7103</td>
+            
+            <td>
+                
+                Ett högermöte i Borlänge.
+                
+            </td>
+            
+            <td><a href="/event/7103/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7104</td>
+            
+            <td>
+                
+                Ett högermöte i Gävle.
+                
+            </td>
+            
+            <td><a href="/event/7104/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7105</td>
+            
+            <td>
+                
+                Ett högermöte i Hudiksvall.
+                
+            </td>
+            
+            <td><a href="/event/7105/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7106</td>
+            
+            <td>
+                
+                Ett högermöte i Söderhamn.
+                
+            </td>
+            
+            <td><a href="/event/7106/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7107</td>
+            
+            <td>
+                
+                Ett högermöte i Härnösand.
+                
+            </td>
+            
+            <td><a href="/event/7107/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7108</td>
+            
+            <td>
+                
+                Ett högermöte i Sundsvall.
+                
+            </td>
+            
+            <td><a href="/event/7108/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7109</td>
+            
+            <td>
+                
+                Ett högermöte i Timrå.
+                
+            </td>
+            
+            <td><a href="/event/7109/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7110</td>
+            
+            <td>
+                
+                Ett högermöte i Ånge.
+                
+            </td>
+            
+            <td><a href="/event/7110/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7111</td>
+            
+            <td>
+                
+                Ett högermöte i Örnsköldsvik.
+                
+            </td>
+            
+            <td><a href="/event/7111/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7112</td>
+            
+            <td>
+                
+                Ett högermöte i Umeå.
+                
+            </td>
+            
+            <td><a href="/event/7112/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7113</td>
+            
+            <td>
+                
+                Ett högermöte i Skellefteå.
+                
+            </td>
+            
+            <td><a href="/event/7113/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7114</td>
+            
+            <td>
+                
+                Ett högermöte i Piteå.
+                
+            </td>
+            
+            <td><a href="/event/7114/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7115</td>
+            
+            <td>
+                
+                Ett högermöte i Luleå.
+                
+            </td>
+            
+            <td><a href="/event/7115/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7116</td>
+            
+            <td>
+                
+                Ett högermöte i Kiruna.
+                
+            </td>
+            
+            <td><a href="/event/7116/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7117</td>
+            
+            <td>
+                
+                Ett högermöte i Kalix.
+                
+            </td>
+            
+            <td><a href="/event/7117/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7118</td>
+            
+            <td>
+                
+                Ett högermöte i Haparanda.
+                
+            </td>
+            
+            <td><a href="/event/7118/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7119</td>
+            
+            <td>
+                
+                Ett högermöte i Gällivare.
+                
+            </td>
+            
+            <td><a href="/event/7119/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7120</td>
+            
+            <td>
+                
+                Ett högermöte i Boden.
+                
+            </td>
+            
+            <td><a href="/event/7120/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7121</td>
+            
+            <td>
+                
+                Ett högermöte i Arvidsjaur.
+                
+            </td>
+            
+            <td><a href="/event/7121/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7122</td>
+            
+            <td>
+                
+                Ett högermöte i Arjeplog.
+                
+            </td>
+            
+            <td><a href="/event/7122/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7123</td>
+            
+            <td>
+                
+                Ett högermöte i Älvsbyn.
+                
+            </td>
+            
+            <td><a href="/event/7123/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7124</td>
+            
+            <td>
+                
+                Ett högermöte i Östersund.
+                
+            </td>
+            
+            <td><a href="/event/7124/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7125</td>
+            
+            <td>
+                
+                Ett högermöte i Umeå.
+                
+            </td>
+            
+            <td><a href="/event/7125/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7126</td>
+            
+            <td>
+                
+                Ett högermöte i Sundsvall.
+                
+            </td>
+            
+            <td><a href="/event/7126/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7127</td>
+            
+            <td>
+                
+                Ett högermöte i Skellefteå.
+                
+            </td>
+            
+            <td><a href="/event/7127/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7128</td>
+            
+            <td>
+                
+                Ett högermöte i Söderhamn.
+                
+            </td>
+            
+            <td><a href="/event/7128/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7129</td>
+            
+            <td>
+                
+                Ett högermöte i Sollefteå.
+                
+            </td>
+            
+            <td><a href="/event/7129/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7130</td>
+            
+            <td>
+                
+                Ett högermöte i Piteå.
+                
+            </td>
+            
+            <td><a href="/event/7130/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7131</td>
+            
+            <td>
+                
+                Ett högermöte i Östersund.
+                
+            </td>
+            
+            <td><a href="/event/7131/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7132</td>
+            
+            <td>
+                
+                Ett högermöte i Örnsköldsvik.
+                
+            </td>
+            
+            <td><a href="/event/7132/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7133</td>
+            
+            <td>
+                
+                Ett högermöte i Örebro.
+                
+            </td>
+            
+            <td><a href="/event/7133/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7134</td>
+            
+            <td>
+                
+                Ett högermöte i Österåker.
+                
+            </td>
+            
+            <td><a href="/event/7134/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7135</td>
+            
+            <td>
+                
+                Ett högermöte i Östhammar.
+                
+            </td>
+            
+            <td><a href="/event/7135/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7136</td>
+            
+            <td>
+                
+                Ett högermöte i Ödeshögs kommun.
+                
+            </td>
+            
+            <td><a href="/event/7136/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7137</td>
+            
+            <td>
+                
+                Ett högermöte i Överkalix.
+                
+            </td>
+            
+            <td><a href="/event/7137/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="QC failed (1/3 valid): timestamp invalid, no valid actors">
+    &#9888;
+</span>
+</td>
+            <td>7138</td>
+            
+            <td>
+                
+                Ett högermöte i Överträd.
+                
+            </td>
+            
+            <td><a href="/event/7138/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7139</td>
+            
+            <td>
+                
+                Ett högermöte i Överum.
+                
+            </td>
+            
+            <td><a href="/event/7139/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7140</td>
+            
+            <td>
+                
+                Ett högermöte i Öxnehaga.
+                
+            </td>
+            
+            <td><a href="/event/7140/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7141</td>
+            
+            <td>
+                
+                Ett högermöte i Åby.
+                
+            </td>
+            
+            <td><a href="/event/7141/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7142</td>
+            
+            <td>
+                
+                Ett högermöte i Ådalen.
+                
+            </td>
+            
+            <td><a href="/event/7142/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7143</td>
+            
+            <td>
+                
+                Ett högermöte i Åkers styckebruk.
+                
+            </td>
+            
+            <td><a href="/event/7143/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7144</td>
+            
+            <td>
+                
+                Ett högermöte i Åkersberga.
+                
+            </td>
+            
+            <td><a href="/event/7144/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7145</td>
+            
+            <td>
+                
+                Ett högermöte i Åland.
+                
+            </td>
+            
+            <td><a href="/event/7145/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7146</td>
+            
+            <td>
+                
+                Ett högermöte i Åmål.
+                
+            </td>
+            
+            <td><a href="/event/7146/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7147</td>
+            
+            <td>
+                
+                Ett högermöte i Ångermanland.
+                
+            </td>
+            
+            <td><a href="/event/7147/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7148</td>
+            
+            <td>
+                
+                Ett högermöte i Åre.
+                
+            </td>
+            
+            <td><a href="/event/7148/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7149</td>
+            
+            <td>
+                
+                Ett högermöte i Östersund.
+                
+            </td>
+            
+            <td><a href="/event/7149/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7150</td>
+            
+            <td>
+                
+                Ett högermöte i Östergötland.
+                
+            </td>
+            
+            <td><a href="/event/7150/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7151</td>
+            
+            <td>
+                
+                Ett högermöte i Örebro.
+                
+            </td>
+            
+            <td><a href="/event/7151/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7152</td>
+            
+            <td>
+                
+                Ett högermöte i Örnsköldsvik.
+                
+            </td>
+            
+            <td><a href="/event/7152/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-unknown" data-status="unknown">
+            <td>
+
+<span class="mini-status unknown" title="unknown">
+    ?
+</span>
+</td>
+            <td>7153</td>
+            
+            <td>
+                
+                Ett högermöte i Östersjöområdet.
+                
+            </td>
+            
+            <td><a href="/event/7153/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7154</td>
+            
+            <td>
+                
+                Å det af Arbetareföreningens styrelse anordnade valmötet i går uppstäldes samtli...
+                
+            </td>
+            
+            <td><a href="/event/7154/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7155</td>
+            
+            <td>
+                
+                I dag lördag har iållits ett valmöte i Söderhamn, bovistadt af 600—700 personer.
+                
+            </td>
+            
+            <td><a href="/event/7155/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7156</td>
+            
+            <td>
+                
+                Vid i dag å hotell Vega hållot, talrikt besökt folkmöte, hvarvid frågan om spanm...
+                
+            </td>
+            
+            <td><a href="/event/7156/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7157</td>
+            
+            <td>
+                
+                Ombud från 25 socknar i Södra Vadsbo hafva bestämt löjtnant Bergendahl till prot...
+                
+            </td>
+            
+            <td><a href="/event/7157/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7158</td>
+            
+            <td>
+                
+                Vid ett talrikt besökt valmöte för Olme, Visnums och Väse härad har f. riksdagsm...
+                
+            </td>
+            
+            <td><a href="/event/7158/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types you listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). The term is not a standard or widely recognized type of gathering in Swedish history for political, social, or labor purposes.">
+    &#9888;
+</span>
+</td>
+            <td>7159</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7159/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; (customs meeting) does not correspond to any of the valid meeting types listed (folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet, etc.). It does not fit the criteria for a public meeting, demonstration, or celebration.">
+    &#9888;
+</span>
+</td>
+            <td>7160</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7160/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7161</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7161/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any specific type of gathering like a *folkmöte*, *sammanträde*, or *demonstration*. The term is not standard for a public meeting or organized event in Swedish history.">
+    &#9888;
+</span>
+</td>
+            <td>7162</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7162/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7163</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7163/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to a specific type of gathering like a *folkmöte*, *strek*, *sammanträde*, etc. The description suggests a political or civic assembly, but the term itself is not a valid meeting type in this classification.">
+    &#9888;
+</span>
+</td>
+            <td>7164</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7164/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7165</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7165/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; (customs meeting) does not correspond to any of the valid meeting types listed (folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet, etc.). The description suggests a political or civic gathering, but the term itself does not fit the predefined categories.">
+    &#9888;
+</span>
+</td>
+            <td>7166</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7166/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7167</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7167/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided valid categories. While &#39;tull&#39; (customs) is a Swedish term, &#39;Tullmöte&#39; does not correspond to any of the specific types of gatherings listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). This term does not clearly refer to a public, political, or social meeting type in the same way the other terms do.">
+    &#9888;
+</span>
+</td>
+            <td>7168</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7168/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7169</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7169/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to a specific type of gathering like a *folkmöte*, *strek*, *sammanträde*, etc. It appears to be a combination of &#39;tull&#39; (customs) and &#39;möte&#39; (meeting), which does not fit the predefined valid meeting types.">
+    &#9888;
+</span>
+</td>
+            <td>7170</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7170/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7171</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7171/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; (customs meeting) does not correspond to any of the valid meeting types listed (e.g., *folkmöte*, *strek*, *sammanträde*). It could be a local or administrative gathering, but it does not fit the broader categories of public gatherings or protests described in the context of Swedish newspapers from the past.">
+    &#9888;
+</span>
+</td>
+            <td>7172</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7172/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7173</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7173/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; does not correspond to any of the predefined valid meeting types in Swedish history (such as *folkmöte*, *strek*, *sammanträde*, etc.). While *tull* (customs) can imply an administrative or regulatory gathering, the term *Tullmöte* itself is not a recognized historical meeting type in Swedish newspapers or public discourse. The context (e.g., a candidate nomination) suggests it may be a local or informal event, but it does not fit the established categories.">
+    &#9888;
+</span>
+</td>
+            <td>7174</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7174/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7175</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7175/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). The term is not a standard or widely recognized type of gathering in Swedish history.">
+    &#9888;
+</span>
+</td>
+            <td>7176</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7176/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7177</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7177/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to a specific type of gathering like a *folkmöte*, *strek*, *sammanträde*, etc. The term is not a standard meeting type name in Swedish history and does not fit the criteria for validity in this analysis.">
+    &#9888;
+</span>
+</td>
+            <td>7178</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7178/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7179</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7179/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types you listed (e.g., *folkmöte*, *strek*, *sammanträde*). It appears to be a combination of *tull* (customs) and *möte* (meeting), but it does not fit the specific types you defined. This is likely a specialized or non-standard term for a customs-related gathering, not a recognized type of public or political meeting.">
+    &#9888;
+</span>
+</td>
+            <td>7180</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7180/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7181</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7181/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided valid categories. While &#39;tull&#39; (customs) is a relevant term, &#39;möte&#39; (meeting) alone does not form a standard or widely recognized meeting type in Swedish history. The description suggests a political or civic gathering related to customs administration, but it does not fit into the predefined valid categories like *folkmöte*, *strek*, *demonstration*, etc.">
+    &#9888;
+</span>
+</td>
+            <td>7182</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7182/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7183</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7183/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to a specific type of gathering like a *folkmöte*, *strek*, *sammanträde*, etc. It appears to be a combination of &#39;tull&#39; (customs) and &#39;möte&#39; (meeting), but it does not fit the predefined valid meeting types.">
+    &#9888;
+</span>
+</td>
+            <td>7184</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7184/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7185</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7185/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided valid categories. While &#39;tull&#39; (customs) is a term related to taxation and administration, &#39;Tullmöte&#39; does not correspond to any of the specific meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). It is unclear whether this refers to a customs-related administrative meeting or another type of gathering.">
+    &#9888;
+</span>
+</td>
+            <td>7186</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7186/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7187</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7187/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided valid categories. While &#39;tull&#39; (customs) is a Swedish term, &#39;Tullmöte&#39; does not correspond to any of the specific meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). It is unclear whether this refers to a customs-related gathering, a local administrative meeting, or something else, but it does not fit the predefined categories.">
+    &#9888;
+</span>
+</td>
+            <td>7188</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7188/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7189</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7189/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any of the valid meeting types listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). The term is not a standard or widely recognized type of gathering in Swedish history.">
+    &#9888;
+</span>
+</td>
+            <td>7190</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7190/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7191</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7191/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided valid categories. While &#39;tull&#39; (customs) is a relevant term, &#39;möte&#39; (meeting) alone does not form a standard or widely recognized meeting type in Swedish history. The description suggests a local political or civic gathering, but it does not fit into the predefined valid categories like *folkmöte*, *strek*, *sammanträde*, etc.">
+    &#9888;
+</span>
+</td>
+            <td>7192</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7192/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7193</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7193/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; does not correspond to any specific type of gathering like a *folkmöte*, *sammanträde*, or *demonstration*. It appears to be a combination of a customs-related term with a meeting, but it does not fit the predefined valid meeting types.">
+    &#9888;
+</span>
+</td>
+            <td>7194</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7194/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7195</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7195/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; (customs meeting) does not correspond to any of the valid meeting types listed (folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet, etc.). The description suggests a political or civic event, but the term itself does not fit the predefined categories.">
+    &#9888;
+</span>
+</td>
+            <td>7196</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7196/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7197</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7197/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list of valid meeting types. While &#39;tull&#39; (customs) is a Swedish term, &#39;Tullmöte&#39; does not correspond to any specific type of gathering like *folkmöte*, *strek*, *sammanträde*, etc. It appears to be a combination of a function (customs) and a meeting, but it does not fit the predefined categories for valid meeting types in this analysis.">
+    &#9888;
+</span>
+</td>
+            <td>7198</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7198/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-valid" data-status="valid">
+            <td>
+
+<span class="mini-status valid" title="valid">
+    &#10003;
+</span>
+</td>
+            <td>7199</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet valmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7199/">View</a></td>
+        </tr>
+        
+        
+        <tr class="row-blocked" data-status="blocked">
+            <td>
+
+<span class="mini-status blocked" title="Meeting type blacklisted: The term &#39;Tullmöte&#39; is not a recognized historical Swedish meeting type in the context of the provided list. While &#39;tull&#39; (customs) is a valid Swedish term, &#39;Tullmöte&#39; (customs meeting) does not correspond to any of the specific types of gatherings listed (e.g., folkmöte, majdemonstration, strejk, demonstration, sammanträde, högtidlighet). The term is not a standard or widely recognized meeting type in Swedish history.">
+    &#9888;
+</span>
+</td>
+            <td>7200</td>
+            
+            <td>
+                
+                Vid ett i Västervik hållet tullmöte uppställdes G. A. Bergquist som kandidat.
+                
+            </td>
+            
+            <td><a href="/event/7200/">View</a></td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+<nav class="pagination">
+    
+        
+            <a href="/event/">1-200</a>
+        
+    
+        
+            <a href="/event/201-400/">201-400</a>
+        
+    
+        
+            <a href="/event/401-600/">401-600</a>
+        
+    
+        
+            <a href="/event/601-800/">601-800</a>
+        
+    
+        
+            <a href="/event/801-1000/">801-1000</a>
+        
+    
+        
+            <a href="/event/1001-1200/">1001-1200</a>
+        
+    
+        
+            <a href="/event/1201-1400/">1201-1400</a>
+        
+    
+        
+            <a href="/event/1401-1600/">1401-1600</a>
+        
+    
+        
+            <a href="/event/1601-1800/">1601-1800</a>
+        
+    
+        
+            <a href="/event/1801-2000/">1801-2000</a>
+        
+    
+        
+            <a href="/event/2001-2200/">2001-2200</a>
+        
+    
+        
+            <a href="/event/2201-2400/">2201-2400</a>
+        
+    
+        
+            <a href="/event/2401-2600/">2401-2600</a>
+        
+    
+        
+            <a href="/event/2601-2800/">2601-2800</a>
+        
+    
+        
+            <a href="/event/2801-3000/">2801-3000</a>
+        
+    
+        
+            <a href="/event/3001-3200/">3001-3200</a>
+        
+    
+        
+            <a href="/event/3201-3400/">3201-3400</a>
+        
+    
+        
+            <a href="/event/3401-3600/">3401-3600</a>
+        
+    
+        
+            <a href="/event/3601-3800/">3601-3800</a>
+        
+    
+        
+            <a href="/event/3801-4000/">3801-4000</a>
+        
+    
+        
+            <a href="/event/4001-4200/">4001-4200</a>
+        
+    
+        
+            <a href="/event/4201-4400/">4201-4400</a>
+        
+    
+        
+            <a href="/event/4401-4600/">4401-4600</a>
+        
+    
+        
+            <a href="/event/4601-4800/">4601-4800</a>
+        
+    
+        
+            <a href="/event/4801-5000/">4801-5000</a>
+        
+    
+        
+            <a href="/event/5001-5200/">5001-5200</a>
+        
+    
+        
+            <a href="/event/5201-5400/">5201-5400</a>
+        
+    
+        
+            <a href="/event/5401-5600/">5401-5600</a>
+        
+    
+        
+            <a href="/event/5601-5800/">5601-5800</a>
+        
+    
+        
+            <a href="/event/5801-6000/">5801-6000</a>
+        
+    
+        
+            <a href="/event/6001-6200/">6001-6200</a>
+        
+    
+        
+            <a href="/event/6201-6400/">6201-6400</a>
+        
+    
+        
+            <a href="/event/6401-6600/">6401-6600</a>
+        
+    
+        
+            <a href="/event/6601-6800/">6601-6800</a>
+        
+    
+        
+            <a href="/event/6801-7000/">6801-7000</a>
+        
+    
+        
+            <span class="page-current">7001-7200</span>
+        
+    
+        
+            <a href="/event/7201-7224/">7201-7224</a>
+        
+    
+</nav>
+
+
+<script>
+// Client-side filtering with localStorage persistence
+const FILTER_KEY = 'cg-review-filters';
+
+function getFilters() {
+    try {
+        const stored = localStorage.getItem(FILTER_KEY);
+        return stored ? JSON.parse(stored) : null;
+    } catch (e) { return null; }
+}
+
+function saveFilters() {
+    const state = {};
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        state[cb.id.replace('filter-', '')] = cb.checked;
+    });
+    try { localStorage.setItem(FILTER_KEY, JSON.stringify(state)); } catch (e) {}
+}
+
+function applyFilters() {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        document.querySelectorAll(`tr[data-status="${status}"]`).forEach(row => {
+            row.style.display = cb.checked ? '' : 'none';
+        });
+    });
+}
+
+// Restore saved state
+const saved = getFilters();
+if (saved) {
+    document.querySelectorAll('.list-filters input').forEach(cb => {
+        const status = cb.id.replace('filter-', '');
+        if (status in saved) cb.checked = saved[status];
+    });
+}
+applyFilters();
+
+// Listen for changes
+document.querySelectorAll('.list-filters input').forEach(cb => {
+    cb.addEventListener('change', function() {
+        saveFilters();
+        applyFilters();
+    });
+});
+</script>
+
+        
+    </main>
+
+    <footer>
+        <div class="status-legend">
+            <span class="status-badge valid">Valid</span>
+            <span class="status-badge invalid">Invalid</span>
+            <span class="status-badge blocked">Blocked</span>
+            <span class="status-badge unknown">Not validated</span>
+        </div>
+        <p>Contentious Gatherings Pipeline Review</p>
+        <p class="generated-at">Site generated: 2026-02-17 17:27 UTC</p>
+    </footer>
+</body>
+</html>
