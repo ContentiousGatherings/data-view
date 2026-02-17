@@ -940,8 +940,8 @@ def main():
     )
     parser.add_argument(
         "--base-url",
-        default="",
-        help="Base URL path prefix for GitHub Pages (e.g. /data-view)",
+        default="/data-view",
+        help="Base URL path prefix for GitHub Pages (default: /data-view)",
     )
 
     args = parser.parse_args()
