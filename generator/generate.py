@@ -101,13 +101,13 @@ def make_issue_url(
     ACTION_CONFIG = {
         "mark_valid": {
             "prefix": "[Valid]",
-            "json": {"table": table, "id": str(record_id), "action": "mark_valid", "reviewer": ""},
+            "json": {"table": table, "id": record_id, "action": "mark_valid", "reviewer": ""},
         },
         "mark_unusable": {
             "prefix": "[Invalid]",
             "json": {
                 "table": table,
-                "id": str(record_id),
+                "id": record_id,
                 "action": "mark_unusable",
                 "reason": "EDIT THIS: Describe why this should be removed",
                 "reviewer": "",
@@ -117,7 +117,7 @@ def make_issue_url(
             "prefix": "[Block]",
             "json": {
                 "table": table,
-                "id": str(record_id),
+                "id": record_id,
                 "action": "mark_blocked",
                 "reason": "EDIT THIS: Describe why this is blocked",
                 "reviewer": "",
@@ -127,7 +127,7 @@ def make_issue_url(
             "prefix": "[Report]",
             "json": {
                 "table": table,
-                "id": str(record_id),
+                "id": record_id,
                 "action": "report",
                 "description": "EDIT THIS: Describe the problem",
                 "reviewer": "",
