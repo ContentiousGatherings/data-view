@@ -191,10 +191,12 @@ class SiteGenerator:
         db_path: str,
         repo: str,
         output_dir: str,
+        base_url: str = "",
     ):
         self.db_path = db_path
         self.output_dir = Path(output_dir)
         self.repo = repo
+        self.base_url = base_url.rstrip("/")
 
         # Generation timestamp
         self.generated_at = datetime.now(timezone.utc)
@@ -214,6 +216,7 @@ class SiteGenerator:
             self.repo, table, id, ctx, self.generated_at_str, action=action
         )
         self.env.globals["generated_at"] = self.generated_at_str
+        self.env.globals["base_url"] = self.base_url
 
         # Database engine
         self.engine = create_engine(f"sqlite:///{db_path}")
@@ -935,6 +938,11 @@ def main():
         default="ContentiousGatherings/data-view",
         help="GitHub repository for issues (default: ContentiousGatherings/data-view)",
     )
+    parser.add_argument(
+        "--base-url",
+        default="",
+        help="Base URL path prefix for GitHub Pages (e.g. /data-view)",
+    )
 
     args = parser.parse_args()
 
@@ -950,6 +958,7 @@ def main():
         db_path=db_path,
         output_dir=output_dir,
         repo=args.repo,
+        base_url=args.base_url,
     )
 
     generator.generate()
