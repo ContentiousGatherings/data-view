@@ -10,14 +10,14 @@ This tool generates a browsable HTML site from the pipeline database (`alpha.db`
 
 ```bash
 # Install dependencies
-pip install jinja2 sqlmodel
+pip install jinja2 sqlmodel tqdm
 
 # Generate the site
 cd cg-review-site
-python -m generator.generate --db ../alpha.db --output ./site
+python -m generator --db ../alpha.db
 
 # Serve locally for testing
-cd site
+cd docs
 python -m http.server 8000
 # Open http://localhost:8000
 ```
@@ -25,46 +25,68 @@ python -m http.server 8000
 ## Full CLI Options
 
 ```bash
-python -m generator.generate \
+python -m generator \
   --db ../alpha.db \
-  --output ./site \
-  --repo "username/cg-review-site" \
-  --base-url "https://username.github.io/cg-review-site"
+  --output ./docs \
+  --repo "ContentiousGatherings/data-view" \
+  --base-url "/data-view"
 ```
 
 | Option | Default | Description |
 |--------|---------|-------------|
 | `--db` | `../alpha.db` | Path to SQLite database |
-| `--output` | `./site` | Output directory for generated HTML |
-| `--repo` | `username/cg-review-site` | GitHub repo for issue links |
-| `--base-url` | `https://username.github.io/cg-review-site` | Base URL for the deployed site |
+| `--output` | `./docs` | Output directory for generated HTML |
+| `--repo` | `ContentiousGatherings/data-view` | GitHub repo for issue links |
+| `--base-url` | `/data-view` | Base URL path prefix for GitHub Pages |
 
 ## Site Structure
 
 ```
-site/
-├── index.html              # Dashboard with entity counts
-├── event/{id}/index.html   # Event detail pages
-├── location/{id}/          # Location pages
-├── splitlocation/{id}/     # Split location pages
-├── actor/{id}/             # Actor pages
-├── splitactor/{id}/        # Split actor pages
-├── timestamp/{id}/         # Timestamp pages
-├── meetingtype/{id}/       # Meeting type pages
-└── static/style.css        # Styles
+docs/
+├── index.html                        # Dashboard with entity counts
+├── static/style.css                  # Styles
+├── event/{id}/index.html             # Event detail pages
+├── location/{id}/                    # Location pages
+├── splitlocation/{id}/               # Split location pages
+├── actor/{id}/                       # Actor pages
+├── splitactor/{id}/                  # Split actor pages
+├── timestamp/{id}/                   # Timestamp pages
+├── meetingtype/{id}/                 # Meeting type pages
+├── authoritativeevent/{id}/          # Authoritative event pages
+├── eventmatch/{id}/                  # Event match pages
+├── authoritativelocation/{id}/       # Authoritative location pages
+├── splitlocationmatch/{id}/          # Split location match pages
+├── authoritativeactor/{id}/          # Authoritative actor pages
+├── actoralias/{id}/                  # Actor alias pages
+├── splitactormatch/{id}/             # Split actor match pages
+├── authoritativemeetingtype/{id}/    # Authoritative meeting type pages
+├── meetingtypematch/{id}/            # Meeting type match pages
+└── authoritativeeventactor/{id}/     # Authoritative event actor pages
 ```
 
-## How to Report Problems
+## How to Review
 
-1. Navigate to any entity page
-2. Click the **Report Problem** button
-3. Edit the JSON in the pre-filled issue:
-   - Change `action` to one of: `mark_unusable`, `mark_blocked`, `correct_field`
-   - Replace the `reason` placeholder with your explanation
-   - For `correct_field`, add `field` and `new_value` parameters
-4. Submit the issue
+Each entity detail page has four action buttons:
+
+| Button | Action | Description |
+|--------|--------|-------------|
+| **Valid** | `mark_valid` | Confirm the entity is correct |
+| **Invalid** | `mark_unusable` | Flag as unusable (edit the reason) |
+| **Block** | `mark_blocked` | Flag as blocked / needs manual review (edit the reason) |
+| **Report** | `report` | Report a general problem (edit the description) |
+
+Click a button, edit the pre-filled JSON if needed, then submit the GitHub issue.
 
 ### Example Issue JSON
+
+**Mark as valid:**
+```json
+{
+  "table": "event",
+  "id": 123,
+  "action": "mark_valid"
+}
+```
 
 **Mark as unusable:**
 ```json
@@ -86,22 +108,20 @@ site/
 }
 ```
 
-**Correct a field:**
+**Report a problem:**
 ```json
 {
   "table": "timestamp",
   "id": 789,
-  "action": "correct_field",
-  "field": "normalized_datetime",
-  "new_value": "1895-03-15T14:00:00",
-  "reason": "The original parsing was off by one day"
+  "action": "report",
+  "description": "The normalized date seems off by one day"
 }
 ```
 
 ## GitHub Action
 
 The `process-review.yml` workflow:
-1. Triggers when an issue with `[Review]` prefix is opened/edited
+1. Triggers when an issue with `[Valid]`, `[Invalid]`, `[Block]`, or `[Report]` prefix is opened/edited
 2. Extracts and validates the JSON from the issue body
 3. If valid: appends to `edits.jsonl`, adds "validated" label, comments confirmation
 4. If invalid: adds "needs-fix" label, comments with what to fix
@@ -131,13 +151,12 @@ python apply_edits.py --edits edits.jsonl --db ../alpha.db
 After database changes:
 
 ```bash
-python -m generator.generate --db ../alpha.db --output ./site
+python -m generator --db ../alpha.db
 ```
 
 ### Deploying to GitHub Pages
 
-1. Push the `site/` directory to the `gh-pages` branch, or
-2. Configure GitHub Pages to serve from the `site/` folder on `main`
+GitHub Pages is configured to serve from the `docs/` folder on `main`.
 
 ### Adding New Entity Types
 
@@ -150,4 +169,4 @@ python -m generator.generate --db ../alpha.db --output ./site
 - Python 3.10+
 - jinja2
 - sqlmodel
-- (inherited from main project) SQLAlchemy
+- tqdm
