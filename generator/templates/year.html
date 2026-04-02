@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}CG Review - Events in {{ year }}{% endblock %}
+
+{% block content %}
+<div class="breadcrumb">
+    <a href="{{ base_url }}/">Home</a> &rsaquo; By Year &rsaquo; {{ year }}
+</div>
+
+<div class="browse-header">
+    <h1>Events in {{ year }}</h1>
+    <span class="browse-count">{{ count }} event{{ 's' if count != 1 }}</span>
+</div>
+
+<nav class="year-nav">
+    {% if prev_year %}
+    <a href="{{ base_url }}/year/{{ prev_year }}/" class="nav-pill">&larr; {{ prev_year }}</a>
+    {% endif %}
+    <a href="{{ base_url }}/#year-chart" class="nav-pill">All Years</a>
+    {% if next_year %}
+    <a href="{{ base_url }}/year/{{ next_year }}/" class="nav-pill">{{ next_year }} &rarr;</a>
+    {% endif %}
+</nav>
+
+{% if events %}
+<table class="entity-table browse-table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Location</th>
+            <th>Actors</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for e in events %}
+        <tr>
+            <td>{{ e.date }}</td>
+            <td><a href="{{ base_url }}/authoritativeevent/{{ e.id }}/">{{ e.canonical_name }}</a></td>
+            <td>
+                {% if e.category %}
+                <span class="category-badge {{ e.category }}">{{ e.category }}</span>
+                {% endif %}
+            </td>
+            <td>{{ e.location }}</td>
+            <td class="actors-cell">{{ e.actors or '—' }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p class="no-data">No events recorded for {{ year }}.</p>
+{% endif %}
+{% endblock %}

@@ -10,6 +10,46 @@
     to submit corrections via GitHub Issues.
 </p>
 
+{% if year_counts %}
+<section class="browse-section" id="year-chart">
+    <h2>Events by Year</h2>
+    <div class="year-chart">
+        {% set max_count = year_counts.values()|max %}
+        {% for year, count in year_counts.items() %}
+        <div class="year-bar-row">
+            <a href="{{ base_url }}/year/{{ year }}/" class="year-label">{{ year }}</a>
+            <div class="year-bar-track">
+                <div class="year-bar-fill" style="width: {{ (count / max_count * 100)|round(1) }}%"></div>
+            </div>
+            <span class="year-bar-count">{{ count }}</span>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endif %}
+
+{% if county_links %}
+<section class="browse-section" id="geo-summary">
+    <h2>Events by County</h2>
+    <table class="entity-table geo-table">
+        <thead>
+            <tr>
+                <th>County</th>
+                <th>Events</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for c in county_links %}
+            <tr>
+                <td><a href="{{ base_url }}/county/{{ c.slug }}/">{{ c.name }}</a></td>
+                <td>{{ c.count }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section>
+{% endif %}
+
 {% macro stat_card(type_key, type_name) %}
 {% set type_stats = stats[type_key] %}
 <div class="stat-card">

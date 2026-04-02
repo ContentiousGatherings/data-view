@@ -9,8 +9,10 @@ GitHub issue links for colleagues to suggest corrections.
 import argparse
 import json
 import os
+import re
 import shutil
 import sys
+from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -192,11 +194,13 @@ class SiteGenerator:
         repo: str,
         output_dir: str,
         base_url: str = "",
+        usable_only: bool = False,
     ):
         self.db_path = db_path
         self.output_dir = Path(output_dir)
         self.repo = repo
         self.base_url = base_url.rstrip("/")
+        self.usable_only = usable_only
 
         # Generation timestamp
         self.generated_at = datetime.now(timezone.utc)
@@ -221,12 +225,37 @@ class SiteGenerator:
         # Database engine
         self.engine = create_engine(f"sqlite:///{db_path}")
 
+    @staticmethod
+    def _is_usable(entity: Any) -> bool:
+        """Check if an entity should be included in usable-only mode."""
+        if hasattr(entity, "blocked") and entity.blocked:
+            return False
+        if hasattr(entity, "use"):
+            if entity.use is False:
+                return False
+        if hasattr(entity, "accepted"):
+            if entity.accepted is False:
+                return False
+        return True
+
+    @staticmethod
+    def _slugify(text: str) -> str:
+        """Convert text to URL-safe slug."""
+        text = text.lower().strip()
+        text = re.sub(r"[åä]", "a", text)
+        text = re.sub(r"[ö]", "o", text)
+        text = re.sub(r"[éè]", "e", text)
+        text = re.sub(r"[^a-z0-9]+", "-", text)
+        return text.strip("-")
+
     def generate(self):
         """Generate the entire static site."""
         print(f"Generating site from {self.db_path}")
         print(f"Output directory: {self.output_dir}")
 
-        # Create output directories
+        # Clean and recreate output directory
+        if self.output_dir.exists():
+            shutil.rmtree(self.output_dir)
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
         # Copy static files
@@ -235,9 +264,10 @@ class SiteGenerator:
         # Generate pages
         with Session(self.engine) as session:
             stats = self._generate_all_pages(session)
+            browse_data = self._generate_browse_pages(session)
 
         # Generate index
-        self._generate_index(stats)
+        self._generate_index(stats, browse_data)
 
         print(f"Site generated successfully at {self.output_dir}")
 
@@ -387,6 +417,8 @@ class SiteGenerator:
 
             query = custom_queries.get(entity_type, select(model))
             entities = session.exec(query).all()
+            if self.usable_only:
+                entities = [e for e in entities if self._is_usable(e)]
             all_entities[entity_type] = {
                 "entities": entities,
                 "display_name": display_name,
@@ -870,12 +902,191 @@ class SiteGenerator:
 
         return context
 
-    def _generate_index(self, stats: dict):
+    def _generate_browse_pages(self, session: Session) -> dict:
+        """Generate year and county browse pages. Returns data for the index."""
+        # Query authoritative events with location data
+        auth_events = session.exec(select(AuthoritativeEvent)).all()
+        if self.usable_only:
+            filtered = []
+            for ae in auth_events:
+                if ae.use is False:
+                    continue
+                # Check that at least one source event is usable
+                matches = session.exec(
+                    select(EventMatch).where(
+                        EventMatch.authoritative_event_id == ae.id
+                    )
+                ).all()
+                has_usable_source = False
+                for match in matches:
+                    event = session.get(Event, match.event_id)
+                    if event and not event.blocked and event.use is not False:
+                        has_usable_source = True
+                        break
+                if has_usable_source or not matches:
+                    filtered.append(ae)
+            auth_events = filtered
+
+        # Build year counts and county counts
+        year_counts: dict[int, int] = Counter()
+        county_counts: dict[str, int] = Counter()
+        # Group events by year and county for browse pages
+        events_by_year: dict[int, list] = defaultdict(list)
+        events_by_county: dict[str, dict[str, list]] = defaultdict(
+            lambda: defaultdict(list)
+        )
+
+        for ae in auth_events:
+            if ae.event_date_start:
+                year = ae.event_date_start.year
+                year_counts[year] += 1
+                events_by_year[year].append(ae)
+
+            if ae.authoritative_location_id:
+                loc = session.get(AuthoritativeLocation, ae.authoritative_location_id)
+                if loc and loc.county:
+                    county_counts[loc.county] += 1
+                    events_by_county[loc.county][loc.name].append(ae)
+
+        # Load actor names for browse pages (batch query)
+        event_actors: dict[int, list[str]] = defaultdict(list)
+        all_ae_actors = session.exec(select(AuthoritativeEventActor)).all()
+        actor_cache: dict[int, str] = {}
+        for aea in all_ae_actors:
+            if aea.authoritative_actor_id not in actor_cache:
+                actor = session.get(AuthoritativeActor, aea.authoritative_actor_id)
+                actor_cache[aea.authoritative_actor_id] = actor.name if actor else "?"
+            event_actors[aea.authoritative_event_id].append(
+                actor_cache[aea.authoritative_actor_id]
+            )
+
+        # Load location names for year pages
+        loc_cache: dict[int, AuthoritativeLocation] = {}
+        for ae in auth_events:
+            if ae.authoritative_location_id and ae.authoritative_location_id not in loc_cache:
+                loc_cache[ae.authoritative_location_id] = session.get(
+                    AuthoritativeLocation, ae.authoritative_location_id
+                )
+
+        self._generate_year_pages(events_by_year, event_actors, loc_cache)
+        self._generate_location_pages(events_by_county, event_actors)
+
+        return {
+            "year_counts": dict(sorted(year_counts.items())),
+            "county_counts": sorted(county_counts.items(), key=lambda x: -x[1]),
+        }
+
+    def _generate_year_pages(
+        self,
+        events_by_year: dict[int, list],
+        event_actors: dict[int, list[str]],
+        loc_cache: dict[int, Any],
+    ):
+        """Generate /year/{year}/index.html for each year."""
+        template = self.env.get_template("year.html")
+        sorted_years = sorted(events_by_year.keys())
+
+        for idx, year in enumerate(sorted_years):
+            events = sorted(
+                events_by_year[year],
+                key=lambda e: e.event_date_start or datetime.min,
+            )
+            prev_year = sorted_years[idx - 1] if idx > 0 else None
+            next_year = sorted_years[idx + 1] if idx < len(sorted_years) - 1 else None
+
+            rows = []
+            for ae in events:
+                loc = loc_cache.get(ae.authoritative_location_id) if ae.authoritative_location_id else None
+                actors = event_actors.get(ae.id, [])
+                actors_str = ", ".join(actors[:3])
+                if len(actors) > 3:
+                    actors_str += f" (+{len(actors) - 3})"
+                rows.append({
+                    "id": ae.id,
+                    "date": ae.event_date_start.strftime("%Y-%m-%d") if ae.event_date_start else "?",
+                    "canonical_name": ae.canonical_name or "—",
+                    "category": ae.category,
+                    "location": loc.name if loc else "—",
+                    "county": loc.county if loc else None,
+                    "actors": actors_str,
+                })
+
+            html = template.render(
+                year=year,
+                events=rows,
+                count=len(events),
+                prev_year=prev_year,
+                next_year=next_year,
+            )
+            year_dir = self.output_dir / "year" / str(year)
+            year_dir.mkdir(parents=True, exist_ok=True)
+            (year_dir / "index.html").write_text(html)
+
+    def _generate_location_pages(
+        self,
+        events_by_county: dict[str, dict[str, list]],
+        event_actors: dict[int, list[str]],
+    ):
+        """Generate /county/{slug}/index.html for each county."""
+        template = self.env.get_template("location_browse.html")
+
+        for county, locations in sorted(events_by_county.items()):
+            slug = self._slugify(county)
+            total = sum(len(evts) for evts in locations.values())
+
+            location_sections = []
+            for loc_name in sorted(locations.keys()):
+                events = sorted(
+                    locations[loc_name],
+                    key=lambda e: e.event_date_start or datetime.min,
+                )
+                rows = []
+                for ae in events:
+                    actors = event_actors.get(ae.id, [])
+                    actors_str = ", ".join(actors[:3])
+                    if len(actors) > 3:
+                        actors_str += f" (+{len(actors) - 3})"
+                    rows.append({
+                        "id": ae.id,
+                        "date": ae.event_date_start.strftime("%Y-%m-%d") if ae.event_date_start else "?",
+                        "canonical_name": ae.canonical_name or "—",
+                        "category": ae.category,
+                        "actors": actors_str,
+                    })
+                location_sections.append({
+                    "name": loc_name,
+                    "events": rows,
+                    "count": len(rows),
+                })
+
+            html = template.render(
+                county=county,
+                slug=slug,
+                total=total,
+                locations=location_sections,
+            )
+            county_dir = self.output_dir / "county" / slug
+            county_dir.mkdir(parents=True, exist_ok=True)
+            (county_dir / "index.html").write_text(html)
+
+    def _generate_index(self, stats: dict, browse_data: dict | None = None):
         """Generate the index page with statistics."""
         template = self.env.get_template("index.html")
 
+        # Build county slugs for linking
+        county_links = []
+        if browse_data:
+            for county, count in browse_data.get("county_counts", []):
+                county_links.append({
+                    "name": county,
+                    "slug": self._slugify(county),
+                    "count": count,
+                })
+
         html = template.render(
             stats=stats,
+            year_counts=browse_data.get("year_counts", {}) if browse_data else {},
+            county_links=county_links,
             # Rows for the index page layout
             entity_rows=[
                 # Row 1: Event centered alone
@@ -943,6 +1154,12 @@ def main():
         default="/data-view",
         help="Base URL path prefix for GitHub Pages (default: /data-view)",
     )
+    parser.add_argument(
+        "--usable-only",
+        action="store_true",
+        default=False,
+        help="Exclude blocked/invalid entities from the generated site",
+    )
 
     args = parser.parse_args()
 
@@ -959,6 +1176,7 @@ def main():
         output_dir=output_dir,
         repo=args.repo,
         base_url=args.base_url,
+        usable_only=args.usable_only,
     )
 
     generator.generate()

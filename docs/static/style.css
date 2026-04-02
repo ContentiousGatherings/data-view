@@ -804,3 +804,147 @@ main > .record-nav:last-child {
         align-items: flex-start;
     }
 }
+
+/* Browse Section (Year Chart & Geo Summary) */
+.browse-section {
+    margin-bottom: 2rem;
+    background: var(--color-bg-alt);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+}
+
+.browse-section h2 {
+    margin-top: 0;
+}
+
+/* Year Chart */
+.year-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.year-bar-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.year-label {
+    flex-shrink: 0;
+    width: 3.5rem;
+    text-align: right;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--color-link);
+    text-decoration: none;
+    font-family: var(--font-mono);
+}
+
+.year-label:hover {
+    text-decoration: underline;
+}
+
+.year-bar-track {
+    flex: 1;
+    height: 1.25rem;
+    background: var(--color-border);
+    border-radius: 0.25rem;
+    overflow: hidden;
+}
+
+.year-bar-fill {
+    height: 100%;
+    background: var(--color-link);
+    border-radius: 0.25rem;
+    min-width: 2px;
+    transition: width 0.3s ease;
+}
+
+.year-bar-count {
+    flex-shrink: 0;
+    width: 2.5rem;
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+}
+
+/* Geo Summary Table */
+.geo-table {
+    max-width: 500px;
+}
+
+.geo-table td:last-child {
+    text-align: right;
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+}
+
+/* Browse Pages (Year & Location) */
+.browse-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.browse-header h1 {
+    margin: 0;
+}
+
+.browse-count {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+}
+
+.year-nav {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.nav-pill {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-bg-alt);
+    border: 1px solid var(--color-border);
+    border-radius: 9999px;
+    font-size: 0.8125rem;
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.nav-pill:hover {
+    background: var(--color-border);
+}
+
+.browse-table td {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.actors-cell {
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+}
+
+.location-section {
+    margin-bottom: 1.5rem;
+}
+
+.location-section h2 {
+    font-size: 1.125rem;
+}
+
+.section-count {
+    font-weight: 400;
+    color: var(--color-text-muted);
+    font-size: 0.875rem;
+}
