@@ -18,3 +18,4 @@
 {"table": "authoritativeevent", "id": 397, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 56, "timestamp": "2026-04-15T13:59:06.838974+00:00"}
 {"table": "authoritativeevent", "id": 3207, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 57, "timestamp": "2026-04-15T14:01:54.274864+00:00"}
 {"table": "authoritativeevent", "id": 940, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 58, "timestamp": "2026-04-15T14:02:43.374293+00:00"}
+{"table": "authoritativeevent", "id": 1900, "action": "report", "description": "timestamp Ringsj\u00f6n \u00e4r v\u00e4l inte r\u00e4tt. \u00c4ven om den sedan normaliserar till r\u00e4tt datum", "reviewer": "AndresBPinto", "issue_number": 59, "timestamp": "2026-04-15T14:08:02.928905+00:00"}
