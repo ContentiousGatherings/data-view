@@ -20,3 +20,4 @@
 {"table": "authoritativeevent", "id": 940, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 58, "timestamp": "2026-04-15T14:02:43.374293+00:00"}
 {"table": "authoritativeevent", "id": 1900, "action": "report", "description": "timestamp Ringsj\u00f6n \u00e4r v\u00e4l inte r\u00e4tt. \u00c4ven om den sedan normaliserar till r\u00e4tt datum", "reviewer": "AndresBPinto", "issue_number": 59, "timestamp": "2026-04-15T14:08:02.928905+00:00"}
 {"table": "authoritativeevent", "id": 1526, "action": "report", "description": "lite os\u00e4ker p\u00e5 om tiden f\u00f6r m\u00f6tet \u00e4r r\u00e4tt. Datumet som anges \u00e4r n\u00e4r en pastor talat illa om m\u00f6tet", "reviewer": "AndresBPinto", "issue_number": 60, "timestamp": "2026-04-15T14:10:31.014738+00:00"}
+{"table": "authoritativeevent", "id": 3441, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 61, "timestamp": "2026-04-15T14:11:02.185867+00:00"}
