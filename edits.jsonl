@@ -30,3 +30,4 @@
 {"table": "event", "id": 6, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 69, "timestamp": "2026-04-15T14:21:40.137381+00:00"}
 {"table": "event", "id": 19, "action": "report", "description": "i stort sett r\u00e4tt, men plockar inte ut talarna som Actors", "reviewer": "AndresBPinto", "issue_number": 71, "timestamp": "2026-04-15T14:22:25.020064+00:00"}
 {"table": "event", "id": 20, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 72, "timestamp": "2026-04-15T14:22:52.579046+00:00"}
+{"table": "event", "id": 25, "action": "report", "description": "oklart om detta \u00e4r ett m\u00f6te", "reviewer": "AndresBPinto", "issue_number": 74, "timestamp": "2026-04-15T14:23:42.017527+00:00"}
