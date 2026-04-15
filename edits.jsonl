@@ -40,3 +40,4 @@
 {"table": "event", "id": 77, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 87, "timestamp": "2026-04-15T14:33:06.907087+00:00"}
 {"table": "event", "id": 79, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 89, "timestamp": "2026-04-15T14:33:41.458994+00:00"}
 {"table": "event", "id": 90, "action": "mark_blocked", "reason": "Internt partim\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 90, "timestamp": "2026-04-15T14:34:13.382336+00:00"}
+{"table": "event", "id": 91, "action": "report", "description": "denna \u00e4r antagligen r\u00e4tt, men beh\u00f6vs mer kontext f\u00f6r att kunna hj\u00e4lpa med ort (gissningsvis \u00e4r det Malm\u00f6)", "reviewer": "AndresBPinto", "issue_number": 91, "timestamp": "2026-04-15T14:35:01.421032+00:00"}
