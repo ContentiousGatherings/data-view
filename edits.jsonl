@@ -11,3 +11,4 @@
 {"table": "authoritativeevent", "id": 4229, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 48, "timestamp": "2026-04-15T13:54:10.181536+00:00"}
 {"table": "authoritativeevent", "id": 2298, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 49, "timestamp": "2026-04-15T13:54:44.326202+00:00"}
 {"table": "authoritativeevent", "id": 3204, "action": "mark_unusable", "reason": "Br\u00f6llop \u00e4r som regel inte PE", "reviewer": "AndresBPinto", "issue_number": 50, "timestamp": "2026-04-15T13:55:16.605863+00:00"}
+{"table": "authoritativeevent", "id": 2476, "action": "report", "description": "Det verkar vara ett korrekt loggat m\u00f6te, men inget i artikel texten visar det", "reviewer": "AndresBPinto", "issue_number": 51, "timestamp": "2026-04-15T13:56:17.065173+00:00"}
