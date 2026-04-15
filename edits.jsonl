@@ -10,3 +10,4 @@
 {"table": "authoritativeevent", "id": 3918, "action": "report", "description": "b\u00f6r sl\u00e5s samman med f\u00f6reg\u00e5ende post. Korrekt datum f\u00f6r h\u00e4ndelsen \u00e4 6 mars 1864", "reviewer": "AndresBPinto", "issue_number": 47, "timestamp": "2026-04-15T13:52:34.306453+00:00"}
 {"table": "authoritativeevent", "id": 4229, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 48, "timestamp": "2026-04-15T13:54:10.181536+00:00"}
 {"table": "authoritativeevent", "id": 2298, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 49, "timestamp": "2026-04-15T13:54:44.326202+00:00"}
+{"table": "authoritativeevent", "id": 3204, "action": "mark_unusable", "reason": "Br\u00f6llop \u00e4r som regel inte PE", "reviewer": "AndresBPinto", "issue_number": 50, "timestamp": "2026-04-15T13:55:16.605863+00:00"}
