@@ -28,3 +28,4 @@
 {"table": "authoritativeevent", "id": 1903, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 67, "timestamp": "2026-04-15T14:17:20.505727+00:00"}
 {"table": "authoritativeevent", "id": 1904, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 68, "timestamp": "2026-04-15T14:18:22.581735+00:00"}
 {"table": "event", "id": 6, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 69, "timestamp": "2026-04-15T14:21:40.137381+00:00"}
+{"table": "event", "id": 19, "action": "report", "description": "i stort sett r\u00e4tt, men plockar inte ut talarna som Actors", "reviewer": "AndresBPinto", "issue_number": 71, "timestamp": "2026-04-15T14:22:25.020064+00:00"}
