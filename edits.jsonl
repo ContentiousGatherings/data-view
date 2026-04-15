@@ -1,3 +1,4 @@
 {"table": "event", "id": 1, "action": "mark_unusable", "reason": "This should work fine. Let us see if the action triggers.", "reviewer": "mathjoha", "issue_number": 1, "timestamp": "2026-01-17T09:59:37.937234+00:00"}
 {"table": "authoritativeevent", "id": 1023, "action": "mark_unusable", "reason": "inte ett folkm\u00f6te", "reviewer": "AndresBPinto", "issue_number": 38, "timestamp": "2026-04-15T13:42:50.339966+00:00"}
 {"table": "authoritativeevent", "id": 920, "action": "report", "description": "actors \u00e4r fel, det \u00e4r inte nationerna som g\u00f6r ngt", "reviewer": "AndresBPinto", "issue_number": 39, "timestamp": "2026-04-15T13:44:50.001519+00:00"}
+{"table": "authoritativeevent", "id": 1124, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 40, "timestamp": "2026-04-15T13:45:46.805427+00:00"}
