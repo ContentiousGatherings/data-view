@@ -1,1 +1,2 @@
 {"table": "event", "id": 1, "action": "mark_unusable", "reason": "This should work fine. Let us see if the action triggers.", "reviewer": "mathjoha", "issue_number": 1, "timestamp": "2026-01-17T09:59:37.937234+00:00"}
+{"table": "authoritativeevent", "id": 1023, "action": "mark_unusable", "reason": "inte ett folkm\u00f6te", "reviewer": "AndresBPinto", "issue_number": 38, "timestamp": "2026-04-15T13:42:50.339966+00:00"}
