@@ -71,3 +71,4 @@
 {"table": "event", "id": 235, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 130, "timestamp": "2026-04-16T11:20:56.079375+00:00"}
 {"table": "event", "id": 223, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 132, "timestamp": "2026-04-16T11:21:47.107218+00:00"}
 {"table": "event", "id": 267, "action": "mark_blocked", "reason": "Domstolsf\u00f6rhandlingen \u00e4r inte en PE; om m\u00f6jligt b\u00f6r det g\u00e5 att f\u00e5 fram det faktiska m\u00f6tet ur artikeln", "reviewer": "AndresBPinto", "issue_number": 134, "timestamp": "2026-04-16T11:22:57.289953+00:00"}
+{"table": "event", "id": 265, "action": "report", "description": "\u00d6verallt \u00e4r en f\u00f6r vag plats", "reviewer": "AndresBPinto", "issue_number": 135, "timestamp": "2026-04-16T11:23:25.918327+00:00"}
