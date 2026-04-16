@@ -148,3 +148,4 @@
 {"table": "event", "id": 525, "action": "mark_blocked", "reason": "inte PE; *fest till blacklist", "reviewer": "AndresBPinto", "issue_number": 241, "timestamp": "2026-04-16T12:44:35.211460+00:00"}
 {"table": "event", "id": 574, "action": "mark_blocked", "reason": "inget faktiskt m\u00f6te n\u00e4mns i texten", "reviewer": "AndresBPinto", "issue_number": 243, "timestamp": "2026-04-16T12:45:34.884668+00:00"}
 {"table": "event", "id": 551, "action": "mark_blocked", "reason": "valm\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 245, "timestamp": "2026-04-16T12:46:20.861006+00:00"}
+{"table": "event", "id": 602, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 247, "timestamp": "2026-04-16T12:47:20.982387+00:00"}
