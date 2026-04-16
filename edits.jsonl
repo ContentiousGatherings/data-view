@@ -74,3 +74,4 @@
 {"table": "event", "id": 265, "action": "report", "description": "\u00d6verallt \u00e4r en f\u00f6r vag plats", "reviewer": "AndresBPinto", "issue_number": 135, "timestamp": "2026-04-16T11:23:25.918327+00:00"}
 {"table": "event", "id": 261, "action": "mark_blocked", "reason": "f\u00f6r brett och vagt, kan inte se att n\u00e5gra faktiska m\u00f6ten med tid och plats n\u00e4mns", "reviewer": "AndresBPinto", "issue_number": 136, "timestamp": "2026-04-16T11:24:11.190458+00:00"}
 {"table": "event", "id": 278, "action": "mark_blocked", "reason": "f\u00f6r vagt, fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 138, "timestamp": "2026-04-16T11:25:18.954750+00:00"}
+{"table": "event", "id": 277, "action": "report", "description": "normaliseringen \u00e4r fel, b\u00f6r vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 139, "timestamp": "2026-04-16T11:25:55.081870+00:00"}
