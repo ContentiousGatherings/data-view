@@ -85,3 +85,4 @@
 {"table": "event", "id": 314, "action": "mark_blocked", "reason": "f\u00f6redrag inte PE", "reviewer": "AndresBPinto", "issue_number": 149, "timestamp": "2026-04-16T11:32:14.080242+00:00"}
 {"table": "event", "id": 311, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 151, "timestamp": "2026-04-16T11:32:50.910497+00:00"}
 {"table": "event", "id": 297, "action": "mark_blocked", "reason": "medlemsm\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 152, "timestamp": "2026-04-16T11:33:22.239362+00:00"}
+{"table": "event", "id": 323, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 154, "timestamp": "2026-04-16T11:34:44.222243+00:00"}
