@@ -62,3 +62,4 @@
 {"table": "event", "id": 208, "action": "mark_blocked", "reason": "den h\u00e4r demonstrationen \u00e4gde inte rum, den blev ju hindrad", "reviewer": "AndresBPinto", "issue_number": 119, "timestamp": "2026-04-16T09:46:41.635268+00:00"}
 {"table": "event", "id": 210, "action": "mark_blocked", "reason": "F\u00f6redrag ska inte inkluderas enligt kodboken", "reviewer": "AndresBPinto", "issue_number": 121, "timestamp": "2026-04-16T09:55:35.344423+00:00"}
 {"table": "event", "id": 204, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 122, "timestamp": "2026-04-16T09:56:10.811489+00:00"}
+{"table": "event", "id": 222, "action": "mark_blocked", "reason": "strejkm\u00f6te, inte en \u00f6ppen PE", "reviewer": "AndresBPinto", "issue_number": 123, "timestamp": "2026-04-16T11:14:45.137907+00:00"}
