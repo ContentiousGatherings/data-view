@@ -140,3 +140,4 @@
 {"table": "event", "id": 508, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 230, "timestamp": "2026-04-16T12:31:37.585590+00:00"}
 {"table": "event", "id": 501, "action": "report", "description": "b\u00f6r delas till en event per plats", "reviewer": "AndresBPinto", "issue_number": 231, "timestamp": "2026-04-16T12:32:04.341650+00:00"}
 {"table": "event", "id": 498, "action": "mark_blocked", "reason": "vi har avgr\u00e4nsat bort strejker", "reviewer": "AndresBPinto", "issue_number": 232, "timestamp": "2026-04-16T12:32:35.068293+00:00"}
+{"table": "event", "id": 522, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 233, "timestamp": "2026-04-16T12:33:34.182636+00:00"}
