@@ -96,3 +96,4 @@
 {"table": "event", "id": 374, "action": "mark_blocked", "reason": "verkar vara ett internt m\u00f6te med majdemonstrationer p\u00e5 dagordningen, inte en PE", "reviewer": "AndresBPinto", "issue_number": 168, "timestamp": "2026-04-16T11:40:43.629824+00:00"}
 {"table": "event", "id": 401, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 169, "timestamp": "2026-04-16T11:41:13.252813+00:00"}
 {"table": "event", "id": 400, "action": "report", "description": "Timestamp \u00e4r fel, ska vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 170, "timestamp": "2026-04-16T11:43:05.957003+00:00"}
+{"table": "event", "id": 396, "action": "report", "description": "oklart om detta \u00e4r en PE, att det omtalas tivolipublik pekar i annan riktning. Hade beh\u00f6vt en l\u00e4nk till artikeln", "reviewer": "AndresBPinto", "issue_number": 171, "timestamp": "2026-04-16T11:50:39.190850+00:00"}
