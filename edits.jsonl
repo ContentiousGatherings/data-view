@@ -142,3 +142,4 @@
 {"table": "event", "id": 498, "action": "mark_blocked", "reason": "vi har avgr\u00e4nsat bort strejker", "reviewer": "AndresBPinto", "issue_number": 232, "timestamp": "2026-04-16T12:32:35.068293+00:00"}
 {"table": "event", "id": 522, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 233, "timestamp": "2026-04-16T12:33:34.182636+00:00"}
 {"table": "event", "id": 520, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 235, "timestamp": "2026-04-16T12:41:01.973321+00:00"}
+{"table": "event", "id": 517, "action": "mark_blocked", "reason": "artikeln beskriver en karneval, inte en PE", "reviewer": "AndresBPinto", "issue_number": 236, "timestamp": "2026-04-16T12:41:59.275922+00:00"}
