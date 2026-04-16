@@ -120,3 +120,4 @@
 {"table": "event", "id": 450, "action": "mark_blocked", "reason": "inte PE; *fest till blacklist", "reviewer": "AndresBPinto", "issue_number": 201, "timestamp": "2026-04-16T12:09:16.980141+00:00"}
 {"table": "event", "id": 446, "action": "report", "description": "f\u00f6r vag plats", "reviewer": "AndresBPinto", "issue_number": 204, "timestamp": "2026-04-16T12:10:14.300238+00:00"}
 {"table": "event", "id": 444, "action": "report", "description": "f\u00f6r vag plats, artikeln verkar mer tala om 1 maj som fenomen \u00e4n om specifika demonstrationer", "reviewer": "AndresBPinto", "issue_number": 205, "timestamp": "2026-04-16T12:10:39.743651+00:00"}
+{"table": "event", "id": 461, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 206, "timestamp": "2026-04-16T12:11:13.168554+00:00"}
