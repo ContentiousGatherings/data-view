@@ -126,3 +126,4 @@
 {"table": "event", "id": 458, "action": "report", "description": "tiden \u00e4r fel, artikeln \u00e4r fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 209, "timestamp": "2026-04-16T12:13:05.282991+00:00"}
 {"table": "event", "id": 430, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 210, "timestamp": "2026-04-16T12:21:31.493767+00:00"}
 {"table": "event", "id": 454, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 211, "timestamp": "2026-04-16T12:22:01.745280+00:00"}
+{"table": "event", "id": 467, "action": "mark_blocked", "reason": "beslut i riksdagen, inte PE", "reviewer": "AndresBPinto", "issue_number": 213, "timestamp": "2026-04-16T12:24:06.668725+00:00"}
