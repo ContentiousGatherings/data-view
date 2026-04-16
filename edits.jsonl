@@ -58,3 +58,4 @@
 {"table": "event", "id": 203, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 113, "timestamp": "2026-04-16T09:41:41.422122+00:00"}
 {"table": "event", "id": 171, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 114, "timestamp": "2026-04-16T09:42:17.789547+00:00"}
 {"table": "event", "id": 165, "action": "mark_blocked", "reason": "Sverige \u00e4r en f\u00f6r vag plats", "reviewer": "AndresBPinto", "issue_number": 115, "timestamp": "2026-04-16T09:42:56.653455+00:00"}
+{"table": "event", "id": 164, "action": "mark_blocked", "reason": "beskriver slutet m\u00f6te; att det ska vara demonstration 1 maj \u00e4r r\u00e4tt, men eventet har fel datum", "reviewer": "AndresBPinto", "issue_number": 116, "timestamp": "2026-04-16T09:43:51.534542+00:00"}
