@@ -77,3 +77,4 @@
 {"table": "event", "id": 277, "action": "report", "description": "normaliseringen \u00e4r fel, b\u00f6r vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 139, "timestamp": "2026-04-16T11:25:55.081870+00:00"}
 {"table": "event", "id": 274, "action": "report", "description": "b\u00f6r delas i tv\u00e5 separata m\u00f6ten", "reviewer": "AndresBPinto", "issue_number": 140, "timestamp": "2026-04-16T11:26:22.204145+00:00"}
 {"table": "event", "id": 271, "action": "mark_blocked", "reason": "Strejkm\u00f6te, inte en PE enligt v\u00e5ra definitioner", "reviewer": "AndresBPinto", "issue_number": 142, "timestamp": "2026-04-16T11:27:10.420661+00:00"}
+{"table": "event", "id": 290, "action": "mark_blocked", "reason": "valm\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 143, "timestamp": "2026-04-16T11:29:06.523319+00:00"}
