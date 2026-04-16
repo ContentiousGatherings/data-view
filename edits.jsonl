@@ -110,3 +110,4 @@
 {"table": "event", "id": 426, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 187, "timestamp": "2026-04-16T12:02:29.857088+00:00"}
 {"table": "event", "id": 425, "action": "report", "description": "oklart om detta verkligen \u00e4r ett folkm\u00f6te, att det ska ha h\u00e4nt p\u00e5 Operans scen talar starkt mot", "reviewer": "AndresBPinto", "issue_number": 188, "timestamp": "2026-04-16T12:03:09.362615+00:00"}
 {"table": "event", "id": 423, "action": "mark_blocked", "reason": "verkar vara j\u00e4rnv\u00e4gsm\u00f6te, inte PE; j\u00e4rnv\u00e4gsm\u00f6te till blacklist", "reviewer": "AndresBPinto", "issue_number": 190, "timestamp": "2026-04-16T12:03:55.702547+00:00"}
+{"table": "event", "id": 432, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 192, "timestamp": "2026-04-16T12:04:31.877328+00:00"}
