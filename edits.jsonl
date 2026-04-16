@@ -63,3 +63,4 @@
 {"table": "event", "id": 210, "action": "mark_blocked", "reason": "F\u00f6redrag ska inte inkluderas enligt kodboken", "reviewer": "AndresBPinto", "issue_number": 121, "timestamp": "2026-04-16T09:55:35.344423+00:00"}
 {"table": "event", "id": 204, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 122, "timestamp": "2026-04-16T09:56:10.811489+00:00"}
 {"table": "event", "id": 222, "action": "mark_blocked", "reason": "strejkm\u00f6te, inte en \u00f6ppen PE", "reviewer": "AndresBPinto", "issue_number": 123, "timestamp": "2026-04-16T11:14:45.137907+00:00"}
+{"table": "event", "id": 221, "action": "report", "description": "denna typ av fram\u00e5tsyftande artilkar tycker jag h\u00e5ller f\u00f6r en event; platsen saknas, b\u00f6r vara Kristianstad", "reviewer": "AndresBPinto", "issue_number": 124, "timestamp": "2026-04-16T11:15:44.941239+00:00"}
