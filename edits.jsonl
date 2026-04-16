@@ -67,3 +67,4 @@
 {"table": "event", "id": 220, "action": "report", "description": "samma h\u00e4ndelse som 221", "reviewer": "AndresBPinto", "issue_number": 125, "timestamp": "2026-04-16T11:16:16.486601+00:00"}
 {"table": "event", "id": 214, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 127, "timestamp": "2026-04-16T11:16:57.212786+00:00"}
 {"table": "event", "id": 254, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 128, "timestamp": "2026-04-16T11:17:51.940949+00:00"}
+{"table": "event", "id": 253, "action": "mark_blocked", "reason": "utst\u00e4llning inte en PE; l\u00e4gg till utst\u00e4llning till v\u00e5r blacklist", "reviewer": "AndresBPinto", "issue_number": 129, "timestamp": "2026-04-16T11:18:27.753239+00:00"}
