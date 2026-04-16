@@ -61,3 +61,4 @@
 {"table": "event", "id": 164, "action": "mark_blocked", "reason": "beskriver slutet m\u00f6te; att det ska vara demonstration 1 maj \u00e4r r\u00e4tt, men eventet har fel datum", "reviewer": "AndresBPinto", "issue_number": 116, "timestamp": "2026-04-16T09:43:51.534542+00:00"}
 {"table": "event", "id": 208, "action": "mark_blocked", "reason": "den h\u00e4r demonstrationen \u00e4gde inte rum, den blev ju hindrad", "reviewer": "AndresBPinto", "issue_number": 119, "timestamp": "2026-04-16T09:46:41.635268+00:00"}
 {"table": "event", "id": 210, "action": "mark_blocked", "reason": "F\u00f6redrag ska inte inkluderas enligt kodboken", "reviewer": "AndresBPinto", "issue_number": 121, "timestamp": "2026-04-16T09:55:35.344423+00:00"}
+{"table": "event", "id": 204, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 122, "timestamp": "2026-04-16T09:56:10.811489+00:00"}
