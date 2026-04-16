@@ -81,3 +81,4 @@
 {"table": "event", "id": 289, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 144, "timestamp": "2026-04-16T11:29:35.844821+00:00"}
 {"table": "event", "id": 287, "action": "mark_blocked", "reason": "internt m\u00f6te mellan fackf\u00f6reningar, inte PE", "reviewer": "AndresBPinto", "issue_number": 145, "timestamp": "2026-04-16T11:30:02.103189+00:00"}
 {"table": "event", "id": 280, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 146, "timestamp": "2026-04-16T11:30:37.090606+00:00"}
+{"table": "event", "id": 315, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 148, "timestamp": "2026-04-16T11:31:46.195098+00:00"}
