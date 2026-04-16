@@ -124,3 +124,4 @@
 {"table": "event", "id": 460, "action": "report", "description": "b\u00f6r delas i tv\u00e5, f\u00f6r det \u00e4r tv\u00e5 olika demonstrationer som omn\u00e4mns", "reviewer": "AndresBPinto", "issue_number": 207, "timestamp": "2026-04-16T12:11:47.649675+00:00"}
 {"table": "event", "id": 459, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 208, "timestamp": "2026-04-16T12:12:18.375585+00:00"}
 {"table": "event", "id": 458, "action": "report", "description": "tiden \u00e4r fel, artikeln \u00e4r fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 209, "timestamp": "2026-04-16T12:13:05.282991+00:00"}
+{"table": "event", "id": 430, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 210, "timestamp": "2026-04-16T12:21:31.493767+00:00"}
