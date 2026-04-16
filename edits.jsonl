@@ -136,3 +136,4 @@
 {"table": "event", "id": 490, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 225, "timestamp": "2026-04-16T12:28:58.881960+00:00"}
 {"table": "event", "id": 481, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 227, "timestamp": "2026-04-16T12:29:26.799384+00:00"}
 {"table": "event", "id": 516, "action": "report", "description": "jag tror tiden \u00e4r fel", "reviewer": "AndresBPinto", "issue_number": 228, "timestamp": "2026-04-16T12:30:12.521804+00:00"}
+{"table": "event", "id": 509, "action": "mark_blocked", "reason": "inte en PE; *sammantr\u00e4de till blacklist", "reviewer": "AndresBPinto", "issue_number": 229, "timestamp": "2026-04-16T12:30:36.948586+00:00"}
