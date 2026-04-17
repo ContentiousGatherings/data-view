@@ -185,3 +185,4 @@
 {"table": "event", "id": 733, "action": "mark_blocked", "reason": "inte PE; begravning till blacklist", "reviewer": "AndresBPinto", "issue_number": 298, "timestamp": "2026-04-17T11:14:29.756566+00:00"}
 {"table": "event", "id": 729, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 299, "timestamp": "2026-04-17T11:33:22.186683+00:00"}
 {"table": "event", "id": 749, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 301, "timestamp": "2026-04-17T11:34:06.286820+00:00"}
+{"table": "event", "id": 747, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 302, "timestamp": "2026-04-17T11:34:36.240389+00:00"}
