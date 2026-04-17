@@ -209,3 +209,4 @@
 {"table": "event", "id": 851, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 333, "timestamp": "2026-04-17T11:50:35.981431+00:00"}
 {"table": "event", "id": 850, "action": "report", "description": "denna typ av beslut \u00e4r bra att koppla till demonstrationen 1 maj (d\u00e5 vet vi vissa som antagligen deltog), men h\u00e4r \u00e4r tiden fel ska vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 334, "timestamp": "2026-04-17T11:51:58.621966+00:00"}
 {"table": "event", "id": 843, "action": "report", "description": "jag tror tiden \u00e4r fel", "reviewer": "AndresBPinto", "issue_number": 335, "timestamp": "2026-04-17T11:52:21.685218+00:00"}
+{"table": "event", "id": 865, "action": "mark_blocked", "reason": "kommunalst\u00e4mma inte PE; *st\u00e4mma till blacklist", "reviewer": "AndresBPinto", "issue_number": 336, "timestamp": "2026-04-17T11:52:58.563322+00:00"}
