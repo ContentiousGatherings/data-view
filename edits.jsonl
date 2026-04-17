@@ -166,3 +166,4 @@
 {"table": "event", "id": 645, "action": "report", "description": "h\u00e4r beh\u00f6vs en tydligare plats \u00e4n Sverige", "reviewer": "AndresBPinto", "issue_number": 272, "timestamp": "2026-04-17T10:59:08.898970+00:00"}
 {"table": "event", "id": 643, "action": "report", "description": "platsen \u00e4r problematisk. b\u00f6r nog vara Lund", "reviewer": "AndresBPinto", "issue_number": 273, "timestamp": "2026-04-17T11:00:11.980287+00:00"}
 {"table": "event", "id": 640, "action": "mark_blocked", "reason": "internt m\u00f6te, inte en PE", "reviewer": "AndresBPinto", "issue_number": 274, "timestamp": "2026-04-17T11:00:51.745498+00:00"}
+{"table": "event", "id": 659, "action": "report", "description": "platsen b\u00f6r vara Esl\u00f6v", "reviewer": "AndresBPinto", "issue_number": 276, "timestamp": "2026-04-17T11:01:35.983181+00:00"}
