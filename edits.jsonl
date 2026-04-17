@@ -203,3 +203,4 @@
 {"table": "event", "id": 800, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 325, "timestamp": "2026-04-17T11:46:37.919645+00:00"}
 {"table": "event", "id": 842, "action": "report", "description": "f\u00f6r vagt, saknar specifika m\u00f6ten med tid och plats", "reviewer": "AndresBPinto", "issue_number": 326, "timestamp": "2026-04-17T11:47:39.950985+00:00"}
 {"table": "event", "id": 833, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 327, "timestamp": "2026-04-17T11:48:15.099363+00:00"}
+{"table": "event", "id": 819, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 329, "timestamp": "2026-04-17T11:48:37.038845+00:00"}
