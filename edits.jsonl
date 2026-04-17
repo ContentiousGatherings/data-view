@@ -171,3 +171,4 @@
 {"table": "event", "id": 653, "action": "report", "description": "samma som event 654", "reviewer": "AndresBPinto", "issue_number": 279, "timestamp": "2026-04-17T11:03:26.091572+00:00"}
 {"table": "event", "id": 672, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 281, "timestamp": "2026-04-17T11:04:06.659103+00:00"}
 {"table": "event", "id": 671, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 282, "timestamp": "2026-04-17T11:04:38.558643+00:00"}
+{"table": "event", "id": 669, "action": "report", "description": "lite sv\u00e5r artikel f\u00f6r modellen, men r\u00e4tt plats f\u00f6r demonstrationen \u00e4r Malm\u00f6", "reviewer": "AndresBPinto", "issue_number": 283, "timestamp": "2026-04-17T11:05:14.898693+00:00"}
