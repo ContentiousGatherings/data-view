@@ -161,3 +161,4 @@
 {"table": "event", "id": 625, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 264, "timestamp": "2026-04-17T09:56:05.503216+00:00"}
 {"table": "event", "id": 634, "action": "report", "description": "tiden b\u00f6r vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 266, "timestamp": "2026-04-17T09:56:51.840683+00:00"}
 {"table": "event", "id": 632, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 268, "timestamp": "2026-04-17T09:57:29.789859+00:00"}
+{"table": "event", "id": 631, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 269, "timestamp": "2026-04-17T09:58:05.147286+00:00"}
