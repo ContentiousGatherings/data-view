@@ -199,3 +199,4 @@
 {"table": "event", "id": 784, "action": "report", "description": "h\u00e4r sl\u00e5s Malm\u00f6 och Landskrona samman, platsen ska vara Malm\u00f6", "reviewer": "AndresBPinto", "issue_number": 317, "timestamp": "2026-04-17T11:43:01.598408+00:00"}
 {"table": "event", "id": 777, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 319, "timestamp": "2026-04-17T11:43:40.143306+00:00"}
 {"table": "event", "id": 818, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 321, "timestamp": "2026-04-17T11:45:37.740365+00:00"}
+{"table": "event", "id": 805, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 323, "timestamp": "2026-04-17T11:46:06.479839+00:00"}
