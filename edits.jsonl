@@ -190,3 +190,4 @@
 {"table": "event", "id": 743, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 304, "timestamp": "2026-04-17T11:35:23.339790+00:00"}
 {"table": "event", "id": 759, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 305, "timestamp": "2026-04-17T11:36:40.220181+00:00"}
 {"table": "event", "id": 758, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 306, "timestamp": "2026-04-17T11:37:15.066028+00:00"}
+{"table": "event", "id": 755, "action": "report", "description": "f\u00f6r vagt, beskriver fenomenet snarare \u00e4n enskilda folkm\u00f6ten", "reviewer": "AndresBPinto", "issue_number": 308, "timestamp": "2026-04-17T11:38:05.577179+00:00"}
