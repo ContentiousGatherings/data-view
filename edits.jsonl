@@ -180,3 +180,4 @@
 {"table": "event", "id": 727, "action": "mark_blocked", "reason": "bildande av fackf\u00f6rening inte PE", "reviewer": "AndresBPinto", "issue_number": 291, "timestamp": "2026-04-17T11:11:29.381942+00:00"}
 {"table": "event", "id": 720, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 293, "timestamp": "2026-04-17T11:11:54.877391+00:00"}
 {"table": "event", "id": 740, "action": "report", "description": "platsen Ryssland borde vara blacklist", "reviewer": "AndresBPinto", "issue_number": 295, "timestamp": "2026-04-17T11:12:59.721174+00:00"}
+{"table": "event", "id": 737, "action": "mark_blocked", "reason": "inte PE; *kongress till blacklist", "reviewer": "AndresBPinto", "issue_number": 296, "timestamp": "2026-04-17T11:13:28.504192+00:00"}
