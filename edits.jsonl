@@ -207,3 +207,4 @@
 {"table": "event", "id": 854, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 330, "timestamp": "2026-04-17T11:49:13.322823+00:00"}
 {"table": "event", "id": 853, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 331, "timestamp": "2026-04-17T11:49:48.345013+00:00"}
 {"table": "event", "id": 851, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 333, "timestamp": "2026-04-17T11:50:35.981431+00:00"}
+{"table": "event", "id": 850, "action": "report", "description": "denna typ av beslut \u00e4r bra att koppla till demonstrationen 1 maj (d\u00e5 vet vi vissa som antagligen deltog), men h\u00e4r \u00e4r tiden fel ska vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 334, "timestamp": "2026-04-17T11:51:58.621966+00:00"}
