@@ -168,3 +168,4 @@
 {"table": "event", "id": 640, "action": "mark_blocked", "reason": "internt m\u00f6te, inte en PE", "reviewer": "AndresBPinto", "issue_number": 274, "timestamp": "2026-04-17T11:00:51.745498+00:00"}
 {"table": "event", "id": 659, "action": "report", "description": "platsen b\u00f6r vara Esl\u00f6v", "reviewer": "AndresBPinto", "issue_number": 276, "timestamp": "2026-04-17T11:01:35.983181+00:00"}
 {"table": "event", "id": 654, "action": "report", "description": "h\u00e4r f\u00e5ngas n\u00e5gra agitationsm\u00f6ten, beh\u00f6ver delas upp p\u00e5 enskilda events", "reviewer": "AndresBPinto", "issue_number": 278, "timestamp": "2026-04-17T11:02:45.866915+00:00"}
+{"table": "event", "id": 653, "action": "report", "description": "samma som event 654", "reviewer": "AndresBPinto", "issue_number": 279, "timestamp": "2026-04-17T11:03:26.091572+00:00"}
