@@ -1,0 +1,4069 @@
+[
+  {
+    "number": 36,
+    "title": "[Report] authoritativeevent/2509",
+    "state": "OPEN",
+    "labels": [
+      "needs-fix"
+    ],
+    "createdAt": "2026-04-15T13:40:04Z",
+    "table": "authoritativeevent",
+    "id": 2509,
+    "action": "report",
+    "description": "EDIT THIS: Jag är osäker på hur vi ska hantera denna typ av tillbakablickande och ganska vaga beskrivningar. Kanske är vi nöjda med att det antagligen var ett folkmöte i Örebro någon gång under 1848",
+    "reviewer": ""
+  },
+  {
+    "number": 37,
+    "title": "[Invalid] authoritativeevent/1264",
+    "state": "OPEN",
+    "labels": [
+      "needs-fix"
+    ],
+    "createdAt": "2026-04-15T13:41:11Z",
+    "table": "authoritativeevent",
+    "id": 1264,
+    "action": "mark_unusable",
+    "reason": "EDIT THIS: för vag beskrivning, saknas plats och specifikt möte",
+    "reviewer": ""
+  },
+  {
+    "number": 38,
+    "title": "[Invalid] authoritativeevent/1023",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:42:23Z",
+    "table": "authoritativeevent",
+    "id": 1023,
+    "action": "mark_unusable",
+    "reason": "inte ett folkmöte",
+    "reviewer": ""
+  },
+  {
+    "number": 39,
+    "title": "[Report] authoritativeevent/920",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:44:19Z",
+    "table": "authoritativeevent",
+    "id": 920,
+    "action": "report",
+    "description": "actors är fel, det är inte nationerna som gör ngt",
+    "reviewer": ""
+  },
+  {
+    "number": 40,
+    "title": "[Valid] authoritativeevent/1124",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:45:24Z",
+    "table": "authoritativeevent",
+    "id": 1124,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 41,
+    "title": "[Report] authoritativeevent/4122",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:46:49Z",
+    "table": "authoritativeevent",
+    "id": 4122,
+    "action": "report",
+    "description": "Mötet hölls i Ramlösa, finns egen post för det mötet, slå ihop denna med posten med Ramlösa som plats",
+    "reviewer": ""
+  },
+  {
+    "number": 42,
+    "title": "[Report] authoritativeevent/4125",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:47:38Z",
+    "table": "authoritativeevent",
+    "id": 4125,
+    "action": "report",
+    "description": "Mötet hölls i Ramlösa, finns egen post för det mötet, slå ihop denna med posten med Ramlösa som plats. Modellen verkar inte plocka upp flera av de namngivna talarna",
+    "reviewer": ""
+  },
+  {
+    "number": 43,
+    "title": "[Report] authoritativeevent/811",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:49:01Z",
+    "table": "authoritativeevent",
+    "id": 811,
+    "action": "report",
+    "description": "Bra att vi vet att det hölls 120 folkmöten 1845, men för allmänt för att vi ska ha nytta av det",
+    "reviewer": ""
+  },
+  {
+    "number": 44,
+    "title": "[Valid] authoritativeevent/714",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T13:49:26Z",
+    "table": "authoritativeevent",
+    "id": 714,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 45,
+    "title": "[Valid] authoritativeevent/2684",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:49:54Z",
+    "table": "authoritativeevent",
+    "id": 2684,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 46,
+    "title": "[Valid] authoritativeevent/3751",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:51:12Z",
+    "table": "authoritativeevent",
+    "id": 3751,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 47,
+    "title": "[Report] authoritativeevent/3918",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:52:07Z",
+    "table": "authoritativeevent",
+    "id": 3918,
+    "action": "report",
+    "description": "bör slås samman med föregående post. Korrekt datum för händelsen ä 6 mars 1864",
+    "reviewer": ""
+  },
+  {
+    "number": 48,
+    "title": "[Valid] authoritativeevent/4229",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:53:42Z",
+    "table": "authoritativeevent",
+    "id": 4229,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 49,
+    "title": "[Valid] authoritativeevent/2298",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:54:18Z",
+    "table": "authoritativeevent",
+    "id": 2298,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 50,
+    "title": "[Invalid] authoritativeevent/3204",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:54:52Z",
+    "table": "authoritativeevent",
+    "id": 3204,
+    "action": "mark_unusable",
+    "reason": "Bröllop är som regel inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 51,
+    "title": "[Report] authoritativeevent/2476",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:55:53Z",
+    "table": "authoritativeevent",
+    "id": 2476,
+    "action": "report",
+    "description": "Det verkar vara ett korrekt loggat möte, men inget i artikel texten visar det",
+    "reviewer": ""
+  },
+  {
+    "number": 52,
+    "title": "[Report] authoritativeevent/2475",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:56:44Z",
+    "table": "authoritativeevent",
+    "id": 2475,
+    "action": "report",
+    "description": "verkar vara ett korrekt möte, men inget i artikeltexten pekar på det",
+    "reviewer": ""
+  },
+  {
+    "number": 53,
+    "title": "[Valid] authoritativeevent/4131",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:57:13Z",
+    "table": "authoritativeevent",
+    "id": 4131,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 54,
+    "title": "[Valid] authoritativeevent/2465",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:58:03Z",
+    "table": "authoritativeevent",
+    "id": 2465,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 55,
+    "title": "[Valid] authoritativeevent/2464",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T13:58:20Z",
+    "table": "authoritativeevent",
+    "id": 2464,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 56,
+    "title": "[Valid] authoritativeevent/397",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T13:58:39Z",
+    "table": "authoritativeevent",
+    "id": 397,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 57,
+    "title": "[Valid] authoritativeevent/3207",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:01:27Z",
+    "table": "authoritativeevent",
+    "id": 3207,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 58,
+    "title": "[Valid] authoritativeevent/940",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:02:16Z",
+    "table": "authoritativeevent",
+    "id": 940,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 59,
+    "title": "[Report] authoritativeevent/1900",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:07:35Z",
+    "table": "authoritativeevent",
+    "id": 1900,
+    "action": "report",
+    "description": "timestamp Ringsjön är väl inte rätt. Även om den sedan normaliserar till rätt datum",
+    "reviewer": ""
+  },
+  {
+    "number": 60,
+    "title": "[Report] authoritativeevent/1526",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:10:05Z",
+    "table": "authoritativeevent",
+    "id": 1526,
+    "action": "report",
+    "description": "lite osäker på om tiden för mötet är rätt. Datumet som anges är när en pastor talat illa om mötet",
+    "reviewer": ""
+  },
+  {
+    "number": 61,
+    "title": "[Valid] authoritativeevent/3441",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:10:37Z",
+    "table": "authoritativeevent",
+    "id": 3441,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 62,
+    "title": "[Report] authoritativeevent/1612",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:12:13Z",
+    "table": "authoritativeevent",
+    "id": 1612,
+    "action": "report",
+    "description": "Nästan rätt, men tiden anges till 6 aug. Rätt datum är 4 aug",
+    "reviewer": ""
+  },
+  {
+    "number": 63,
+    "title": "[Report] authoritativeevent/2806",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:13:08Z",
+    "table": "authoritativeevent",
+    "id": 2806,
+    "action": "report",
+    "description": "datumet är fel, ska vara 4 aug. bör slås ihop",
+    "reviewer": ""
+  },
+  {
+    "number": 64,
+    "title": "[Report] authoritativeevent/1898",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:14:42Z",
+    "table": "authoritativeevent",
+    "id": 1898,
+    "action": "report",
+    "description": "ett kombinat av tre separata händelser",
+    "reviewer": ""
+  },
+  {
+    "number": 65,
+    "title": "[Valid] authoritativeevent/1731",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:15:34Z",
+    "table": "authoritativeevent",
+    "id": 1731,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 66,
+    "title": "[Valid] authoritativeevent/1730",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:15:58Z",
+    "table": "authoritativeevent",
+    "id": 1730,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 67,
+    "title": "[Valid] authoritativeevent/1903",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:16:54Z",
+    "table": "authoritativeevent",
+    "id": 1903,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 68,
+    "title": "[Valid] authoritativeevent/1904",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:17:55Z",
+    "table": "authoritativeevent",
+    "id": 1904,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 69,
+    "title": "[Valid] event/6",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:20:58Z",
+    "table": "event",
+    "id": 6,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 70,
+    "title": "[Valid] event/18",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:21:26Z",
+    "table": "event",
+    "id": 18,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 71,
+    "title": "[Report] event/19",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:21:55Z",
+    "table": "event",
+    "id": 19,
+    "action": "report",
+    "description": "i stort sett rätt, men plockar inte ut talarna som Actors",
+    "reviewer": ""
+  },
+  {
+    "number": 72,
+    "title": "[Block] event/20",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:22:25Z",
+    "table": "event",
+    "id": 20,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 73,
+    "title": "[Valid] event/23",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:22:44Z",
+    "table": "event",
+    "id": 23,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 74,
+    "title": "[Report] event/25",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:23:18Z",
+    "table": "event",
+    "id": 25,
+    "action": "report",
+    "description": "oklart om detta är ett möte",
+    "reviewer": ""
+  },
+  {
+    "number": 75,
+    "title": "[Valid] event/27",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:23:38Z",
+    "table": "event",
+    "id": 27,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 76,
+    "title": "[Valid] event/30",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:23:54Z",
+    "table": "event",
+    "id": 30,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 77,
+    "title": "[Valid] event/31",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:24:09Z",
+    "table": "event",
+    "id": 31,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 78,
+    "title": "[Valid] event/38",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:25:41Z",
+    "table": "event",
+    "id": 38,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 79,
+    "title": "[Block] event/41",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:26:07Z",
+    "table": "event",
+    "id": 41,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 80,
+    "title": "[Valid] event/52",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:26:28Z",
+    "table": "event",
+    "id": 52,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 81,
+    "title": "[Valid] event/53",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:26:48Z",
+    "table": "event",
+    "id": 53,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 82,
+    "title": "[Invalid] event/56",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:27:53Z",
+    "table": "event",
+    "id": 56,
+    "action": "mark_unusable",
+    "reason": "Generell artikel om majdemonstrationer. hänvisar inte till några faktiska demos",
+    "reviewer": ""
+  },
+  {
+    "number": 83,
+    "title": "[Valid] event/57",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:28:19Z",
+    "table": "event",
+    "id": 57,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 84,
+    "title": "[Invalid] event/58",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:28:42Z",
+    "table": "event",
+    "id": 58,
+    "action": "mark_unusable",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 85,
+    "title": "[Valid] event/61",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:32:00Z",
+    "table": "event",
+    "id": 61,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 86,
+    "title": "[Block] event/76",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:32:19Z",
+    "table": "event",
+    "id": 76,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 87,
+    "title": "[Valid] event/77",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:32:39Z",
+    "table": "event",
+    "id": 77,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 88,
+    "title": "[Valid] event/78",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:32:59Z",
+    "table": "event",
+    "id": 78,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 89,
+    "title": "[Valid] event/79",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:33:16Z",
+    "table": "event",
+    "id": 79,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 90,
+    "title": "[Block] event/90",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:33:44Z",
+    "table": "event",
+    "id": 90,
+    "action": "mark_blocked",
+    "reason": "Internt partimöte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 91,
+    "title": "[Report] event/91",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:34:33Z",
+    "table": "event",
+    "id": 91,
+    "action": "report",
+    "description": "denna är antagligen rätt, men behövs mer kontext för att kunna hjälpa med ort (gissningsvis är det Malmö)",
+    "reviewer": ""
+  },
+  {
+    "number": 92,
+    "title": "[Valid] event/94",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:34:48Z",
+    "table": "event",
+    "id": 94,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 93,
+    "title": "[Block] event/97",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:35:29Z",
+    "table": "event",
+    "id": 97,
+    "action": "mark_blocked",
+    "reason": "Jag tror detta är för vagt. kopplar inte till faktiska möten",
+    "reviewer": ""
+  },
+  {
+    "number": 94,
+    "title": "[Invalid] event/100",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:35:56Z",
+    "table": "event",
+    "id": 100,
+    "action": "mark_unusable",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 95,
+    "title": "[Invalid] event/101",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:36:22Z",
+    "table": "event",
+    "id": 101,
+    "action": "mark_unusable",
+    "reason": "med stor sannolikhet inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 96,
+    "title": "[Block] event/105",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-15T14:36:52Z",
+    "table": "event",
+    "id": 105,
+    "action": "mark_blocked",
+    "reason": "konferenser ska väl vara på vår blacklist?",
+    "reviewer": ""
+  },
+  {
+    "number": 97,
+    "title": "[Valid] event/107",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-15T14:37:07Z",
+    "table": "event",
+    "id": 107,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 98,
+    "title": "[Report] authoritativeevent/1898",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T08:59:55Z",
+    "table": "authoritativeevent",
+    "id": 1898,
+    "action": "report",
+    "description": "Mötet verkar vara en hallucination, kan inte hitta något av de mötena som rapporteras, tre olika möten har slagits samman till ett",
+    "reviewer": ""
+  },
+  {
+    "number": 99,
+    "title": "[Report] event/109",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:30:57Z",
+    "table": "event",
+    "id": 109,
+    "action": "report",
+    "description": "För vag plats, jag hade behövt en ort",
+    "reviewer": ""
+  },
+  {
+    "number": 100,
+    "title": "[Valid] event/123",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T09:31:10Z",
+    "table": "event",
+    "id": 123,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 101,
+    "title": "[Report] event/122",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:32:26Z",
+    "table": "event",
+    "id": 122,
+    "action": "report",
+    "description": "Osäker på om detta är ett folkmöte enligt vår definition, verkar vara för enbart nominering av riksdagskandidater",
+    "reviewer": ""
+  },
+  {
+    "number": 102,
+    "title": "[Valid] event/115",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:34:12Z",
+    "table": "event",
+    "id": 115,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 103,
+    "title": "[Valid] event/114",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T09:34:33Z",
+    "table": "event",
+    "id": 114,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 104,
+    "title": "[Block] event/141",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:35:39Z",
+    "table": "event",
+    "id": 141,
+    "action": "mark_blocked",
+    "reason": "Inte ett offentligt tillgängligt möte",
+    "reviewer": ""
+  },
+  {
+    "number": 105,
+    "title": "[Block] event/136",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T09:36:18Z",
+    "table": "event",
+    "id": 136,
+    "action": "mark_blocked",
+    "reason": "Revisionsberättelse, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 106,
+    "title": "[Valid] event/134",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:36:37Z",
+    "table": "event",
+    "id": 134,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 107,
+    "title": "[Report] event/131",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:37:48Z",
+    "table": "event",
+    "id": 131,
+    "action": "report",
+    "description": "Datumet är fel, demonstrationen bör ha skett 1 maj. Det nämns aktörer i texten som modellen inte plockat upp",
+    "reviewer": ""
+  },
+  {
+    "number": 108,
+    "title": "[Block] event/127",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:38:25Z",
+    "table": "event",
+    "id": 127,
+    "action": "mark_blocked",
+    "reason": "stängt möte mellan kommitte och statsrådsberedningen, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 109,
+    "title": "[Valid] event/149",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T09:38:53Z",
+    "table": "event",
+    "id": 149,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 110,
+    "title": "[Valid] event/148",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:39:11Z",
+    "table": "event",
+    "id": 148,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 111,
+    "title": "[Report] event/146",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:39:55Z",
+    "table": "event",
+    "id": 146,
+    "action": "report",
+    "description": "för vagt med att det skett ett oklart antal möten under föregående år",
+    "reviewer": ""
+  },
+  {
+    "number": 112,
+    "title": "[Valid] event/142",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:40:36Z",
+    "table": "event",
+    "id": 142,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 113,
+    "title": "[Valid] event/203",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:41:14Z",
+    "table": "event",
+    "id": 203,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 114,
+    "title": "[Valid] event/171",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:41:49Z",
+    "table": "event",
+    "id": 171,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 115,
+    "title": "[Block] event/165",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:42:29Z",
+    "table": "event",
+    "id": 165,
+    "action": "mark_blocked",
+    "reason": "Sverige är en för vag plats",
+    "reviewer": ""
+  },
+  {
+    "number": 116,
+    "title": "[Block] event/164",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:43:27Z",
+    "table": "event",
+    "id": 164,
+    "action": "mark_blocked",
+    "reason": "beskriver slutet möte; att det ska vara demonstration 1 maj är rätt, men eventet har fel datum",
+    "reviewer": ""
+  },
+  {
+    "number": 117,
+    "title": "[Valid] event/160",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T09:43:42Z",
+    "table": "event",
+    "id": 160,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 118,
+    "title": "[Block] event/209",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T10:47:09Z",
+    "table": "event",
+    "id": 209,
+    "action": "mark_blocked",
+    "reason": "för vagt (\"funderar på att\") för att vi ska veta att mötet ägt rum",
+    "reviewer": "",
+    "_parse_note": "JSON had unescaped quotes in original issue body"
+  },
+  {
+    "number": 119,
+    "title": "[Block] event/208",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:46:18Z",
+    "table": "event",
+    "id": 208,
+    "action": "mark_blocked",
+    "reason": "den här demonstrationen ägde inte rum, den blev ju hindrad",
+    "reviewer": ""
+  },
+  {
+    "number": 120,
+    "title": "[Valid] event/207",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T09:46:31Z",
+    "table": "event",
+    "id": 207,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 121,
+    "title": "[Block] event/210",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:55:07Z",
+    "table": "event",
+    "id": 210,
+    "action": "mark_blocked",
+    "reason": "Föredrag ska inte inkluderas enligt kodboken",
+    "reviewer": ""
+  },
+  {
+    "number": 122,
+    "title": "[Valid] event/204",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T09:55:44Z",
+    "table": "event",
+    "id": 204,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 123,
+    "title": "[Block] event/222",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:14:18Z",
+    "table": "event",
+    "id": 222,
+    "action": "mark_blocked",
+    "reason": "strejkmöte, inte en öppen PE",
+    "reviewer": ""
+  },
+  {
+    "number": 124,
+    "title": "[Report] event/221",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:15:19Z",
+    "table": "event",
+    "id": 221,
+    "action": "report",
+    "description": "denna typ av framåtsyftande artilkar tycker jag håller för en event; platsen saknas, bör vara Kristianstad",
+    "reviewer": ""
+  },
+  {
+    "number": 125,
+    "title": "[Report] event/220",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:15:51Z",
+    "table": "event",
+    "id": 220,
+    "action": "report",
+    "description": "samma händelse som 221",
+    "reviewer": ""
+  },
+  {
+    "number": 126,
+    "title": "[Valid] event/218",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:16:10Z",
+    "table": "event",
+    "id": 218,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 127,
+    "title": "[Valid] event/214",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:16:32Z",
+    "table": "event",
+    "id": 214,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 128,
+    "title": "[Block] event/254",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:17:26Z",
+    "table": "event",
+    "id": 254,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 129,
+    "title": "[Block] event/253",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:18:00Z",
+    "table": "event",
+    "id": 253,
+    "action": "mark_blocked",
+    "reason": "utställning inte en PE; lägg till utställning till vår blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 130,
+    "title": "[Valid] event/235",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:20:14Z",
+    "table": "event",
+    "id": 235,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 131,
+    "title": "[Report] event/228",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:20:49Z",
+    "table": "event",
+    "id": 228,
+    "action": "report",
+    "description": "Ralmö bör vara Malmö. Antagligen ett problem med OCR snarare än modellen",
+    "reviewer": ""
+  },
+  {
+    "number": 132,
+    "title": "[Valid] event/223",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:21:20Z",
+    "table": "event",
+    "id": 223,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 133,
+    "title": "[Valid] event/270",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:21:41Z",
+    "table": "event",
+    "id": 270,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 134,
+    "title": "[Block] event/267",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:22:34Z",
+    "table": "event",
+    "id": 267,
+    "action": "mark_blocked",
+    "reason": "Domstolsförhandlingen är inte en PE; om möjligt bör det gå att få fram det faktiska mötet ur artikeln",
+    "reviewer": ""
+  },
+  {
+    "number": 135,
+    "title": "[Report] event/265",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:22:58Z",
+    "table": "event",
+    "id": 265,
+    "action": "report",
+    "description": "Överallt är en för vag plats",
+    "reviewer": ""
+  },
+  {
+    "number": 136,
+    "title": "[Block] event/261",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:23:47Z",
+    "table": "event",
+    "id": 261,
+    "action": "mark_blocked",
+    "reason": "för brett och vagt, kan inte se att några faktiska möten med tid och plats nämns",
+    "reviewer": ""
+  },
+  {
+    "number": 137,
+    "title": "[Valid] event/255",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:24:02Z",
+    "table": "event",
+    "id": 255,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 138,
+    "title": "[Block] event/278",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:24:51Z",
+    "table": "event",
+    "id": 278,
+    "action": "mark_blocked",
+    "reason": "för vagt, framåtsyftande",
+    "reviewer": ""
+  },
+  {
+    "number": 139,
+    "title": "[Report] event/277",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:25:27Z",
+    "table": "event",
+    "id": 277,
+    "action": "report",
+    "description": "normaliseringen är fel, bör vara 1 maj",
+    "reviewer": ""
+  },
+  {
+    "number": 140,
+    "title": "[Report] event/274",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:25:58Z",
+    "table": "event",
+    "id": 274,
+    "action": "report",
+    "description": "bör delas i två separata möten",
+    "reviewer": ""
+  },
+  {
+    "number": 141,
+    "title": "[Valid] event/272",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:26:13Z",
+    "table": "event",
+    "id": 272,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 142,
+    "title": "[Block] event/271",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:26:48Z",
+    "table": "event",
+    "id": 271,
+    "action": "mark_blocked",
+    "reason": "Strejkmöte, inte en PE enligt våra definitioner",
+    "reviewer": ""
+  },
+  {
+    "number": 143,
+    "title": "[Block] event/290",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:28:42Z",
+    "table": "event",
+    "id": 290,
+    "action": "mark_blocked",
+    "reason": "valmöte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 144,
+    "title": "[Valid] event/289",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:29:10Z",
+    "table": "event",
+    "id": 289,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 145,
+    "title": "[Block] event/287",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:29:40Z",
+    "table": "event",
+    "id": 287,
+    "action": "mark_blocked",
+    "reason": "internt möte mellan fackföreningar, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 146,
+    "title": "[Block] event/280",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:30:08Z",
+    "table": "event",
+    "id": 280,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 147,
+    "title": "[Block] event/279",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:30:33Z",
+    "table": "event",
+    "id": 279,
+    "action": "mark_blocked",
+    "reason": "inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 148,
+    "title": "[Block] event/315",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:31:19Z",
+    "table": "event",
+    "id": 315,
+    "action": "mark_blocked",
+    "reason": "inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 149,
+    "title": "[Block] event/314",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:31:49Z",
+    "table": "event",
+    "id": 314,
+    "action": "mark_blocked",
+    "reason": "föredrag inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 150,
+    "title": "[Block] event/312",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:32:07Z",
+    "table": "event",
+    "id": 312,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 151,
+    "title": "[Valid] event/311",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:32:27Z",
+    "table": "event",
+    "id": 311,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 152,
+    "title": "[Block] event/297",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:32:55Z",
+    "table": "event",
+    "id": 297,
+    "action": "mark_blocked",
+    "reason": "medlemsmöte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 153,
+    "title": "[Valid] event/291",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:33:16Z",
+    "table": "event",
+    "id": 291,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 154,
+    "title": "[Block] event/323",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:34:16Z",
+    "table": "event",
+    "id": 323,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 155,
+    "title": "[Valid] event/321",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:34:35Z",
+    "table": "event",
+    "id": 321,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 156,
+    "title": "[Valid] event/320",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:34:45Z",
+    "table": "event",
+    "id": 320,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 157,
+    "title": "[Valid] event/318",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:34:57Z",
+    "table": "event",
+    "id": 318,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 158,
+    "title": "[Valid] event/317",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:35:13Z",
+    "table": "event",
+    "id": 317,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 159,
+    "title": "[Block] event/371",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:35:44Z",
+    "table": "event",
+    "id": 371,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 160,
+    "title": "[Valid] event/338",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:35:56Z",
+    "table": "event",
+    "id": 338,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 161,
+    "title": "[Block] event/329",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:36:37Z",
+    "table": "event",
+    "id": 329,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 162,
+    "title": "[Block] event/328",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:38:10Z",
+    "table": "event",
+    "id": 328,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 163,
+    "title": "[Valid] event/324",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:38:20Z",
+    "table": "event",
+    "id": 324,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 164,
+    "title": "[Block] event/386",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:38:49Z",
+    "table": "event",
+    "id": 386,
+    "action": "mark_blocked",
+    "reason": "intern möte inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 165,
+    "title": "[Block] event/385",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:39:21Z",
+    "table": "event",
+    "id": 385,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 166,
+    "title": "[Valid] event/384",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:39:33Z",
+    "table": "event",
+    "id": 384,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 167,
+    "title": "[Valid] event/378",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:39:48Z",
+    "table": "event",
+    "id": 378,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 168,
+    "title": "[Block] event/374",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:40:22Z",
+    "table": "event",
+    "id": 374,
+    "action": "mark_blocked",
+    "reason": "verkar vara ett internt möte med majdemonstrationer på dagordningen, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 169,
+    "title": "[Valid] event/401",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:40:47Z",
+    "table": "event",
+    "id": 401,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 170,
+    "title": "[Report] event/400",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:42:41Z",
+    "table": "event",
+    "id": 400,
+    "action": "report",
+    "description": "Timestamp är fel, ska vara 1 maj",
+    "reviewer": ""
+  },
+  {
+    "number": 171,
+    "title": "[Report] event/396",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:50:16Z",
+    "table": "event",
+    "id": 396,
+    "action": "report",
+    "description": "oklart om detta är en PE, att det omtalas tivolipublik pekar i annan riktning. Hade behövt en länk till artikeln",
+    "reviewer": ""
+  },
+  {
+    "number": 172,
+    "title": "[Valid] event/390",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:50:28Z",
+    "table": "event",
+    "id": 390,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 173,
+    "title": "[Report] event/389",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:51:15Z",
+    "table": "event",
+    "id": 389,
+    "action": "report",
+    "description": "omtalar två folkmöten, men saknar både tid och plats för dessa möten",
+    "reviewer": ""
+  },
+  {
+    "number": 174,
+    "title": "[Valid] event/387",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:51:29Z",
+    "table": "event",
+    "id": 387,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 175,
+    "title": "[Valid] event/387",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:51:44Z",
+    "table": "event",
+    "id": 387,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 176,
+    "title": "[Report] event/411",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:55:30Z",
+    "table": "event",
+    "id": 411,
+    "action": "report",
+    "description": "modellen har inte plockat upp rätt tid eller plats för folkmötet. Rätt datum ska vara 15 augusti, plats Ladugårdsgärdet",
+    "reviewer": ""
+  },
+  {
+    "number": 177,
+    "title": "[Block] event/409",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:56:16Z",
+    "table": "event",
+    "id": 409,
+    "action": "mark_blocked",
+    "reason": "strejk, ska väl inte vara med",
+    "reviewer": ""
+  },
+  {
+    "number": 178,
+    "title": "[Block] event/407",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:57:22Z",
+    "table": "event",
+    "id": 407,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 179,
+    "title": "[Valid] event/406",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:57:42Z",
+    "table": "event",
+    "id": 406,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 180,
+    "title": "[Block] event/403",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T11:58:03Z",
+    "table": "event",
+    "id": 403,
+    "action": "mark_blocked",
+    "reason": "högtidsdag, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 181,
+    "title": "[Valid] event/402",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:58:21Z",
+    "table": "event",
+    "id": 402,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 182,
+    "title": "[Valid] event/418",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T11:59:50Z",
+    "table": "event",
+    "id": 418,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 183,
+    "title": "[Valid] event/417",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:00:12Z",
+    "table": "event",
+    "id": 417,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 184,
+    "title": "[Block] event/415",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:00:40Z",
+    "table": "event",
+    "id": 415,
+    "action": "mark_blocked",
+    "reason": "internt möte inte en PE; styrelsemöten till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 185,
+    "title": "[Block] event/414",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:01:01Z",
+    "table": "event",
+    "id": 414,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 186,
+    "title": "[Block] event/413",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:01:28Z",
+    "table": "event",
+    "id": 413,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE; sammanträde till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 187,
+    "title": "[Valid] event/426",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:02:02Z",
+    "table": "event",
+    "id": 426,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 188,
+    "title": "[Report] event/425",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:02:44Z",
+    "table": "event",
+    "id": 425,
+    "action": "report",
+    "description": "oklart om detta verkligen är ett folkmöte, att det ska ha hänt på Operans scen talar starkt mot",
+    "reviewer": ""
+  },
+  {
+    "number": 189,
+    "title": "[Valid] event/424",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:02:56Z",
+    "table": "event",
+    "id": 424,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 190,
+    "title": "[Block] event/423",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:03:31Z",
+    "table": "event",
+    "id": 423,
+    "action": "mark_blocked",
+    "reason": "verkar vara järnvägsmöte, inte PE; järnvägsmöte till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 191,
+    "title": "[Valid] event/420",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:03:47Z",
+    "table": "event",
+    "id": 420,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 192,
+    "title": "[Valid] event/432",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:04:06Z",
+    "table": "event",
+    "id": 432,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 193,
+    "title": "[Report] event/429",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:05:00Z",
+    "table": "event",
+    "id": 429,
+    "action": "report",
+    "description": "modellen verkar ta att ngn är ordförande som intäkt för att det hållits ett möte. Så är inte fallet",
+    "reviewer": ""
+  },
+  {
+    "number": 194,
+    "title": "[Block] event/428",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:05:31Z",
+    "table": "event",
+    "id": 428,
+    "action": "mark_blocked",
+    "reason": "möte för bara rösträttsinnehavare, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 195,
+    "title": "[Valid] event/427",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:05:46Z",
+    "table": "event",
+    "id": 427,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 196,
+    "title": "[Valid] event/442",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:06:22Z",
+    "table": "event",
+    "id": 442,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 197,
+    "title": "[Report] event/441",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:07:08Z",
+    "table": "event",
+    "id": 441,
+    "action": "report",
+    "description": "jag tror inte detta handlar om en PE, för det verkar vara ett tryckfrihetsåtal efter att ha tryckt en resolution från ett folkmöte",
+    "reviewer": ""
+  },
+  {
+    "number": 198,
+    "title": "[Valid] event/439",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:07:37Z",
+    "table": "event",
+    "id": 439,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 199,
+    "title": "[Valid] event/438",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:07:49Z",
+    "table": "event",
+    "id": 438,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 200,
+    "title": "[Report] event/436",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:08:15Z",
+    "table": "event",
+    "id": 436,
+    "action": "report",
+    "description": "tiden är fel, bör vara 1 maj",
+    "reviewer": ""
+  },
+  {
+    "number": 201,
+    "title": "[Block] event/450",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:08:49Z",
+    "table": "event",
+    "id": 450,
+    "action": "mark_blocked",
+    "reason": "inte PE; *fest till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 202,
+    "title": "[Valid] event/448",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:08:58Z",
+    "table": "event",
+    "id": 448,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 203,
+    "title": "[Valid] event/447",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:09:14Z",
+    "table": "event",
+    "id": 447,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 204,
+    "title": "[Report] event/446",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:09:33Z",
+    "table": "event",
+    "id": 446,
+    "action": "report",
+    "description": "för vag plats",
+    "reviewer": ""
+  },
+  {
+    "number": 205,
+    "title": "[Report] event/444",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:10:16Z",
+    "table": "event",
+    "id": 444,
+    "action": "report",
+    "description": "för vag plats, artikeln verkar mer tala om 1 maj som fenomen än om specifika demonstrationer",
+    "reviewer": ""
+  },
+  {
+    "number": 206,
+    "title": "[Block] event/461",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:10:48Z",
+    "table": "event",
+    "id": 461,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 207,
+    "title": "[Report] event/460",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:11:22Z",
+    "table": "event",
+    "id": 460,
+    "action": "report",
+    "description": "bör delas i två, för det är två olika demonstrationer som omnämns",
+    "reviewer": ""
+  },
+  {
+    "number": 208,
+    "title": "[Valid] event/459",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:11:53Z",
+    "table": "event",
+    "id": 459,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 209,
+    "title": "[Report] event/458",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:12:40Z",
+    "table": "event",
+    "id": 458,
+    "action": "report",
+    "description": "tiden är fel, artikeln är framåtsyftande",
+    "reviewer": ""
+  },
+  {
+    "number": 210,
+    "title": "[Block] event/430",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:21:08Z",
+    "table": "event",
+    "id": 430,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 211,
+    "title": "[Valid] event/454",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:21:34Z",
+    "table": "event",
+    "id": 454,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 212,
+    "title": "[Valid] event/452",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:21:44Z",
+    "table": "event",
+    "id": 452,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 213,
+    "title": "[Block] event/467",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:23:41Z",
+    "table": "event",
+    "id": 467,
+    "action": "mark_blocked",
+    "reason": "beslut i riksdagen, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 214,
+    "title": "[Block] event/466",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:24:33Z",
+    "table": "event",
+    "id": 466,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 466 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 215,
+    "title": "[Block] event/465",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:25:03Z",
+    "table": "event",
+    "id": 465,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 465 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 216,
+    "title": "[Block] event/464",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:25:18Z",
+    "table": "event",
+    "id": 464,
+    "action": "mark_blocked",
+    "reason": "inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 217,
+    "title": "[Block] event/462",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:25:43Z",
+    "table": "event",
+    "id": 462,
+    "action": "mark_blocked",
+    "reason": "inte PE; *smmanträde till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 218,
+    "title": "[Block] event/471",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:26:08Z",
+    "table": "event",
+    "id": 471,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 465 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 219,
+    "title": "[Block] event/470",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:26:28Z",
+    "table": "event",
+    "id": 470,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 465 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 220,
+    "title": "[Block] event/470",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:26:41Z",
+    "table": "event",
+    "id": 470,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 465 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 221,
+    "title": "[Block] event/469",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:26:57Z",
+    "table": "event",
+    "id": 469,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 465 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 222,
+    "title": "[Block] event/468",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:27:11Z",
+    "table": "event",
+    "id": 468,
+    "action": "mark_blocked",
+    "reason": "inte PE. events nr 465 till 471 är samma",
+    "reviewer": ""
+  },
+  {
+    "number": 223,
+    "title": "[Valid] event/496",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:27:41Z",
+    "table": "event",
+    "id": 496,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 224,
+    "title": "[Valid] event/495",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:27:59Z",
+    "table": "event",
+    "id": 495,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 225,
+    "title": "[Valid] event/490",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:28:32Z",
+    "table": "event",
+    "id": 490,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 226,
+    "title": "[Valid] event/485",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:28:48Z",
+    "table": "event",
+    "id": 485,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 227,
+    "title": "[Valid] event/481",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:29:00Z",
+    "table": "event",
+    "id": 481,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 228,
+    "title": "[Report] event/516",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:29:46Z",
+    "table": "event",
+    "id": 516,
+    "action": "report",
+    "description": "jag tror tiden är fel",
+    "reviewer": ""
+  },
+  {
+    "number": 229,
+    "title": "[Block] event/509",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:30:14Z",
+    "table": "event",
+    "id": 509,
+    "action": "mark_blocked",
+    "reason": "inte en PE; *sammanträde till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 230,
+    "title": "[Valid] event/508",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:31:12Z",
+    "table": "event",
+    "id": 508,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 231,
+    "title": "[Report] event/501",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:31:37Z",
+    "table": "event",
+    "id": 501,
+    "action": "report",
+    "description": "bör delas till en event per plats",
+    "reviewer": ""
+  },
+  {
+    "number": 232,
+    "title": "[Block] event/498",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:32:09Z",
+    "table": "event",
+    "id": 498,
+    "action": "mark_blocked",
+    "reason": "vi har avgränsat bort strejker",
+    "reviewer": ""
+  },
+  {
+    "number": 233,
+    "title": "[Block] event/522",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:33:07Z",
+    "table": "event",
+    "id": 522,
+    "action": "mark_blocked",
+    "reason": "inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 234,
+    "title": "[Block] event/521",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:33:24Z",
+    "table": "event",
+    "id": 521,
+    "action": "mark_blocked",
+    "reason": "inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 235,
+    "title": "[Valid] event/520",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:40:36Z",
+    "table": "event",
+    "id": 520,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 236,
+    "title": "[Block] event/517",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:41:31Z",
+    "table": "event",
+    "id": 517,
+    "action": "mark_blocked",
+    "reason": "artikeln beskriver en karneval, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 237,
+    "title": "[Valid] event/546",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:42:02Z",
+    "table": "event",
+    "id": 546,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 238,
+    "title": "[Valid] event/540",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:42:13Z",
+    "table": "event",
+    "id": 540,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 239,
+    "title": "[Valid] event/523",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:43:05Z",
+    "table": "event",
+    "id": 523,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 240,
+    "title": "[Valid] event/533",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:43:25Z",
+    "table": "event",
+    "id": 533,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 241,
+    "title": "[Block] event/525",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:44:11Z",
+    "table": "event",
+    "id": 525,
+    "action": "mark_blocked",
+    "reason": "inte PE; *fest till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 242,
+    "title": "[Block] event/524",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:44:30Z",
+    "table": "event",
+    "id": 524,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 243,
+    "title": "[Block] event/574",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:45:08Z",
+    "table": "event",
+    "id": 574,
+    "action": "mark_blocked",
+    "reason": "inget faktiskt möte nämns i texten",
+    "reviewer": ""
+  },
+  {
+    "number": 244,
+    "title": "[Block] event/573",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:45:29Z",
+    "table": "event",
+    "id": 573,
+    "action": "mark_blocked",
+    "reason": "paritinternt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 245,
+    "title": "[Block] event/551",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:45:52Z",
+    "table": "event",
+    "id": 551,
+    "action": "mark_blocked",
+    "reason": "valmöte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 246,
+    "title": "[Block] event/548",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:46:18Z",
+    "table": "event",
+    "id": 548,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 247,
+    "title": "[Block] event/602",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:46:52Z",
+    "table": "event",
+    "id": 602,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 248,
+    "title": "[Valid] event/600",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:47:20Z",
+    "table": "event",
+    "id": 600,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 249,
+    "title": "[Report] event/590",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:47:53Z",
+    "table": "event",
+    "id": 590,
+    "action": "report",
+    "description": "Timestamp bör vara 1 maj",
+    "reviewer": ""
+  },
+  {
+    "number": 250,
+    "title": "[Report] event/588",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:48:33Z",
+    "table": "event",
+    "id": 588,
+    "action": "report",
+    "description": "bör delas på de tre platser som möten ägt rum på; saknas tid",
+    "reviewer": ""
+  },
+  {
+    "number": 251,
+    "title": "[Valid] event/587",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:48:52Z",
+    "table": "event",
+    "id": 587,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 252,
+    "title": "[Valid] event/610",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:49:55Z",
+    "table": "event",
+    "id": 610,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 253,
+    "title": "[Block] event/609",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:50:24Z",
+    "table": "event",
+    "id": 609,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 254,
+    "title": "[Valid] event/607",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-16T12:50:42Z",
+    "table": "event",
+    "id": 607,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 255,
+    "title": "[Block] event/606",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:51:00Z",
+    "table": "event",
+    "id": 606,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 256,
+    "title": "[Valid] event/605",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-16T12:51:20Z",
+    "table": "event",
+    "id": 605,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 257,
+    "title": "[Valid] event/619",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:52:52Z",
+    "table": "event",
+    "id": 619,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 258,
+    "title": "[Valid] event/616",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T09:53:09Z",
+    "table": "event",
+    "id": 616,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 259,
+    "title": "[Report] event/615",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:54:00Z",
+    "table": "event",
+    "id": 615,
+    "action": "report",
+    "description": "plats bör framgå av artikeln, saknas här; actor ska vara arbetarekommunen",
+    "reviewer": ""
+  },
+  {
+    "number": 260,
+    "title": "[Block] event/612",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T09:54:19Z",
+    "table": "event",
+    "id": 612,
+    "action": "mark_blocked",
+    "reason": "valmöte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 261,
+    "title": "[Valid] event/611",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:54:40Z",
+    "table": "event",
+    "id": 611,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 262,
+    "title": "[Valid] event/628",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:54:59Z",
+    "table": "event",
+    "id": 628,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 263,
+    "title": "[Valid] event/627",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T09:55:10Z",
+    "table": "event",
+    "id": 627,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 264,
+    "title": "[Valid] event/625",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:55:39Z",
+    "table": "event",
+    "id": 625,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 265,
+    "title": "[Valid] event/620",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T09:55:52Z",
+    "table": "event",
+    "id": 620,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 266,
+    "title": "[Report] event/634",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:56:27Z",
+    "table": "event",
+    "id": 634,
+    "action": "report",
+    "description": "tiden bör vara 1 maj",
+    "reviewer": ""
+  },
+  {
+    "number": 267,
+    "title": "[Valid] event/633",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T09:56:43Z",
+    "table": "event",
+    "id": 633,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 268,
+    "title": "[Valid] event/632",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:57:04Z",
+    "table": "event",
+    "id": 632,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 269,
+    "title": "[Block] event/631",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T09:57:40Z",
+    "table": "event",
+    "id": 631,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 270,
+    "title": "[Valid] event/629",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T09:57:53Z",
+    "table": "event",
+    "id": 629,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 271,
+    "title": "[Valid] event/649",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T10:58:07Z",
+    "table": "event",
+    "id": 649,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 272,
+    "title": "[Report] event/645",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T10:58:42Z",
+    "table": "event",
+    "id": 645,
+    "action": "report",
+    "description": "här behövs en tydligare plats än Sverige",
+    "reviewer": ""
+  },
+  {
+    "number": 273,
+    "title": "[Report] event/643",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T10:59:48Z",
+    "table": "event",
+    "id": 643,
+    "action": "report",
+    "description": "platsen är problematisk. bör nog vara Lund",
+    "reviewer": ""
+  },
+  {
+    "number": 274,
+    "title": "[Block] event/640",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:00:13Z",
+    "table": "event",
+    "id": 640,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 275,
+    "title": "[Valid] event/639",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:00:34Z",
+    "table": "event",
+    "id": 639,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 276,
+    "title": "[Report] event/659",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:01:09Z",
+    "table": "event",
+    "id": 659,
+    "action": "report",
+    "description": "platsen bör vara Eslöv",
+    "reviewer": ""
+  },
+  {
+    "number": 277,
+    "title": "[Block] event/655",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:01:32Z",
+    "table": "event",
+    "id": 655,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 278,
+    "title": "[Report] event/654",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:02:22Z",
+    "table": "event",
+    "id": 654,
+    "action": "report",
+    "description": "här fångas några agitationsmöten, behöver delas upp på enskilda events",
+    "reviewer": ""
+  },
+  {
+    "number": 279,
+    "title": "[Report] event/653",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:03:01Z",
+    "table": "event",
+    "id": 653,
+    "action": "report",
+    "description": "samma som event 654",
+    "reviewer": ""
+  },
+  {
+    "number": 280,
+    "title": "[Report] event/652",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:03:19Z",
+    "table": "event",
+    "id": 652,
+    "action": "report",
+    "description": "samma som event 654",
+    "reviewer": ""
+  },
+  {
+    "number": 281,
+    "title": "[Valid] event/672",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:03:41Z",
+    "table": "event",
+    "id": 672,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 282,
+    "title": "[Valid] event/671",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:04:14Z",
+    "table": "event",
+    "id": 671,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 283,
+    "title": "[Report] event/669",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:04:51Z",
+    "table": "event",
+    "id": 669,
+    "action": "report",
+    "description": "lite svår artikel för modellen, men rätt plats för demonstrationen är Malmö",
+    "reviewer": ""
+  },
+  {
+    "number": 284,
+    "title": "[Report] event/662",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:06:40Z",
+    "table": "event",
+    "id": 662,
+    "action": "report",
+    "description": "den normaliserade tiden är fel, bör vara 1 april",
+    "reviewer": ""
+  },
+  {
+    "number": 285,
+    "title": "[Block] event/661",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:07:09Z",
+    "table": "event",
+    "id": 661,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 286,
+    "title": "[Valid] event/716",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:08:39Z",
+    "table": "event",
+    "id": 716,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 287,
+    "title": "[Valid] event/703",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:09:01Z",
+    "table": "event",
+    "id": 703,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 288,
+    "title": "[Valid] event/675",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:09:30Z",
+    "table": "event",
+    "id": 675,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 289,
+    "title": "[Valid] event/673",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:09:43Z",
+    "table": "event",
+    "id": 673,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 290,
+    "title": "[Block] event/728",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:10:11Z",
+    "table": "event",
+    "id": 728,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 291,
+    "title": "[Block] event/727",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:10:50Z",
+    "table": "event",
+    "id": 727,
+    "action": "mark_blocked",
+    "reason": "bildande av fackförening inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 292,
+    "title": "[Valid] event/724",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:11:08Z",
+    "table": "event",
+    "id": 724,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 293,
+    "title": "[Block] event/720",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:11:32Z",
+    "table": "event",
+    "id": 720,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 294,
+    "title": "[Valid] event/718",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:11:48Z",
+    "table": "event",
+    "id": 718,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 295,
+    "title": "[Report] event/740",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:12:33Z",
+    "table": "event",
+    "id": 740,
+    "action": "report",
+    "description": "platsen Ryssland borde vara blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 296,
+    "title": "[Block] event/737",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:13:03Z",
+    "table": "event",
+    "id": 737,
+    "action": "mark_blocked",
+    "reason": "inte PE; *kongress till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 297,
+    "title": "[Valid] event/734",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:13:44Z",
+    "table": "event",
+    "id": 734,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 298,
+    "title": "[Block] event/733",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:14:08Z",
+    "table": "event",
+    "id": 733,
+    "action": "mark_blocked",
+    "reason": "inte PE; begravning till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 299,
+    "title": "[Block] event/729",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:32:58Z",
+    "table": "event",
+    "id": 729,
+    "action": "mark_blocked",
+    "reason": "inte en PE",
+    "reviewer": ""
+  },
+  {
+    "number": 300,
+    "title": "[Valid] event/750",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:33:20Z",
+    "table": "event",
+    "id": 750,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 301,
+    "title": "[Valid] event/749",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:33:42Z",
+    "table": "event",
+    "id": 749,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 302,
+    "title": "[Valid] event/747",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:34:08Z",
+    "table": "event",
+    "id": 747,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 303,
+    "title": "[Valid] event/745",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:34:37Z",
+    "table": "event",
+    "id": 745,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 304,
+    "title": "[Block] event/743",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:35:00Z",
+    "table": "event",
+    "id": 743,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 305,
+    "title": "[Valid] event/759",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:36:15Z",
+    "table": "event",
+    "id": 759,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 306,
+    "title": "[Valid] event/758",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:36:50Z",
+    "table": "event",
+    "id": 758,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 307,
+    "title": "[Valid] event/757",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:37:08Z",
+    "table": "event",
+    "id": 757,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 308,
+    "title": "[Report] event/755",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:37:41Z",
+    "table": "event",
+    "id": 755,
+    "action": "report",
+    "description": "för vagt, beskriver fenomenet snarare än enskilda folkmöten",
+    "reviewer": ""
+  },
+  {
+    "number": 309,
+    "title": "[Valid] event/754",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:37:57Z",
+    "table": "event",
+    "id": 754,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 310,
+    "title": "[Valid] event/775",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:38:23Z",
+    "table": "event",
+    "id": 775,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 311,
+    "title": "[Valid] event/771",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:38:38Z",
+    "table": "event",
+    "id": 771,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 312,
+    "title": "[Valid] event/768",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:39:17Z",
+    "table": "event",
+    "id": 768,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 313,
+    "title": "[Block] event/764",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:39:37Z",
+    "table": "event",
+    "id": 764,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 314,
+    "title": "[Block] event/763",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:39:53Z",
+    "table": "event",
+    "id": 763,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 315,
+    "title": "[Valid] event/796",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:40:26Z",
+    "table": "event",
+    "id": 796,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 316,
+    "title": "[Report] event/788",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:41:59Z",
+    "table": "event",
+    "id": 788,
+    "action": "report",
+    "description": "ett återkommande fel är att modellen verkar prioritera spcifika platser framför stad. KAnske kan vi hitta ett sätt att få denna data på nivå Stad, men också att få med gator och andra platser på lägre nivå",
+    "reviewer": ""
+  },
+  {
+    "number": 317,
+    "title": "[Report] event/784",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:42:37Z",
+    "table": "event",
+    "id": 784,
+    "action": "report",
+    "description": "här slås Malmö och Landskrona samman, platsen ska vara Malmö",
+    "reviewer": ""
+  },
+  {
+    "number": 318,
+    "title": "[Block] event/778",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:42:55Z",
+    "table": "event",
+    "id": 778,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 319,
+    "title": "[Block] event/777",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:43:14Z",
+    "table": "event",
+    "id": 777,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 320,
+    "title": "[Block] event/777",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:43:30Z",
+    "table": "event",
+    "id": 777,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 321,
+    "title": "[Block] event/818",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:45:12Z",
+    "table": "event",
+    "id": 818,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 322,
+    "title": "[Valid] event/810",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:45:25Z",
+    "table": "event",
+    "id": 810,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 323,
+    "title": "[Valid] event/805",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:45:41Z",
+    "table": "event",
+    "id": 805,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 324,
+    "title": "[Block] event/801",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:46:03Z",
+    "table": "event",
+    "id": 801,
+    "action": "mark_blocked",
+    "reason": "inte PE; årssammankomst till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 325,
+    "title": "[Valid] event/800",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:46:12Z",
+    "table": "event",
+    "id": 800,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 326,
+    "title": "[Report] event/842",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:47:14Z",
+    "table": "event",
+    "id": 842,
+    "action": "report",
+    "description": "för vagt, saknar specifika möten med tid och plats",
+    "reviewer": ""
+  },
+  {
+    "number": 327,
+    "title": "[Valid] event/833",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:47:48Z",
+    "table": "event",
+    "id": 833,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 328,
+    "title": "[Valid] event/830",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:47:56Z",
+    "table": "event",
+    "id": 830,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 329,
+    "title": "[Block] event/819",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:48:15Z",
+    "table": "event",
+    "id": 819,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 330,
+    "title": "[Block] event/854",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:48:48Z",
+    "table": "event",
+    "id": 854,
+    "action": "mark_blocked",
+    "reason": "internt möte, inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 331,
+    "title": "[Block] event/853",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:49:24Z",
+    "table": "event",
+    "id": 853,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 332,
+    "title": "[Valid] event/852",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:49:39Z",
+    "table": "event",
+    "id": 852,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 333,
+    "title": "[Valid] event/851",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:50:10Z",
+    "table": "event",
+    "id": 851,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 334,
+    "title": "[Report] event/850",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:51:20Z",
+    "table": "event",
+    "id": 850,
+    "action": "report",
+    "description": "denna typ av beslut är bra att koppla till demonstrationen 1 maj (då vet vi vissa som antagligen deltog), men här är tiden fel ska vara 1 maj",
+    "reviewer": ""
+  },
+  {
+    "number": 335,
+    "title": "[Report] event/843",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:51:58Z",
+    "table": "event",
+    "id": 843,
+    "action": "report",
+    "description": "jag tror tiden är fel",
+    "reviewer": ""
+  },
+  {
+    "number": 336,
+    "title": "[Block] event/865",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:52:37Z",
+    "table": "event",
+    "id": 865,
+    "action": "mark_blocked",
+    "reason": "kommunalstämma inte PE; *stämma till blacklist",
+    "reviewer": ""
+  },
+  {
+    "number": 337,
+    "title": "[Report] event/864",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:53:11Z",
+    "table": "event",
+    "id": 864,
+    "action": "report",
+    "description": "oklart om detta är en PE, mer kontext behövs",
+    "reviewer": ""
+  },
+  {
+    "number": 338,
+    "title": "[Valid] event/863",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:53:23Z",
+    "table": "event",
+    "id": 863,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 339,
+    "title": "[Valid] event/859",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:53:42Z",
+    "table": "event",
+    "id": 859,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 340,
+    "title": "[Valid] event/858",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:53:52Z",
+    "table": "event",
+    "id": 858,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 341,
+    "title": "[Block] event/884",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:54:24Z",
+    "table": "event",
+    "id": 884,
+    "action": "mark_blocked",
+    "reason": "internt möte inte PE",
+    "reviewer": ""
+  },
+  {
+    "number": 342,
+    "title": "[Valid] event/880",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:54:34Z",
+    "table": "event",
+    "id": 880,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 343,
+    "title": "[Valid] event/879",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:54:47Z",
+    "table": "event",
+    "id": 879,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 344,
+    "title": "[Block] event/876",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:55:22Z",
+    "table": "event",
+    "id": 876,
+    "action": "mark_blocked",
+    "reason": "verkar vara agiterande text, inget PE nämns",
+    "reviewer": ""
+  },
+  {
+    "number": 345,
+    "title": "[Block] event/875",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:55:57Z",
+    "table": "event",
+    "id": 875,
+    "action": "mark_blocked",
+    "reason": "agiterande text, ingen PE nämns",
+    "reviewer": ""
+  },
+  {
+    "number": 346,
+    "title": "[Report] event/868",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:56:44Z",
+    "table": "event",
+    "id": 868,
+    "action": "report",
+    "description": "excerpten nämner bara skrivelse, svårt att se var mötet kommer från",
+    "reviewer": ""
+  },
+  {
+    "number": 347,
+    "title": "[Valid] event/901",
+    "state": "OPEN",
+    "labels": [],
+    "createdAt": "2026-04-17T11:57:04Z",
+    "table": "event",
+    "id": 901,
+    "action": "mark_valid",
+    "reviewer": ""
+  },
+  {
+    "number": 348,
+    "title": "[Report] event/891",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:58:41Z",
+    "table": "event",
+    "id": 891,
+    "action": "report",
+    "description": "beskriver avsaknaden av PE genom förbud att samlas i Boulognerskogen; Oklart om det är parken i Paris eller Gävle förbudet avser",
+    "reviewer": ""
+  },
+  {
+    "number": 349,
+    "title": "[Report] event/890",
+    "state": "OPEN",
+    "labels": [
+      "validated"
+    ],
+    "createdAt": "2026-04-17T11:59:28Z",
+    "table": "event",
+    "id": 890,
+    "action": "report",
+    "description": "texten beskriver en PE som inte hände pga förbud från polismästaren",
+    "reviewer": ""
+  }
+]
