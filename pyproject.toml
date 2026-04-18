@@ -1,0 +1,11 @@
+[project]
+name = "cg-data-view"
+version = "0.1.0"
+description = "Tools for validating and analyzing the Contentious Gatherings pipeline output"
+requires-python = ">=3.10"
+dependencies = [
+    "jinja2",
+    "openpyxl",
+    "sqlmodel",
+    "tqdm",
+]
