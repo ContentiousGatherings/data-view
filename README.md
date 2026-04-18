@@ -1,10 +1,13 @@
-# CG Review Site
+# CG Data View
 
-Static site generator for validating the Contentious Gatherings pipeline output.
+Tools for validating and analyzing the Contentious Gatherings pipeline output.
 
 ## Overview
 
-This tool generates a browsable HTML site from the pipeline database (`alpha.db`), allowing colleagues to review extracted entities and submit corrections via GitHub Issues.
+This repository contains two tools:
+
+1. **Review Site Generator** (`generator/`) — Generates a browsable HTML site from the pipeline database, allowing colleagues to review extracted entities and submit corrections via GitHub Issues.
+2. **Pilot Dataset Export** (`pilot/`) — Extracts AuthoritativeEvents matching specific meeting type search terms and exports them to `.xlsx` with embedded charts for initial analysis.
 
 ## Quick Start
 
@@ -164,9 +167,63 @@ GitHub Pages is configured to serve from the `docs/` folder on `main`.
 2. Update `_generate_all_pages()` in `generator/generate.py`
 3. Add to `entity_types` list in index template
 
+## Pilot Dataset Export
+
+Extracts deduplicated AuthoritativeEvents that match specific meeting type keywords and exports structured data to `.xlsx` for downstream analysis.
+
+### What it does
+
+1. Searches `MeetingType.name` for two search terms:
+   - **folkmöte** — public meetings
+   - **förstamaj-tåg** — May Day marches (matches spelling variants)
+2. Traces matched MeetingTypes through `Event` → `EventMatch` → `AuthoritativeEvent` to get deduplicated canonical events
+3. Resolves related entities: location, county (län), actors, source article excerpts and URLs
+4. Exports to a single `.xlsx` file with:
+   - **Data** sheet — one row per AuthoritativeEvent with all variables and IDs for traceability
+   - **Möten per år** sheet — line chart of events over time, per search term
+   - **Möten per län** sheet — bar chart of events by county, per search term
+
+### Output columns
+
+| Column | Source |
+|--------|--------|
+| AuthEvent ID | `AuthoritativeEvent.id` |
+| Datum | `AuthoritativeEvent.event_date_start` |
+| Kategori | `AuthoritativeEvent.category` |
+| Ort | `AuthoritativeLocation.name` |
+| Ort ID | `AuthoritativeLocation.id` |
+| Län | `AuthoritativeLocation.county` |
+| Aktörer | `AuthoritativeActor.name` (via `AuthoritativeEventActor`) |
+| Aktör-IDn | `AuthoritativeActor.id` values |
+| Textutdrag | Source `Event.excerpt` values (via `EventMatch`) |
+| Länkar | Source `Article.url` values |
+| Tidning | Source `Article.journal` values |
+| Käll-event-IDn | Source `Event.id` values |
+| Artikel-IDn | Source `Article.id` values |
+| MeetingType-IDn | Matched `MeetingType.id` values |
+| Sökord | Which search term matched |
+| Källor | `AuthoritativeEvent.source_event_count` |
+
+### Usage
+
+```bash
+pip install openpyxl sqlmodel tqdm
+
+python -m pilot --db ../alpha.db --xlsx
+```
+
+Produces a timestamped file, e.g. `2026-04-18T143022_pilot_dataset.xlsx`.
+
+| Option | Default | Description |
+|--------|---------|-------------|
+| `--db` | `../alpha.db` | Path to SQLite database |
+| `--xlsx` | (flag) | Produce the .xlsx output file |
+| `--usable-only` | (flag) | Exclude blocked/invalid AuthoritativeEvents |
+
 ## Dependencies
 
 - Python 3.10+
 - jinja2
 - sqlmodel
 - tqdm
+- openpyxl (pilot export)
