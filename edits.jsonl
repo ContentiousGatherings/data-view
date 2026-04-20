@@ -387,3 +387,4 @@
 {"table": "event", "id": 1692, "action": "report", "description": "den normaliserade tiden \u00e4r fel, b\u00f6r vara 8 eller 15 april 1871", "reviewer": "AndresBPinto", "issue_number": 617, "timestamp": "2026-04-20T12:21:35.700921+00:00"}
 {"table": "event", "id": 1690, "action": "mark_blocked", "reason": "inte en PE", "reviewer": "AndresBPinto", "issue_number": 618, "timestamp": "2026-04-20T12:22:10.158200+00:00"}
 {"table": "event", "id": 1688, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 620, "timestamp": "2026-04-20T12:22:52.931343+00:00"}
+{"table": "event", "id": 1706, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 622, "timestamp": "2026-04-20T12:23:34.457883+00:00"}
