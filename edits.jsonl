@@ -233,3 +233,4 @@
 {"table": "event", "id": 928, "action": "mark_blocked", "reason": "fram\u00e5tsyftande, vagt", "reviewer": "AndresBPinto", "issue_number": 369, "timestamp": "2026-04-20T08:11:58.438229+00:00"}
 {"table": "event", "id": 927, "action": "mark_blocked", "reason": "mkt oklart om detta \u00e4r en PE", "reviewer": "AndresBPinto", "issue_number": 370, "timestamp": "2026-04-20T08:12:27.192967+00:00"}
 {"table": "event", "id": 941, "action": "mark_blocked", "reason": "antagligen inte PE", "reviewer": "AndresBPinto", "issue_number": 372, "timestamp": "2026-04-20T08:13:11.471936+00:00"}
+{"table": "event", "id": 937, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 374, "timestamp": "2026-04-20T08:13:53.803441+00:00"}
