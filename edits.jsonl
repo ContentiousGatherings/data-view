@@ -289,3 +289,4 @@
 {"table": "event", "id": 1169, "action": "report", "description": "\u00e5ret \u00e4r antagligen fel", "reviewer": "AndresBPinto", "issue_number": 452, "timestamp": "2026-04-20T09:31:05.147383+00:00"}
 {"table": "event", "id": 1164, "action": "mark_blocked", "reason": "demonstrationen \u00e4r f\u00f6rbjuden, har inte \u00e4gt rum; Ett m\u00f6jligt sidosp\u00e5r hade varit att samla in ocks\u00e5 f\u00f6rbjudna demonstrationer", "reviewer": "AndresBPinto", "issue_number": 453, "timestamp": "2026-04-20T09:32:07.456785+00:00"}
 {"table": "event", "id": 1163, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 454, "timestamp": "2026-04-20T09:34:50.502151+00:00"}
+{"table": "event", "id": 1191, "action": "mark_blocked", "reason": "ingen konkret PE omn\u00e4mns", "reviewer": "AndresBPinto", "issue_number": 456, "timestamp": "2026-04-20T09:35:50.019201+00:00"}
