@@ -326,3 +326,4 @@
 {"table": "event", "id": 1386, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 512, "timestamp": "2026-04-20T11:09:09.255417+00:00"}
 {"table": "event", "id": 1334, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 514, "timestamp": "2026-04-20T11:09:52.734543+00:00"}
 {"table": "event", "id": 1400, "action": "mark_blocked", "reason": "Ryssland \u00e4r inte i Sverige", "reviewer": "AndresBPinto", "issue_number": 516, "timestamp": "2026-04-20T11:10:40.939779+00:00"}
+{"table": "event", "id": 1394, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 518, "timestamp": "2026-04-20T11:11:16.541893+00:00"}
