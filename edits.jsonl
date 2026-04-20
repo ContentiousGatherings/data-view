@@ -230,3 +230,4 @@
 {"table": "event", "id": 922, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 363, "timestamp": "2026-04-20T07:49:39.124948+00:00"}
 {"table": "event", "id": 918, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 365, "timestamp": "2026-04-20T08:10:28.818113+00:00"}
 {"table": "event", "id": 930, "action": "mark_blocked", "reason": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 367, "timestamp": "2026-04-20T08:11:22.243172+00:00"}
+{"table": "event", "id": 928, "action": "mark_blocked", "reason": "fram\u00e5tsyftande, vagt", "reviewer": "AndresBPinto", "issue_number": 369, "timestamp": "2026-04-20T08:11:58.438229+00:00"}
