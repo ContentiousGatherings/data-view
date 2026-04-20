@@ -245,3 +245,4 @@
 {"table": "event", "id": 958, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 386, "timestamp": "2026-04-20T08:19:21.918762+00:00"}
 {"table": "event", "id": 978, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 388, "timestamp": "2026-04-20T08:20:02.177467+00:00"}
 {"table": "event", "id": 977, "action": "report", "description": "fram\u00e5tsyftande, men h\u00f6gt k\u00e4llv\u00e4rde p\u00e5 att demonstrationen skulle h\u00e5llas", "reviewer": "AndresBPinto", "issue_number": 389, "timestamp": "2026-04-20T08:20:30.790697+00:00"}
+{"table": "event", "id": 974, "action": "mark_blocked", "reason": "f\u00f6r vagt, inga konkreta PE", "reviewer": "AndresBPinto", "issue_number": 391, "timestamp": "2026-04-20T08:21:15.785509+00:00"}
