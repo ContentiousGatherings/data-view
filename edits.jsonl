@@ -297,3 +297,4 @@
 {"table": "event", "id": 1194, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 463, "timestamp": "2026-04-20T09:38:48.419447+00:00"}
 {"table": "event", "id": 1192, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 465, "timestamp": "2026-04-20T09:39:14.890574+00:00"}
 {"table": "event", "id": 1220, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 466, "timestamp": "2026-04-20T09:39:38.660641+00:00"}
+{"table": "event", "id": 1215, "action": "mark_blocked", "reason": "internt m\u00f6te inf\u00f6r demonstration inte PE", "reviewer": "AndresBPinto", "issue_number": 467, "timestamp": "2026-04-20T09:40:07.058543+00:00"}
