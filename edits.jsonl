@@ -330,3 +330,4 @@
 {"table": "event", "id": 1401, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 520, "timestamp": "2026-04-20T11:11:40.574301+00:00"}
 {"table": "event", "id": 1411, "action": "mark_blocked", "reason": "antagligen inte PE, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 521, "timestamp": "2026-04-20T11:12:07.510278+00:00"}
 {"table": "event", "id": 1408, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 523, "timestamp": "2026-04-20T11:12:54.019159+00:00"}
+{"table": "event", "id": 1405, "action": "report", "description": "akt\u00f6rer ska delas", "reviewer": "AndresBPinto", "issue_number": 524, "timestamp": "2026-04-20T11:13:18.300788+00:00"}
