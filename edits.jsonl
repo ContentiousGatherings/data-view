@@ -242,3 +242,4 @@
 {"table": "event", "id": 944, "action": "mark_blocked", "reason": "internt m\u00f6te, ingen PE", "reviewer": "AndresBPinto", "issue_number": 382, "timestamp": "2026-04-20T08:17:34.829356+00:00"}
 {"table": "event", "id": 962, "action": "mark_blocked", "reason": "internt m\u00f6te  inte PE", "reviewer": "AndresBPinto", "issue_number": 383, "timestamp": "2026-04-20T08:18:00.124609+00:00"}
 {"table": "event", "id": 961, "action": "report", "description": "artikel om en kommande demonstration, men talarlistan kanske \u00e4nd\u00e5 g\u00f6r att den ska med", "reviewer": "AndresBPinto", "issue_number": 384, "timestamp": "2026-04-20T08:18:34.367908+00:00"}
+{"table": "event", "id": 958, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 386, "timestamp": "2026-04-20T08:19:21.918762+00:00"}
