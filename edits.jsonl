@@ -273,3 +273,4 @@
 {"table": "event", "id": 1129, "action": "report", "description": "b\u00f6r delas p\u00e5 flera events med en plats var", "reviewer": "AndresBPinto", "issue_number": 429, "timestamp": "2026-04-20T09:10:17.769868+00:00"}
 {"table": "event", "id": 1126, "action": "report", "description": "tiden b\u00f6r vara 1 maj eller d\u00e4romkring", "reviewer": "AndresBPinto", "issue_number": 430, "timestamp": "2026-04-20T09:10:55.860082+00:00"}
 {"table": "event", "id": 1124, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 432, "timestamp": "2026-04-20T09:11:25.632775+00:00"}
+{"table": "event", "id": 1115, "action": "mark_blocked", "reason": "fram\u00e5tsyftande, olkart om studentm\u00f6te \u00e4r PE", "reviewer": "AndresBPinto", "issue_number": 434, "timestamp": "2026-04-20T09:12:01.733316+00:00"}
