@@ -276,3 +276,4 @@
 {"table": "event", "id": 1115, "action": "mark_blocked", "reason": "fram\u00e5tsyftande, olkart om studentm\u00f6te \u00e4r PE", "reviewer": "AndresBPinto", "issue_number": 434, "timestamp": "2026-04-20T09:12:01.733316+00:00"}
 {"table": "event", "id": 1114, "action": "report", "description": "tiden \u00e4r fel, b\u00f6r vara 24 maj 1906", "reviewer": "AndresBPinto", "issue_number": 435, "timestamp": "2026-04-20T09:14:01.277148+00:00"}
 {"table": "event", "id": 1135, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 436, "timestamp": "2026-04-20T09:21:30.779888+00:00"}
+{"table": "event", "id": 1132, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 438, "timestamp": "2026-04-20T09:21:58.138804+00:00"}
