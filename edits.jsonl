@@ -303,3 +303,4 @@
 {"table": "event", "id": 1228, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 471, "timestamp": "2026-04-20T09:42:06.791002+00:00"}
 {"table": "event", "id": 1225, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 473, "timestamp": "2026-04-20T09:42:54.546183+00:00"}
 {"table": "event", "id": 1221, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 475, "timestamp": "2026-04-20T09:43:35.730205+00:00"}
+{"table": "event", "id": 1233, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 476, "timestamp": "2026-04-20T09:44:10.201091+00:00"}
