@@ -228,3 +228,4 @@
 {"table": "event", "id": 908, "action": "mark_blocked", "reason": "fram\u00e5tsyftande om demonstration", "reviewer": "AndresBPinto", "issue_number": 361, "timestamp": "2026-04-20T07:48:40.836676+00:00"}
 {"table": "event", "id": 925, "action": "report", "description": "antagligen internt m\u00f6te, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 362, "timestamp": "2026-04-20T07:49:15.762027+00:00"}
 {"table": "event", "id": 922, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 363, "timestamp": "2026-04-20T07:49:39.124948+00:00"}
+{"table": "event", "id": 918, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 365, "timestamp": "2026-04-20T08:10:28.818113+00:00"}
