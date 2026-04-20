@@ -379,3 +379,4 @@
 {"table": "event", "id": 1635, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 602, "timestamp": "2026-04-20T12:05:18.912594+00:00"}
 {"table": "event", "id": 1650, "action": "report", "description": "oklart om detta \u00e4r en PE, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 604, "timestamp": "2026-04-20T12:06:08.809713+00:00"}
 {"table": "event", "id": 1648, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 606, "timestamp": "2026-04-20T12:06:49.005056+00:00"}
+{"table": "event", "id": 1665, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 608, "timestamp": "2026-04-20T12:08:17.106318+00:00"}
