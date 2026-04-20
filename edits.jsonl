@@ -239,3 +239,4 @@
 {"table": "event", "id": 952, "action": "mark_blocked", "reason": "principiell text om 1 maj, inte konkret PE", "reviewer": "AndresBPinto", "issue_number": 379, "timestamp": "2026-04-20T08:15:40.635854+00:00"}
 {"table": "event", "id": 948, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 380, "timestamp": "2026-04-20T08:16:13.349816+00:00"}
 {"table": "event", "id": 945, "action": "report", "description": "internt m\u00f6te som iofs omtalar demonstration som h\u00e5llits p\u00e5 1 maj; platsen \u00e4r fel, ska vara Esl\u00f6v", "reviewer": "AndresBPinto", "issue_number": 381, "timestamp": "2026-04-20T08:17:00.502778+00:00"}
+{"table": "event", "id": 944, "action": "mark_blocked", "reason": "internt m\u00f6te, ingen PE", "reviewer": "AndresBPinto", "issue_number": 382, "timestamp": "2026-04-20T08:17:34.829356+00:00"}
