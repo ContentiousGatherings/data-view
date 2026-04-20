@@ -300,3 +300,4 @@
 {"table": "event", "id": 1215, "action": "mark_blocked", "reason": "internt m\u00f6te inf\u00f6r demonstration inte PE", "reviewer": "AndresBPinto", "issue_number": 467, "timestamp": "2026-04-20T09:40:07.058543+00:00"}
 {"table": "event", "id": 1210, "action": "mark_blocked", "reason": "f\u00f6redrag, antagligen inte PE", "reviewer": "AndresBPinto", "issue_number": 468, "timestamp": "2026-04-20T09:40:42.218349+00:00"}
 {"table": "event", "id": 1205, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 469, "timestamp": "2026-04-20T09:41:26.057150+00:00"}
+{"table": "event", "id": 1228, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 471, "timestamp": "2026-04-20T09:42:06.791002+00:00"}
