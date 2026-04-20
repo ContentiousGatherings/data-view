@@ -337,3 +337,4 @@
 {"table": "event", "id": 1412, "action": "mark_blocked", "reason": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 530, "timestamp": "2026-04-20T11:15:30.218210+00:00"}
 {"table": "event", "id": 1442, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 532, "timestamp": "2026-04-20T11:16:01.566394+00:00"}
 {"table": "event", "id": 1437, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 534, "timestamp": "2026-04-20T11:16:25.116003+00:00"}
+{"table": "event", "id": 1436, "action": "report", "description": "akt\u00f6rer ska delas", "reviewer": "AndresBPinto", "issue_number": 536, "timestamp": "2026-04-20T11:16:54.626177+00:00"}
