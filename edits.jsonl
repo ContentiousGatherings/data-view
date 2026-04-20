@@ -265,3 +265,4 @@
 {"table": "event", "id": 1070, "action": "report", "description": "oklart om detta \u00e4r en PE, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 418, "timestamp": "2026-04-20T09:04:41.411328+00:00"}
 {"table": "event", "id": 1101, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 419, "timestamp": "2026-04-20T09:06:28.816538+00:00"}
 {"table": "event", "id": 1099, "action": "report", "description": "platsen antagligen fel, mer kontext kr\u00e4vs", "reviewer": "AndresBPinto", "issue_number": 421, "timestamp": "2026-04-20T09:07:19.147313+00:00"}
+{"table": "event", "id": 1096, "action": "report", "description": "platsen fel", "reviewer": "AndresBPinto", "issue_number": 422, "timestamp": "2026-04-20T09:07:43.840545+00:00"}
