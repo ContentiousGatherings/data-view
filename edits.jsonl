@@ -251,3 +251,4 @@
 {"table": "event", "id": 1019, "action": "report", "description": "inget i utdraget ger st\u00f6d f\u00f6r plats och tid", "reviewer": "AndresBPinto", "issue_number": 394, "timestamp": "2026-04-20T08:23:19.855188+00:00"}
 {"table": "event", "id": 1017, "action": "mark_blocked", "reason": "f\u00f6r vagt, ingen konkret PE rapporteras", "reviewer": "AndresBPinto", "issue_number": 395, "timestamp": "2026-04-20T08:23:47.921509+00:00"}
 {"table": "event", "id": 1006, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 397, "timestamp": "2026-04-20T08:24:15.169174+00:00"}
+{"table": "event", "id": 1032, "action": "mark_blocked", "reason": "verkar vara internt m\u00f6te", "reviewer": "AndresBPinto", "issue_number": 399, "timestamp": "2026-04-20T08:33:32.303316+00:00"}
