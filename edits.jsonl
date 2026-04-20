@@ -334,3 +334,4 @@
 {"table": "event", "id": 1402, "action": "report", "description": "ska delas i flera olika events", "reviewer": "AndresBPinto", "issue_number": 525, "timestamp": "2026-04-20T11:13:47.662701+00:00"}
 {"table": "event", "id": 1428, "action": "mark_blocked", "reason": "valm\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 526, "timestamp": "2026-04-20T11:14:24.262538+00:00"}
 {"table": "event", "id": 1421, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 528, "timestamp": "2026-04-20T11:14:56.691958+00:00"}
+{"table": "event", "id": 1412, "action": "mark_blocked", "reason": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 530, "timestamp": "2026-04-20T11:15:30.218210+00:00"}
