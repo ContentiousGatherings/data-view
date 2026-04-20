@@ -371,3 +371,4 @@
 {"table": "event", "id": 1625, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 588, "timestamp": "2026-04-20T11:52:33.292391+00:00"}
 {"table": "event", "id": 1620, "action": "report", "description": "sv\u00e5rtytt, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 590, "timestamp": "2026-04-20T11:53:16.482624+00:00"}
 {"table": "event", "id": 1618, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 592, "timestamp": "2026-04-20T11:53:51.051135+00:00"}
+{"table": "event", "id": 1633, "action": "report", "description": "iofs intressant, men inte en PE?", "reviewer": "AndresBPinto", "issue_number": 593, "timestamp": "2026-04-20T11:54:18.915639+00:00"}
