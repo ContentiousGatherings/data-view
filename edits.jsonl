@@ -406,3 +406,4 @@
 {"table": "event", "id": 1800, "action": "report", "description": "platsen \u00e4r fel, PE h\u00e4nde inte i tingsr\u00e4tten", "reviewer": "AndresBPinto", "issue_number": 647, "timestamp": "2026-04-21T09:11:48.954055+00:00"}
 {"table": "event", "id": 1799, "action": "report", "description": "inte helt fel, men inte helt r\u00e4tt. beh\u00f6ver mer kontext", "reviewer": "AndresBPinto", "issue_number": 648, "timestamp": "2026-04-21T09:12:22.366445+00:00"}
 {"table": "event", "id": 1798, "action": "mark_blocked", "reason": "allm\u00e4nt h\u00e5llen artikel, ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 649, "timestamp": "2026-04-21T09:12:54.254654+00:00"}
+{"table": "event", "id": 1796, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE; fest till blacklist", "reviewer": "AndresBPinto", "issue_number": 650, "timestamp": "2026-04-21T09:13:17.515700+00:00"}
