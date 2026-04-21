@@ -479,3 +479,4 @@
 {"table": "event", "id": 2164, "action": "mark_blocked", "reason": "vagt om folkm\u00f6ten, inte konkret PE", "reviewer": "AndresBPinto", "issue_number": 758, "timestamp": "2026-04-21T11:46:33.269984+00:00"}
 {"table": "event", "id": 2160, "action": "mark_blocked", "reason": "f\u00f6r vagt, inte konkret PE", "reviewer": "AndresBPinto", "issue_number": 760, "timestamp": "2026-04-21T11:47:22.349477+00:00"}
 {"table": "event", "id": 2220, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 761, "timestamp": "2026-04-21T11:49:25.777476+00:00"}
+{"table": "event", "id": 2185, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 764, "timestamp": "2026-04-21T11:50:13.020497+00:00"}
