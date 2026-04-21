@@ -437,3 +437,4 @@
 {"table": "event", "id": 1962, "action": "mark_blocked", "reason": "ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 692, "timestamp": "2026-04-21T09:45:20.612973+00:00"}
 {"table": "event", "id": 1956, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 694, "timestamp": "2026-04-21T09:45:53.893381+00:00"}
 {"table": "event", "id": 1976, "action": "report", "description": "oklart om detta \u00e4r en PE, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 696, "timestamp": "2026-04-21T09:46:44.012483+00:00"}
+{"table": "event", "id": 1975, "action": "report", "description": "oklart om PE, \u00f6verlappande med 1976", "reviewer": "AndresBPinto", "issue_number": 697, "timestamp": "2026-04-21T09:47:14.106291+00:00"}
