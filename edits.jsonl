@@ -432,3 +432,4 @@
 {"table": "event", "id": 1913, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 685, "timestamp": "2026-04-21T09:42:09.676994+00:00"}
 {"table": "event", "id": 1949, "action": "mark_blocked", "reason": "beslut om att delta i demo, inte PE", "reviewer": "AndresBPinto", "issue_number": 686, "timestamp": "2026-04-21T09:42:40.436617+00:00"}
 {"table": "event", "id": 1945, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 688, "timestamp": "2026-04-21T09:43:32.962629+00:00"}
+{"table": "event", "id": 1932, "action": "mark_blocked", "reason": "f\u00f6r vagt, ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 689, "timestamp": "2026-04-21T09:44:04.236365+00:00"}
