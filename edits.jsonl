@@ -395,3 +395,4 @@
 {"table": "event", "id": 1713, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 629, "timestamp": "2026-04-20T12:26:45.918276+00:00"}
 {"table": "event", "id": 1711, "action": "report", "description": "tiden \u00e4r fel, av texten att d\u00f6ma intr\u00e4ffade h\u00e4ndelsen samma \u00e5r", "reviewer": "AndresBPinto", "issue_number": 631, "timestamp": "2026-04-20T12:27:46.193536+00:00"}
 {"table": "event", "id": 1741, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 632, "timestamp": "2026-04-21T09:03:21.603536+00:00"}
+{"table": "event", "id": 1728, "action": "mark_blocked", "reason": "strejker ska v\u00e4l inte inkluderas", "reviewer": "AndresBPinto", "issue_number": 634, "timestamp": "2026-04-21T09:04:02.994152+00:00"}
