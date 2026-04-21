@@ -488,3 +488,4 @@
 {"table": "event", "id": 2225, "action": "mark_blocked", "reason": "internt m\u00f6te om strejk", "reviewer": "AndresBPinto", "issue_number": 772, "timestamp": "2026-04-21T11:53:17.697118+00:00"}
 {"table": "event", "id": 2224, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 773, "timestamp": "2026-04-21T11:53:42.078555+00:00"}
 {"table": "event", "id": 2257, "action": "report", "description": "beh\u00f6vs mer precis plats", "reviewer": "AndresBPinto", "issue_number": 774, "timestamp": "2026-04-21T13:10:30.080315+00:00"}
+{"table": "event", "id": 2252, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 776, "timestamp": "2026-04-21T13:11:03.891115+00:00"}
