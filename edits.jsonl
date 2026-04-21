@@ -470,3 +470,4 @@
 {"table": "event", "id": 2112, "action": "mark_blocked", "reason": "fram\u00e5tsyftande, inte PE", "reviewer": "AndresBPinto", "issue_number": 746, "timestamp": "2026-04-21T11:33:46.795474+00:00"}
 {"table": "event", "id": 2146, "action": "report", "description": "tiden \u00e4r fel; platsen b\u00f6r vara mer precis", "reviewer": "AndresBPinto", "issue_number": 747, "timestamp": "2026-04-21T11:41:25.315526+00:00"}
 {"table": "event", "id": 2141, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 749, "timestamp": "2026-04-21T11:41:54.556280+00:00"}
+{"table": "event", "id": 2137, "action": "report", "description": "verkar vara en PE, men mer kontext beh\u00f6vs; full article text \u00e4r konstig", "reviewer": "AndresBPinto", "issue_number": 750, "timestamp": "2026-04-21T11:42:47.156213+00:00"}
