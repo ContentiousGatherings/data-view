@@ -492,3 +492,4 @@
 {"table": "event", "id": 2249, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 778, "timestamp": "2026-04-21T13:11:43.150606+00:00"}
 {"table": "event", "id": 2270, "action": "mark_blocked", "reason": "valm\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 779, "timestamp": "2026-04-21T13:12:17.754467+00:00"}
 {"table": "event", "id": 2267, "action": "report", "description": "oklart om detta \u00e4r PE; beh\u00f6ver delas i tv\u00e5 events", "reviewer": "AndresBPinto", "issue_number": 780, "timestamp": "2026-04-21T13:12:43.929115+00:00"}
+{"table": "event", "id": 2265, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 782, "timestamp": "2026-04-21T13:13:18.976489+00:00"}
