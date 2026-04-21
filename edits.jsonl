@@ -451,3 +451,4 @@
 {"table": "event", "id": 2040, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 718, "timestamp": "2026-04-21T09:54:05.939038+00:00"}
 {"table": "event", "id": 2039, "action": "mark_blocked", "reason": "generell referens till folkm\u00f6ten, ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 719, "timestamp": "2026-04-21T09:54:31.186975+00:00"}
 {"table": "event", "id": 2037, "action": "mark_blocked", "reason": "generell beskrivning, inte konkret PE", "reviewer": "AndresBPinto", "issue_number": 720, "timestamp": "2026-04-21T09:54:55.641349+00:00"}
+{"table": "event", "id": 2052, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 721, "timestamp": "2026-04-21T09:55:26.959992+00:00"}
