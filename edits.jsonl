@@ -467,3 +467,4 @@
 {"table": "event", "id": 2104, "action": "report", "description": "normaliserad tid \u00e4r fel, b\u00f6r vara 5 dec", "reviewer": "AndresBPinto", "issue_number": 740, "timestamp": "2026-04-21T11:30:37.989996+00:00"}
 {"table": "event", "id": 2130, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 742, "timestamp": "2026-04-21T11:31:31.214514+00:00"}
 {"table": "event", "id": 2114, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 745, "timestamp": "2026-04-21T11:31:59.199057+00:00"}
+{"table": "event", "id": 2112, "action": "mark_blocked", "reason": "fram\u00e5tsyftande, inte PE", "reviewer": "AndresBPinto", "issue_number": 746, "timestamp": "2026-04-21T11:33:46.795474+00:00"}
