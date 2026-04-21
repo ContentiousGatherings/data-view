@@ -494,3 +494,4 @@
 {"table": "event", "id": 2267, "action": "report", "description": "oklart om detta \u00e4r PE; beh\u00f6ver delas i tv\u00e5 events", "reviewer": "AndresBPinto", "issue_number": 780, "timestamp": "2026-04-21T13:12:43.929115+00:00"}
 {"table": "event", "id": 2265, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 782, "timestamp": "2026-04-21T13:13:18.976489+00:00"}
 {"table": "event", "id": 2280, "action": "report", "description": "normaliserade tiden \u00e4r fel, b\u00f6r vara innan 5 maj", "reviewer": "AndresBPinto", "issue_number": 784, "timestamp": "2026-04-21T13:14:03.039918+00:00"}
+{"table": "event", "id": 2278, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 786, "timestamp": "2026-04-21T13:14:43.358213+00:00"}
