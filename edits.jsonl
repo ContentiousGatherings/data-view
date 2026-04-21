@@ -484,3 +484,4 @@
 {"table": "event", "id": 2243, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 767, "timestamp": "2026-04-21T11:51:04.936785+00:00"}
 {"table": "event", "id": 2238, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 769, "timestamp": "2026-04-21T11:51:36.553089+00:00"}
 {"table": "event", "id": 2237, "action": "report", "description": "sp\u00e4nnande h\u00e4ndelsetyp men inte en PE", "reviewer": "AndresBPinto", "issue_number": 770, "timestamp": "2026-04-21T11:52:07.430337+00:00"}
+{"table": "event", "id": 2226, "action": "report", "description": "jag \u00e4r os\u00e4ker p\u00e5 om detta \u00e4r en PE, granskning av MO kr\u00e4vs", "reviewer": "AndresBPinto", "issue_number": 771, "timestamp": "2026-04-21T11:52:44.192531+00:00"}
