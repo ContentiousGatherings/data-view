@@ -430,3 +430,4 @@
 {"table": "event", "id": 1923, "action": "mark_blocked", "reason": "internt m\u00f6te med beslut om demonstration", "reviewer": "AndresBPinto", "issue_number": 682, "timestamp": "2026-04-21T09:40:46.961367+00:00"}
 {"table": "event", "id": 1922, "action": "report", "description": "platsen fel, b\u00f6r inte vara r\u00e5dhusr\u00e4tten; tiden fel, ska vara 1 maj", "reviewer": "AndresBPinto", "issue_number": 683, "timestamp": "2026-04-21T09:41:35.372289+00:00"}
 {"table": "event", "id": 1913, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 685, "timestamp": "2026-04-21T09:42:09.676994+00:00"}
+{"table": "event", "id": 1949, "action": "mark_blocked", "reason": "beslut om att delta i demo, inte PE", "reviewer": "AndresBPinto", "issue_number": 686, "timestamp": "2026-04-21T09:42:40.436617+00:00"}
