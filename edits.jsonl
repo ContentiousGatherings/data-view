@@ -399,3 +399,4 @@
 {"table": "event", "id": 1726, "action": "mark_blocked", "reason": "internt m\u00f6te om att delta i demonstration, inte PE", "reviewer": "AndresBPinto", "issue_number": 635, "timestamp": "2026-04-21T09:04:28.404634+00:00"}
 {"table": "event", "id": 1760, "action": "report", "description": "akt\u00f6rerna ska delas", "reviewer": "AndresBPinto", "issue_number": 637, "timestamp": "2026-04-21T09:06:19.555221+00:00"}
 {"table": "event", "id": 1758, "action": "report", "description": "den normaliserade tiden \u00e4r antagligen fel avseende m\u00e5nad", "reviewer": "AndresBPinto", "issue_number": 638, "timestamp": "2026-04-21T09:06:56.605192+00:00"}
+{"table": "event", "id": 1745, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 640, "timestamp": "2026-04-21T09:08:46.590833+00:00"}
