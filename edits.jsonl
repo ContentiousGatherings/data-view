@@ -486,3 +486,4 @@
 {"table": "event", "id": 2237, "action": "report", "description": "sp\u00e4nnande h\u00e4ndelsetyp men inte en PE", "reviewer": "AndresBPinto", "issue_number": 770, "timestamp": "2026-04-21T11:52:07.430337+00:00"}
 {"table": "event", "id": 2226, "action": "report", "description": "jag \u00e4r os\u00e4ker p\u00e5 om detta \u00e4r en PE, granskning av MO kr\u00e4vs", "reviewer": "AndresBPinto", "issue_number": 771, "timestamp": "2026-04-21T11:52:44.192531+00:00"}
 {"table": "event", "id": 2225, "action": "mark_blocked", "reason": "internt m\u00f6te om strejk", "reviewer": "AndresBPinto", "issue_number": 772, "timestamp": "2026-04-21T11:53:17.697118+00:00"}
+{"table": "event", "id": 2224, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 773, "timestamp": "2026-04-21T11:53:42.078555+00:00"}
