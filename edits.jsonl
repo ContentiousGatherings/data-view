@@ -403,3 +403,4 @@
 {"table": "event", "id": 1768, "action": "mark_blocked", "reason": "inget konkret PE", "reviewer": "AndresBPinto", "issue_number": 642, "timestamp": "2026-04-21T09:09:37.994332+00:00"}
 {"table": "event", "id": 1765, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 644, "timestamp": "2026-04-21T09:10:04.003378+00:00"}
 {"table": "event", "id": 1763, "action": "mark_blocked", "reason": "diskussion i riksdagen om folkm\u00f6ten, inte PE", "reviewer": "AndresBPinto", "issue_number": 646, "timestamp": "2026-04-21T09:11:05.534347+00:00"}
+{"table": "event", "id": 1800, "action": "report", "description": "platsen \u00e4r fel, PE h\u00e4nde inte i tingsr\u00e4tten", "reviewer": "AndresBPinto", "issue_number": 647, "timestamp": "2026-04-21T09:11:48.954055+00:00"}
