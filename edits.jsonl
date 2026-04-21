@@ -454,3 +454,4 @@
 {"table": "event", "id": 2052, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 721, "timestamp": "2026-04-21T09:55:26.959992+00:00"}
 {"table": "event", "id": 2049, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 723, "timestamp": "2026-04-21T09:56:30.934844+00:00"}
 {"table": "event", "id": 2044, "action": "report", "description": "fram\u00e5tsyftande, men h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 725, "timestamp": "2026-04-21T09:57:12.171318+00:00"}
+{"table": "event", "id": 2066, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 726, "timestamp": "2026-04-21T09:57:47.032289+00:00"}
