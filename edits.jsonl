@@ -414,3 +414,4 @@
 {"table": "event", "id": 1853, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 657, "timestamp": "2026-04-21T09:24:51.296806+00:00"}
 {"table": "event", "id": 1844, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 658, "timestamp": "2026-04-21T09:25:21.153866+00:00"}
 {"table": "event", "id": 1840, "action": "mark_blocked", "reason": "strejk; 1839, 1840 och 1841 \u00e4r identiska", "reviewer": "AndresBPinto", "issue_number": 661, "timestamp": "2026-04-21T09:26:26.720617+00:00"}
+{"table": "event", "id": 1871, "action": "report", "description": "platsen anger inte stad", "reviewer": "AndresBPinto", "issue_number": 663, "timestamp": "2026-04-21T09:27:07.108294+00:00"}
