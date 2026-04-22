@@ -540,3 +540,4 @@
 {"table": "event", "id": 2511, "action": "report", "description": "fram\u00e5tsyftande men h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 861, "timestamp": "2026-04-22T08:35:37.956049+00:00"}
 {"table": "event", "id": 2510, "action": "mark_blocked", "reason": "kongress inte PE", "reviewer": "AndresBPinto", "issue_number": 862, "timestamp": "2026-04-22T08:36:01.511858+00:00"}
 {"table": "event", "id": 2509, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 863, "timestamp": "2026-04-22T08:36:25.809328+00:00"}
+{"table": "event", "id": 2527, "action": "mark_blocked", "reason": "valm\u00f6te", "reviewer": "AndresBPinto", "issue_number": 864, "timestamp": "2026-04-22T08:36:58.931366+00:00"}
