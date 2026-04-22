@@ -607,3 +607,4 @@
 {"table": "event", "id": 2903, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 972, "timestamp": "2026-04-22T09:51:14.918230+00:00"}
 {"table": "event", "id": 2898, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 974, "timestamp": "2026-04-22T09:51:57.968862+00:00"}
 {"table": "event", "id": 2924, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 976, "timestamp": "2026-04-22T09:52:33.343909+00:00"}
+{"table": "event", "id": 2906, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 979, "timestamp": "2026-04-22T09:53:09.051123+00:00"}
