@@ -655,3 +655,4 @@
 {"table": "event", "id": 3187, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1055, "timestamp": "2026-04-22T11:21:13.700560+00:00"}
 {"table": "event", "id": 3184, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1057, "timestamp": "2026-04-22T11:21:44.518234+00:00"}
 {"table": "event", "id": 3176, "action": "report", "description": "platsen \u00e4r fel, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1059, "timestamp": "2026-04-22T11:22:14.797639+00:00"}
+{"table": "event", "id": 3195, "action": "mark_blocked", "reason": "valm\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1060, "timestamp": "2026-04-22T11:22:46.681925+00:00"}
