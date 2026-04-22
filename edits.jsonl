@@ -700,3 +700,4 @@
 {"table": "event", "id": 3400, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 1138, "timestamp": "2026-04-22T12:26:33.737221+00:00"}
 {"table": "event", "id": 3382, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1140, "timestamp": "2026-04-22T12:27:10.139317+00:00"}
 {"table": "event", "id": 3423, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1141, "timestamp": "2026-04-22T12:33:25.402346+00:00"}
+{"table": "event", "id": 3421, "action": "report", "description": "f\u00f6r vag tid? MO beh\u00f6ver granska", "reviewer": "AndresBPinto", "issue_number": 1143, "timestamp": "2026-04-22T12:33:58.339465+00:00"}
