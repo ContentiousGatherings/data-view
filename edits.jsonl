@@ -685,3 +685,4 @@
 {"table": "event", "id": 3308, "action": "mark_blocked", "reason": "generellt om folkm\u00f6ten, konkret PE saknas; b\u00f6r delas p\u00e5 flera events", "reviewer": "AndresBPinto", "issue_number": 1108, "timestamp": "2026-04-22T12:16:55.243190+00:00"}
 {"table": "event", "id": 3304, "action": "report", "description": "tiden \u00e4r fel ska vara 12 nov", "reviewer": "AndresBPinto", "issue_number": 1110, "timestamp": "2026-04-22T12:17:49.719944+00:00"}
 {"table": "event", "id": 3346, "action": "report", "description": "den normaliserade tiden \u00e4r fel", "reviewer": "AndresBPinto", "issue_number": 1111, "timestamp": "2026-04-22T12:18:29.833084+00:00"}
+{"table": "event", "id": 3341, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 1113, "timestamp": "2026-04-22T12:19:01.525241+00:00"}
