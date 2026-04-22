@@ -638,3 +638,4 @@
 {"table": "event", "id": 3098, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1029, "timestamp": "2026-04-22T11:10:28.055486+00:00"}
 {"table": "event", "id": 3090, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1030, "timestamp": "2026-04-22T11:11:10.345490+00:00"}
 {"table": "event", "id": 3118, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 1031, "timestamp": "2026-04-22T11:11:49.020298+00:00"}
+{"table": "event", "id": 3117, "action": "report", "description": "fram\u00e5tsyftande; beh\u00f6ver delas i flera events", "reviewer": "AndresBPinto", "issue_number": 1032, "timestamp": "2026-04-22T11:12:24.549006+00:00"}
