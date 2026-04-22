@@ -620,3 +620,4 @@
 {"table": "event", "id": 3002, "action": "report", "description": "tid framg\u00e5r inte av utdraget", "reviewer": "AndresBPinto", "issue_number": 999, "timestamp": "2026-04-22T10:49:54.063844+00:00"}
 {"table": "event", "id": 3039, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 1001, "timestamp": "2026-04-22T10:55:39.439934+00:00"}
 {"table": "event", "id": 3035, "action": "report", "description": "\u00e5ret f\u00f6r demonstrationen \u00e4r oklart, normaliserade tiden med stor sannolikhet fel", "reviewer": "AndresBPinto", "issue_number": 1002, "timestamp": "2026-04-22T10:58:27.256161+00:00"}
+{"table": "event", "id": 3026, "action": "report", "description": "platsen \u00e4r fel, ska antagligen vara Lomma", "reviewer": "AndresBPinto", "issue_number": 1004, "timestamp": "2026-04-22T10:59:12.768560+00:00"}
