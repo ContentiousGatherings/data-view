@@ -691,3 +691,4 @@
 {"table": "event", "id": 3348, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1119, "timestamp": "2026-04-22T12:21:23.774161+00:00"}
 {"table": "event", "id": 3347, "action": "report", "description": "normaliserad tid \u00e4r fel", "reviewer": "AndresBPinto", "issue_number": 1120, "timestamp": "2026-04-22T12:21:46.969653+00:00"}
 {"table": "event", "id": 3358, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1122, "timestamp": "2026-04-22T12:22:30.103386+00:00"}
+{"table": "event", "id": 3356, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1124, "timestamp": "2026-04-22T12:22:55.774716+00:00"}
