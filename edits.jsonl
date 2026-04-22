@@ -611,3 +611,4 @@
 {"table": "event", "id": 2938, "action": "report", "description": "inl\u00e4mnande av petition", "reviewer": "AndresBPinto", "issue_number": 981, "timestamp": "2026-04-22T09:54:58.859116+00:00"}
 {"table": "event", "id": 2931, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 984, "timestamp": "2026-04-22T09:55:43.176990+00:00"}
 {"table": "event", "id": 2957, "action": "mark_blocked", "reason": "f\u00f6r vagt, konkret PE saknas", "reviewer": "AndresBPinto", "issue_number": 986, "timestamp": "2026-04-22T09:56:28.013200+00:00"}
+{"table": "event", "id": 2953, "action": "report", "description": "fram\u00e5tsyftande, men antagligen h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 987, "timestamp": "2026-04-22T09:56:57.308895+00:00"}
