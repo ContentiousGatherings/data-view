@@ -592,3 +592,4 @@
 {"table": "event", "id": 2785, "action": "report", "description": "2785-2787 identiska", "reviewer": "AndresBPinto", "issue_number": 944, "timestamp": "2026-04-22T09:29:21.453867+00:00"}
 {"table": "event", "id": 2811, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 946, "timestamp": "2026-04-22T09:29:48.239376+00:00"}
 {"table": "event", "id": 2804, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 948, "timestamp": "2026-04-22T09:30:26.349969+00:00"}
+{"table": "event", "id": 2795, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 950, "timestamp": "2026-04-22T09:31:08.156744+00:00"}
