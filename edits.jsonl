@@ -617,3 +617,4 @@
 {"table": "event", "id": 2969, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 993, "timestamp": "2026-04-22T10:46:54.060827+00:00"}
 {"table": "event", "id": 2962, "action": "report", "description": "den normaliserade tiden \u00e4r fel, b\u00f6r vara 1903 07 12", "reviewer": "AndresBPinto", "issue_number": 995, "timestamp": "2026-04-22T10:47:53.810830+00:00"}
 {"table": "event", "id": 3005, "action": "mark_blocked", "reason": "f\u00f6r vagt ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 997, "timestamp": "2026-04-22T10:48:28.145247+00:00"}
+{"table": "event", "id": 3002, "action": "report", "description": "tid framg\u00e5r inte av utdraget", "reviewer": "AndresBPinto", "issue_number": 999, "timestamp": "2026-04-22T10:49:54.063844+00:00"}
