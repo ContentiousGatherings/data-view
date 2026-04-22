@@ -663,3 +663,4 @@
 {"table": "event", "id": 3196, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1069, "timestamp": "2026-04-22T11:47:33.603388+00:00"}
 {"table": "event", "id": 3213, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 1070, "timestamp": "2026-04-22T11:50:32.836714+00:00"}
 {"table": "event", "id": 3209, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1072, "timestamp": "2026-04-22T11:51:05.527604+00:00"}
+{"table": "event", "id": 3208, "action": "mark_blocked", "reason": "inte PE; sammantr\u00e4de till blacklist", "reviewer": "AndresBPinto", "issue_number": 1073, "timestamp": "2026-04-22T11:51:29.934281+00:00"}
