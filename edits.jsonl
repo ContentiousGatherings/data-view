@@ -596,3 +596,4 @@
 {"table": "event", "id": 2824, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 951, "timestamp": "2026-04-22T09:40:15.194705+00:00"}
 {"table": "event", "id": 2815, "action": "mark_blocked", "reason": "strejk ska inte samlas in", "reviewer": "AndresBPinto", "issue_number": 954, "timestamp": "2026-04-22T09:41:21.750360+00:00"}
 {"table": "event", "id": 2840, "action": "report", "description": "b\u00f6r delas i tv\u00e5 events", "reviewer": "AndresBPinto", "issue_number": 956, "timestamp": "2026-04-22T09:42:13.466487+00:00"}
+{"table": "event", "id": 2833, "action": "report", "description": "vi samlar v\u00e4l inte in petitioner?", "reviewer": "AndresBPinto", "issue_number": 958, "timestamp": "2026-04-22T09:42:53.465861+00:00"}
