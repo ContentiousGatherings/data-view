@@ -670,3 +670,4 @@
 {"table": "event", "id": 3218, "action": "report", "description": "fram\u00e5tsyftande men relativt h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 1078, "timestamp": "2026-04-22T11:53:43.009012+00:00"}
 {"table": "event", "id": 3253, "action": "report", "description": "Location \u00e4r fel, b\u00f6r vara Lund", "reviewer": "AndresBPinto", "issue_number": 1080, "timestamp": "2026-04-22T11:55:00.545542+00:00"}
 {"table": "event", "id": 3244, "action": "report", "description": "platsen \u00e4r oklar, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1082, "timestamp": "2026-04-22T11:55:36.057423+00:00"}
+{"table": "event", "id": 3261, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1084, "timestamp": "2026-04-22T11:56:05.471839+00:00"}
