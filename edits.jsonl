@@ -682,3 +682,4 @@
 {"table": "event", "id": 3299, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1101, "timestamp": "2026-04-22T12:14:46.073057+00:00"}
 {"table": "event", "id": 3291, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1104, "timestamp": "2026-04-22T12:15:26.585869+00:00"}
 {"table": "event", "id": 3332, "action": "mark_blocked", "reason": "strejk", "reviewer": "AndresBPinto", "issue_number": 1106, "timestamp": "2026-04-22T12:15:53.143847+00:00"}
+{"table": "event", "id": 3308, "action": "mark_blocked", "reason": "generellt om folkm\u00f6ten, konkret PE saknas; b\u00f6r delas p\u00e5 flera events", "reviewer": "AndresBPinto", "issue_number": 1108, "timestamp": "2026-04-22T12:16:55.243190+00:00"}
