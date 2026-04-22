@@ -696,3 +696,4 @@
 {"table": "event", "id": 3362, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1128, "timestamp": "2026-04-22T12:23:53.240545+00:00"}
 {"table": "event", "id": 3381, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1131, "timestamp": "2026-04-22T12:24:26.635770+00:00"}
 {"table": "event", "id": 3367, "action": "mark_blocked", "reason": "generellt om folkm\u00f6ten, konkret PE saknas", "reviewer": "AndresBPinto", "issue_number": 1133, "timestamp": "2026-04-22T12:25:09.530985+00:00"}
+{"table": "event", "id": 3404, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1136, "timestamp": "2026-04-22T12:25:59.185618+00:00"}
