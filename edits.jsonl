@@ -512,3 +512,4 @@
 {"table": "event", "id": 2320, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 811, "timestamp": "2026-04-22T08:02:29.099691+00:00"}
 {"table": "event", "id": 2340, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 814, "timestamp": "2026-04-22T08:03:15.703111+00:00"}
 {"table": "event", "id": 2332, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 817, "timestamp": "2026-04-22T08:04:01.714030+00:00"}
+{"table": "event", "id": 2358, "action": "report", "description": "oklart om detta \u00e4r en PE, mer kontext kr\u00e4vs", "reviewer": "AndresBPinto", "issue_number": 819, "timestamp": "2026-04-22T08:05:05.393103+00:00"}
