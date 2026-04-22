@@ -645,3 +645,4 @@
 {"table": "event", "id": 3123, "action": "report", "description": "platsen ok\u00e4nd, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1039, "timestamp": "2026-04-22T11:14:59.305940+00:00"}
 {"table": "event", "id": 3121, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1040, "timestamp": "2026-04-22T11:15:29.957079+00:00"}
 {"table": "event", "id": 3154, "action": "mark_blocked", "reason": "inte PE; utst\u00e4llning till blacklist", "reviewer": "AndresBPinto", "issue_number": 1041, "timestamp": "2026-04-22T11:15:55.048062+00:00"}
+{"table": "event", "id": 3145, "action": "mark_blocked", "reason": "uppenbarligen inte PE", "reviewer": "AndresBPinto", "issue_number": 1043, "timestamp": "2026-04-22T11:16:39.041494+00:00"}
