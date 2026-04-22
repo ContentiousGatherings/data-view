@@ -636,3 +636,4 @@
 {"table": "event", "id": 3111, "action": "report", "description": "fram\u00e5tsyftande men h\u00f6gt k\u00e4lv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 1026, "timestamp": "2026-04-22T11:09:29.779412+00:00"}
 {"table": "event", "id": 3101, "action": "report", "description": "normaliserad tid \u00e4r fel ska vara 1 maj 1892", "reviewer": "AndresBPinto", "issue_number": 1027, "timestamp": "2026-04-22T11:10:00.272611+00:00"}
 {"table": "event", "id": 3098, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1029, "timestamp": "2026-04-22T11:10:28.055486+00:00"}
+{"table": "event", "id": 3090, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1030, "timestamp": "2026-04-22T11:11:10.345490+00:00"}
