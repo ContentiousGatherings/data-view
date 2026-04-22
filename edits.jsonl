@@ -564,3 +564,4 @@
 {"table": "event", "id": 2686, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 901, "timestamp": "2026-04-22T08:53:01.059664+00:00"}
 {"table": "event", "id": 2679, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 903, "timestamp": "2026-04-22T08:53:29.661302+00:00"}
 {"table": "event", "id": 2701, "action": "mark_blocked", "reason": "kongress inte PE; verkar vara utanf\u00f6r Sverige", "reviewer": "AndresBPinto", "issue_number": 904, "timestamp": "2026-04-22T08:54:10.464284+00:00"}
+{"table": "event", "id": 2693, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 906, "timestamp": "2026-04-22T08:54:42.302197+00:00"}
