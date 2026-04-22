@@ -534,3 +534,4 @@
 {"table": "event", "id": 2495, "action": "mark_blocked", "reason": "valm\u00f6te", "reviewer": "AndresBPinto", "issue_number": 853, "timestamp": "2026-04-22T08:31:41.855118+00:00"}
 {"table": "event", "id": 2506, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 855, "timestamp": "2026-04-22T08:32:17.933109+00:00"}
 {"table": "event", "id": 2505, "action": "report", "description": "fram\u00e5tsyftande men h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 856, "timestamp": "2026-04-22T08:32:43.873338+00:00"}
+{"table": "event", "id": 2501, "action": "mark_blocked", "reason": "valm\u00f6te; jag tror att vi kan blacklista alla valm\u00f6ten f\u00f6re en rimligt vald \u00e5r, typ 1890", "reviewer": "AndresBPinto", "issue_number": 857, "timestamp": "2026-04-22T08:33:26.443543+00:00"}
