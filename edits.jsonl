@@ -577,3 +577,4 @@
 {"table": "event", "id": 2732, "action": "report", "description": "m\u00f6tet inte PE, men h\u00e4r finns referat till demonstration", "reviewer": "AndresBPinto", "issue_number": 922, "timestamp": "2026-04-22T09:11:12.918985+00:00"}
 {"table": "event", "id": 2724, "action": "report", "description": "2720-2724 identiska b\u00f6r sl\u00e5s samman", "reviewer": "AndresBPinto", "issue_number": 924, "timestamp": "2026-04-22T09:12:34.613101+00:00"}
 {"table": "event", "id": 2753, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 926, "timestamp": "2026-04-22T09:17:44.320381+00:00"}
+{"table": "event", "id": 2747, "action": "report", "description": "plats b\u00f6r normaliseras till stad, i detta fall malm\u00f6", "reviewer": "AndresBPinto", "issue_number": 928, "timestamp": "2026-04-22T09:18:36.691380+00:00"}
