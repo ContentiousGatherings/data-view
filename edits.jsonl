@@ -582,3 +582,4 @@
 {"table": "event", "id": 2762, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 931, "timestamp": "2026-04-22T09:23:31.311537+00:00"}
 {"table": "event", "id": 2760, "action": "report", "description": "den normaliserade tiden \u00e4r fel", "reviewer": "AndresBPinto", "issue_number": 932, "timestamp": "2026-04-22T09:24:13.119164+00:00"}
 {"table": "event", "id": 2759, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 933, "timestamp": "2026-04-22T09:24:43.717570+00:00"}
+{"table": "event", "id": 2757, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 934, "timestamp": "2026-04-22T09:25:12.794942+00:00"}
