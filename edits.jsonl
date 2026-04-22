@@ -703,3 +703,4 @@
 {"table": "event", "id": 3421, "action": "report", "description": "f\u00f6r vag tid? MO beh\u00f6ver granska", "reviewer": "AndresBPinto", "issue_number": 1143, "timestamp": "2026-04-22T12:33:58.339465+00:00"}
 {"table": "event", "id": 3405, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1145, "timestamp": "2026-04-22T12:34:26.597989+00:00"}
 {"table": "event", "id": 3437, "action": "report", "description": "platsen ok\u00e4nd, men b\u00f6r g\u00e5 att f\u00e5 ut av artikeln", "reviewer": "AndresBPinto", "issue_number": 1146, "timestamp": "2026-04-22T12:35:19.428919+00:00"}
+{"table": "event", "id": 3432, "action": "mark_blocked", "reason": "generellt resonemang, konkret PE saknas", "reviewer": "AndresBPinto", "issue_number": 1147, "timestamp": "2026-04-22T12:35:43.640766+00:00"}
