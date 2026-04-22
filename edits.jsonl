@@ -538,3 +538,4 @@
 {"table": "event", "id": 2514, "action": "mark_blocked", "reason": "valm\u00f6te", "reviewer": "AndresBPinto", "issue_number": 859, "timestamp": "2026-04-22T08:34:40.611729+00:00"}
 {"table": "event", "id": 2512, "action": "report", "description": "f\u00f6r vagt, saknas konkreta PE", "reviewer": "AndresBPinto", "issue_number": 860, "timestamp": "2026-04-22T08:35:00.570530+00:00"}
 {"table": "event", "id": 2511, "action": "report", "description": "fram\u00e5tsyftande men h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 861, "timestamp": "2026-04-22T08:35:37.956049+00:00"}
+{"table": "event", "id": 2510, "action": "mark_blocked", "reason": "kongress inte PE", "reviewer": "AndresBPinto", "issue_number": 862, "timestamp": "2026-04-22T08:36:01.511858+00:00"}
