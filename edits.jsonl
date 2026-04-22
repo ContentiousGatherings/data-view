@@ -659,3 +659,4 @@
 {"table": "event", "id": 3193, "action": "mark_blocked", "reason": "valm\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1062, "timestamp": "2026-04-22T11:23:29.832205+00:00"}
 {"table": "event", "id": 3191, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1064, "timestamp": "2026-04-22T11:24:03.730746+00:00"}
 {"table": "event", "id": 3204, "action": "mark_blocked", "reason": "inbjudan inte PE; fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 1065, "timestamp": "2026-04-22T11:45:47.665166+00:00"}
+{"table": "event", "id": 3202, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1067, "timestamp": "2026-04-22T11:46:25.330569+00:00"}
