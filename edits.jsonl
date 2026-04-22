@@ -568,3 +568,4 @@
 {"table": "event", "id": 2692, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 907, "timestamp": "2026-04-22T08:55:11.606338+00:00"}
 {"table": "event", "id": 2710, "action": "report", "description": "beh\u00f6ver delas i flera olika events", "reviewer": "AndresBPinto", "issue_number": 909, "timestamp": "2026-04-22T08:56:13.277106+00:00"}
 {"table": "event", "id": 2709, "action": "report", "description": "2709, 2710, 2711 identiska", "reviewer": "AndresBPinto", "issue_number": 910, "timestamp": "2026-04-22T08:57:05.325941+00:00"}
+{"table": "event", "id": 2703, "action": "report", "description": "platsen \u00e4r markerad som ok\u00e4nd, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 913, "timestamp": "2026-04-22T08:57:55.606651+00:00"}
