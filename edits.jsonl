@@ -726,3 +726,4 @@
 {"table": "event", "id": 3566, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1181, "timestamp": "2026-04-22T12:54:24.878179+00:00"}
 {"table": "event", "id": 3565, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1182, "timestamp": "2026-04-22T12:55:08.646290+00:00"}
 {"table": "event", "id": 3562, "action": "mark_blocked", "reason": "f\u00f6r vagt, konkret PE saknas", "reviewer": "AndresBPinto", "issue_number": 1184, "timestamp": "2026-04-22T12:55:47.405329+00:00"}
+{"table": "event", "id": 3557, "action": "mark_blocked", "reason": "faninvigning inte PE", "reviewer": "AndresBPinto", "issue_number": 1185, "timestamp": "2026-04-22T12:56:14.944136+00:00"}
