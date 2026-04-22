@@ -594,3 +594,4 @@
 {"table": "event", "id": 2804, "action": "mark_blocked", "reason": "inte PE", "reviewer": "AndresBPinto", "issue_number": 948, "timestamp": "2026-04-22T09:30:26.349969+00:00"}
 {"table": "event", "id": 2795, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 950, "timestamp": "2026-04-22T09:31:08.156744+00:00"}
 {"table": "event", "id": 2824, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 951, "timestamp": "2026-04-22T09:40:15.194705+00:00"}
+{"table": "event", "id": 2815, "action": "mark_blocked", "reason": "strejk ska inte samlas in", "reviewer": "AndresBPinto", "issue_number": 954, "timestamp": "2026-04-22T09:41:21.750360+00:00"}
