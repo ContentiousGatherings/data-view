@@ -643,3 +643,4 @@
 {"table": "event", "id": 3142, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1036, "timestamp": "2026-04-22T11:13:37.576811+00:00"}
 {"table": "event", "id": 3140, "action": "mark_blocked", "reason": "generellt resonemang om majdemonstrationer, ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 1037, "timestamp": "2026-04-22T11:14:20.447051+00:00"}
 {"table": "event", "id": 3123, "action": "report", "description": "platsen ok\u00e4nd, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1039, "timestamp": "2026-04-22T11:14:59.305940+00:00"}
+{"table": "event", "id": 3121, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1040, "timestamp": "2026-04-22T11:15:29.957079+00:00"}
