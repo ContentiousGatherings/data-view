@@ -624,3 +624,4 @@
 {"table": "event", "id": 3053, "action": "report", "description": "tiden \u00e4r fel, b\u00f6r vara januari 1886", "reviewer": "AndresBPinto", "issue_number": 1006, "timestamp": "2026-04-22T11:00:17.148160+00:00"}
 {"table": "event", "id": 3048, "action": "report", "description": "paltsen \u00e4r fel, b\u00f6r vara en tydlig location", "reviewer": "AndresBPinto", "issue_number": 1007, "timestamp": "2026-04-22T11:00:53.426750+00:00"}
 {"table": "event", "id": 3042, "action": "report", "description": "fel plats, ska vara Malm\u00f6; fel tid ska vara 1 maj 1897", "reviewer": "AndresBPinto", "issue_number": 1010, "timestamp": "2026-04-22T11:02:17.354584+00:00"}
+{"table": "event", "id": 3059, "action": "mark_blocked", "reason": "fram\u00e5tsyftande; oklart plats", "reviewer": "AndresBPinto", "issue_number": 1011, "timestamp": "2026-04-22T11:03:08.464462+00:00"}
