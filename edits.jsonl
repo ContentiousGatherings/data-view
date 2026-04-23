@@ -767,3 +767,4 @@
 {"table": "event", "id": 3775, "action": "mark_blocked", "reason": "ingen PE, demonstrationen f\u00f6rbjuden", "reviewer": "AndresBPinto", "issue_number": 1247, "timestamp": "2026-04-23T12:25:28.329037+00:00"}
 {"table": "event", "id": 3769, "action": "report", "description": "fram\u00e5tsyftande, h\u00f6gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 1249, "timestamp": "2026-04-23T12:26:08.409111+00:00"}
 {"table": "event", "id": 3761, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 1251, "timestamp": "2026-04-23T12:26:41.451274+00:00"}
+{"table": "event", "id": 3785, "action": "report", "description": "normaliserad tid fel, ska vara 1871", "reviewer": "AndresBPinto", "issue_number": 1252, "timestamp": "2026-04-23T12:27:22.389828+00:00"}
