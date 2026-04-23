@@ -734,3 +734,4 @@
 {"table": "event", "id": 3611, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1191, "timestamp": "2026-04-23T11:36:57.657572+00:00"}
 {"table": "event", "id": 3604, "action": "mark_blocked", "reason": "internt m\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1193, "timestamp": "2026-04-23T11:37:36.263734+00:00"}
 {"table": "event", "id": 3602, "action": "mark_blocked", "reason": "verkar inte alls handla om PE", "reviewer": "AndresBPinto", "issue_number": 1195, "timestamp": "2026-04-23T11:38:30.460382+00:00"}
+{"table": "event", "id": 3631, "action": "mark_blocked", "reason": "f\u00f6redrag, antagligen inte PE", "reviewer": "AndresBPinto", "issue_number": 1196, "timestamp": "2026-04-23T11:42:32.258964+00:00"}
