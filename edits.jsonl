@@ -746,3 +746,4 @@
 {"table": "event", "id": 3646, "action": "mark_blocked", "reason": "ingen konkret PE n\u00e4mns; full article text \u00e4r konstig", "reviewer": "AndresBPinto", "issue_number": 1209, "timestamp": "2026-04-23T11:59:20.640663+00:00"}
 {"table": "event", "id": 3645, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 1210, "timestamp": "2026-04-23T11:59:54.827028+00:00"}
 {"table": "event", "id": 3676, "action": "report", "description": "tiden \u00e4r fel, b\u00f6r vara fredag n\u00e4rmast innan tidningens tryckdatum", "reviewer": "AndresBPinto", "issue_number": 1212, "timestamp": "2026-04-23T12:01:06.253059+00:00"}
+{"table": "event", "id": 3671, "action": "report", "description": "normaliserade tiden antagligen fel, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1214, "timestamp": "2026-04-23T12:02:08.051610+00:00"}
