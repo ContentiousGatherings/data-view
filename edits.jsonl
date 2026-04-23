@@ -730,3 +730,4 @@
 {"table": "event", "id": 3600, "action": "report", "description": "antagligen inte PE, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1186, "timestamp": "2026-04-23T11:12:58.263014+00:00"}
 {"table": "event", "id": 3599, "action": "mark_blocked", "reason": "internt m\u00f6te, inte PE", "reviewer": "AndresBPinto", "issue_number": 1187, "timestamp": "2026-04-23T11:13:32.387101+00:00"}
 {"table": "event", "id": 3591, "action": "mark_blocked", "reason": "f\u00f6r vagt ingen konkret PE", "reviewer": "AndresBPinto", "issue_number": 1189, "timestamp": "2026-04-23T11:14:04.972890+00:00"}
+{"table": "event", "id": 3587, "action": "report", "description": "fram\u00e5tsyftande", "reviewer": "AndresBPinto", "issue_number": 1190, "timestamp": "2026-04-23T11:14:39.731160+00:00"}
