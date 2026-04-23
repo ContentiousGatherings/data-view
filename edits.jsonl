@@ -743,3 +743,4 @@
 {"table": "event", "id": 3638, "action": "mark_blocked", "reason": "verkar vara ngt slags ber\u00e4ttelse, l\u00e5gt k\u00e4llv\u00e4rde", "reviewer": "AndresBPinto", "issue_number": 1204, "timestamp": "2026-04-23T11:55:35.428511+00:00"}
 {"table": "event", "id": 3669, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1206, "timestamp": "2026-04-23T11:56:06.680093+00:00"}
 {"table": "event", "id": 3647, "action": "report", "description": "n\u00e5got \u00e4r fel med tiden, 1 juli var en onsdag men enligt texten skulle m\u00f6tet h\u00e5llas en s\u00f6ndag", "reviewer": "AndresBPinto", "issue_number": 1208, "timestamp": "2026-04-23T11:58:21.741645+00:00"}
+{"table": "event", "id": 3646, "action": "mark_blocked", "reason": "ingen konkret PE n\u00e4mns; full article text \u00e4r konstig", "reviewer": "AndresBPinto", "issue_number": 1209, "timestamp": "2026-04-23T11:59:20.640663+00:00"}
