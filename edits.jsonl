@@ -748,3 +748,4 @@
 {"table": "event", "id": 3676, "action": "report", "description": "tiden \u00e4r fel, b\u00f6r vara fredag n\u00e4rmast innan tidningens tryckdatum", "reviewer": "AndresBPinto", "issue_number": 1212, "timestamp": "2026-04-23T12:01:06.253059+00:00"}
 {"table": "event", "id": 3671, "action": "report", "description": "normaliserade tiden antagligen fel, mer kontext beh\u00f6vs", "reviewer": "AndresBPinto", "issue_number": 1214, "timestamp": "2026-04-23T12:02:08.051610+00:00"}
 {"table": "event", "id": 3687, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1216, "timestamp": "2026-04-23T12:12:18.706646+00:00"}
+{"table": "event", "id": 3684, "action": "report", "description": "den normaliserade tiden \u00e4r fel, ska vara annandag (antalgien p\u00e5sk?) 1896", "reviewer": "AndresBPinto", "issue_number": 1218, "timestamp": "2026-04-23T12:13:25.577090+00:00"}
