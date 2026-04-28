@@ -778,3 +778,4 @@
 {"table": "event", "id": 3810, "action": "mark_blocked", "reason": "valm\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1266, "timestamp": "2026-04-23T12:38:16.443120+00:00"}
 {"table": "authoritativeevent", "id": 1677, "action": "report", "description": "N\u00e4stan alla event tagna fr\u00e5n denna tidning \u00e4r felaktiga, ortnamn och datum f\u00f6r event \u00e5terfinns inte av mig vid manuell granskning.", "reviewer": "DavLarHen", "issue_number": 1269, "timestamp": "2026-04-28T12:04:24.906910+00:00"}
 {"table": "authoritativeevent", "id": 751, "action": "report", "description": "Hallucination", "reviewer": "AndresBPinto", "issue_number": 1270, "timestamp": "2026-04-28T12:06:39.733628+00:00"}
+{"table": "authoritativeevent", "id": 753, "action": "report", "description": "Hallucination", "reviewer": "AndresBPinto", "issue_number": 1271, "timestamp": "2026-04-28T12:10:12.507328+00:00"}
