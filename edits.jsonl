@@ -776,3 +776,4 @@
 {"table": "event", "id": 3815, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1262, "timestamp": "2026-04-23T12:37:11.307915+00:00"}
 {"table": "event", "id": 3813, "action": "mark_valid", "reviewer": "AndresBPinto", "issue_number": 1264, "timestamp": "2026-04-23T12:37:43.000043+00:00"}
 {"table": "event", "id": 3810, "action": "mark_blocked", "reason": "valm\u00f6te inte PE", "reviewer": "AndresBPinto", "issue_number": 1266, "timestamp": "2026-04-23T12:38:16.443120+00:00"}
+{"table": "authoritativeevent", "id": 1677, "action": "report", "description": "N\u00e4stan alla event tagna fr\u00e5n denna tidning \u00e4r felaktiga, ortnamn och datum f\u00f6r event \u00e5terfinns inte av mig vid manuell granskning.", "reviewer": "DavLarHen", "issue_number": 1269, "timestamp": "2026-04-28T12:04:24.906910+00:00"}
