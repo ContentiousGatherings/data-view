@@ -4,7 +4,11 @@ Excel export for pilot dataset.
 Builds an .xlsx workbook with a data sheet and embedded charts.
 """
 
+import re
 from collections import Counter
+
+# Characters illegal in XML 1.0 (and therefore xlsx): \x00-\x08, \x0b, \x0c, \x0e-\x1f
+_ILLEGAL_XML_CHARS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f]")
 
 from openpyxl import Workbook
 from openpyxl.chart import BarChart, LineChart, Reference
@@ -16,6 +20,7 @@ from pilot.extract import PilotRow
 # Column definitions: (header, dataclass field, column width)
 COLUMNS = [
     ("AuthEvent ID", "auth_event_id", 14),
+    ("Webbsida", "site_url", 50),
     ("Datum", "datum", 12),
     ("Kategori", "kategori", 16),
     ("Ort", "ort", 20),
@@ -25,6 +30,7 @@ COLUMNS = [
     ("Aktör-IDn", "aktor_idn", 16),
     ("Textutdrag", "textutdrag", 50),
     ("Länkar", "lankar", 40),
+    ("Publiceringsdatum", "publiceringsdatum", 20),
     ("Tidning", "tidning", 20),
     ("Käll-event-IDn", "kall_event_idn", 18),
     ("Artikel-IDn", "artikel_idn", 18),
@@ -66,6 +72,8 @@ def _write_data_sheet(wb: Workbook, rows: list[PilotRow]) -> None:
     for row_idx, row in enumerate(rows, start=2):
         for col_idx, (_, field_name, _) in enumerate(COLUMNS, start=1):
             value = getattr(row, field_name)
+            if isinstance(value, str):
+                value = _ILLEGAL_XML_CHARS.sub("", value)
             cell = ws.cell(row=row_idx, column=col_idx, value=value)
             # Wrap text for long content
             if field_name in ("textutdrag", "lankar", "aktorer"):

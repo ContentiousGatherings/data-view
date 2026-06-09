@@ -17,21 +17,22 @@ from tqdm import tqdm
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.db_model import (
-    Actor,
     Article,
     AuthoritativeActor,
     AuthoritativeEvent,
     AuthoritativeEventActor,
     AuthoritativeLocation,
+    AuthoritativeMeetingType,
     Event,
     EventMatch,
     MeetingType,
+    MeetingTypeMatch,
 )
 
 # Search term definitions: (label, SQL LIKE patterns)
 SEARCH_TERMS = [
     ("folkmöte", ["%folkmöte%"]),
-    ("förstamaj-tåg", ["%förstamaj%tåg%", "%första maj%tåg%"]),
+    ("första maj", ["%majdemonstration%", "%1majdemonstration%", "%majfest%", "%majfirande%", "%demonstration%"]),
 ]
 
 
@@ -40,6 +41,7 @@ class PilotRow:
     """One row in the pilot dataset, representing an AuthoritativeEvent."""
 
     auth_event_id: int
+    site_url: str | None = None
     datum: str | None = None
     kategori: str | None = None
     ort: str | None = None
@@ -49,6 +51,7 @@ class PilotRow:
     aktor_idn: str | None = None
     textutdrag: str | None = None
     lankar: str | None = None
+    publiceringsdatum: str | None = None
     tidning: str | None = None
     kall_event_idn: str | None = None
     artikel_idn: str | None = None
@@ -58,172 +61,245 @@ class PilotRow:
 
 
 def extract_pilot_data(
-    db_path: str, usable_only: bool = False
+    db_path: str,
+    usable_only: bool = False,
+    terms: list[str] | None = None,
 ) -> list[PilotRow]:
     """Extract pilot dataset rows from the database.
+
+    Args:
+        terms: If provided, only use search terms whose labels are in this list.
 
     Returns a list of PilotRow sorted by date.
     """
     engine = create_engine(f"sqlite:///{db_path}")
 
+    active_terms = SEARCH_TERMS
+    if terms:
+        active_terms = [(l, p) for l, p in SEARCH_TERMS if l in terms]
+
     with Session(engine) as session:
-        # Step 1: Find AuthoritativeEvent IDs per search term
+        # Step 1: Find AuthoritativeEvent IDs per search term via JOINs
         # Maps auth_event_id → set of search term labels
         auth_event_terms: dict[int, set[str]] = defaultdict(set)
         # Maps auth_event_id → set of source event IDs that matched
         auth_event_sources: dict[int, set[int]] = defaultdict(set)
-        # Maps auth_event_id → set of matching MeetingType IDs
-        auth_event_mt_ids: dict[int, set[int]] = defaultdict(set)
+        # Maps auth_event_id → set of matching AuthoritativeMeetingType IDs
+        auth_event_amt_ids: dict[int, set[int]] = defaultdict(set)
 
-        for label, patterns in SEARCH_TERMS:
-            # Find matching MeetingTypes
-            matching_mt_ids = set()
+        for label, patterns in active_terms:
             for pattern in patterns:
-                stmt = select(MeetingType.id).where(
-                    MeetingType.name.ilike(pattern)
+                # JOIN: AuthoritativeMeetingType → MeetingTypeMatch → MeetingType → Event → EventMatch
+                stmt = (
+                    select(
+                        EventMatch.authoritative_event_id,
+                        EventMatch.event_id,
+                        AuthoritativeMeetingType.id,
+                    )
+                    .join(Event, EventMatch.event_id == Event.id)
+                    .join(MeetingType, Event.type_id == MeetingType.id)
+                    .join(
+                        MeetingTypeMatch,
+                        MeetingTypeMatch.meetingtype_id == MeetingType.id,
+                    )
+                    .join(
+                        AuthoritativeMeetingType,
+                        MeetingTypeMatch.authoritative_meetingtype_id
+                        == AuthoritativeMeetingType.id,
+                    )
+                    .where(AuthoritativeMeetingType.name.ilike(pattern))
+                    .where(MeetingTypeMatch.accepted == True)
+                    .where(EventMatch.authoritative_event_id.isnot(None))
                 )
-                matching_mt_ids.update(session.exec(stmt).all())
+                results = session.exec(stmt).all()
+                for ae_id, event_id, amt_id in results:
+                    auth_event_terms[ae_id].add(label)
+                    auth_event_sources[ae_id].add(event_id)
+                    auth_event_amt_ids[ae_id].add(amt_id)
 
-            if not matching_mt_ids:
-                print(f"  No MeetingTypes found for '{label}'")
-                continue
-
-            print(f"  Found {len(matching_mt_ids)} MeetingTypes for '{label}'")
-
-            # Find Events with those MeetingTypes
-            event_ids = set()
-            for mt_id in matching_mt_ids:
-                stmt = select(Event.id).where(Event.type_id == mt_id)
-                event_ids.update(session.exec(stmt).all())
-
-            if not event_ids:
-                print(f"  No Events found for '{label}'")
-                continue
-
-            print(f"  Found {len(event_ids)} Events for '{label}'")
-
-            # Trace Events → EventMatch → AuthoritativeEvent
-            for event_id in event_ids:
-                stmt = select(EventMatch).where(EventMatch.event_id == event_id)
-                matches = session.exec(stmt).all()
-                for match in matches:
-                    if match.authoritative_event_id is not None:
-                        auth_event_terms[match.authoritative_event_id].add(label)
-                        auth_event_sources[match.authoritative_event_id].add(event_id)
-                        # Find which MT IDs this event used
-                        event = session.get(Event, event_id)
-                        if event and event.type_id in matching_mt_ids:
-                            auth_event_mt_ids[match.authoritative_event_id].add(
-                                event.type_id
-                            )
+            matched = sum(1 for ae, terms in auth_event_terms.items() if label in terms)
+            print(f"  '{label}': {matched} AuthoritativeEvents")
 
         print(
             f"\n  Total unique AuthoritativeEvents found: {len(auth_event_terms)}"
         )
 
-        # Step 2: Build rows
-        rows: list[PilotRow] = []
+        # Step 2: Batch-fetch AuthoritativeEvents
         auth_event_ids = sorted(auth_event_terms.keys())
-
-        for ae_id in tqdm(auth_event_ids, desc="Resolving AuthoritativeEvents"):
-            auth_event = session.get(AuthoritativeEvent, ae_id)
-            if auth_event is None:
+        ae_map: dict[int, AuthoritativeEvent] = {}
+        for ae in session.exec(
+            select(AuthoritativeEvent).where(
+                AuthoritativeEvent.id.in_(auth_event_ids)
+            )
+        ).all():
+            if usable_only and ae.use is False:
                 continue
+            ae_map[ae.id] = ae
 
-            if usable_only and auth_event.use is False:
-                continue
+        # Batch-fetch AuthoritativeMeetingTypes
+        all_amt_ids = {amid for ids in auth_event_amt_ids.values() for amid in ids}
+        amt_map: dict[int, AuthoritativeMeetingType] = {}
+        if all_amt_ids:
+            for amt in session.exec(
+                select(AuthoritativeMeetingType).where(
+                    AuthoritativeMeetingType.id.in_(all_amt_ids)
+                )
+            ).all():
+                amt_map[amt.id] = amt
 
+        # Batch-fetch locations
+        loc_ids = {
+            ae.authoritative_location_id
+            for ae in ae_map.values()
+            if ae.authoritative_location_id
+        }
+        loc_map: dict[int, AuthoritativeLocation] = {}
+        if loc_ids:
+            for loc in session.exec(
+                select(AuthoritativeLocation).where(
+                    AuthoritativeLocation.id.in_(loc_ids)
+                )
+            ).all():
+                loc_map[loc.id] = loc
+
+        # Batch-fetch actors per AuthoritativeEvent
+        ae_actor_links = session.exec(
+            select(AuthoritativeEventActor).where(
+                AuthoritativeEventActor.authoritative_event_id.in_(ae_map.keys())
+            )
+        ).all()
+        actor_ids = {link.authoritative_actor_id for link in ae_actor_links}
+        actor_map: dict[int, AuthoritativeActor] = {}
+        if actor_ids:
+            for actor in session.exec(
+                select(AuthoritativeActor).where(
+                    AuthoritativeActor.id.in_(actor_ids)
+                )
+            ).all():
+                actor_map[actor.id] = actor
+        # Group by auth_event_id
+        ae_actors_grouped: dict[int, list[AuthoritativeActor]] = defaultdict(list)
+        for link in ae_actor_links:
+            actor = actor_map.get(link.authoritative_actor_id)
+            if actor:
+                ae_actors_grouped[link.authoritative_event_id].append(actor)
+
+        # Batch-fetch all source events via EventMatch
+        all_em = session.exec(
+            select(EventMatch.authoritative_event_id, EventMatch.event_id).where(
+                EventMatch.authoritative_event_id.in_(ae_map.keys())
+            )
+        ).all()
+        ae_all_sources: dict[int, set[int]] = defaultdict(set)
+        all_event_ids: set[int] = set()
+        for ae_id, event_id in all_em:
+            ae_all_sources[ae_id].add(event_id)
+            all_event_ids.add(event_id)
+
+        # Batch-fetch Events
+        event_map: dict[int, Event] = {}
+        if all_event_ids:
+            for ev in session.exec(
+                select(Event).where(Event.id.in_(all_event_ids))
+            ).all():
+                event_map[ev.id] = ev
+
+        # Batch-fetch Articles
+        article_uuids = {
+            ev.article_id for ev in event_map.values() if ev.article_id
+        }
+        article_map: dict[str, Article] = {}
+        if article_uuids:
+            for art in session.exec(
+                select(Article).where(Article.id.in_(article_uuids))
+            ).all():
+                article_map[str(art.id)] = art
+
+        # Step 3: Build rows
+        rows: list[PilotRow] = []
+        for ae_id in tqdm(sorted(ae_map.keys()), desc="Building rows"):
+            auth_event = ae_map[ae_id]
             row = PilotRow(auth_event_id=ae_id)
+            row.site_url = f"https://contentiousgatherings.github.io/data-view/authoritativeevent/{ae_id}/"
 
             # Datum
             if auth_event.event_date_start:
                 row.datum = auth_event.event_date_start.strftime("%Y-%m-%d")
 
-            # Kategori
-            row.kategori = auth_event.category
+            # Kategori — from matched AuthoritativeMeetingTypes
+            amt_ids = auth_event_amt_ids.get(ae_id, set())
+            amt_names = sorted({amt_map[a].name for a in amt_ids if a in amt_map})
+            if amt_names:
+                row.kategori = "; ".join(amt_names)
 
-            # Location (Ort, Län)
+            # Location
             if auth_event.authoritative_location_id:
-                auth_loc = session.get(
-                    AuthoritativeLocation, auth_event.authoritative_location_id
-                )
+                auth_loc = loc_map.get(auth_event.authoritative_location_id)
                 if auth_loc:
                     row.ort = auth_loc.name
                     row.ort_id = auth_loc.id
                     row.lan = auth_loc.county
 
-            # Aktörer (via AuthoritativeEventActor → AuthoritativeActor)
-            stmt = select(AuthoritativeEventActor).where(
-                AuthoritativeEventActor.authoritative_event_id == ae_id
-            )
-            ae_actors = session.exec(stmt).all()
-            actor_names = []
-            actor_ids = []
-            for ae_actor in ae_actors:
-                auth_actor = session.get(
-                    AuthoritativeActor, ae_actor.authoritative_actor_id
-                )
-                if auth_actor:
-                    actor_names.append(auth_actor.name)
-                    actor_ids.append(str(auth_actor.id))
-            if actor_names:
-                row.aktorer = "; ".join(actor_names)
-                row.aktor_idn = "; ".join(actor_ids)
+            # Aktörer
+            actors = ae_actors_grouped.get(ae_id, [])
+            if actors:
+                row.aktorer = "; ".join(a.name for a in actors)
+                row.aktor_idn = "; ".join(str(a.id) for a in actors)
 
-            # Source event data (excerpts, URLs, journals)
-            source_event_ids = auth_event_sources.get(ae_id, set())
-            # Also include all source events from EventMatch, not just the
-            # ones that matched the search term
-            stmt = select(EventMatch.event_id).where(
-                EventMatch.authoritative_event_id == ae_id
-            )
-            all_source_ids = set(session.exec(stmt).all())
-            # Use the matched ones for traceability
-            matched_source_ids = source_event_ids
+            # Source event data
+            source_ids = ae_all_sources.get(ae_id, set())
+            matched_source_ids = auth_event_sources.get(ae_id, set())
 
             excerpts = []
             urls = []
             journals = []
-            article_ids = []
+            article_ids_list = []
+            pub_dates = []
 
-            for src_id in sorted(all_source_ids):
-                event = session.get(Event, src_id)
+            for src_id in sorted(source_ids):
+                event = event_map.get(src_id)
                 if event is None:
                     continue
                 if event.excerpt:
                     excerpts.append(event.excerpt)
                 if event.article_id:
-                    article = session.get(Article, event.article_id)
+                    article = article_map.get(str(event.article_id))
                     if article:
-                        article_ids.append(str(article.id))
+                        article_ids_list.append(str(article.id))
                         if article.url:
-                            urls.append(article.url)
+                            url = article.url.replace("_alto.xml", ".jp2")
+                            urls.append(url)
                         if article.journal:
                             journals.append(article.journal)
+                        if article.date_published:
+                            pub_dates.append(
+                                article.date_published.strftime("%Y-%m-%d")
+                            )
 
             if excerpts:
-                # Deduplicate while preserving order
                 seen = set()
                 unique = []
                 for e in excerpts:
                     if e not in seen:
                         seen.add(e)
                         unique.append(e)
-                row.textutdrag = " ||| ".join(unique)
+                row.textutdrag = "\n-------------\n".join(unique)
             if urls:
                 row.lankar = "; ".join(dict.fromkeys(urls))
+            if pub_dates:
+                row.publiceringsdatum = "; ".join(dict.fromkeys(pub_dates))
             if journals:
                 row.tidning = "; ".join(dict.fromkeys(journals))
-            if article_ids:
-                row.artikel_idn = "; ".join(dict.fromkeys(article_ids))
+            if article_ids_list:
+                row.artikel_idn = "; ".join(dict.fromkeys(article_ids_list))
 
             # Source event and MeetingType IDs
             row.kall_event_idn = "; ".join(
                 str(i) for i in sorted(matched_source_ids)
             )
-            mt_ids = auth_event_mt_ids.get(ae_id, set())
-            if mt_ids:
-                row.meetingtype_idn = "; ".join(str(i) for i in sorted(mt_ids))
+            amt_ids = auth_event_amt_ids.get(ae_id, set())
+            if amt_ids:
+                row.meetingtype_idn = "; ".join(str(i) for i in sorted(amt_ids))
 
             # Sökord
             terms = auth_event_terms.get(ae_id, set())

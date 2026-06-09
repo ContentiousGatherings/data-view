@@ -13,11 +13,13 @@ import os
 import sys
 from datetime import datetime, timezone
 
-from pilot.extract import extract_pilot_data
+from pilot.extract import SEARCH_TERMS, extract_pilot_data
 from pilot.export import export_xlsx
 
 
 def main():
+    available_terms = [label for label, _ in SEARCH_TERMS]
+
     parser = argparse.ArgumentParser(
         description="Generate pilot dataset (.xlsx) from pipeline database"
     )
@@ -38,6 +40,13 @@ def main():
         default=False,
         help="Exclude blocked/invalid AuthoritativeEvents",
     )
+    parser.add_argument(
+        "--terms",
+        nargs="+",
+        choices=available_terms,
+        default=None,
+        help=f"Search terms to include (default: all). Choices: {', '.join(available_terms)}",
+    )
 
     args = parser.parse_args()
 
@@ -54,10 +63,14 @@ def main():
 
     # Generate output filename with ISO datetime prefix
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H%M%S")
-    output_path = f"{timestamp}_pilot_dataset.xlsx"
+    if args.terms:
+        suffix = "_".join(t.replace(" ", "-") for t in args.terms)
+        output_path = f"{timestamp}_pilot_{suffix}.xlsx"
+    else:
+        output_path = f"{timestamp}_pilot_dataset.xlsx"
 
     print(f"Extracting pilot data from {db_path}")
-    rows = extract_pilot_data(db_path, usable_only=args.usable_only)
+    rows = extract_pilot_data(db_path, usable_only=args.usable_only, terms=args.terms)
 
     if not rows:
         print("No matching AuthoritativeEvents found.")
